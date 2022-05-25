@@ -1,0 +1,116 @@
+//border color
+$color-border:#7e7e7e;
+//표의 타이틀 #292832
+$color-bigbg_b: #202932;
+$color-bigbg_font:#fff;
+$color-bigbg_menu: #989898;
+$color-bigbg_menu_font:#fff;
+$color-smallbg_menu: rgba(152, 152, 152, 0.5);
+$color-smallbg_menu_font:#fff;
+$color-bg1_b:#2C3845;
+$color-bg1_font_b:#fff;
+$color-bg2_b:rgba(44, 56, 69, 0.5);
+$color-bg2_font:#e5e5e5;
+$color-bg_value:#77797C;
+$color-bg_value_font:#e5e5e5;
+//표의 타이틀 #5E5433
+$color-bigbg_y: #5e5433;
+$color-bg1_y:#877744;
+$color-bg1_font:#fff;
+$color-bg2_y:rgba(135, 119, 68, 0.5);
+//표의 타이틀 #2A5330
+$color-bigbg_g: #2A5330;
+$color-bg1_g:#2F8234;
+$color-bg1_font_g:#fff;
+$color-bg2_g:rgba(47, 130, 52, 0.5);
+//표의 타이틀 #452C3C
+$color-bigbg_p: #452C3C;
+$color-bg1_p:#602e4e;
+$color-bg1_font_p:#fff;
+$color-bg2_p:rgba(96, 46, 78, 0.5);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header_section {
+    width: 100%;
+    display: flex;
+
+    .header1 {
+        width: 100%;
+        height: 80px;
+        background-color: #000;
+
+        .header_icon_wrap {
+            .header_menu {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                li {
+                    display: flex;
+                    .hamburger_menu {
+                        img {
+                            width: 10px;
+                        }
+                    }
+
+                    img {
+                        color: #B6B6B6;
+                    }
+
+                    span {
+                        color: #B6B6B6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.all {
+    display: flex;
+    width: 100%;
+
+    .sidebar {
+        width: 5%;
+        height: 1528px;
+        background-color: #2D2E33;
+
+        .management_categories {
+            .main_menu {}
+
+            .sub_menu {}
+        }
+    }
+
+    .main {
+        width: 95%;
+
+        .card_wrap{
+            .card_sales_revenue{
+                background-color: #F56954;
+                width: 395px;
+                height: 145px;
+                color: #fff;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                .revenue{
+                    font-size: 45px;
+                }
+                .period_revenue{
+                    font-size: 28px;
+                }
+                .revenue_analysis{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

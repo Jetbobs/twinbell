@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header_section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_section .header1 {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li .hamburger_menu img {
+  width: 10px;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li img {
+  color: #B6B6B6;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li span {
+  color: #B6B6B6;
+}
+
+.all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.all .sidebar {
+  width: 5%;
+  height: 1528px;
+  background-color: #2D2E33;
+}
+
+.all .main {
+  width: 95%;
+}
+
+.all .main .card_wrap .card_sales_revenue {
+  background-color: #F56954;
+  width: 395px;
+  height: 145px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all .main .card_wrap .card_sales_revenue .revenue {
+  font-size: 45px;
+}
+
+.all .main .card_wrap .card_sales_revenue .period_revenue {
+  font-size: 28px;
+}
+
+.all .main .card_wrap .card_sales_revenue .revenue_analysis {
+  font-size: 13px;
+}
+/*# sourceMappingURL=style.css.map */
