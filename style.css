@@ -17,6 +17,7 @@
 }
 
 .header_section .header1 .header_icon_wrap .header_menu {
+  padding-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,9 +62,19 @@
 
 .all .main {
   width: 95%;
+  background-color: #3E3E3E;
 }
 
-.all .main .card_wrap .card_sales_revenue {
+.all .main .card_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+
+.all .main .card_wrap .card_period_revenue {
   background-color: #F56954;
   width: 395px;
   height: 145px;
@@ -82,15 +93,162 @@
           justify-content: center;
 }
 
-.all .main .card_wrap .card_sales_revenue .revenue {
+.all .main .card_wrap .card_period_revenue .revenue {
   font-size: 45px;
 }
 
-.all .main .card_wrap .card_sales_revenue .period_revenue {
+.all .main .card_wrap .card_period_revenue .period_revenue {
   font-size: 28px;
 }
 
-.all .main .card_wrap .card_sales_revenue .revenue_analysis {
+.all .main .card_wrap .card_period_revenue .revenue_analysis {
   font-size: 13px;
+}
+
+.all .main .card_wrap .card_period_payments {
+  background-color: #FFA812;
+  width: 395px;
+  height: 145px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all .main .card_wrap .card_period_payments .period_payments_wrap .payments {
+  font-size: 45px;
+}
+
+.all .main .card_wrap .card_period_payments .period_payments_wrap .period_payments {
+  font-size: 28px;
+}
+
+.all .main .card_wrap .card_period_payments .period_payments_wrap .payments_analysis {
+  font-size: 13px;
+}
+
+.all .main .card_wrap .card_period_accidents {
+  background-color: #00C0F0;
+  width: 395px;
+  height: 145px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all .main .card_wrap .card_period_accidents .number_accidents_wrap .accidents {
+  font-size: 45px;
+}
+
+.all .main .card_wrap .card_period_accidents .number_accidents_wrap .period_accidents {
+  font-size: 28px;
+}
+
+.all .main .card_wrap .card_period_accidents .number_accidents_wrap .accidents_analysis {
+  font-size: 13px;
+}
+
+.all .main .card_wrap .card_period_users {
+  background-color: #00A65A;
+  width: 395px;
+  height: 145px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all .main .card_wrap .card_period_users .number_users_wrap .users {
+  font-size: 45px;
+}
+
+.all .main .card_wrap .card_period_users .number_users_wrap .period_users {
+  font-size: 28px;
+}
+
+.all .main .card_wrap .card_period_users .number_users_wrap .users_analysis {
+  font-size: 13px;
+}
+
+.all .main .card_wrap .btn_date .btn_date_wrap {
+  height: 145px;
+  color: #B6B6B6;
+  width: 77px;
+}
+
+.all .main .card_wrap .btn_date .btn_date_wrap .btn_date_yesterday {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #fff;
+  height: 33.3%;
+  border-bottom: 1px solid #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .main .card_wrap .btn_date .btn_date_wrap .btn_date_today {
+  background-color: #fff;
+  height: 33.3%;
+  border-bottom: 1px solid #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .main .card_wrap .btn_date .btn_date_wrap .btn_date_this_month {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+  height: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

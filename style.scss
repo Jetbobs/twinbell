@@ -45,12 +45,15 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
 
         .header_icon_wrap {
             .header_menu {
+                padding-left: 5%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 height: 80px;
+
                 li {
                     display: flex;
+
                     .hamburger_menu {
                         img {
                             width: 10px;
@@ -88,9 +91,12 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
 
     .main {
         width: 95%;
-
-        .card_wrap{
-            .card_sales_revenue{
+        background-color: #3E3E3E;
+        .card_wrap {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+            .card_period_revenue {
                 background-color: #F56954;
                 width: 395px;
                 height: 145px;
@@ -101,14 +107,126 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
-                .revenue{
+
+                .revenue {
                     font-size: 45px;
                 }
-                .period_revenue{
+
+                .period_revenue {
                     font-size: 28px;
                 }
-                .revenue_analysis{
+
+                .revenue_analysis {
                     font-size: 13px;
+                }
+            }
+
+            .card_period_payments {
+                background-color: #FFA812;
+                width: 395px;
+                height: 145px;
+                color: #fff;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                .period_payments_wrap {
+                    .payments {
+                        font-size: 45px;
+                    }
+
+                    .period_payments {
+                        font-size: 28px;
+                    }
+
+                    .payments_analysis {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .card_period_accidents {
+                background-color: #00C0F0;
+                width: 395px;
+                height: 145px;
+                color: #fff;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                .number_accidents_wrap {
+                    .accidents {
+                        font-size: 45px;
+                    }
+                    .period_accidents {
+                        font-size: 28px;
+                    }
+                    .accidents_analysis {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .card_period_users{
+                background-color: #00A65A;
+                width: 395px;
+                height: 145px;
+                color: #fff;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                .number_users_wrap{
+                    .users{
+                        font-size: 45px;
+                    }
+                    .period_users{
+                        font-size: 28px;
+                    }
+                    .users_analysis{
+                        font-size: 13px;
+                    }
+                }
+            }
+            .btn_date{
+                .btn_date_wrap{
+                    height: 145px;
+                    color: #B6B6B6;
+                    width: 77px;
+                    .btn_date_yesterday{
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        background-color: #fff;
+                        height: 33.3%;
+                        border-bottom: 1px solid #707070;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .btn_date_today{
+                        background-color: #fff;
+                        height: 33.3%;
+                        border-bottom: 1px solid #707070;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .btn_date_this_month{
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius:5px ;
+                        background-color: #fff;
+                        height: 33.3%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
         }
