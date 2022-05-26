@@ -232,3 +232,34 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
         }
     }
 }
+.chart_title{
+    color: #fff;
+    font-size: 25px;
+}
+.chart_wrap{
+    .revenue_analysis_chart{
+        .sales_chart{
+            width: 802px;
+            height: 410px;
+            background-color: #707070;
+            border-radius: 5px;
+        }
+        .sales_table{
+            table{
+                thead{
+                    th{
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -251,4 +251,25 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.chart_title {
+  color: #fff;
+  font-size: 25px;
+}
+
+.chart_wrap .revenue_analysis_chart .sales_chart {
+  width: 802px;
+  height: 410px;
+  background-color: #707070;
+  border-radius: 5px;
+}
+
+.chart_wrap .revenue_analysis_chart .sales_table table thead th {
+  color: #fff;
+  font-size: 12px;
+}
+
+.chart_wrap .revenue_analysis_chart .sales_table table tbody tr td {
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
