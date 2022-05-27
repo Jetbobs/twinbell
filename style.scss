@@ -32,6 +32,7 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans KR';
 }
 
 .header_section {
@@ -53,7 +54,7 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
 
                 li {
                     display: flex;
-
+                    align-items: center;
                     .hamburger_menu {
                         img {
                             width: 10px;
@@ -66,6 +67,8 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
 
                     span {
                         color: #B6B6B6;
+                        padding-left: 5px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -78,7 +81,7 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
     width: 100%;
 
     .sidebar {
-        width: 5%;
+        width: 3.5%;
         height: 1528px;
         background-color: #2D2E33;
 
@@ -90,12 +93,12 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
     }
 
     .main {
-        width: 95%;
+        width: 96.5%;
         background-color: #3E3E3E;
         .card_wrap {
             display: flex;
             justify-content: space-around;
-            padding-top: 30px;
+            padding: 30px;
             .card_period_revenue {
                 background-color: #F56954;
                 width: 395px;
@@ -105,9 +108,11 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
                 border-bottom-right-radius: 5px;
                 border-bottom-left-radius: 5px;
                 display: flex;
-                align-items: flex-start;
-                justify-content: center;
-
+                .card_period_revenue_wrap{
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                 .revenue {
                     font-size: 45px;
                 }
@@ -120,6 +125,7 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
                     font-size: 13px;
                 }
             }
+            }
 
             .card_period_payments {
                 background-color: #FFA812;
@@ -130,10 +136,12 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
                 border-bottom-right-radius: 5px;
                 border-bottom-left-radius: 5px;
                 display: flex;
-                align-items: flex-start;
-                justify-content: center;
 
                 .period_payments_wrap {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .payments {
                         font-size: 45px;
                     }
@@ -157,10 +165,12 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
                 border-bottom-right-radius: 5px;
                 border-bottom-left-radius: 5px;
                 display: flex;
-                align-items: flex-start;
-                justify-content: center;
 
                 .number_accidents_wrap {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .accidents {
                         font-size: 45px;
                     }
@@ -181,9 +191,11 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
                 border-bottom-right-radius: 5px;
                 border-bottom-left-radius: 5px;
                 display: flex;
-                align-items: flex-start;
-                justify-content: center;
                 .number_users_wrap{
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .users{
                         font-size: 45px;
                     }
@@ -234,32 +246,78 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
 }
 .chart_title{
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 .chart_wrap{
+    display: flex;
+    justify-content: space-around;
     .revenue_analysis_chart{
+        width: 802px;
         .sales_chart{
-            width: 802px;
             height: 410px;
             background-color: #707070;
             border-radius: 5px;
         }
-        .sales_table{
-            table{
-                thead{
-                    th{
-                        color: #fff;
-                        font-size: 12px;
-                    }
+        
+    }
+    .orders_analysis_chart{
+        width: 621px;
+        .orders_chart{
+            height: 410px;
+            background-color: #707070;
+            border-radius: 5px;
+        }
+        
+    }
+    .accidents_analysis_chart{
+        width: 257px;
+        .accidents_chart{
+            height: 410px;
+            background-color: #707070;
+            border-radius: 5px;
+        }
+    }
+    .table_wrap{
+        .orders_table{
+            display: flex;
+            .orders_table2{
+                padding-left: 80px;
+            }
+        }
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            margin-top: 10px;
+            thead{
+                th:not(:last-child){
+                    border-right: 1px solid #707070;
                 }
-                tbody{
-                    tr{
-                        td{
-                            color: #fff;
-                        }
+                th{
+                    border-bottom: 1px solid #707070;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 10px;
+                }
+            }
+            tbody{
+                tr{
+                    font-size: 12px;
+                    td:not(:last-child){
+                        border-right: 1px solid #707070;
+                    }
+                    td{
+                        padding: 9px;
+                        color: #fff;
                     }
                 }
             }
+        }
+        p{
+            color: #fff;
+            font-size: 12px;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }

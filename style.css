@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans KR';
 }
 
 .header_section {
@@ -33,6 +34,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header_section .header1 .header_icon_wrap .header_menu li .hamburger_menu img {
@@ -45,6 +49,8 @@
 
 .header_section .header1 .header_icon_wrap .header_menu li span {
   color: #B6B6B6;
+  padding-left: 5px;
+  font-size: 20px;
 }
 
 .all {
@@ -55,13 +61,13 @@
 }
 
 .all .sidebar {
-  width: 5%;
+  width: 3.5%;
   height: 1528px;
   background-color: #2D2E33;
 }
 
 .all .main {
-  width: 95%;
+  width: 96.5%;
   background-color: #3E3E3E;
 }
 
@@ -71,7 +77,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 30px;
+  padding: 30px;
 }
 
 .all .main .card_wrap .card_period_revenue {
@@ -85,23 +91,31 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.all .main .card_wrap .card_period_revenue .revenue {
+.all .main .card_wrap .card_period_revenue .card_period_revenue_wrap {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all .main .card_wrap .card_period_revenue .card_period_revenue_wrap .revenue {
   font-size: 45px;
 }
 
-.all .main .card_wrap .card_period_revenue .period_revenue {
+.all .main .card_wrap .card_period_revenue .card_period_revenue_wrap .period_revenue {
   font-size: 28px;
 }
 
-.all .main .card_wrap .card_period_revenue .revenue_analysis {
+.all .main .card_wrap .card_period_revenue .card_period_revenue_wrap .revenue_analysis {
   font-size: 13px;
 }
 
@@ -116,12 +130,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.all .main .card_wrap .card_period_payments .period_payments_wrap {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .all .main .card_wrap .card_period_payments .period_payments_wrap .payments {
@@ -147,12 +169,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.all .main .card_wrap .card_period_accidents .number_accidents_wrap {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .all .main .card_wrap .card_period_accidents .number_accidents_wrap .accidents {
@@ -178,12 +208,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.all .main .card_wrap .card_period_users .number_users_wrap {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .all .main .card_wrap .card_period_users .number_users_wrap .users {
@@ -254,22 +292,96 @@
 
 .chart_title {
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.chart_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.chart_wrap .revenue_analysis_chart {
+  width: 802px;
 }
 
 .chart_wrap .revenue_analysis_chart .sales_chart {
-  width: 802px;
   height: 410px;
   background-color: #707070;
   border-radius: 5px;
 }
 
-.chart_wrap .revenue_analysis_chart .sales_table table thead th {
+.chart_wrap .orders_analysis_chart {
+  width: 621px;
+}
+
+.chart_wrap .orders_analysis_chart .orders_chart {
+  height: 410px;
+  background-color: #707070;
+  border-radius: 5px;
+}
+
+.chart_wrap .accidents_analysis_chart {
+  width: 257px;
+}
+
+.chart_wrap .accidents_analysis_chart .accidents_chart {
+  height: 410px;
+  background-color: #707070;
+  border-radius: 5px;
+}
+
+.chart_wrap .table_wrap .orders_table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chart_wrap .table_wrap .orders_table .orders_table2 {
+  padding-left: 80px;
+}
+
+.chart_wrap .table_wrap table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.chart_wrap .table_wrap table thead th:not(:last-child) {
+  border-right: 1px solid #707070;
+}
+
+.chart_wrap .table_wrap table thead th {
+  border-bottom: 1px solid #707070;
   color: #fff;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.chart_wrap .table_wrap table tbody tr {
   font-size: 12px;
 }
 
-.chart_wrap .revenue_analysis_chart .sales_table table tbody tr td {
+.chart_wrap .table_wrap table tbody tr td:not(:last-child) {
+  border-right: 1px solid #707070;
+}
+
+.chart_wrap .table_wrap table tbody tr td {
+  padding: 9px;
   color: #fff;
+}
+
+.chart_wrap .table_wrap p {
+  color: #fff;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

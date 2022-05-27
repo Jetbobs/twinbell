@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Document</title>
 </head>
 
@@ -129,112 +130,260 @@
                     <div class="sales_chart">
 
                     </div>
-                    <div class="sales_table">
-                        <table>
-                            <thead>
-                                <th>월/액</th>
-                                <th>1월</th>
-                                <th>2월</th>
-                                <th>3월</th>
-                                <th>4월</th>
-                                <th>5월</th>
-                                <th>6월</th>
-                                <th>7월</th>
-                                <th>8월</th>
-                                <th>9월</th>
-                                <th>10월</th>
-                                <th>11월</th>
-                                <th>12월</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>목표매출</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                    <td>912,000</td>
-                                </tr>
-                                <tr>
-                                    <td>실매출</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                    <td>848,000</td>
-                                </tr>
-                                <tr>
-                                    <td>달성률</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                    <td>86%</td>
-                                </tr>
-                                <tr>
-                                    <td>입금액</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                    <td>342,000</td>
-                                </tr>
-                                <tr>
-                                    <td>미수금액</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                    <td>506,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="table_wrap">
+                        <div class="sales_table">
+                            <table>
+                                <thead>
+                                    <th>월/액</th>
+                                    <th>1월</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                    <th>5월</th>
+                                    <th>6월</th>
+                                    <th>7월</th>
+                                    <th>8월</th>
+                                    <th>9월</th>
+                                    <th>10월</th>
+                                    <th>11월</th>
+                                    <th>12월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>목표매출</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>실매출</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>달성률</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>입금액</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미수금액</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>(단위 : 천만원)</p>
+                        </div>
                     </div>
                 </div>
                 <div class="orders_analysis_chart">
                     <p class="chart_title">※ 주문 분석 차트</p>
-                    <div class="orders_chart"></div>
-                    <div class="orders_table"></div>
+                    <div class="orders_chart">
+
+                    </div>
+                    <div class="table_wrap">
+                        <div class="orders_table">
+                            <div class="orders_table1">
+                                <table>
+                                    <thead>
+                                        <th>월/액</th>
+                                        <th>2월</th>
+                                        <th>3월</th>
+                                        <th>4월</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>주문건수</td>
+                                            <td>912,000</td>
+                                            <td>912,000</td>
+                                            <td>912,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>결재건수</td>
+                                            <td>848,000</td>
+                                            <td>848,000</td>
+                                            <td>848,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>견적건수</td>
+                                            <td>86%</td>
+                                            <td>86%</td>
+                                            <td>86%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>입금액</td>
+                                            <td>342,000</td>
+                                            <td>342,000</td>
+                                            <td>342,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>미수금액</td>
+                                            <td>506,000</td>
+                                            <td>506,000</td>
+                                            <td>506,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>(단위 : 천만원)</p>
+                            </div>
+                            <div class="orders_table2">
+                                <table>
+                                    <thead>
+                                        <th>월/액</th>
+                                        <th>2월</th>
+                                        <th>3월</th>
+                                        <th>4월</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>주문건수</td>
+                                            <td>912,000</td>
+                                            <td>912,000</td>
+                                            <td>912,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>결재건수</td>
+                                            <td>848,000</td>
+                                            <td>848,000</td>
+                                            <td>848,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>견적건수</td>
+                                            <td>86%</td>
+                                            <td>86%</td>
+                                            <td>86%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>입금액</td>
+                                            <td>342,000</td>
+                                            <td>342,000</td>
+                                            <td>342,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>미수금액</td>
+                                            <td>506,000</td>
+                                            <td>506,000</td>
+                                            <td>506,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>(단위 : 천만원)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="accidents_analysis_chart">
                     <p class="chart_title">※ 사고 분석 차트</p>
                     <div class="accidents_chart"></div>
-                    <div class="accidents_table"></div>
+                    <div class="table_wrap">
+                        <div class="accidents_table">
+                            <table>
+                                <thead>
+                                    <th>월/액</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>사고건수</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>개인실수</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>데이터 오류</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>장비 오류</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                        <td>342,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주문 오류</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                        <td>506,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>(단위 : 건)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart_wrap2">
+                <div class="chart_title">
+                    ※ 현황차트
+                </div>
+                <div class="current_chart_tapmenu">
+                    <div class="current_daily_sales"></div>
+                    <div class="current_order_processing"></div>
+                    <div class="current_customer_emoney"></div>
                 </div>
             </div>
         </div>
