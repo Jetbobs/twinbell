@@ -384,4 +384,44 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+.chart_wrap2 {
+  color: #fff;
+}
+
+.chart_wrap2 .current_chart_tapmenu {
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.chart_wrap2 .current_chart_tapmenu .current_daily_sales, .chart_wrap2 .current_chart_tapmenu .current_order_processing, .chart_wrap2 .current_chart_tapmenu .current_order_processing, .chart_wrap2 .current_chart_tapmenu .current_customer_emoney, .chart_wrap2 .current_chart_tapmenu .current_coupon, .chart_wrap2 .current_chart_tapmenu .current_post {
+  width: 110px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #707070;
+}
+
+.chart_wrap2 .tap_daily_sales {
+  width: 679px;
+  height: 454px;
+  background-color: #707070;
+  border-radius: 5px;
+}
+
+.chart_wrap2 .tap_current_dauly_sales_table {
+  border-collapse: collapse;
+  border: 1px solid #707070;
+}
 /*# sourceMappingURL=style.css.map */

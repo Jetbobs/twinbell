@@ -321,3 +321,30 @@ $color-bg2_p:rgba(96, 46, 78, 0.5);
         }
     }
 }
+.chart_wrap2{
+    color: #fff;
+    .current_chart_tapmenu{
+        width: 550px;
+        display: flex;
+        font-size: 13px;
+        margin-bottom: 30px;
+        .current_daily_sales,.current_order_processing,.current_order_processing,.current_customer_emoney,.current_coupon,.current_post{
+            width: 110px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(112,112,112,1);
+        }
+    }
+    .tap_daily_sales{
+        width: 679px;
+        height: 454px;
+        background-color: rgba(112,112,112,1);
+        border-radius: 5px;
+    }
+    .tap_current_dauly_sales_table{
+        border-collapse: collapse;
+        border: 1px solid rgba(112,112,112,1);;
+    }
+}
