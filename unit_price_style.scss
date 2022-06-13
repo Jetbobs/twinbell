@@ -1,0 +1,265 @@
+//border color
+$color-border: #7e7e7e;
+//표의 타이틀 #292832
+$color-bigbg_b: #202932;
+$color-bigbg_font: #fff;
+$color-bigbg_menu: #989898;
+$color-bigbg_menu_font: #fff;
+$color-smallbg_menu: rgba(152, 152, 152, 0.5);
+$color-smallbg_menu_font: #fff;
+$color-bg1_b: #2C3845;
+$color-bg1_font_b: #fff;
+$color-bg2_b: rgba(44, 56, 69, 0.5);
+$color-bg2_font: #e5e5e5;
+$color-bg_value: #77797C;
+$color-bg_value_font: #e5e5e5;
+//표의 타이틀 #5E5433
+$color-bigbg_y: #5e5433;
+$color-bg1_y: #877744;
+$color-bg1_font: #fff;
+$color-bg2_y: rgba(135, 119, 68, 0.5);
+//표의 타이틀 #2A5330
+$color-bigbg_g: #2A5330;
+$color-bg1_g: #2F8234;
+$color-bg1_font_g: #fff;
+$color-bg2_g: rgba(47, 130, 52, 0.5);
+//표의 타이틀 #452C3C
+$color-bigbg_p: #452C3C;
+$color-bg1_p: #602e4e;
+$color-bg1_font_p: #fff;
+$color-bg2_p: rgba(96, 46, 78, 0.5);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR';
+}
+
+.header_section {
+    width: 100%;
+    display: flex;
+
+    .header1 {
+        width: 100%;
+        height: 80px;
+        background-color: #000;
+
+        .header_icon_wrap {
+            .header_menu {
+                padding-left: 5%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    .hamburger_menu {
+                        img {
+                            width: 10px;
+                        }
+                    }
+
+                    img {
+                        color: #B6B6B6;
+                    }
+
+                    span {
+                        color: #B6B6B6;
+                        padding-left: 5px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.all {
+    display: flex;
+    width: 100%;
+
+    .sidebar {
+        width: 3.5%;
+        background-color: #2D2E33;
+    }
+
+    .main {
+        width: 96.5%;
+        background-color: #3E3E3E;
+        padding-left: 50px;
+        .btn_unit_price {
+            display: flex;
+            justify-content: space-between;
+            width: 1022px;
+            margin-top: 40px;
+
+            .digital_printing,
+            .single_printing,
+            .name_card_printing,
+            .paper_printing {
+                border: 1px solid #707070;
+                border-radius: 5px;
+                color: #A5A5A5;
+                width: 245px;
+                height: 58px;
+                background-color: #4F4F50;
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-collapse: collapse;
+            }
+        }
+
+        .btn_unit_price_group {
+            display: flex;
+            justify-content: space-between;
+            width: 1022px;
+            margin-top: 30px;
+
+            .group_s,
+            .group_a,
+            .group_b,
+            .group_c {
+                border: 1px solid #707070;
+                border-radius: 5px;
+                color: #A5A5A5;
+                width: 245px;
+                height: 58px;
+                background-color: #4F4F50;
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-collapse: collapse;
+            }
+        }
+
+        .digital_printing_title {
+            color: #fff;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+
+        .book_cover_price {
+            .book_cover_price_table {
+                table{
+                    color: #fff;
+                    border-collapse: collapse;
+                    text-align: center;
+                    vertical-align: middle;
+                    thead{
+                        th{
+                            border: 1px solid #929293;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                text-align: center;
+                                vertical-align: middle;
+                                border: 1px solid #D8D8D8;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+.printing_price{
+    border: 1px solid #929293;
+    background-color: $color-bigbg_b;
+    width: 332px;
+    height: 57px;
+    font-size: 22px;
+}
+.each_group{
+    background-color: $color-bigbg_b;
+    width: 187px;
+    height: 103px;
+}
+.both_sides{
+    background-color: $color-bigbg_b;
+    width: 146px;
+    height: 103px;
+}
+.color_categories{
+    background-color: $color-bigbg_b;
+    width: 172px;
+    height: 103px;
+}
+.each_group_1{
+    background-color: #919398;
+    font-size: 20px;
+    color: #D7D7D7;
+}
+.both_sides_1{
+    background-color: #78797d;
+}
+.single_side_1{
+    background-color: #78797d;
+}
+.color_categories_1, .color_categories_2{
+    background-color: #78797d;
+}
+.printing_price_table{
+    width: 1162px;
+    th{
+        height: 52px;
+        background-color: $color-bg1_b;
+    }
+    tbody{
+        tr:first-child{
+            background-color: #343a41;
+        }
+        tr:not(:first-child){
+            background-color: #4f4f50;
+        }
+        td{
+            height: 52px;
+        }
+    }
+}
+.printing_price_table_wrap1, .printing_price_table_wrap2{
+    display: flex;
+
+}
+.printing_price_table_wrap1{
+    align-items: center;
+}
+.btn_printing_price_table_edit{
+    border-radius: 5px;
+    width: 115px;
+    height: 40px;
+    background-color: #fea929;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1220px;
+}
+#book_printing_price,#book_printing_price_spring{
+    
+    table{
+        tbody{
+            tr{
+                td{
+                    height: 52px;
+                }
+            }
+        }
+    }
+    .printing_way_per{
+        width: 317px;
+        background-color: #202932;
+        height: 103px;
+    }
+}
+

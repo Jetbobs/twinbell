@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR';
+}
+
+.header_section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_section .header1 {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu {
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li .hamburger_menu img {
+  width: 10px;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li img {
+  color: #B6B6B6;
+}
+
+.header_section .header1 .header_icon_wrap .header_menu li span {
+  color: #B6B6B6;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.all .sidebar {
+  width: 3.5%;
+  background-color: #2D2E33;
+}
+
+.all .main {
+  width: 96.5%;
+  background-color: #3E3E3E;
+  padding-left: 50px;
+}
+
+.all .main .btn_unit_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1022px;
+  margin-top: 40px;
+}
+
+.all .main .btn_unit_price .digital_printing,
+.all .main .btn_unit_price .single_printing,
+.all .main .btn_unit_price .name_card_printing,
+.all .main .btn_unit_price .paper_printing {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  color: #A5A5A5;
+  width: 245px;
+  height: 58px;
+  background-color: #4F4F50;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-collapse: collapse;
+}
+
+.all .main .btn_unit_price_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1022px;
+  margin-top: 30px;
+}
+
+.all .main .btn_unit_price_group .group_s,
+.all .main .btn_unit_price_group .group_a,
+.all .main .btn_unit_price_group .group_b,
+.all .main .btn_unit_price_group .group_c {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  color: #A5A5A5;
+  width: 245px;
+  height: 58px;
+  background-color: #4F4F50;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-collapse: collapse;
+}
+
+.all .main .digital_printing_title {
+  color: #fff;
+  font-size: 30px;
+  margin: 40px 0;
+}
+
+.all .main .book_cover_price .book_cover_price_table table {
+  color: #fff;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.all .main .book_cover_price .book_cover_price_table table thead th {
+  border: 1px solid #929293;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.all .main .book_cover_price .book_cover_price_table table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #D8D8D8;
+}
+
+.printing_price {
+  border: 1px solid #929293;
+  background-color: #202932;
+  width: 332px;
+  height: 57px;
+  font-size: 22px;
+}
+
+.each_group {
+  background-color: #202932;
+  width: 187px;
+  height: 103px;
+}
+
+.both_sides {
+  background-color: #202932;
+  width: 146px;
+  height: 103px;
+}
+
+.color_categories {
+  background-color: #202932;
+  width: 172px;
+  height: 103px;
+}
+
+.each_group_1 {
+  background-color: #919398;
+  font-size: 20px;
+  color: #D7D7D7;
+}
+
+.both_sides_1 {
+  background-color: #78797d;
+}
+
+.single_side_1 {
+  background-color: #78797d;
+}
+
+.color_categories_1, .color_categories_2 {
+  background-color: #78797d;
+}
+
+.printing_price_table {
+  width: 1162px;
+}
+
+.printing_price_table th {
+  height: 52px;
+  background-color: #2C3845;
+}
+
+.printing_price_table tbody tr:first-child {
+  background-color: #343a41;
+}
+
+.printing_price_table tbody tr:not(:first-child) {
+  background-color: #4f4f50;
+}
+
+.printing_price_table tbody td {
+  height: 52px;
+}
+
+.printing_price_table_wrap1, .printing_price_table_wrap2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.printing_price_table_wrap1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_printing_price_table_edit {
+  border-radius: 5px;
+  width: 115px;
+  height: 40px;
+  background-color: #fea929;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1220px;
+}
+
+#book_printing_price table tbody tr td, #book_printing_price_spring table tbody tr td {
+  height: 52px;
+}
+
+#book_printing_price .printing_way_per, #book_printing_price_spring .printing_way_per {
+  width: 317px;
+  background-color: #202932;
+  height: 103px;
+}
+/*# sourceMappingURL=unit_price_style.css.map */
