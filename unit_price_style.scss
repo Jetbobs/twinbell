@@ -88,6 +88,7 @@ $color-bg2_p: rgba(96, 46, 78, 0.5);
 
     .main {
         width: 96.5%;
+        height: 100vh;
         background-color: #3E3E3E;
         padding-left: 50px;
         .btn_unit_price {
@@ -224,6 +225,7 @@ $color-bg2_p: rgba(96, 46, 78, 0.5);
         }
         td{
             height: 52px;
+            width: 300px;
         }
     }
 }
@@ -245,8 +247,11 @@ $color-bg2_p: rgba(96, 46, 78, 0.5);
     align-items: center;
     margin-left: 1220px;
 }
-#book_printing_price,#book_printing_price_spring{
-    
+#book_cover_price,#book_inside_price,#book_print_price_leaflet{
+    margin-bottom: 50px;
+}
+#book_printing_price,#book_printing_price_spring,#book_printing_price_saddle_stitching,#book_printing_price_case_binding,#book_printing_price_special_printing{
+    margin-bottom: 50px;
     table{
         tbody{
             tr{
@@ -262,4 +267,82 @@ $color-bg2_p: rgba(96, 46, 78, 0.5);
         height: 103px;
     }
 }
+#book_cover_price_hot_stamping,#book_cover_price_uv_epoxy,#book_cover_price_ganji,#book_cover_price_end_papers,#book_cover_price_spring_cover,#book_cover_price_coating,#book_cover_price_wing,#book_cover_price_oshi,#book_cover_price_fold{
 
+    .printing_price,.each_group,.both_sides,.color_categories{
+        background-color: $color-bigbg_y;
+    }
+    .printing_price_table{
+        thead{
+            tr{
+                th{
+                    background-color: $color-bg1_y;
+                }
+            }
+        }
+        tbody{
+            tr:first-child{
+                td{
+                    background-color: $color-bg2_y;
+                }
+            }
+        }
+    }
+    .both_sides{
+        width: 317px;
+        height: 103px;
+    }
+}
+#book_cover_price_hot_stamping,#book_cover_price_uv_epoxy,#book_cover_price_ganji,#book_cover_price_end_papers,#book_cover_price_spring_cover,#book_cover_price_coating,#book_cover_price_wing,#book_cover_price_oshi,#book_cover_price_fold{
+margin-bottom: 50px;
+}
+#book_cover_price_wing{
+    .printing_price_table_wrap2{
+        table{
+            thead{
+                th{
+                    height: 52px;
+                }
+            }
+        }
+    }
+}
+#paper_print_price{
+    .printing_price_table{
+        width: 1335px;
+    }
+    table{
+        tbody{
+            tr{
+                td{
+                    height: 35px;
+                    width: 140px;
+                }
+            }
+        }
+    }
+    .each_group{
+        width: 332px;
+        height: 146px;
+    }
+    .printing_price_table{
+        thead{
+            th{
+                height: 48px;
+                width: 140px;
+            }
+        }
+    }
+    .printing_price_table_categories1{
+        td{
+            height: 55px;
+            width: 140px;
+        }
+    }
+    .printing_price_table_categories2{
+        td{
+            height: 42px;
+            width: 140px;
+        }
+    }
+}

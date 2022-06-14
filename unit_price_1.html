@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unit_price_style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header_section">
+        <div class="header1">
+            <div class="header_icon_wrap">
+                <ul class="header_menu">
+                    <li>
+                        <img src="/아이콘/1/홈.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/견적관리/그룹 18755.png" alt="견적관리">
+                        <span>견적관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/경영관리/그룹 18761.png" alt="경영관리">
+                        <span>경영관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/주문관리/그룹 18777.png" alt="주문관리">
+                        <span>주문관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/공정관리/그룹 18787.png" alt="공정관리">
+                        <span>공정관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/전자결제/그룹 18793.png" alt="전자결제">
+                        <span>전자결제</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/게시판 관리/그룹 18613.png" alt="게시판 관리">
+                        <span>게시판 관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/고객관리/그룹 18809.png" alt="고객관리">
+                        <span>고객관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/재고관리/그룹 18815.png" alt="재고관리">
+                        <span>재고관리</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/통계/그룹 18848.png" alt="통계">
+                        <span>통계</span>
+                    </li>
+                    <li>
+                        <img src="/아이콘/1/시스템관리/그룹 18598.png" alt="시스템관리">
+                        <span>시스템관리</span>
+                    </li>
+                    <li class="hamburger_menu">
+                        <img src="/아이콘/1/그룹 19078.png" alt="메뉴">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="all">
+        <div class="sidebar">
+            <ul class="management_categories">
+            </ul>
+            <ul class="management_categories">
+            </ul>
+            <ul class="management_categories">
+            </ul>
+            <ul class="management_categories">
+            </ul>
+        </div>
+        <div class="main">
+            <div class="btn_unit_price">
+                <div class="digital_printing">
+                    디지털 윤전 단가
+                </div>
+                <div class="single_printing">
+                    낱장 인쇄 단가
+                </div>
+                <div class="name_card_printing">
+                    명함 단가
+                </div>
+                <div class="paper_printing">
+                    종이 단가
+                </div>
+            </div>
+            <div class="btn_unit_price_group">
+                <div class="group_s">
+                    단가표 구성 (S그룹)
+                </div>
+                <div class="group_a">
+                    단가표 구성 (A그룹)
+                </div>
+                <div class="group_b">
+                    단가표 구성 (B그룹)
+                </div>
+                <div class="group_c">
+                    단가표 구성 (C그룹)
+                </div>
+            </div>
+            <div class="digital_printing_title">
+                ※ C 그룹 디지털 윤전 인쇄 단가
+            </div>
+            <div class="book_cover_price" id="book_print_price_leaflet">
+                <div class="book_cover_price_table">
+                    <div class="printing_price_table_wrap1">
+                    <table>
+                        <thead>
+                            <th class="printing_price">낱장 (리플릿/표지)</th>
+                        </thead>
+                    </table>
+                    <div class="btn_printing_price_table_edit">
+                        수정하기
+                    </div>
+                </div>
+                    <div class="printing_price_table_wrap2">
+                        <table>
+                            <thead>
+                                <th class="each_group">그룹별</th>
+                                <th class="both_sides">양단면</th>
+                                <th class="color_categories">컬러분류</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4" class="each_group_1">C그룹</td>
+                                    <td rowspan="2" class="both_sides_1">양면</td>
+                                    <td class="color_categories_1">컬러</td>
+                                </tr>
+                                <tr>
+                                    <td class="color_categories_2">흑백</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" class="single_side_1">단면</td>
+                                    <td class="color_categories_1">컬러</td>
+                                </tr>
+                                <tr>
+                                    <td class="color_categories_2">흑백</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="printing_price_table">
+                            <thead>
+                                <th colspan="6">기기별 인쇄 비용 (단위 : 원)</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>인디고</td>
+                                    <td>아이젠</td>
+                                    <td>A기기</td>
+                                    <td>B기기</td>
+                                    <td>C기기</td>
+                                    <td>D기기</td>
+                                </tr>
+                                <tr>
+                                    <td>700</td>
+                                    <td>600</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--테이블 금색-->
+            <div class="book_cover_price" id="book_cover_price_hot_stamping">
+                <div class="book_cover_price_table">
+                    <div class="printing_price_table_wrap1">
+                    <table>
+                        <thead>
+                            <th class="printing_price">표지 인쇄비</th>
+                        </thead>
+                    </table>
+                    <div class="btn_printing_price_table_edit">
+                        수정하기
+                    </div>
+                </div>
+                    <div class="printing_price_table_wrap2">
+                        <table>
+                            <thead>
+                                <th class="each_group">그룹별</th>
+                                <th class="both_sides">양단면</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="6" class="each_group_1">C그룹</td>
+                                    <td rowspan="" class="both_sides_1">금</td>
+                                </tr>
+                                <tr>
+                                    <td class="both_sides_1">
+                                        은
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="both_sides_1">
+                                        홀로그램
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="both_sides_1">
+                                        청
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="both_sides_1">
+                                        적
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="both_sides_1">
+                                        먹
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="printing_price_table">
+                            <thead>
+                                <th colspan="6">박 비용 / 제작부수 별</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1~50</td>
+                                    <td>51~100</td>
+                                    <td>101~150</td>
+                                    <td>151~200</td>
+                                    <td>201~300</td>
+                                    <td>300이상</td>
+                                </tr>
+                                <tr>
+                                    <td>700</td>
+                                    <td>600</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="book_cover_price" id="book_cover_price_uv_epoxy">
+                <div class="book_cover_price_table">
+                    <div class="printing_price_table_wrap1">
+                    <table>
+                        <thead>
+                            <th class="printing_price">UV 에폭시 비용</th>
+                        </thead>
+                    </table>
+                    <div class="btn_printing_price_table_edit">
+                        수정하기
+                    </div>
+                </div>
+                    <div class="printing_price_table_wrap2">
+                        <table>
+                            <thead>
+                                <th class="each_group">그룹별</th>
+                                <th class="both_sides">에폭시 옵션 (1부당 금액)</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4" class="each_group_1">C그룹</td>
+                                    <td rowspan="2" class="both_sides_1">UV 에폭시</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="printing_price_table">
+                            <thead>
+                                <th colspan="6">UV 에폭시 비용 / 제작부수 별</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1~50</td>
+                                    <td>51~100</td>
+                                    <td>101~150</td>
+                                    <td>151~200</td>
+                                    <td>201~300</td>
+                                    <td>300이상</td>
+                                </tr>
+                                <tr>
+                                    <td>700</td>
+                                    <td>600</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="book_cover_price" id="book_cover_price_coating">
+                <div class="book_cover_price_table">
+                    <div class="printing_price_table_wrap1">
+                    <table>
+                        <thead>
+                            <th class="printing_price">코팅 비용</th>
+                        </thead>
+                    </table>
+                    <div class="btn_printing_price_table_edit">
+                        수정하기
+                    </div>
+                </div>
+                    <div class="printing_price_table_wrap2">
+                        <table>
+                            <thead>
+                                <th class="each_group">그룹별</th>
+                                <th class="both_sides">코팅</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="1" class="each_group_1">C그룹</td>
+                                    <td rowspan="1" class="both_sides_1">양면</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="printing_price_table">
+                            <thead>
+                                <th colspan="4">코팅 / 제작수량(제작부수)별</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>무광</td>
+                                    <td>유광</td>
+                                    <td>엠보</td>
+                                    <td>기타</td>
+                                </tr>
+                                <tr>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                    <td>700</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="book_cover_price" id="book_cover_price_oshi">
+                <div class="book_cover_price_table">
+                    <div class="printing_price_table_wrap1">
+                    <table>
+                        <thead>
+                            <th class="printing_price">오시 비용</th>
+                        </thead>
+                    </table>
+                    <div class="btn_printing_price_table_edit">
+                        수정하기
+                    </div>
+                </div>
+                    <div class="printing_price_table_wrap2">
+                        <table>
+                            <thead>
+                                <th class="each_group">그룹별</th>
+                                <th class="both_sides">오시</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="1" class="each_group_1">C그룹</td>
+                                    <td rowspan="1" class="both_sides_1">양면</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="printing_price_table">
+                            <thead>
+                                <th colspan="4">오시 개수</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>150</td>
+                                    <td>320</td>
+                                    <td>350</td>
+                                    <td>400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="book_cover_price" id="book_cover_price_fold">
+                <div class="book_cover_price_table">
+                    <div class="printing_price_table_wrap1">
+                    <table>
+                        <thead>
+                            <th class="printing_price">접지 비용</th>
+                        </thead>
+                    </table>
+                    <div class="btn_printing_price_table_edit">
+                        수정하기
+                    </div>
+                </div>
+                    <div class="printing_price_table_wrap2">
+                        <table>
+                            <thead>
+                                <th class="each_group">그룹별</th>
+                                <th class="both_sides">접지</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="1" class="each_group_1">C그룹</td>
+                                    <td rowspan="1" class="both_sides_1">접지 단가</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="printing_price_table">
+                            <thead>
+                                <th colspan="6">접지 종류</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2단접지</td>
+                                    <td>3단접지</td>
+                                    <td>N단접지</td>
+                                    <td>4단접지</td>
+                                    <td>4단 병풍접지</td>
+                                    <td>4단 대문접지</td>
+                                </tr>
+                                <tr>
+                                    <td>150</td>
+                                    <td>320</td>
+                                    <td>350</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                    <td>400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<!-- <div></div> -->
+
+</html>
