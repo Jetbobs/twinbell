@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face { font-family: 'Pretendard-Bold'; src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff"); font-weight: 700; font-style: normal; }
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html { font-size: 10px; }
+
+html[lang="ko-KR"], html[lang="ko"] { font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif; }
+
+html[lang="ko-KR"] body, html[lang="ko"] body { font-size: 16px; font-weight: 400; line-height: 1.4; color: #000; }
+
+html[lang="en"], html *[lang="en"] { font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif; }
+
+html[lang="en"] body, html *[lang="en"] body { font-size: 18px; font-weight: 400; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+//버튼 컬러
+$color-btn-blue: #007DFB;
+$color-naver: #19CE60;
+$color-facebook: #3A5CA9;
+$color-kakao: #F7E600;
+//input 컬러
+$color-input-bg: #f9f9f9;
+$color-input-font: #cfcfcf;
+$color-header-grey: #e7e7e7;
+//그레이헤더
+$color-grey-header-font-grey:#717171;
+//text 버튼 컬러
+$color-text-btn: #878787;
+//버튼 기본 형태
+button{
+    color: #fff;
+    font-size: 20px;
+    display: table-cell; 
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border: 0px solid #fff;
+}
+// 로그인 / 회원가입 기본 높이 넓이
+.btn_sign_up{
+    width: 440px;
+    height: 60px;
+}
+.sign_up_twinbell{
+    background-color: $color-btn-blue;
+}
+.sign_up_kakao{
+    background-color: $color-kakao;
+    color: #000;
+}
+.sign_up_naver{
+    background-color: $color-naver;
+}
+.sign_up_facebook{
+    background-color: $color-facebook;
+}
+.input_type{
+    height: 52px;
+    display: flex;
+}
+
+.input_id{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.input_width{
+    flex: 1;
+}
+.input_frame{
+    font-weight: bold;
+color: $color-input-font;
+background-color: $color-input-bg;
+font-size: 18px;
+border: 1px solid #D5D5D5;
+box-sizing: border-box;
+border-radius: 5px;
+padding: 5px 10px;
+}
+.sign_up_input_wrap{
+    width: 582px;
+    display: flex;
+    flex-direction: column;
+}
+.input_btn{
+    width: 100px;
+    height: 52px;
+    background-color: $color-btn-blue;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 7px;
+}
+.phone_verification_wrap{
+    p{
+        display: flex;
+        align-items: center;
+    }
+}
+.phone_verification_wrap2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 1px solid $color-header-grey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    span{
+        font-size: 15px;
+        color: $color-grey-header-font-grey;
+    }
+}
+.grey_header{
+    height: 52px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: $color-header-grey;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.input_radio{
+
+    font-weight: normal;
+    color: #000;
+    background-color: $color-input-bg;
+    font-size: 15px;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.input_radio_test{
+    margin-right: 5px;
+}
+.radio_wrap{
+    display: flex;
+    align-items: center;
+    label{
+        margin-right: 15px;
+    }
+}
+.text_btn_wrap{
+    font-size: 15px;
+    a{
+        text-decoration: none;
+        color: $color-text-btn;
+    }
+    span{
+        color: $color-text-btn;
+    }
+}

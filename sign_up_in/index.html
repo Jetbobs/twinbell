@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="all_wrap">
+        <h2>
+            트윈벨 미디어의 서비스를 경험해보세요
+        </h2>
+        <!--회원가입 버튼 wrap-->
+        <div class="btn_wrap">
+            <button class="btn_sign_up sign_up_twinbell">
+                트윈벨 미디어 회원 가입
+            </button>
+            <button class="btn_sign_up sign_up_kakao">
+                카카오 로그인 / 회원가입
+            </button>
+            <button class="btn_sign_up sign_up_naver">
+                NAVER 로그인 / 회원가입
+            </button>
+            <button class="btn_sign_up sign_up_facebook">
+                facebook 로그인 / 회원가입
+            </button>
+        </div>
+        <!--회원가입 input-->
+        <div class="sign_up_input_wrap">
+            <div class="input_type input_id">
+                <input class="input_width input_frame" type="text" placeholder="트윈벨미디어에서 사용하실 아이디를 입력해 주세요" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '트윈벨미디어에서 사용하실 아이디를 입력해 주세요'">
+                <button class="input_btn"><span>중복확인</span></button>
+            </div>
+            <div class="input_type input_pw" id="input_pw">
+                <input class="input_width input_frame" type="text" placeholder="비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요'">
+            </div>
+            <div class="input_type input_pw" id="input_pw_check">
+                <input class="input_width input_frame" type="text" placeholder="비밀번호 확인" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '비밀번호 확인'">
+            </div>
+            <div class="phone_verification_wrap">
+                <p class="grey_header">
+                    휴대폰 인증
+                </p>
+                <div class="phone_verification_wrap2">
+                    <span>본인이 사용하고 계신 휴대폰으로 인증이 가능합니다. <br> 가입을 원하시면 "인증하기"를 클릭해 주세요.</span>
+                    <button class="input_btn">인증하기</button>
+                </div>
+            </div>
+            <div class="input_type input_radio" id="input_pw_radio">
+                <div class="radio_wrap">
+                    <label for=""><input class="input_radio_test" name="user_type" type="radio" value="personal">개인</label>
+                    <label for=""><input class="input_radio_test" name="user_type" type="radio" value="business">사업자</label>
+                    <label for=""><input class="input_radio_test" name="user_type" type="radio" value="scholl">학교/학원</label>
+                    <label for=""><input class="input_radio_test" name="user_type" type="radio" value="etc">기타</label>
+                </div>
+            </div>
+        </div>
+        <div class="text_btn_wrap">
+            <a href="">HOME</a>
+            <span>|</span>
+            <a href="">아이디찾기</a>
+            <span>|</span>
+            <a href="">비밀번호 찾기</a>
+            <span>|</span>
+            <a href="">로그인</a>
+        </div>
+</body>
+
+</html>
