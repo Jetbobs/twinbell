@@ -723,4 +723,10 @@
   border: 1px solid #707070;
   background: #4F4F50;
 }
+
+.policy_radio_wrap .policy_radio_text p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #888888;
+}
 /*# sourceMappingURL=style.css.map */
