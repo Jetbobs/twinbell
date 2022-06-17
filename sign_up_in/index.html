@@ -6,109 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <link rel="stylesheet" href="./flex/flex.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="all_wrap">
-        <h2>
-            트윈벨 미디어의 서비스를 경험해보세요
-        </h2>
-        <!--회원가입 버튼 wrap-->
-        <div class="btn_wrap">
-            <button class="btn_sign_up sign_up_twinbell">
+    <div class="sign_up_wrap flex flex_d_c flex_a_c flex_j_sb">
+        <div class="title_wrap">
+            <div class="title font_b">
+                <p>
+                    트윈벨 미디어의 서비스를 경험해보세요
+                <p>
+            </div>
+            <div class="sub_title font_b font_txt_a_c">
+                <p>
+                    트윈벨 미디어의 회원으로 가입하시면<br>쿠폰 및 다양한 이벤트 혜택을 받을 수 있습니다.
+                </p>
+            </div>
+        </div>
+        <div class="twinbell_sign_up_wrap flex flex_d_c flex_a_c">
+            <button class="sign_up_twinbell">
                 트윈벨 미디어 회원 가입
             </button>
-            <button class="btn_sign_up sign_up_kakao">
-                카카오 로그인 / 회원가입
-            </button>
-            <button class="btn_sign_up sign_up_naver">
-                NAVER 로그인 / 회원가입
-            </button>
-            <button class="btn_sign_up sign_up_facebook">
-                facebook 로그인 / 회원가입
-            </button>
-        </div>
-        <!--회원가입 input-->
-        <div class="sign_up_input_wrap">
-            <div class="input_type input_id">
-                <input class="input_width input_frame" type="text" placeholder="트윈벨미디어에서 사용하실 아이디를 입력해 주세요"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = '트윈벨미디어에서 사용하실 아이디를 입력해 주세요'">
-                <button class="input_btn"><span>중복확인</span></button>
-            </div>
-            <div class="input_type input_pw" id="input_pw">
-                <input class="input_width input_frame" type="text" placeholder="비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요'">
-            </div>
-            <div class="input_type input_pw" id="input_pw_check">
-                <input class="input_width input_frame" type="text" placeholder="비밀번호 확인" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '비밀번호 확인'">
-            </div>
-            <div class="phone_verification_wrap">
-                <p class="grey_header">
-                    휴대폰 인증
-                </p>
-                <div class="phone_verification_wrap2">
-                    <span>본인이 사용하고 계신 휴대폰으로 인증이 가능합니다. <br> 가입을 원하시면 "인증하기"를 클릭해 주세요.</span>
-                    <button class="input_btn">인증하기</button>
-                </div>
-            </div>
-            <div class="input_type input_radio" id="input_pw_radio">
-                <div class="radio_wrap">
-                    <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                            value="personal">개인</label>
-                    <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                            value="business">사업자</label>
-                    <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                            value="scholl">학교/학원</label>
-                    <label for=""><input class="input_radio_test" name="user_type" type="radio" value="etc">기타</label>
-                </div>
+            <div class="text_btn_wrap">
+                <a href="">HOME</a>
+                <span>|</span>
+                <a href="">아이디찾기</a>
+                <span>|</span>
+                <a href="">비밀번호 찾기</a>
+                <span>|</span>
+                <a href="">로그인</a>
             </div>
         </div>
-        <div class="text_btn_wrap">
-            <a href="">HOME</a>
-            <span>|</span>
-            <a href="">아이디찾기</a>
-            <span>|</span>
-            <a href="">비밀번호 찾기</a>
-            <span>|</span>
-            <a href="">로그인</a>
-        </div>
-        <!--이용약관 동의 라디오 버튼-->
-        <div class="policy_radio_wrap">
-            <div class="policy_radio_text">
-                <p>트윈벨미디어가 제공하는 혜택, 이벤트 등의 안내 정보 수신에 대한 확인을 부탁드립니다.</p>
-            </div>
-            <div class="reception_radio_wrap">
-                <div class="reception_radio_text">
-                    <p>이메일 수신 여부</p>
-                    <p>SMS 등 문자 수신 여부</p>
-                </div>
-                <div class="reception_radio reception_radio_setting">
-                    <div class="reception_radio_email">
-                        <label for=""><input type="radio" name="reception_email">수신함</label>
-                        <label for=""><input type="radio" name="reception_email">미수신</label>
-                    </div>
-                    <div class="reception_radio_sms">
-                        <label for=""><input type="radio" name="reception_sms">수신함</label>
-                        <label for=""><input type="radio" name="reception_sms">미수신</label>
-                    </div>
-                </div>
+        <div class="sns_sign_up">
+            <div class="sns_sign_up_wrap">
+                <button class="sign_up_kakao">
+                    카카오 로그인 / 회원가입
+                </button>
+                <button class="sign_up_naver">
+                    NAVER 로그인 / 회원가입
+                </button>
+                <button class="sign_up_facebook">
+                    facebook 로그인 / 회원가입
+                </button>
             </div>
         </div>
-        <!--이용약관 동의-->
-        <div class="policy_wrap">
-            <div class="policy">
-                <p class="grey_header">
-                    서비스 이용약관
-                </p>
-                <div class="service_policy">
-                    <h4>제1조(목적)</h4>
-                    <p>본 이용약관은 트윈벨미디어(전자상거래 사업자)가 몰과 이용자의 권리, 의무 및 책임사항을 규정정함을 목적으로 한다운영하는 사이트(이하'트윈벨미디어몰')에서 제공하는 인터넷 관련 서비스(이하'서비스')를 이용함에 있어 사이버몰과 이용자의 권리, 의무 및 책임사항을 규정정함을 목적으로 한다.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </div>
+    </div>
 </body>
 
 </html>

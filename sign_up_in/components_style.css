@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"], html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body, html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"], html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body, html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: #fff;
+  font-size: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  border: 0px solid #fff;
+}
+
+.btn_sign_up {
+  width: 440px;
+  height: 60px;
+}
+
+.sign_up_twinbell {
+  background-color: #007DFB;
+}
+
+.sign_up_kakao {
+  background-color: #F7E600;
+  color: #000;
+}
+
+.sign_up_naver {
+  background-color: #19CE60;
+}
+
+.sign_up_facebook {
+  background-color: #3A5CA9;
+}
+
+.input_type {
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input_id {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.input_width {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.input_frame {
+  font-weight: bold;
+  color: #cfcfcf;
+  background-color: #f9f9f9;
+  font-size: 18px;
+  border: 1px solid #D5D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.sign_up_input_wrap {
+  width: 582px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input_btn {
+  width: 100px;
+  height: 52px;
+  background-color: #007DFB;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-left: 7px;
+}
+
+.phone_verification_wrap2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px;
+  border: 1px solid #e7e7e7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.phone_verification_wrap2 span {
+  font-size: 15px;
+  color: #717171;
+}
+
+.grey_header {
+  height: 52px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #e7e7e7;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input_radio {
+  font-weight: normal;
+  color: #000;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  border: 1px solid #D5D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.input_radio_test {
+  margin-right: 5px;
+}
+
+.radio_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio_wrap label {
+  margin-right: 15px;
+}
+
+.text_btn_wrap {
+  font-size: 15px;
+}
+
+.text_btn_wrap a {
+  text-decoration: none;
+  color: #878787;
+}
+
+.text_btn_wrap span {
+  color: #878787;
+}
+
+.policy_radio_wrap {
+  color: #888888;
+}
+
+.policy_radio_wrap .policy_radio_text {
+  margin-bottom: 15px;
+}
+
+.policy_radio_wrap .policy_radio_text p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.policy_radio_wrap .reception_radio_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.policy_radio_wrap .reception_radio_wrap .reception_radio_text {
+  margin-right: 60px;
+}
+
+.policy_radio_wrap .reception_radio_wrap .reception_radio_text p {
+  margin-bottom: 15px;
+}
+
+.policy_radio_wrap .reception_radio_wrap .reception_radio input {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.policy_radio_wrap .reception_radio_wrap .reception_radio label {
+  margin-right: 20px;
+}
+
+.reception_radio_setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.policy_wrap .policy {
+  width: 580px;
+}
+
+.policy_wrap .policy .service_policy {
+  color: #717171;
+  overflow: auto;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 580px;
+  height: 246px;
+}
+
+.policy_wrap .policy .service_policy p {
+  font-size: 12px;
+}
+
+.service_policy::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+  background-color: #fff;
+}
+
+.service_policy::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.service_policy::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+/*# sourceMappingURL=components_style.css.map */
