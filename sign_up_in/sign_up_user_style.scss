@@ -91,16 +91,18 @@ $color-text-btn: #878787;
         width: 100%;
 
         .policy_agreement_wrap {
-            width: 580px;
+            width: 45%;
             padding: 15px 0;
-
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             .policy_title {
                 font-size: 20px;
                 margin-bottom: 10px;
 
             }
 
-            .service_policy_wrap {
+            .policy_wrap {
                 .grey_header {
                     font-size: 15px;
                     height: 52px;
@@ -126,8 +128,8 @@ $color-text-btn: #878787;
                     border: 1px solid $color-header-grey;
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;
-                    width: 580px;
-                    height: 246px;
+                    width: 100%;
+                    height: 180px;
 
                     p {
                         font-size: 12px;
@@ -240,14 +242,15 @@ $color-text-btn: #878787;
         }
 
         .input_sign_up_wrap {
+            padding: 15px 0;
             .input_information_wrap {
-                width: 580px;
-                padding-top: 15px;
+                width: 100%;
+                padding-bottom: 15px;
 
                 .input_information_title {
                     font-size: 20px;
                     p{
-                        margin-bottom: 10px;
+                        padding-bottom: 10px;
                     }
 
                     .input_information_subtitle {
@@ -261,18 +264,19 @@ $color-text-btn: #878787;
                     flex-direction: column;
 
                     .input_type_id {
-                        height: 52px;
+ 
                         display: flex;
                         width: 100%;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         margin-bottom: 5px;
 
                         .input_frame {
+                            font-size: 14px;
                             background-color: $color-input-bg;
                             border: 1px solid #D5D5D5;
                             box-sizing: border-box;
                             border-radius: 5px;
-                            padding: 5px 10px;
+                            padding: 12px 10px;
                             flex: 1;
                         }
 
@@ -282,36 +286,38 @@ $color-text-btn: #878787;
 
                         input::placeholder {
                             color: $color-input-font;
-                            font-size: 18px;
+                            font-size: 15px;
                             font-weight: bold;
                         }
 
                         .input_btn {
                             font-size: 18px;
                             width: 100px;
-                            height: 52px;
                             background-color: $color-btn-blue;
                             border: 0px solid $color-btn-blue;
                             border-radius: 5px;
                             padding: 0 10px;
                             margin-left: 7px;
-                            color: #fff;
+                            span{
+                                color: #fff;
+                            }
                         }
                     }
 
                     .input_type_pw {
-                        height: 52px;
+ 
                         display: flex;
                         width: 100%;
                         justify-content: space-around;
                         margin-bottom: 5px;
 
                         .input_frame {
+                            font-size: 14px;
                             background-color: $color-input-bg;
                             border: 1px solid #D5D5D5;
                             box-sizing: border-box;
                             border-radius: 5px;
-                            padding: 5px 10px;
+                            padding: 12px 10px;
                             flex: 1;
                         }
 
@@ -321,43 +327,45 @@ $color-text-btn: #878787;
 
                         input::placeholder {
                             color: $color-input-font;
-                            font-size: 18px;
+                            font-size: 15px;
                             font-weight: bold;
                         }
 
-                        height: 52px;
+ 
                         display: flex;
                         width: 100%;
                         justify-content: space-around;
 
                         .input_frame {
+                            font-size: 14px;
                             background-color: $color-input-bg;
                             border: 1px solid #D5D5D5;
                             box-sizing: border-box;
                             border-radius: 5px;
-                            padding: 5px 10px;
+                            padding: 12px 10px;
                             flex: 1;
                         }
 
                         input::placeholder {
                             color: $color-input-font;
-                            font-size: 18px;
+                            font-size: 15px;
                             font-weight: bold;
                         }
                     }
 
                     .input_type_pw_check {
-                        height: 52px;
+ 
                         display: flex;
                         width: 100%;
                         justify-content: space-around;
 
                         .input_frame {
+                            font-size: 14px;
                             background-color: $color-input-bg;
                             border: 1px solid #D5D5D5;
                             box-sizing: border-box;
                             border-radius: 5px;
-                            padding: 5px 10px;
+                            padding: 12px 10px;
                             flex: 1;
                         }
 
@@ -367,7 +375,7 @@ $color-text-btn: #878787;
 
                         input::placeholder {
                             color: $color-input-font;
-                            font-size: 18px;
+                            font-size: 15px;
                             font-weight: bold;
                         }
                     }
@@ -376,7 +384,6 @@ $color-text-btn: #878787;
             }
 
             .phone_verification_wrap {
-                margin-top: 20px;
                 .grey_header {
                     font-size: 15px;
                     height: 52px;
@@ -412,11 +419,11 @@ $color-text-btn: #878787;
                     .input_btn {
                         font-size: 18px;
                         width: 100px;
-                        height: 52px;
+ 
                         background-color: $color-btn-blue;
                         border: 0px solid $color-btn-blue;
                         border-radius: 5px;
-                        padding: 0 10px;
+                        padding: 10px 10px;
                         margin-left: 7px;
                         color: #fff;
                     }
@@ -427,7 +434,7 @@ $color-text-btn: #878787;
                 .input_information_title {
                     font-size: 20px;
                     p{
-                        margin-bottom: 10px;
+                        padding-bottom: 10px;
                     }
     
                     .input_information_subtitle {
@@ -443,10 +450,9 @@ $color-text-btn: #878787;
                         border: 1px solid #D5D5D5;
                         box-sizing: border-box;
                         border-radius: 5px;
-                        padding: 5px 10px;
+                        padding: 15px 10px;
                         flex: 1;
-                        height: 52px;
-                        margin-bottom: 10px;
+ 
                         .input_radio{
                             .radio_wrap{
                                 font-size: 15px;
@@ -460,20 +466,22 @@ $color-text-btn: #878787;
                         }
                     }
                     .input_company_wrap{
+                        padding-top: 10px;
                         .input_name{
-                            margin-bottom: 10px;
+                            padding-bottom: 10px;
                             display: flex;
                             .company_name{
-                                height: 52px;
+         
                                 display: flex;
                                 width: 100%;
                                 justify-content: space-around;
                                 .input_frame{
+                                    font-size: 14px;
                                     background-color: $color-input-bg;
                                     border: 1px solid #D5D5D5;
                                     box-sizing: border-box;
                                     border-radius: 5px;
-                                    padding: 5px 10px;
+                                    padding: 12px 10px;
                                     flex: 1;
                                 }
                                 input:focus {
@@ -482,22 +490,23 @@ $color-text-btn: #878787;
         
                                 input::placeholder {
                                     color: $color-input-font;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                     font-weight: bold;
                                 }
                             }
                             .ceo_name{
                                 margin-left: 10px;
-                                height: 52px;
+         
                                 display: flex;
                                 width: 100%;
                                 justify-content: space-around;
                                 .input_frame{
+                                    font-size: 14px;
                                     background-color: $color-input-bg;
                                     border: 1px solid #D5D5D5;
                                     box-sizing: border-box;
                                     border-radius: 5px;
-                                    padding: 5px 10px;
+                                    padding: 12px 10px;
                                     flex: 1;
                                 }
                                 input:focus {
@@ -506,24 +515,25 @@ $color-text-btn: #878787;
         
                                 input::placeholder {
                                     color: $color-input-font;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                     font-weight: bold;
                                 }
                             }
                         }
                         .input_email{
-                            margin-bottom: 10px;
+                            padding-bottom: 10px;
                             .email{
-                                height: 52px;
+         
                                 display: flex;
                                 width: 100%;
                                 justify-content: space-around;
                                 .input_frame{
+                                    font-size: 14px;
                                     background-color: $color-input-bg;
                                     border: 1px solid #D5D5D5;
                                     box-sizing: border-box;
                                     border-radius: 5px;
-                                    padding: 5px 10px;
+                                    padding: 12px 10px;
                                     flex: 1;
                                 }
                                 input:focus {
@@ -532,27 +542,22 @@ $color-text-btn: #878787;
         
                                 input::placeholder {
                                     color: $color-input-font;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                     font-weight: bold;
                                 }
                             }
                         }
                         .input_business{
-                            margin-bottom: 10px;
                             display: flex;
                             align-items: center;
                             .business1,.business2,.business3{
-                                height: 52px;
-                                display: flex;
-                                width: 100%;
-                                justify-content: space-around;
                                 .input_frame{
+                                    font-size: 14px;
                                     background-color: $color-input-bg;
                                     border: 1px solid #D5D5D5;
                                     box-sizing: border-box;
                                     border-radius: 5px;
-                                    padding: 5px 10px;
-                                    flex: 1;
+                                    padding: 12px 10px;
                                 }
                                 input:focus {
                                     outline: none;
@@ -560,18 +565,18 @@ $color-text-btn: #878787;
         
                                 input::placeholder {
                                     color: $color-input-font;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                     font-weight: bold;
                                 }
                             }
                             .business1{
-                                flex: 2;
+                                flex: 4;
                             }
                             .business2{
                                 flex: 1;
                             }
                             .business3{
-                                flex: 2;
+                                flex: 4;
                             }
                         }
                     }
