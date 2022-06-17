@@ -75,6 +75,7 @@ html[lang="en"] body, html *[lang="en"] body {
 }
 
 .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap {
+  margin-top: 25px;
   font-size: 15px;
 }
 
