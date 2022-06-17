@@ -38,27 +38,29 @@ html[lang="en"] body, html *[lang="en"] body {
   padding: 0;
 }
 
-.sign_up_wrap {
-  height: 650px;
-  position: absolute;
-  top: 10%;
-  left: 28%;
+.all_wrap {
+  width: 100vw;
+  height: 100vh;
 }
 
-.sign_up_wrap .title_wrap .title {
+.all_wrap .sign_up_wrap {
+  height: 650px;
+}
+
+.all_wrap .sign_up_wrap .title_wrap .title {
   margin-bottom: 50px;
 }
 
-.sign_up_wrap .title_wrap .title p {
+.all_wrap .sign_up_wrap .title_wrap .title p {
   font-size: 50px;
 }
 
-.sign_up_wrap .title_wrap .sub_title p {
+.all_wrap .sign_up_wrap .title_wrap .sub_title p {
   font-size: 20px;
   color: #5D5D5D;
 }
 
-.sign_up_wrap .twinbell_sign_up_wrap button {
+.all_wrap .sign_up_wrap .twinbell_sign_up_wrap button {
   color: #fff;
   font-size: 20px;
   display: table-cell;
@@ -68,27 +70,27 @@ html[lang="en"] body, html *[lang="en"] body {
   border: 0px solid #fff;
 }
 
-.sign_up_wrap .twinbell_sign_up_wrap .sign_up_twinbell {
+.all_wrap .sign_up_wrap .twinbell_sign_up_wrap .sign_up_twinbell {
   width: 440px;
   height: 60px;
   background-color: #007DFB;
 }
 
-.sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap {
+.all_wrap .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap {
   margin-top: 25px;
   font-size: 15px;
 }
 
-.sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap a {
+.all_wrap .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap a {
   text-decoration: none;
   color: #878787;
 }
 
-.sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap span {
+.all_wrap .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap span {
   color: #878787;
 }
 
-.sign_up_wrap .sns_sign_up button {
+.all_wrap .sign_up_wrap .sns_sign_up button {
   color: #fff;
   font-size: 20px;
   display: table-cell;
@@ -98,7 +100,7 @@ html[lang="en"] body, html *[lang="en"] body {
   border: 0px solid #fff;
 }
 
-.sign_up_wrap .sns_sign_up .sns_sign_up_wrap {
+.all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,21 +110,21 @@ html[lang="en"] body, html *[lang="en"] body {
           flex-direction: column;
 }
 
-.sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_kakao {
+.all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_kakao {
   width: 440px;
   height: 60px;
   background-color: #F7E600;
   margin-bottom: 20px;
 }
 
-.sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_naver {
+.all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_naver {
   width: 440px;
   height: 60px;
   background-color: #19CE60;
   margin-bottom: 20px;
 }
 
-.sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_facebook {
+.all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_facebook {
   width: 440px;
   height: 60px;
   background-color: #3A5CA9;
