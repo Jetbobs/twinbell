@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+    font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+    font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+    font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+//버튼 컬러
+$color-btn-blue: #007DFB;
+$color-naver: #19CE60;
+$color-facebook: #3A5CA9;
+$color-kakao: #F7E600;
+//input 컬러
+$color-input-bg: #f9f9f9;
+$color-input-font: #cfcfcf;
+$color-header-grey: #e7e7e7;
+//그레이헤더
+$color-grey-header-font-grey: #717171;
+//text 버튼 컬러
+$color-text-btn: #878787;
+//modal 컬러
+$color-modal-title-color:#2E2E2E;
+$color-modal-close-bg: #7d7d7d;
+
+.all {
+    width: 630px;
+    height: 390px;
+    .all_wrap{
+        height: 100%;
+        .modal_wrap {
+            height: 9%;
+            box-sizing: border-box;
+            padding: 5px 10px ;
+            width: 100%;
+            background-color: #2C3845;
+            .modal_title {
+                p {
+                    font-size: bold;
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+        }
+        .modal_inside_wrap{
+            height: 91%;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 15px;
+            .input_wrap{
+                .modal_name{
+                    padding: 10px 0;
+                    .name_title{
+                        pad: 10px 0;
+                        p{
+                            color: $color-modal-title-color;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                    }
+                    .name_input{
+                        input{
+                            font-size: 14px;
+                            background-color: $color-input-bg;
+                            border: 1px solid #D5D5D5;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            padding: 12px 10px;
+                            flex: 1;
+                        }
+                        input::placeholder {
+                            color: $color-input-font;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .modal_phone{
+                    .phone_title{
+                        padding: 10px 0;
+                        p{
+                            color: $color-modal-title-color;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                    }
+                    .phone_input{
+                        width: 60%;
+                        input{
+                            font-size: 14px;
+                            background-color: $color-input-bg;
+                            border: 1px solid #D5D5D5;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            padding: 12px 10px;
+                            flex: 1;
+                        }
+                        input::placeholder {
+                            color: $color-input-font;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+                        .phone1{
+                            flex-grow: 1;
+                            input{
+                                width: 80%;
+                            }
+                        }
+                        .phone2{
+                            flex-grow: 1;
+                            input{
+                                width: 80%;
+                            }
+                        }
+                        .phone3{
+                            flex-grow: 1;
+                            input{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+            .modal_send_btn{
+                margin: 0 auto;
+                font-size: 18px;
+                background-color: $color-btn-blue;
+                border: 0px solid $color-btn-blue;
+                border-radius: 5px;
+                padding: 0 10px;
+                width: 35%;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                span{
+                    color: #fff;
+                }
+            }
+            .verification_wrap{
+                .verification_title{
+                    padding: 10px 0;
+                    p{
+                        color: $color-modal-title-color;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                }
+                .verification_input_wrap{
+                    .verification_input{
+                        flex-grow: 8;
+                        input{
+                            font-size: 14px;
+                            background-color: $color-input-bg;
+                            border: 1px solid #D5D5D5;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            padding: 12px 10px;
+                            flex: 1;
+                        }
+                        input::placeholder {
+                            color: $color-input-font;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+                    .verification_btn{
+                        flex-grow: 1;
+                        font-size: 18px;
+                        background-color: $color-btn-blue;
+                        border: 0px solid $color-btn-blue;
+                        border-radius: 5px;
+                        padding: 0 10px;
+                        margin-left: 7px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        span{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .modal_close{
+                background-color: $color-modal-close-bg;
+                font-size: 18px;
+                border: 0px solid $color-modal-close-bg;
+                border-radius: 5px;
+                padding: 0 10px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                span{
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

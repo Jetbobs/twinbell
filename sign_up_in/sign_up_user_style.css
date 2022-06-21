@@ -43,8 +43,9 @@ html *[lang="en"] body {
 }
 
 .all_wrap {
+  padding: 15px 0;
   width: 1280px;
-  height: 100vh;
+  height: 100%;
 }
 
 .all_wrap .sign_up_wrap {
@@ -232,6 +233,7 @@ html *[lang="en"] body {
 }
 
 .all_wrap .sign_up_wrap2 .input_sign_up_wrap {
+  width: 45%;
   padding: 15px 0;
 }
 

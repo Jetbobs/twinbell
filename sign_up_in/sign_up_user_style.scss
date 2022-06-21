@@ -59,8 +59,9 @@ $color-grey-header-font-grey: #717171;
 $color-text-btn: #878787;
 
 .all_wrap {
+    padding: 15px 0;
     width: 1280px;
-    height: 100vh;
+    height: 100%;
 
     .sign_up_wrap {
         width: 100%;
@@ -242,6 +243,7 @@ $color-text-btn: #878787;
         }
 
         .input_sign_up_wrap {
+            width: 45%;
             padding: 15px 0;
             .input_information_wrap {
                 width: 100%;

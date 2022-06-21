@@ -28,4 +28,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.flex_j_sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=flex.css.map */
