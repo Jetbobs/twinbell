@@ -803,6 +803,10 @@ html *[lang="en"] body {
           flex-grow: 4;
 }
 
+.all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .void {
+  height: 49px;
+}
+
 .all_wrap .sign_up_wrap3 .sign_up {
   display: -webkit-box;
   display: -ms-flexbox;
