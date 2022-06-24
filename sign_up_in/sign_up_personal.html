@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/sign_up_user_style.css">
     <link rel="stylesheet" href="./font/font.css">
     <link rel="stylesheet" href="./flex/flex.css">
+    <link rel="stylesheet" href="./modal/pv_modal.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/sign_up.js"></script>
+    <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Document</title>
 </head>
 
@@ -223,7 +232,7 @@
                         </p>
                         <div class="phone_verification_wrap2">
                             <span>본인이 사용하고 계신 휴대폰으로 인증이 가능합니다. <br> 가입을 원하시면 "인증하기"를 클릭해 주세요.</span>
-                            <button class="input_btn font_b">인증하기</button>
+                            <button class="input_btn font_b"><a href="#test_modal" rel="modal:open">인증하기</a></button>
                         </div>
                     </div>
                     <div class="input_more_information_wrap">
@@ -238,13 +247,13 @@
                                 <div class="input_radio" id="input_pw_radio">
                                     <div class="radio_wrap">
                                         <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                                                value="personal" checked>개인</label>
+                                                value="personal" onclick="" checked>개인</label>
                                         <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                                                value="business">사업자</label>
+                                                value="business" onclick="">사업자</label>
                                         <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                                                value="scholl">학교/학원</label>
+                                                value="school"  onclick="">학교/학원</label>
                                         <label for=""><input class="input_radio_test" name="user_type" type="radio"
-                                                value="etc">기타</label>
+                                                value="etc"  onclick="">기타</label>
                                     </div>
                                 </div>
                             </div>
@@ -276,9 +285,9 @@
 
             </div>
             <div class="sign_up_wrap3">
-                <div class="sign_up">
+                <a href="sign_up_complete.html"><div class="sign_up">
                     <p>약관 동의하고 가입하기</p>
-                </div>
+                </div></a>
                 <div class="sign_up_text_btn">
                     <a href="">HOME</a>
                     <span>|</span>
@@ -292,6 +301,75 @@
         </div>
     </div>
 </body>
-
+<div class="test_modal modal" id="test_modal" style="max-width:690px"><a>test1</a>
+    test
+    <div class="all_modal">
+        <div class="all_wrap_modal">
+            <div class="modal_wrap">
+                <div class="modal_title">
+                    <p>※휴대폰 인증하기</p>
+                </div>
+            </div>
+            <div class="modal_inside_wrap flex flex_d_c flex_j_sb">
+                <div class="input_wrap">
+                    <div class="modal_name">
+                        <div class="name_title">
+                            <p>
+                                · 이름
+                            </p>
+                        </div>
+                        <div class="name_input flex">
+                            <input type="text" placeholder="이름을 입력하세요." onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '이름을 입력하세요.'">
+                        </div>
+                    </div>
+                    <div class="modal_phone">
+                        <div class="phone_title">
+                            <p>· 휴대폰 번호</p>
+                        </div>
+                        <div class="phone_input flex">
+                            <div class="phone1">
+                                <input type="text" placeholder="" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = ''">
+                            </div>
+                            <div class="phone2">
+                                <input type="text" placeholder="" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = ''">
+                            </div>
+                            <div class="phone3">
+                                <input type="text" placeholder="" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = ''">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_send_btn flex">
+                    <span>
+                        인증번호 문자 발송 하기
+                    </span>
+                </div>
+                <div class="verification_wrap flex flex_d_c">
+                    <div class="verification_title">
+                        <p>
+                            · 휴대폰으로 수신한 인증번호를 입력해 주시기 바랍니다.
+                        </p>
+                    </div>
+                    <div class="verification_input_wrap flex">
+                        <div class="verification_input flex">
+                            <input type="text" placeholder="인증번호 입력" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '인증번호 입력'">
+                        </div>
+                        <div class="verification_btn">
+                            <span>인증확인</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_close flex">
+                    <span>창 닫기</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </html>
 <!---->

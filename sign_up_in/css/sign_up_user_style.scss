@@ -428,6 +428,11 @@ $color-text-btn: #878787;
                         padding: 10px 10px;
                         margin-left: 7px;
                         color: #fff;
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                        }
                     }
                 }
             }
@@ -617,4 +622,7 @@ $color-text-btn: #878787;
             }
         }
     }
+
+a{
+    text-decoration: none;
 }
