@@ -1,0 +1,268 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+//header_color
+$color-header-border: #E0E0E0;
+//main_color
+$color-subtitle: #C4C4C4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007DFB;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.all{
+    width: 100%;
+    height: 100%;
+    .header_wrap{
+        width: 100%;
+        height: 10%;
+        .header1{
+            display: flex;
+            border: 1px solid $color-header-border;
+            .h1_wrap{
+                width: 40%;
+                .h1_sec1{
+                    width: 30%;
+                }
+                .h1_sec2{
+                    width: 20%;
+                }
+                .h1_sec3{
+                    width: 25%;
+                }
+                .h1_sec4{
+                    width: 25%;
+                }
+                .h1_sec1, .h1_sec2, .h1_sec3, .h1_sec4{
+                    p{
+                        padding: 5px 10px;
+                        text-align: center;
+                        border: 1px solid $color-header-border;
+                    }
+                }
+            }
+        }
+        .header2{
+            width: 100%;
+            height: 70%;
+            border: 1px solid $color-header-border;
+            .h2_wrap{
+                height: 100%;
+                .logo{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 0 70px 5px 5px;
+                }
+                .hamburger_menu_btn{
+                }
+                .h2_menu_wrap{
+                    height: 100%;
+                    width: 50%;
+                    justify-content: space-around;
+                    align-items: center;
+                    .menu1, .menu2, .menu3, .menu4, .menu5, .menu6{
+                        text-align: center;
+                        height: 100%;
+                        padding: 10px 20px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        .find_wrap{
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 430px;
+            .id_pw_title_wrap{
+                width: 100%;
+                padding: 20px 0;
+                .id_pw_title{
+                    p{
+                        text-align: center;
+                        font-size: $font-largest;
+                        color: #000;
+                        padding: 10px 0;
+                    }
+                }
+                .id_pw_subtitle{
+                    p{
+                        text-align: center;
+                        font-size: $font-subtitle;
+                        color: $color-subtitle;
+                    }
+                }
+            }
+            .find_id_pw_wrap{
+                height: 45%;
+                width: 100%;
+                flex-direction: column;
+                .id_pw_btn_wrap{
+                    .find_id_btn{
+                        width: 50%;
+                        background-color: #000;
+                        padding: 10px 0 ;
+                        p{
+                            text-align: center;
+                            font-size: 15px;
+                            color: #fff;
+                        }
+                    }
+                    .find_pw_btn{
+                        width: 50%;
+                        background-color: #f9f9f9;
+                        padding: 10px 0 ;
+                        p{
+                            color: #AEAEAE;
+                            text-align: center;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .id_pw_input_wrap{
+                width: 100%;
+                .id_input, .phone_input, .email_input{
+                    width: 100%;
+                    border-bottom: 1px solid #999999;
+                    margin-bottom: 15px;
+                    input{
+                        font-size: $font-subtitle;
+                        border: none;
+                        width: 100%;
+                        font-weight: bold;
+                        padding: 10px 0;
+                    }
+                    input:focus{
+                        outline: none;
+                    }
+                    input::placeholder{
+                        font-size: 15px;
+                        color: $color-subtitle;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }   .find_btn{
+            border-radius: 20px;
+            background-color: #000;
+            padding: 10px 0;
+            p{
+                text-align: center;
+                color: #fff;
+            }
+        }
+        .find_result_wrap{
+            .find_result_text{
+                padding: 15px 0;
+                p{
+                    color: #636363;
+                    font-size: 17px; // 18px로 하면 튀어나감
+                    text-align: center;
+                }
+            }
+            .find_result{
+                border-bottom: 1px solid #999;
+                p{
+                    padding: 5px 0;
+                    text-align: center;
+                    font-size: $font-largest;
+
+                }
+            }
+        }
+        // .find_pw_result_wrap{
+        //     .find_pw_result_text{
+        //         padding: 15px 0;
+        //         p{
+        //             color: #636363;
+        //             font-size: 17px;
+        //             text-align: center;
+        //         }
+        //     }
+        //     .find_pw_result{
+        //         display: flex;
+        //         border-bottom: 1px solid #999;
+        //         p{
+        //             padding: 5px 0;
+        //             text-align: center;
+        //             font-size: $font-largest;
+
+        //         }
+        //         .copy_btn{
+        //             span{
+        //                 padding: 5px;
+        //                 background-color: $color-btn-blue;
+        //                 font-size: 12px;
+        //                 color: #fff;
+        //             }
+        //         }
+        //     }
+        // }
+        .sns_btn_wrap{
+            .sns_btn:not(:last-child){
+                margin-right: 15px;
+            }
+        }
+    }
+
+}
+//input::placeholder
+input::placeholder{
+    font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
