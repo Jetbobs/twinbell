@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+
+body header .upper_menu {
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .upper_menu nav ul {
+  list-style: none;
+}
+
+body header .upper_menu nav ul .quick_menu {
+  border: 1px solid #E0E0E0;
+  float: left;
+  padding: 15px 30px;
+}
+
+body header .upper_menu .login_btn_wrap nav ul {
+  list-style: none;
+}
+
+body header .upper_menu .login_btn_wrap nav ul .login_btn {
+  font-size: 14px;
+  float: left;
+  padding: 0 10px;
+}
+
+body header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+body header #menu {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 20px 10px;
+}
+
+body header #menu .logo_menu_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header #menu .logo_menu_wrap .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 80px;
+}
+
+body header #menu .logo_menu_wrap .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header #menu .logo_menu_wrap .menu nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header #menu .logo_menu_wrap .menu nav ul li {
+  float: left;
+  padding: 20px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body main #main {
+  width: 430px;
+}
+
+body main #main .title {
+  margin-bottom: 100px;
+}
+
+body main #main .title h2 {
+  text-align: center;
+}
+
+body main #main .input_wrap {
+  width: 430px;
+}
+
+body main #main .input_wrap #id_input {
+  margin-bottom: 30px;
+}
+
+body main #main .input_wrap .id_pw_input {
+  width: 100%;
+  border-bottom: 1px solid #999;
+}
+
+body main #main .input_wrap .id_pw_input input {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  font-weight: bold;
+  padding: 10px 0;
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+body main #main .input_wrap .id_pw_input input:focus {
+  outline: none;
+}
+
+body main #main .input_wrap .id_pw_input input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #C4C4C4;
+  font-weight: bolder;
+}
+
+body main #main .input_wrap .id_pw_input input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #C4C4C4;
+  font-weight: bolder;
+}
+
+body main #main .input_wrap .id_pw_input input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #C4C4C4;
+  font-weight: bolder;
+}
+
+body main #main .input_wrap .id_pw_input input::placeholder {
+  font-size: 15px;
+  color: #C4C4C4;
+  font-weight: bolder;
+}
+
+body main #main .input_etc_wrap {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 430px;
+}
+
+body main #main .input_etc_wrap span, body main #main .input_etc_wrap label {
+  font-size: 16px;
+  color: #222;
+}
+
+body main #main .input_etc_wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #main .input_etc_wrap input {
+  margin-right: 10px;
+}
+
+body main #main .input_etc_wrap .id_remember {
+  width: 100%;
+}
+
+body main #main .input_etc_wrap .id_remember input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+body main #main .input_etc_wrap .find_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+body main #main .input_etc_wrap .find_wrap .find_btn:first-child span {
+  padding-right: 10px;
+  border-right: 1px solid #000;
+}
+
+body main #main .input_etc_wrap .find_wrap .find_btn:last-child span {
+  padding-left: 10px;
+}
+
+body main #main .login_btn {
+  background-color: #000;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 30px 0;
+}
+
+body main #main .login_btn span {
+  color: #fff;
+  font-size: 18px;
+}
+
+body main #main .sns_btn_wrap nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main #main .sns_btn_wrap nav ul {
+  list-style: none;
+}
+
+body main #main .sns_btn_wrap nav ul li {
+  float: left;
+}
+
+body main #main .sns_btn_wrap nav ul li:not(:last-child) {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
