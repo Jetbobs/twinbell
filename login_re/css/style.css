@@ -54,7 +54,16 @@ h2 {
   font-size: 40px;
 }
 
-body header {
+body #app {
+  height: 100%;
+}
+
+body #app a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body #app header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +75,7 @@ body header {
   width: 100%;
 }
 
-body header .upper_menu {
+body #app header .upper_menu {
   width: 100%;
   border-bottom: 1px solid #E0E0E0;
   display: -webkit-box;
@@ -80,42 +89,42 @@ body header .upper_menu {
           align-items: center;
 }
 
-body header .upper_menu nav ul {
+body #app header .upper_menu nav ul {
   list-style: none;
 }
 
-body header .upper_menu nav ul .quick_menu {
+body #app header .upper_menu nav ul .quick_menu {
   border: 1px solid #E0E0E0;
   float: left;
   padding: 15px 30px;
 }
 
-body header .upper_menu .login_btn_wrap nav ul {
+body #app header .upper_menu .login_btn_wrap nav ul {
   list-style: none;
 }
 
-body header .upper_menu .login_btn_wrap nav ul .login_btn {
+body #app header .upper_menu .login_btn_wrap nav ul .login_btn {
   font-size: 14px;
   float: left;
   padding: 0 10px;
 }
 
-body header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
+body #app header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
   border-right: 1px solid #000;
 }
 
-body header #menu {
+body #app header #menu {
   border-bottom: 1px solid #E0E0E0;
   padding: 20px 10px;
 }
 
-body header #menu .logo_menu_wrap {
+body #app header #menu .logo_menu_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header #menu .logo_menu_wrap .logo {
+body #app header #menu .logo_menu_wrap .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,13 +134,13 @@ body header #menu .logo_menu_wrap .logo {
   padding-right: 80px;
 }
 
-body header #menu .logo_menu_wrap .menu {
+body #app header #menu .logo_menu_wrap .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header #menu .logo_menu_wrap .menu nav ul {
+body #app header #menu .logo_menu_wrap .menu nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,12 +153,12 @@ body header #menu .logo_menu_wrap .menu nav ul {
           align-items: center;
 }
 
-body header #menu .logo_menu_wrap .menu nav ul li {
+body #app header #menu .logo_menu_wrap .menu nav ul li {
   float: left;
   padding: 20px;
 }
 
-body main {
+body #app main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,32 +171,32 @@ body main {
   height: 100%;
 }
 
-body main #main {
+body #app main #main {
   width: 430px;
 }
 
-body main #main .title {
+body #app main #main .title {
   margin-bottom: 100px;
 }
 
-body main #main .title h2 {
+body #app main #main .title h2 {
   text-align: center;
 }
 
-body main #main .input_wrap {
+body #app main #main .input_wrap {
   width: 430px;
 }
 
-body main #main .input_wrap #id_input {
+body #app main #main .input_wrap #id_input {
   margin-bottom: 30px;
 }
 
-body main #main .input_wrap .id_pw_input {
+body #app main #main .input_wrap .id_pw_input {
   width: 100%;
   border-bottom: 1px solid #999;
 }
 
-body main #main .input_wrap .id_pw_input input {
+body #app main #main .input_wrap .id_pw_input input {
   width: 100%;
   font-size: 18px;
   border: none;
@@ -196,35 +205,35 @@ body main #main .input_wrap .id_pw_input input {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-body main #main .input_wrap .id_pw_input input:focus {
+body #app main #main .input_wrap .id_pw_input input:focus {
   outline: none;
 }
 
-body main #main .input_wrap .id_pw_input input::-webkit-input-placeholder {
+body #app main #main .input_wrap .id_pw_input input::-webkit-input-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
 
-body main #main .input_wrap .id_pw_input input:-ms-input-placeholder {
+body #app main #main .input_wrap .id_pw_input input:-ms-input-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
 
-body main #main .input_wrap .id_pw_input input::-ms-input-placeholder {
+body #app main #main .input_wrap .id_pw_input input::-ms-input-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
 
-body main #main .input_wrap .id_pw_input input::placeholder {
+body #app main #main .input_wrap .id_pw_input input::placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
 
-body main #main .input_etc_wrap {
+body #app main #main .input_etc_wrap {
   padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,12 +244,12 @@ body main #main .input_etc_wrap {
   width: 430px;
 }
 
-body main #main .input_etc_wrap span, body main #main .input_etc_wrap label {
+body #app main #main .input_etc_wrap span, body #app main #main .input_etc_wrap label {
   font-size: 16px;
   color: #222;
 }
 
-body main #main .input_etc_wrap label {
+body #app main #main .input_etc_wrap label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,20 +258,20 @@ body main #main .input_etc_wrap label {
           align-items: center;
 }
 
-body main #main .input_etc_wrap input {
+body #app main #main .input_etc_wrap input {
   margin-right: 10px;
 }
 
-body main #main .input_etc_wrap .id_remember {
+body #app main #main .input_etc_wrap .id_remember {
   width: 100%;
 }
 
-body main #main .input_etc_wrap .id_remember input[type="checkbox"] {
+body #app main #main .input_etc_wrap .id_remember input[type="checkbox"] {
   width: 20px;
   height: 20px;
 }
 
-body main #main .input_etc_wrap .find_wrap {
+body #app main #main .input_etc_wrap .find_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,16 +281,16 @@ body main #main .input_etc_wrap .find_wrap {
   width: 100%;
 }
 
-body main #main .input_etc_wrap .find_wrap .find_btn:first-child span {
+body #app main #main .input_etc_wrap .find_wrap .find_btn:first-child span {
   padding-right: 10px;
   border-right: 1px solid #000;
 }
 
-body main #main .input_etc_wrap .find_wrap .find_btn:last-child span {
+body #app main #main .input_etc_wrap .find_wrap .find_btn:last-child span {
   padding-left: 10px;
 }
 
-body main #main .login_btn {
+body #app main #main .login_btn {
   background-color: #000;
   border-radius: 20px;
   text-align: center;
@@ -289,12 +298,12 @@ body main #main .login_btn {
   margin: 30px 0;
 }
 
-body main #main .login_btn span {
+body #app main #main .login_btn span {
   color: #fff;
   font-size: 18px;
 }
 
-body main #main .sns_btn_wrap nav {
+body #app main #main .sns_btn_wrap nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,15 +312,15 @@ body main #main .sns_btn_wrap nav {
           justify-content: center;
 }
 
-body main #main .sns_btn_wrap nav ul {
+body #app main #main .sns_btn_wrap nav ul {
   list-style: none;
 }
 
-body main #main .sns_btn_wrap nav ul li {
+body #app main #main .sns_btn_wrap nav ul li {
   float: left;
 }
 
-body main #main .sns_btn_wrap nav ul li:not(:last-child) {
+body #app main #main .sns_btn_wrap nav ul li:not(:last-child) {
   margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -68,7 +68,13 @@ h2{
 }
 
 body{
-  //header
+  #app{
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    height: 100%;
+      //header
   header {
     display: flex;
     flex-direction: column;
@@ -256,5 +262,6 @@ body{
         }
       }
     }
+  }
   }
 }
