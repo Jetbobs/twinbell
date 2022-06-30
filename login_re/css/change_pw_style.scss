@@ -172,17 +172,68 @@ body {
         width: 434px;
 
         .title {
-          margin-bottom: 100px;
+          margin-bottom: 15px;
 
           h2 {
             text-align: center;
           }
         }
 
+        .sub_title {
+          text-align: center;
+          font-size: $font-subtitle;
+          color: $color-subtitle;
+          margin-bottom: 40px;
+        }
+
+        .find_wrap {
+          text-align: center;
+          display: flex;
+          font-size: 15px;
+          margin-bottom: 20px;
+
+          .find_active {
+            width: 215px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+          }
+
+          .find_disabled {
+            width: 215px;
+            background-color: #f9f9f9;
+            color: #AEAEAE;
+            padding: 10px 0;
+            border: 1px solid #D5D5D5;
+          }
+        }
+
+        .radio_wrap {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 30px;
+
+          input {
+            margin-right: 10px;
+          }
+
+          input[type=radio] {
+            width: 20px;
+            height: 20px;
+          }
+
+          label {
+            display: flex;
+          }
+        }
+
         .input_wrap {
           width: 430px;
 
-          #id_input {
+          #name_input,
+          #phone_input,
+          #email_input {
             margin-bottom: 30px;
           }
 
@@ -191,7 +242,6 @@ body {
             border-bottom: 1px solid #999;
 
             input {
-              width: 100%;
               font-size: $font-subtitle;
               border: none;
               font-weight: bold;
@@ -209,89 +259,50 @@ body {
               font-weight: bolder;
             }
           }
-        }
 
-        .input_etc_wrap {
-          padding: 15px 0;
-          display: flex;
-          justify-content: space-between;
-          width: 430px;
+          #email_input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input {
+            }
 
-          span,
-          label {
-            font-size: 16px;
-            color: #222;
+            .send_btn {
+              span {
+                color: #fff;
+                background-color: #000;
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 15px;
+              }
+            }
           }
 
-          label {
+          #verification_input {
             display: flex;
             align-items: center;
-          }
+            justify-content: space-between;
 
-          input {
-            margin-right: 10px;
-          }
-
-          .id_remember {
-            width: 100%;
-
-            input[type="checkbox"] {
-              width: 20px;
-              height: 20px;
-            }
-          }
-
-          .find_wrap {
-            display: flex;
-            justify-content: end;
-            width: 100%;
-
-            .find_btn {}
-
-            .find_btn:first-child {
+            .type_verification {
               span {
-                padding-right: 10px;
-                border-right: 1px solid #000;
-              }
-            }
-
-            .find_btn:last-child {
-              span {
-                padding-left: 10px;
+                color: #ff9644;
+                font-size: 15px;
               }
             }
           }
         }
+
 
         .login_btn {
           background-color: #000;
           border-radius: 20px;
           text-align: center;
           padding: 10px 0;
-          margin: 30px 0;
+          margin-top: 40px;
 
           span {
             color: #fff;
             font-size: $font-subtitle;
-          }
-        }
-
-        .sns_btn_wrap {
-          nav {
-            display: flex;
-            justify-content: center;
-
-            ul {
-              list-style: none;
-
-              li {
-                float: left;
-              }
-
-              li:not(:last-child) {
-                margin-right: 10px;
-              }
-            }
           }
         }
       }

@@ -172,17 +172,71 @@ body {
         width: 434px;
 
         .title {
-          margin-bottom: 100px;
+          margin-bottom: 15px;
 
           h2 {
             text-align: center;
+          }
+        }
+        .sub_title{
+          text-align: center;
+          font-size: $font-subtitle;
+          color: $color-subtitle;
+          margin-bottom: 40px;
+        }
+        .find_wrap{
+          text-align: center;
+          display: flex;
+          font-size: 15px;
+          margin-bottom: 40px;
+          .find_active{
+            width: 215px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+          }
+          .find_disabled{
+            width: 215px;
+            background-color: #f9f9f9;
+            color: #AEAEAE;
+            padding: 10px 0;
+            border: 1px solid #D5D5D5;
+          }
+        }
+        .result_desc{
+          margin-bottom: 30px;
+          p{
+            text-align: center;
+            font-size: 17px;
+            color: #636363;
+          }
+        }
+        .result_wrap{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-bottom: 2px solid $color-header-border;
+          padding-bottom: 5px;
+          .result{
+            span{
+              font-size: $font-largest;
+              text-align: center;
+            }
+          }
+          .copy_btn{
+            span{
+              font-size: 12px;
+              background-color: $color-btn-blue;
+              color: #fff;
+              padding: 5px;
+            }
           }
         }
 
         .input_wrap {
           width: 430px;
 
-          #id_input {
+          #name_input, #phone_input {
             margin-bottom: 30px;
           }
 
@@ -211,87 +265,17 @@ body {
           }
         }
 
-        .input_etc_wrap {
-          padding: 15px 0;
-          display: flex;
-          justify-content: space-between;
-          width: 430px;
-
-          span,
-          label {
-            font-size: 16px;
-            color: #222;
-          }
-
-          label {
-            display: flex;
-            align-items: center;
-          }
-
-          input {
-            margin-right: 10px;
-          }
-
-          .id_remember {
-            width: 100%;
-
-            input[type="checkbox"] {
-              width: 20px;
-              height: 20px;
-            }
-          }
-
-          .find_wrap {
-            display: flex;
-            justify-content: end;
-            width: 100%;
-
-            .find_btn {}
-
-            .find_btn:first-child {
-              span {
-                padding-right: 10px;
-                border-right: 1px solid #000;
-              }
-            }
-
-            .find_btn:last-child {
-              span {
-                padding-left: 10px;
-              }
-            }
-          }
-        }
 
         .login_btn {
           background-color: #000;
           border-radius: 20px;
           text-align: center;
           padding: 10px 0;
-          margin: 30px 0;
+          margin-top: 40px;
 
           span {
             color: #fff;
             font-size: $font-subtitle;
-          }
-        }
-
-        .sns_btn_wrap {
-          nav {
-            display: flex;
-            justify-content: center;
-
-            ul {
-              list-style: none;
-
-              li {
-                float: left;
-              }
-
-              li:not(:last-child) {
-                margin-right: 10px;
-              }
-            }
           }
         }
       }

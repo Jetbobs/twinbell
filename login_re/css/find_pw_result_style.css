@@ -186,18 +186,84 @@ body #app main #main {
 }
 
 body #app main #main .title {
-  margin-bottom: 100px;
+  margin-bottom: 15px;
 }
 
 body #app main #main .title h2 {
   text-align: center;
 }
 
+body #app main #main .sub_title {
+  text-align: center;
+  font-size: 18px;
+  color: #C4C4C4;
+  margin-bottom: 40px;
+}
+
+body #app main #main .find_wrap {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+body #app main #main .find_wrap .find_active {
+  width: 215px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+body #app main #main .find_wrap .find_disabled {
+  width: 215px;
+  background-color: #f9f9f9;
+  color: #AEAEAE;
+  padding: 10px 0;
+  border: 1px solid #D5D5D5;
+}
+
+body #app main #main .result_desc {
+  margin-bottom: 30px;
+}
+
+body #app main #main .result_desc p {
+  text-align: center;
+  font-size: 17px;
+  color: #636363;
+}
+
+body #app main #main .result_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #E0E0E0;
+  padding-bottom: 5px;
+}
+
+body #app main #main .result_wrap .result span {
+  font-size: 40px;
+  text-align: center;
+}
+
+body #app main #main .result_wrap .copy_btn span {
+  font-size: 12px;
+  background-color: #007DFB;
+  color: #fff;
+  padding: 5px;
+}
+
 body #app main #main .input_wrap {
   width: 430px;
 }
 
-body #app main #main .input_wrap #id_input {
+body #app main #main .input_wrap #name_input, body #app main #main .input_wrap #phone_input {
   margin-bottom: 30px;
 }
 
@@ -243,95 +309,16 @@ body #app main #main .input_wrap .info_input input::placeholder {
   font-weight: bolder;
 }
 
-body #app main #main .input_etc_wrap {
-  padding: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 430px;
-}
-
-body #app main #main .input_etc_wrap span,
-body #app main #main .input_etc_wrap label {
-  font-size: 16px;
-  color: #222;
-}
-
-body #app main #main .input_etc_wrap label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body #app main #main .input_etc_wrap input {
-  margin-right: 10px;
-}
-
-body #app main #main .input_etc_wrap .id_remember {
-  width: 100%;
-}
-
-body #app main #main .input_etc_wrap .id_remember input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-}
-
-body #app main #main .input_etc_wrap .find_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  width: 100%;
-}
-
-body #app main #main .input_etc_wrap .find_wrap .find_btn:first-child span {
-  padding-right: 10px;
-  border-right: 1px solid #000;
-}
-
-body #app main #main .input_etc_wrap .find_wrap .find_btn:last-child span {
-  padding-left: 10px;
-}
-
 body #app main #main .login_btn {
   background-color: #000;
   border-radius: 20px;
   text-align: center;
   padding: 10px 0;
-  margin: 30px 0;
+  margin-top: 40px;
 }
 
 body #app main #main .login_btn span {
   color: #fff;
   font-size: 18px;
 }
-
-body #app main #main .sns_btn_wrap nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body #app main #main .sns_btn_wrap nav ul {
-  list-style: none;
-}
-
-body #app main #main .sns_btn_wrap nav ul li {
-  float: left;
-}
-
-body #app main #main .sns_btn_wrap nav ul li:not(:last-child) {
-  margin-right: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=find_pw_result_style.css.map */
