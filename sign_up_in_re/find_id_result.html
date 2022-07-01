@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/find_pw_style.css">
+    <link rel="stylesheet" href="/css/find_id_result_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/reg.js"></script>
     <title>Document</title>
 </head>
 
@@ -71,32 +70,23 @@
                 <p>정보를 입력해 주시기 바랍니다.</p>
             </div>
             <div class="find_wrap" >
-                <div class="find_disabled" OnClick="location.href = './find_id.html'" style="cursor:pointer;">
+                <div class="find_active" OnClick="location.href = './find_id.html'" style="cursor:pointer;">
                     <span>아이디 찾기</span>
                 </div>
-                <div class="find_active" OnClick="location.href = './find_pw.html'" style="cursor:pointer;">
+                <div class="find_disabled" OnClick="location.href = './find_pw.html'" style="cursor:pointer;">
                     <span>비밀번호 찾기</span>
                 </div>
             </div>
-            <div class="input_wrap">
-                <div class="info_input" id="name_input">
-                    <input type="text" name="id" value="" placeholder="이름을 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = '이름을 입력하여 주십시오'">
-                </div>
-                <div class="info_input" id="phone_input">
-                    <input type="text" name="pw" value="" placeholder="핸드폰 번호를 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '핸드폰 번호를 입력하여 주십시오'">
-                </div>
-                <div class="info_input" id="email_input">
-                    <input type="email" name="pw" value="" placeholder="이메일 주소를 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '이메일 주소를 입력하여 주십시오'">
+            <div class="result_desc">
+                <p>요청하신 아이디는 다음과 같습니다.</p>
+            </div>
+            <div class="result_wrap">
+                <div class="result">
+                    <span>twinbellmedia</span>
                 </div>
             </div>
             <div class="login_btn" OnClick="location.href ='#'" style="cursor:pointer;">
-                <a href="#"><span>비밀번호 찾기</span></a>
+                <a href="#"><span>로그인 하기</span></a>
             </div>
         </section>
     </main>

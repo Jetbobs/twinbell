@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/find_pw_style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/reg.js"></script>
     <title>Document</title>
 </head>
 
@@ -64,39 +63,35 @@
     <main>
         <section id="main">
             <div class="title">
-                <h2>아이디 찾기 / 비밀번호 찾기</h2>
+                <h2>트윈벨미디어의 서비스를 경험해보세요</h2>
             </div>
             <div class="sub_title">
-                <p>정보 확인을 위하여 회원가입 시 입력한</p>
-                <p>정보를 입력해 주시기 바랍니다.</p>
+                <p>트윈벨 미디어의 회원으로 가입하시면</p>
+                <p>쿠폰 및 다양한 이벤트 혜택을 받을 수 있습니다.</p>
             </div>
-            <div class="find_wrap" >
-                <div class="find_disabled" OnClick="location.href = './find_id.html'" style="cursor:pointer;">
-                    <span>아이디 찾기</span>
+            <div class="sign_up_wrap">
+                <div class="sign_up_btn" id="twinbell_sign" OnClick="location.href ='#'" style="cursor:pointer;">
+                    <span>트윈벨 미디어 회원 가입</span>
                 </div>
-                <div class="find_active" OnClick="location.href = './find_pw.html'" style="cursor:pointer;">
-                    <span>비밀번호 찾기</span>
+                <div class="sign_up_etc">
+                    <nav>
+                        <ul>
+                            <li OnClick="location.href ='#'" style="cursor: pointer;">HOME</li>
+                            <li OnClick="location.href ='#'" style="cursor: pointer;">아이디찾기</li>
+                            <li OnClick="location.href ='#'" style="cursor: pointer;">비밀번호 찾기</li>
+                            <li OnClick="location.href ='#'" style="cursor: pointer;">로그인 하기</li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-            <div class="input_wrap">
-                <div class="info_input" id="name_input">
-                    <input type="text" name="id" value="" placeholder="이름을 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = '이름을 입력하여 주십시오'">
+                <div class="sign_up_btn" OnClick="location.href ='#'" id="kakao_sign" style="cursor:pointer;">
+                    <span>카카오 로그인 / 회원가입</span>
                 </div>
-                <div class="info_input" id="phone_input">
-                    <input type="text" name="pw" value="" placeholder="핸드폰 번호를 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '핸드폰 번호를 입력하여 주십시오'">
+                <div class="sign_up_btn" OnClick="location.href ='#'" id="naver_sign" style="cursor:pointer;">
+                    <span>NAVER 로그인 / 회원가입</span>
                 </div>
-                <div class="info_input" id="email_input">
-                    <input type="email" name="pw" value="" placeholder="이메일 주소를 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '이메일 주소를 입력하여 주십시오'">
+                <div class="sign_up_btn" OnClick="location.href ='#'" id="facebook_sign" style="cursor:pointer;">
+                    <span>facebook 로그인 / 회원가입</span>
                 </div>
-            </div>
-            <div class="login_btn" OnClick="location.href ='#'" style="cursor:pointer;">
-                <a href="#"><span>비밀번호 찾기</span></a>
             </div>
         </section>
     </main>

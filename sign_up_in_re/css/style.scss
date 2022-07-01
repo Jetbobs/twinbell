@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+//font-size
+$login-btn-size: 14px;
+
+//header_color
+$color-header-border: #E0E0E0;
+//main_color
+$color-subtitle: #C4C4C4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007DFB;
+$color-naver: #19CE60;
+$color-facebook: #3A5CA9;
+$color-kakao: #F7E600;
+
+//css reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body {
+  #app {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    height: 100%;
+
+    //header
+    header {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+
+      .upper_menu {
+        width: 100%;
+        border-bottom: 1px solid $color-header-border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+
+        nav {
+          ul {
+            list-style: none;
+
+            .quick_menu {
+              border: 1px solid $color-header-border;
+              float: left;
+              padding: 15px 30px;
+            }
+          }
+        }
+
+        .login_btn_wrap {
+          nav {
+            ul {
+              list-style: none;
+
+              .login_btn {
+                font-size: $login-btn-size;
+                float: left;
+                padding: 0 10px;
+              }
+
+              .login_btn:not(:last-child) {
+                border-right: 1px solid #000;
+              }
+            }
+          }
+        }
+      }
+
+      //2번째 메뉴 네비바
+      #menu {
+        border-bottom: 1px solid $color-header-border;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo_menu_wrap {
+          display: flex;
+
+          .logo {
+            display: flex;
+            align-items: center;
+            padding-right: 80px;
+          }
+
+          .menu {
+            display: flex;
+
+            nav {
+              ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                  float: left;
+                  padding: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //main
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      #main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+
+        .title {
+          margin-bottom: 50px;
+
+          h2 {
+            text-align: center;
+          }
+        }
+
+        .sub_title {
+          margin-bottom: 70px;
+
+          p {
+            color: #5D5D5D;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+
+        .sign_up_wrap {
+          width: 434px;
+
+          .sign_up_btn {
+            display: flex;
+            padding: 15px 0;
+            justify-content: center;
+
+            span {
+              font-size: 20px;
+              color: #fff;
+            }
+          }
+
+          #twinbell_sign {
+            background-color: $color-btn-blue;
+            margin-bottom: 20px;
+          }
+
+          #kakao_sign {
+            background-color: $color-kakao;
+            margin-bottom: 20px;
+          }
+
+          #naver_sign {
+            background-color: $color-naver;
+            margin-bottom: 20px;
+          }
+
+          #facebook_sign {
+            background-color: $color-facebook;
+          }
+
+          .sign_up_etc {
+            margin-bottom: 80px;
+            font-size: 15px;
+            color: #878787;
+            display: flex;
+            justify-content: center;
+
+            nav {
+              ul {
+                li {
+                  float: left;
+                  padding: 0px 5px;
+                }
+                li:not(:last-child){
+                  border-right: 2px solid #878787;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

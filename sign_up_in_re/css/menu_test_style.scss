@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+//font-size
+$login-btn-size: 14px;
+
+//header_color
+$color-header-border: #E0E0E0;
+//main_color
+$color-subtitle: #C4C4C4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007DFB;
+
+//css reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+ul,li{
+    list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body {
+  #app {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    height: 100%;
+
+    //header
+    header {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+
+      .upper_menu {
+        width: 100%;
+        border-bottom: 1px solid $color-header-border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+
+        nav {
+          ul {
+
+            .quick_menu {
+              border: 1px solid $color-header-border;
+              float: left;
+              padding: 15px 30px;
+            }
+          }
+        }
+
+        .login_btn_wrap {
+          nav {
+            ul {
+                
+
+              .login_btn {
+                font-size: $login-btn-size;
+                float: left;
+                padding: 0 10px;
+              }
+
+              .login_btn:not(:last-child) {
+                border-right: 1px solid #000;
+              }
+            }
+          }
+        }
+      }
+
+      //2번째 메뉴 네비바
+      #menu {
+        border-bottom: 1px solid $color-header-border;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo_menu_wrap {
+          display: flex;
+
+          .logo {
+            display: flex;
+            align-items: center;
+            padding-right: 80px;
+          }
+
+          .menu {
+            display: flex;
+
+            nav.main_menu {
+              ul {
+                  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                  float: left;
+                  padding: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sub_menu_wrap{
+display: none;
+        #sub_menu{
+          padding: 15px 10%;
+          background-color: #fff;
+          display: flex;
+          justify-content: space-between;
+          .menu{
+            padding-left: 255px;
+            nav{
+              ul{
+                li{
+                  color: #666666;
+                  font-size: 17px;
+                  padding-bottom: 15px;
+                }
+              }
+            }
+          }
+          .menu_img{
+            background-color: #fd9898;
+            width: 300px;
+            height: 100%;
+          }
+        }
+        #sub_menu_rest{
+          background-color: rgba(25, 25, 25, 0.9);
+          height: 100vh;
+          width: 100vw;
+        }
+      }
+      .all_menu{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(25, 25, 25, 0.9);
+        padding: 0px 190px;
+        .close_btn{
+          display: flex;
+          justify-content: end;
+          padding: 15px 0;
+          img{
+            width: 40px;
+            height: 40px;
+          }
+        }
+        nav{
+          .menu_wrap{
+            display: flex;
+            justify-content: space-between;
+            .menu{
+              width: 230px;
+              .title{
+                border-bottom: 1px solid #868686;
+                margin-bottom: 10px;
+                p{
+                  color: $color-btn-blue;
+                  font-size: 24px;
+                  padding-bottom: 15px;
+                }
+              }
+              .sub_menu{
+                ul{
+                    
+                  li{
+                    color: #959595;
+                    padding: 10px 0;
+                  }
+                }
+              }
+            }
+          }
+          .menu_wrap:first-child{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    //main
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      #main {
+        width: 434px;
+
+        .title {
+          margin-bottom: 100px;
+
+          h2 {
+            text-align: center;
+          }
+        }
+
+        .input_wrap {
+          width: 430px;
+
+          #id_input {
+            margin-bottom: 30px;
+          }
+
+          .info_input {
+            width: 100%;
+            border-bottom: 1px solid #999;
+
+            input {
+              width: 100%;
+              font-size: $font-subtitle;
+              border: none;
+              font-weight: bold;
+              padding: 10px 0;
+              font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+            }
+
+            input:focus {
+              outline: none;
+            }
+
+            input::placeholder {
+              font-size: 15px;
+              color: $color-subtitle;
+              font-weight: bolder;
+            }
+          }
+        }
+
+        .input_etc_wrap {
+          padding: 15px 0;
+          display: flex;
+          justify-content: space-between;
+          width: 430px;
+
+          span,
+          label {
+            font-size: 16px;
+            color: #222;
+          }
+
+          label {
+            display: flex;
+            align-items: center;
+          }
+
+          input {
+            margin-right: 10px;
+          }
+
+          .id_remember {
+            width: 100%;
+
+            input[type="checkbox"] {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .find_wrap {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+
+            .find_btn {}
+
+            .find_btn:first-child {
+              span {
+                padding-right: 10px;
+                border-right: 1px solid #000;
+              }
+            }
+
+            .find_btn:last-child {
+              span {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+
+        .login_btn {
+          background-color: #000;
+          border-radius: 20px;
+          text-align: center;
+          padding: 10px 0;
+          margin: 30px 0;
+
+          span {
+            color: #fff;
+            font-size: $font-subtitle;
+          }
+        }
+
+        .sns_btn_wrap {
+          nav {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                
+
+              li {
+                float: left;
+              }
+
+              li:not(:last-child) {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

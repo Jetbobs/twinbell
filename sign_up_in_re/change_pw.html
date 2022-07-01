@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/find_pw_style.css">
+    <link rel="stylesheet" href="/css/change_pw_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/reg.js"></script>
     <title>Document</title>
 </head>
 
@@ -71,11 +70,19 @@
                 <p>정보를 입력해 주시기 바랍니다.</p>
             </div>
             <div class="find_wrap" >
-                <div class="find_disabled" OnClick="location.href = './find_id.html'" style="cursor:pointer;">
+                <div class="find_disabled" style="cursor:pointer;">
                     <span>아이디 찾기</span>
                 </div>
-                <div class="find_active" OnClick="location.href = './find_pw.html'" style="cursor:pointer;">
-                    <span>비밀번호 찾기</span>
+                <div class="find_active" style="cursor:pointer;">
+                    <span>비밀번호 변경</span>
+                </div>
+            </div>
+            <div class="radio_wrap">
+                <div class="radio_verification">
+                    <label for=""><input type="radio" name="veri" value="veri_phone" checked><span>휴대폰으로 인증</span></label>
+                </div>
+                <div class="radio_verification">
+                    <label for=""><input type="radio" name="veri" value="veri_email"><span>이메일로 인증</span></label>
                 </div>
             </div>
             <div class="input_wrap">
@@ -85,18 +92,29 @@
                             onblur="this.placeholder = '이름을 입력하여 주십시오'">
                 </div>
                 <div class="info_input" id="phone_input">
-                    <input type="text" name="pw" value="" placeholder="핸드폰 번호를 입력하여 주십시오"
+                    <input type="text" name="pw" value="" placeholder="아이디를 입력하여 주십시오"
                     onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '핸드폰 번호를 입력하여 주십시오'">
+                    onblur="this.placeholder = '아이디를 입력하여 주십시오'">
                 </div>
                 <div class="info_input" id="email_input">
-                    <input type="email" name="pw" value="" placeholder="이메일 주소를 입력하여 주십시오"
+                    <input type="text" name="pw" value="" placeholder="가입 시 기입한 이메일 주소 입력"
                     onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '이메일 주소를 입력하여 주십시오'">
+                    onblur="this.placeholder = '가입 시 기입한 이메일 주소 입력'">
+                    <div class="send_btn" style="cursor: pointer;">
+                        <span>인증번호 발송</span>
+                    </div>
+                </div>
+                <div class="info_input" id="verification_input">
+                    <input type="text" name="pw" value="" placeholder="인증번호를 입력하여 주십시오"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '인증번호를 입력하여 주십시오'">
+                    <div class="type_verification">
+                        <span>유효 입력 03:00</span>
+                    </div>
                 </div>
             </div>
             <div class="login_btn" OnClick="location.href ='#'" style="cursor:pointer;">
-                <a href="#"><span>비밀번호 찾기</span></a>
+                <a href="#"><span>임시 비밀번호 발급</span></a>
             </div>
         </section>
     </main>

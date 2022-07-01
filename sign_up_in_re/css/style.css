@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body #app {
+  height: 100%;
+}
+
+body #app a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body #app header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+
+body #app header .upper_menu {
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+}
+
+body #app header .upper_menu nav ul {
+  list-style: none;
+}
+
+body #app header .upper_menu nav ul .quick_menu {
+  border: 1px solid #E0E0E0;
+  float: left;
+  padding: 15px 30px;
+}
+
+body #app header .upper_menu .login_btn_wrap nav ul {
+  list-style: none;
+}
+
+body #app header .upper_menu .login_btn_wrap nav ul .login_btn {
+  font-size: 14px;
+  float: left;
+  padding: 0 10px;
+}
+
+body #app header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+body #app header #menu {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 20px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #app header #menu .logo_menu_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #app header #menu .logo_menu_wrap .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 80px;
+}
+
+body #app header #menu .logo_menu_wrap .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #app header #menu .logo_menu_wrap .menu nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #app header #menu .logo_menu_wrap .menu nav ul li {
+  float: left;
+  padding: 20px;
+}
+
+body #app main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body #app main #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+}
+
+body #app main #main .title {
+  margin-bottom: 50px;
+}
+
+body #app main #main .title h2 {
+  text-align: center;
+}
+
+body #app main #main .sub_title {
+  margin-bottom: 70px;
+}
+
+body #app main #main .sub_title p {
+  color: #5D5D5D;
+  font-size: 20px;
+  text-align: center;
+}
+
+body #app main #main .sign_up_wrap {
+  width: 434px;
+}
+
+body #app main #main .sign_up_wrap .sign_up_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #app main #main .sign_up_wrap .sign_up_btn span {
+  font-size: 20px;
+  color: #fff;
+}
+
+body #app main #main .sign_up_wrap #twinbell_sign {
+  background-color: #007DFB;
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up_wrap #kakao_sign {
+  background-color: #F7E600;
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up_wrap #naver_sign {
+  background-color: #19CE60;
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up_wrap #facebook_sign {
+  background-color: #3A5CA9;
+}
+
+body #app main #main .sign_up_wrap .sign_up_etc {
+  margin-bottom: 80px;
+  font-size: 15px;
+  color: #878787;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #app main #main .sign_up_wrap .sign_up_etc nav ul li {
+  float: left;
+  padding: 0px 5px;
+}
+
+body #app main #main .sign_up_wrap .sign_up_etc nav ul li:not(:last-child) {
+  border-right: 2px solid #878787;
+}
+/*# sourceMappingURL=style.css.map */
