@@ -43,6 +43,7 @@ $login-btn-size: 14px;
 
 //header_color
 $color-header-border: #E0E0E0;
+$color-grey-header: #e7e7e7;
 //main_color
 $color-subtitle: #C4C4C4;
 //font-size
@@ -171,19 +172,22 @@ body {
 
     //main
     main {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100%;
 
       #main {
+        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 80px;
+        padding: 0% 10%;
 
         .title {
-          margin-bottom: 50px;
+          margin-bottom: 10px;
 
           h2 {
             text-align: center;
@@ -191,7 +195,7 @@ body {
         }
 
         .sub_title {
-          margin-bottom: 70px;
+          margin-bottom: 10px;
 
           p {
             color: #5D5D5D;
@@ -199,66 +203,60 @@ body {
             text-align: center;
           }
         }
-
-        .sign_up_wrap {
-          width: 434px;
-
-          .sign_up_btn {
-            display: flex;
-            padding: 15px 0;
-            justify-content: center;
-
-            span {
+        .line{
+          width: 100%;
+          hr{
+            border: 1px solid #9f9f9f;
+          }
+        }
+        .sign_up_wrap{
+          width: 100%;
+          .policy_desc_wrap{
+            p{
               font-size: 20px;
-              color: #fff;
-            }
-          }
-
-          #twinbell_sign {
-            background-color: $color-btn-blue;
-            margin-bottom: 20px;
-          }
-
-          #kakao_sign {
-            background-color: $color-kakao;
-            margin-bottom: 20px;
-          }
-
-          #naver_sign {
-            background-color: $color-naver;
-            margin-bottom: 20px;
-          }
-
-          #facebook_sign {
-            background-color: $color-facebook;
-          }
-
-          .sign_up_etc {
-            margin-bottom: 80px;
-            font-size: 15px;
-            color: #878787;
-            display: flex;
-            justify-content: center;
-
-            nav {
-              ul {
-                li {
-                  float: left;
-                  padding: 0px 5px;
-                }
-                li:not(:last-child){
-                  border-right: 2px solid #878787;
-                }
+              span{
+                color: red;
+                vertical-align: middle;
               }
             }
           }
-        }
-        .sns_btn_wrap{
-          nav{
-            ul{
-              li{
-                float: left;
-                margin-right: 10px;
+          .policy_wrap{
+            .grey_header{
+              background-color: $color-grey-header;
+              padding: 10px 20px;
+              border-top-right-radius: 10px;
+              border-top-left-radius: 10px;
+            }
+            .policy{
+              overflow: auto;
+              padding: 40px 30px;
+              box-sizing: border-box;
+              border: 1px solid $color-grey-header;
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 5px;
+              width: 100%;
+              height: 180px;
+            }
+            .policy::-webkit-scrollbar {
+              display: none;
+              width: 10px;
+              background-color: #fff;
+          }
+
+          .policy::-webkit-scrollbar-thumb {
+              background-color: #fff;
+              border-radius: 5px;
+          }
+
+          .policy::-webkit-scrollbar-track {
+              background-color: #fff;
+          }
+          }
+          #policy_wrap{
+            .title{
+              p{
+                color: #888888;
+                font-size: 15px;
               }
             }
           }

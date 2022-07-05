@@ -174,6 +174,7 @@ body #app header #menu .logo_menu_wrap .menu nav ul li {
 }
 
 body #app main {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,6 +188,7 @@ body #app main {
 }
 
 body #app main #main {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,10 +200,11 @@ body #app main #main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 80px;
+  padding: 0% 10%;
 }
 
 body #app main #main .title {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 body #app main #main .title h2 {
@@ -209,7 +212,7 @@ body #app main #main .title h2 {
 }
 
 body #app main #main .sub_title {
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 }
 
 body #app main #main .sub_title p {
@@ -218,67 +221,63 @@ body #app main #main .sub_title p {
   text-align: center;
 }
 
+body #app main #main .line {
+  width: 100%;
+}
+
+body #app main #main .line hr {
+  border: 1px solid #9f9f9f;
+}
+
 body #app main #main .sign_up_wrap {
-  width: 434px;
+  width: 100%;
 }
 
-body #app main #main .sign_up_wrap .sign_up_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body #app main #main .sign_up_wrap .sign_up_btn span {
+body #app main #main .sign_up_wrap .policy_desc_wrap p {
   font-size: 20px;
-  color: #fff;
 }
 
-body #app main #main .sign_up_wrap #twinbell_sign {
-  background-color: #007DFB;
-  margin-bottom: 20px;
+body #app main #main .sign_up_wrap .policy_desc_wrap p span {
+  color: red;
+  vertical-align: middle;
 }
 
-body #app main #main .sign_up_wrap #kakao_sign {
-  background-color: #F7E600;
-  margin-bottom: 20px;
+body #app main #main .sign_up_wrap .policy_wrap .grey_header {
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-body #app main #main .sign_up_wrap #naver_sign {
-  background-color: #19CE60;
-  margin-bottom: 20px;
+body #app main #main .sign_up_wrap .policy_wrap .policy {
+  overflow: auto;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  height: 180px;
 }
 
-body #app main #main .sign_up_wrap #facebook_sign {
-  background-color: #3A5CA9;
+body #app main #main .sign_up_wrap .policy_wrap .policy::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+  background-color: #fff;
 }
 
-body #app main #main .sign_up_wrap .sign_up_etc {
-  margin-bottom: 80px;
+body #app main #main .sign_up_wrap .policy_wrap .policy::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+body #app main #main .sign_up_wrap .policy_wrap .policy::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body #app main #main .sign_up_wrap #policy_wrap .title p {
+  color: #888888;
   font-size: 15px;
-  color: #878787;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-
-body #app main #main .sign_up_wrap .sign_up_etc nav ul li {
-  float: left;
-  padding: 0px 5px;
-}
-
-body #app main #main .sign_up_wrap .sign_up_etc nav ul li:not(:last-child) {
-  border-right: 2px solid #878787;
-}
-
-body #app main #main .sns_btn_wrap nav ul li {
-  float: left;
-  margin-right: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sign_up_personal_style.css.map */
