@@ -163,10 +163,6 @@ body #app header #menu .logo_menu_wrap .menu nav.main_menu ul li {
   padding: 20px;
 }
 
-body #app header .sub_menu_wrap {
-  display: none;
-}
-
 body #app header .sub_menu_wrap #sub_menu {
   padding: 15px 10%;
   background-color: #fff;

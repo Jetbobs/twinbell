@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/sign_up_in_re/css/sign_up_personal_style.css">
+    <link rel="stylesheet" href="/sign_up_in_re/css/sign_up_business_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -192,17 +192,26 @@
                             <label for=""><input type="radio" name="type" value="e">기타</label>
                         </div>
                         <div class="input" id="name">
-                            <input type="text" placeholder="이름을 입력해 주세요" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = '이름을 입력해 주세요'">
+                            <input type="text" name="name" placeholder="회사명을 입력해 주세요" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '회사명을 입력해 주세요'">
+                                <input type="text" name="ceo" placeholder="대표자명을 입력해 주세요" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '대표자명을 입력해 주세요'">
                         </div>
                         <div class="input" id="email">
-                            <input type="text" placeholder="이메일을 입력해 주세요" onfocus="this.placeholder = ''"
+                            <input type="text" name="email" placeholder="이메일을 입력해 주세요" onfocus="this.placeholder = ''"
                                 onblur="this.placeholder = '이메일을 입력해 주세요'">
                         </div>
+                        <div class="input" id="business_num">
+                            <input type="text" name="business_num" placeholder="사업자번호 입력" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '사업자번호 입력'">
+                                <span>-</span>
+                                <input type="text" name="business_num1" placeholder="" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = ''">
+                                <span>-</span>
+                                <input type="text" name="business_num2" placeholder="" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = ''">
+                        </div>
                         <div class="bubble" id="buuble_na">
-                            <!-- <p>
-                            사용불가
-                        </p> -->
                             <span>사용불가</span>
                             <span><img src="/sign_up_in_re/icon/pw/not_available.png" alt=""></span>
                             <p class="bubble_desc">비밀번호를 동일하게 입력해주세요.</p>

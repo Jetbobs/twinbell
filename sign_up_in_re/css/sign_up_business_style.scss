@@ -361,6 +361,22 @@ body {
               input::placeholder {
                 color: #CFCFCF;
               }
+              input[name="name"]{
+                width: 355px;
+                margin-right: 10px;
+              }
+              input[name="ceo"]{
+                width: 215px;
+              }
+              input[name="business_num"]{
+                width: 217px;
+              }
+              input[name="business_num1"]{
+                width: 118px;
+              }
+              input[name="business_num2"]{
+                width: 215px;
+              }
             }
 
             #id {
@@ -378,6 +394,16 @@ body {
 
             #pw_check {
               margin-bottom: 20px;
+            }
+            #email{
+              margin-bottom: 20px;
+            }
+            #business_num{
+              span{
+                display: flex;
+                align-items: center;
+                padding: 0 3.5px;
+              }
             }
 
             .verification_wrap {

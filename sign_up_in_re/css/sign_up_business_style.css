@@ -384,6 +384,27 @@ body #app main #main .sign_up #info_input .input input::placeholder {
   color: #CFCFCF;
 }
 
+body #app main #main .sign_up #info_input .input input[name="name"] {
+  width: 355px;
+  margin-right: 10px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="ceo"] {
+  width: 215px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="business_num"] {
+  width: 217px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="business_num1"] {
+  width: 118px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="business_num2"] {
+  width: 215px;
+}
+
 body #app main #main .sign_up #info_input #id {
   margin-bottom: 5px;
 }
@@ -399,6 +420,20 @@ body #app main #main .sign_up #info_input #pw {
 
 body #app main #main .sign_up #info_input #pw_check {
   margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input #email {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input #business_num span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3.5px;
 }
 
 body #app main #main .sign_up #info_input .verification_wrap {
@@ -555,4 +590,4 @@ body #app main #main .sign_up_etc nav ul li {
 body #app main #main .sign_up_etc nav ul li:not(:last-child) {
   border-right: 2px solid #878787;
 }
-/*# sourceMappingURL=sign_up_personal_style.css.map */
+/*# sourceMappingURL=sign_up_business_style.css.map */
