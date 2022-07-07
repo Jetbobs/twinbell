@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
 @font-face {
-  font-family: 'Pretendard-Bold';
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -42,14 +43,14 @@ html *[lang="en"] body {
 $login-btn-size: 14px;
 
 //header_color
-$color-header-border: #E0E0E0;
+$color-header-border: #e0e0e0;
 //main_color
-$color-subtitle: #C4C4C4;
+$color-subtitle: #c4c4c4;
 //font-size
 $font-largest: 40px;
 $font-subtitle: 18px;
 //버튼 컬러
-$color-btn-blue: #007DFB;
+$color-btn-blue: #007dfb;
 
 //css reset
 * {
@@ -63,8 +64,9 @@ body {
   height: 100%;
   width: 100%;
 }
-ul,li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
 h2 {
@@ -84,7 +86,6 @@ body {
     header {
       display: flex;
       flex-direction: column;
-      position: fixed;
       width: 100%;
 
       .upper_menu {
@@ -97,7 +98,6 @@ body {
 
         nav {
           ul {
-
             .quick_menu {
               border: 1px solid $color-header-border;
               float: left;
@@ -109,8 +109,6 @@ body {
         .login_btn_wrap {
           nav {
             ul {
-                
-
               .login_btn {
                 font-size: $login-btn-size;
                 float: left;
@@ -147,7 +145,6 @@ body {
 
             nav.main_menu {
               ul {
-                  
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -161,17 +158,17 @@ body {
           }
         }
       }
-      .sub_menu_wrap{
-        #sub_menu{
+      .sub_menu_wrap {
+        #sub_menu {
           padding: 15px 10%;
           background-color: #fff;
           display: flex;
           justify-content: space-between;
-          .menu{
+          .menu {
             padding-left: 255px;
-            nav{
-              ul{
-                li{
+            nav {
+              ul {
+                li {
                   color: #666666;
                   font-size: 17px;
                   padding-bottom: 15px;
@@ -179,53 +176,52 @@ body {
               }
             }
           }
-          .menu_img{
+          .menu_img {
             background-color: #fd9898;
             width: 300px;
             height: 100%;
           }
         }
-        #sub_menu_rest{
+        #sub_menu_rest {
           background-color: rgba(25, 25, 25, 0.9);
           height: 100vh;
           width: 100vw;
         }
       }
-      .all_menu{
+      .all_menu {
         display: none;
         position: fixed;
         width: 100vw;
         height: 100vh;
         background-color: rgba(25, 25, 25, 0.9);
         padding: 0px 190px;
-        .close_btn{
+        .close_btn {
           display: flex;
           justify-content: end;
           padding: 15px 0;
-          img{
+          img {
             width: 40px;
             height: 40px;
           }
         }
-        nav{
-          .menu_wrap{
+        nav {
+          .menu_wrap {
             display: flex;
             justify-content: space-between;
-            .menu{
+            .menu {
               width: 230px;
-              .title{
+              .title {
                 border-bottom: 1px solid #868686;
                 margin-bottom: 10px;
-                p{
+                p {
                   color: $color-btn-blue;
                   font-size: 24px;
                   padding-bottom: 15px;
                 }
               }
-              .sub_menu{
-                ul{
-                    
-                  li{
+              .sub_menu {
+                ul {
+                  li {
                     color: #959595;
                     padding: 10px 0;
                   }
@@ -233,7 +229,7 @@ body {
               }
             }
           }
-          .menu_wrap:first-child{
+          .menu_wrap:first-child {
             margin-bottom: 15px;
           }
         }
@@ -325,7 +321,8 @@ body {
             justify-content: end;
             width: 100%;
 
-            .find_btn {}
+            .find_btn {
+            }
 
             .find_btn:first-child {
               span {
@@ -361,8 +358,6 @@ body {
             justify-content: center;
 
             ul {
-                
-
               li {
                 float: left;
               }

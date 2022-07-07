@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -71,13 +71,12 @@ body #app header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
   width: 100%;
 }
 
 body #app header .upper_menu {
   width: 100%;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +94,7 @@ body #app header .upper_menu nav ul {
 }
 
 body #app header .upper_menu nav ul .quick_menu {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   float: left;
   padding: 15px 30px;
 }
@@ -115,7 +114,7 @@ body #app header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) 
 }
 
 body #app header #menu {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   padding: 20px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,9 +174,6 @@ body #app main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
 }
 
@@ -196,7 +192,7 @@ body #app main #main .title h2 {
 body #app main #main .sub_title {
   text-align: center;
   font-size: 18px;
-  color: #C4C4C4;
+  color: #c4c4c4;
   margin-bottom: 40px;
 }
 
@@ -219,9 +215,9 @@ body #app main #main .find_wrap .find_active {
 body #app main #main .find_wrap .find_disabled {
   width: 215px;
   background-color: #f9f9f9;
-  color: #AEAEAE;
+  color: #aeaeae;
   padding: 10px 0;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
 }
 
 body #app main #main .input_wrap {
@@ -252,25 +248,25 @@ body #app main #main .input_wrap .info_input input:focus {
 
 body #app main #main .input_wrap .info_input input::-webkit-input-placeholder {
   font-size: 15px;
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-weight: bolder;
 }
 
 body #app main #main .input_wrap .info_input input:-ms-input-placeholder {
   font-size: 15px;
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-weight: bolder;
 }
 
 body #app main #main .input_wrap .info_input input::-ms-input-placeholder {
   font-size: 15px;
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-weight: bolder;
 }
 
 body #app main #main .input_wrap .info_input input::placeholder {
   font-size: 15px;
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-weight: bolder;
 }
 

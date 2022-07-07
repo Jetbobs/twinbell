@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/find_id_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/login_re/css/find_id_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/reg.js"></script>
     <script src="./js/find_id.js"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="app" id="app">
-    <header>
+      <header>
         <div class="upper_menu">
+          <nav>
+            <ul>
+              <a href="#"><li class="quick_menu">주문을 쉽고 간단하게</li></a>
+              <a href="#"><li class="quick_menu">NCS 교재</li></a>
+              <a href="#"><li class="quick_menu">인쇄가이드</li></a>
+              <a href="#"><li class="quick_menu">견적문의</li></a>
+            </ul>
+          </nav>
+          <div class="login_btn_wrap">
             <nav>
-                <ul>
-                    <a href="#"><li class="quick_menu">주문을 쉽고 간단하게</li></a>
-                    <a href="#"><li class="quick_menu">NCS 교재</li></a>
-                    <a href="#"><li class="quick_menu">인쇄가이드</li></a>
-                    <a href="#"><li class="quick_menu">견적문의</li></a>
-                </ul>
+              <ul>
+                <a href="#"><li class="login_btn">홈</li></a>
+                <a href="#"><li class="login_btn">로그인</li></a>
+                <a href="#"><li class="login_btn">회원가입</li></a>
+              </ul>
             </nav>
-            <div class="login_btn_wrap">
-                <nav>
-                    <ul>
-                        <a href="#"><li class="login_btn">홈</li></a>
-                        <a href="#"><li class="login_btn">로그인</li></a>
-                        <a href="#"><li class="login_btn">회원가입</li></a>
-                    </ul>
-                </nav>
-            </div>
+          </div>
         </div>
         <div id="menu">
-            <div class="logo_menu_wrap">
-                <div class="logo">
-                        <a href="#"><img src="../logo/logo.png" alt=""></a>
-                </div>
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <a href="#"><li>디지털윤전</li></a>
-                            <a href="#"><li>고급인쇄</li></a>
-                            <a href="#"><li>
-                                <span>상업인쇄</span>
-                                <span>(대량/옵셋)</span>
-                            </li></a>
-                            <a href="#"><li>마이페이지</li></a>
-                            <a href="#"><li>고객지원</li></a>
-                            <a href="#"><li>이벤트</li></a>
-                        </ul>
-                    </nav>
-                </div>
+          <div class="logo_menu_wrap">
+            <div class="logo">
+              <a href="#"><img src="../logo/logo.png" alt="" /></a>
             </div>
-            <div class="category_menu_wrap" OnClick="location.href ='#'" style="cursor:pointer;">
-                <i class="fa-solid fa-bars"></i>
-                <span>전체카테고리</span>
+            <div class="menu">
+              <nav>
+                <ul>
+                  <a href="#"><li>디지털윤전</li></a>
+                  <a href="#"><li>고급인쇄</li></a>
+                  <a href="#"
+                    ><li>
+                      <span>상업인쇄</span>
+                      <span>(대량/옵셋)</span>
+                    </li></a
+                  >
+                  <a href="#"><li>마이페이지</li></a>
+                  <a href="#"><li>고객지원</li></a>
+                  <a href="#"><li>이벤트</li></a>
+                </ul>
+              </nav>
             </div>
+          </div>
+          <div
+            class="category_menu_wrap"
+            OnClick="location.href ='#'"
+            style="cursor: pointer"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <span>전체카테고리</span>
+          </div>
         </div>
-    </header>
-    <main>
+      </header>
+      <main>
         <section id="main">
-            <div class="title">
-                <h2>아이디 찾기 / 비밀번호 찾기</h2>
+          <div class="title">
+            <h2>아이디 찾기 / 비밀번호 찾기</h2>
+          </div>
+          <div class="sub_title">
+            <p>정보 확인을 위하여 회원가입 시 입력한</p>
+            <p>정보를 입력해 주시기 바랍니다.</p>
+          </div>
+          <div class="find_wrap">
+            <div
+              class="find_active"
+              OnClick="location.href = './find_id.html'"
+              style="cursor: pointer"
+            >
+              <span>아이디 찾기</span>
             </div>
-            <div class="sub_title">
-                <p>정보 확인을 위하여 회원가입 시 입력한</p>
-                <p>정보를 입력해 주시기 바랍니다.</p>
+            <div
+              class="find_disabled"
+              OnClick="location.href = './find_pw.html'"
+              style="cursor: pointer"
+            >
+              <span>비밀번호 찾기</span>
             </div>
-            <div class="find_wrap" >
-                <div class="find_active" OnClick="location.href = './find_id.html'" style="cursor:pointer;">
-                    <span>아이디 찾기</span>
-                </div>
-                <div class="find_disabled" OnClick="location.href = './find_pw.html'" style="cursor:pointer;">
-                    <span>비밀번호 찾기</span>
-                </div>
+          </div>
+          <div class="input_wrap">
+            <div class="info_input" id="name_input">
+              <input
+                type="text"
+                onkeypress="isCorrect(this)"
+                name="id"
+                value=""
+                placeholder="이름을 입력하여 주십시오"
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '이름을 입력하여 주십시오'"
+              />
             </div>
-            <div class="input_wrap">
-                <div class="info_input" id="name_input">
-                    <input type="text" onkeypress="isCorrect(this)" name="id" value="" placeholder="이름을 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = '이름을 입력하여 주십시오'" >
-                </div>
-                <div class="info_input" id="phone_input">
-                    <input type="text" name="pw" value="" maxlength="13" placeholder="핸드폰 번호를 입력하여 주십시오"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = '핸드폰 번호를 입력하여 주십시오'">
-                </div>
+            <div class="info_input" id="phone_input">
+              <input
+                type="text"
+                name="pw"
+                value=""
+                maxlength="13"
+                placeholder="핸드폰 번호를 입력하여 주십시오"
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '핸드폰 번호를 입력하여 주십시오'"
+              />
             </div>
-            <div class="login_btn" OnClick="location.href ='#'" style="cursor:pointer;">
-                <a href="#"><span>아이디 찾기</span></a>
-            </div>
+          </div>
+          <div
+            class="login_btn"
+            OnClick="location.href ='#'"
+            style="cursor: pointer"
+          >
+            <a href="#"><span>아이디 찾기</span></a>
+          </div>
         </section>
-    </main>
-</div>
-</body>
-
+      </main>
+    </div>
+  </body>
 </html>

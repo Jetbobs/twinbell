@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -76,13 +76,12 @@ body #app header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
   width: 100%;
 }
 
 body #app header .upper_menu {
   width: 100%;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +99,7 @@ body #app header .upper_menu nav ul {
 }
 
 body #app header .upper_menu nav ul .quick_menu {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   float: left;
   padding: 15px 30px;
 }
@@ -120,7 +119,7 @@ body #app header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) 
 }
 
 body #app header #menu {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   padding: 20px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,9 +180,6 @@ body #app main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
 }
 
@@ -216,7 +212,7 @@ body #app main #main .sub_title {
 }
 
 body #app main #main .sub_title p {
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-size: 20px;
   text-align: center;
 }
@@ -256,7 +252,7 @@ body #app main #main .sign_up .sign_up_wrap .title p span {
 }
 
 body #app main #main .sign_up .sign_up_wrap .sub_title {
-  color: #21D59B;
+  color: #21d59b;
 }
 
 body #app main #main .sign_up #policy .title {
@@ -360,7 +356,7 @@ body #app main #main .sign_up #info_input .input input {
   width: 100%;
   font-size: 16px;
   background-color: #f9f9f9;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
@@ -369,19 +365,19 @@ body #app main #main .sign_up #info_input .input input {
 }
 
 body #app main #main .sign_up #info_input .input input::-webkit-input-placeholder {
-  color: #CFCFCF;
+  color: #cfcfcf;
 }
 
 body #app main #main .sign_up #info_input .input input:-ms-input-placeholder {
-  color: #CFCFCF;
+  color: #cfcfcf;
 }
 
 body #app main #main .sign_up #info_input .input input::-ms-input-placeholder {
-  color: #CFCFCF;
+  color: #cfcfcf;
 }
 
 body #app main #main .sign_up #info_input .input input::placeholder {
-  color: #CFCFCF;
+  color: #cfcfcf;
 }
 
 body #app main #main .sign_up #info_input #id {
@@ -439,7 +435,7 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .veri
 
 body #app main #main .sign_up #info_input .radio_info {
   background-color: #f9f9f9;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
@@ -476,7 +472,7 @@ body #app main #main .sign_up .bubble {
 }
 
 body #app main #main .sign_up .bubble span {
-  color: #F73E22;
+  color: #f73e22;
   font-size: 13px;
   font-weight: bold;
 }
@@ -519,8 +515,8 @@ body #app main #main .sign_up .bubble::after {
 
 body #app main #main .blue_btn {
   font-size: 18px;
-  background-color: #007DFB;
-  border: 0px solid #007DFB;
+  background-color: #007dfb;
+  border: 0px solid #007dfb;
   border-radius: 5px;
   color: #fff;
   padding: 10px 17px;

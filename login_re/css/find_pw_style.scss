@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
 @font-face {
-  font-family: 'Pretendard-Bold';
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -42,14 +43,14 @@ html *[lang="en"] body {
 $login-btn-size: 14px;
 
 //header_color
-$color-header-border: #E0E0E0;
+$color-header-border: #e0e0e0;
 //main_color
-$color-subtitle: #C4C4C4;
+$color-subtitle: #c4c4c4;
 //font-size
 $font-largest: 40px;
 $font-subtitle: 18px;
 //버튼 컬러
-$color-btn-blue: #007DFB;
+$color-btn-blue: #007dfb;
 
 //css reset
 * {
@@ -165,11 +166,11 @@ body {
     main {
       display: flex;
       justify-content: center;
-      align-items: center;
       height: 100%;
 
       #main {
         width: 434px;
+        margin-top: 80px;
 
         .title {
           margin-bottom: 15px;
@@ -178,36 +179,37 @@ body {
             text-align: center;
           }
         }
-        .sub_title{
+        .sub_title {
           text-align: center;
           font-size: $font-subtitle;
           color: $color-subtitle;
           margin-bottom: 40px;
         }
-        .find_wrap{
+        .find_wrap {
           text-align: center;
           display: flex;
           font-size: 15px;
           margin-bottom: 40px;
-          .find_active{
+          .find_active {
             width: 215px;
             background-color: #000;
             color: #fff;
             padding: 10px 0;
           }
-          .find_disabled{
+          .find_disabled {
             width: 215px;
             background-color: #f9f9f9;
-            color: #AEAEAE;
+            color: #aeaeae;
             padding: 10px 0;
-            border: 1px solid #D5D5D5;
+            border: 1px solid #d5d5d5;
           }
         }
 
         .input_wrap {
           width: 430px;
 
-          #name_input, #phone_input {
+          #name_input,
+          #phone_input {
             margin-bottom: 30px;
           }
 
@@ -235,7 +237,6 @@ body {
             }
           }
         }
-
 
         .login_btn {
           background-color: #000;

@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
 @font-face {
-  font-family: 'Pretendard-Bold';
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -42,14 +43,14 @@ html *[lang="en"] body {
 $login-btn-size: 14px;
 
 //header_color
-$color-header-border: #E0E0E0;
+$color-header-border: #e0e0e0;
 //main_color
-$color-subtitle: #C4C4C4;
+$color-subtitle: #c4c4c4;
 //font-size
 $font-largest: 40px;
 $font-subtitle: 18px;
 //버튼 컬러
-$color-btn-blue: #007DFB;
+$color-btn-blue: #007dfb;
 
 //css reset
 * {
@@ -81,7 +82,6 @@ body {
     header {
       display: flex;
       flex-direction: column;
-      position: fixed;
       width: 100%;
 
       .upper_menu {
@@ -165,11 +165,11 @@ body {
     main {
       display: flex;
       justify-content: center;
-      align-items: center;
       height: 100%;
 
       #main {
         width: 434px;
+        margin-top: 80px;
 
         .title {
           margin-bottom: 100px;
@@ -246,7 +246,8 @@ body {
             justify-content: end;
             width: 100%;
 
-            .find_btn {}
+            .find_btn {
+            }
 
             .find_btn:first-child {
               span {
