@@ -204,6 +204,11 @@ body #app main #main .title h2 {
   text-align: center;
 }
 
+body #app main #main .congrat_text {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
 body #app main #main .sub_title {
   margin-bottom: 70px;
 }
@@ -214,67 +219,21 @@ body #app main #main .sub_title p {
   text-align: center;
 }
 
-body #app main #main .sign_up_wrap {
-  width: 434px;
-}
-
-body #app main #main .sign_up_wrap .sign_up_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body #app main #main .sign_up_wrap .sign_up_btn span {
-  font-size: 20px;
-  color: #fff;
-}
-
-body #app main #main .sign_up_wrap #twinbell_sign {
+body #app main #main .blue_btn {
+  font-size: 18px;
   background-color: #007dfb;
-  margin-bottom: 20px;
+  border: 0px solid #007dfb;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 17px;
 }
 
-body #app main #main .sign_up_wrap #kakao_sign {
-  background-color: #f7e600;
-  margin-bottom: 20px;
+body #app main #main .blue_btn span {
+  display: inline;
 }
 
-body #app main #main .sign_up_wrap #naver_sign {
-  background-color: #19ce60;
-  margin-bottom: 20px;
+body #app main #main #goto_main {
+  width: 440px;
+  text-align: center;
 }
-
-body #app main #main .sign_up_wrap #facebook_sign {
-  background-color: #3a5ca9;
-}
-
-body #app main #main .sign_up_wrap .sign_up_etc {
-  margin-bottom: 80px;
-  font-size: 15px;
-  color: #878787;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body #app main #main .sign_up_wrap .sign_up_etc nav ul li {
-  float: left;
-  padding: 0px 5px;
-}
-
-body #app main #main .sign_up_wrap .sign_up_etc nav ul li:not(:last-child) {
-  border-right: 2px solid #878787;
-}
-
-body #app main #main .sns_btn_wrap nav ul li {
-  float: left;
-  margin-right: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sign_up_complete_style.css.map */

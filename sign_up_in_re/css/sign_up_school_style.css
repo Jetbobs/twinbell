@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body #app {
+  height: 100%;
+}
+
+body #app a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body #app header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+body #app header .upper_menu {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+}
+
+body #app header .upper_menu nav ul {
+  list-style: none;
+}
+
+body #app header .upper_menu nav ul .quick_menu {
+  border: 1px solid #e0e0e0;
+  float: left;
+  padding: 15px 30px;
+}
+
+body #app header .upper_menu .login_btn_wrap nav ul {
+  list-style: none;
+}
+
+body #app header .upper_menu .login_btn_wrap nav ul .login_btn {
+  font-size: 14px;
+  float: left;
+  padding: 0 10px;
+}
+
+body #app header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+body #app header #menu {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #app header #menu .logo_menu_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #app header #menu .logo_menu_wrap .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 80px;
+}
+
+body #app header #menu .logo_menu_wrap .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #app header #menu .logo_menu_wrap .menu nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #app header #menu .logo_menu_wrap .menu nav ul li {
+  float: left;
+  padding: 20px;
+}
+
+body #app main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+body #app main #main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+  padding: 0% 10%;
+}
+
+body #app main #main .title {
+  margin-bottom: 10px;
+}
+
+body #app main #main .title h2 {
+  text-align: center;
+}
+
+body #app main #main .sub_title {
+  margin-bottom: 10px;
+}
+
+body #app main #main .sub_title p {
+  color: #5d5d5d;
+  font-size: 20px;
+  text-align: center;
+}
+
+body #app main #main .line {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+body #app main #main .line hr {
+  border: 1px solid #9f9f9f;
+}
+
+body #app main #main .sign_up {
+  width: 1288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+body #app main #main .sign_up .sign_up_wrap {
+  width: 580px;
+}
+
+body #app main #main .sign_up .sign_up_wrap .title p {
+  font-size: 20px;
+}
+
+body #app main #main .sign_up .sign_up_wrap .title p span {
+  color: red;
+  vertical-align: middle;
+}
+
+body #app main #main .sign_up .sign_up_wrap .sub_title {
+  color: #21d59b;
+}
+
+body #app main #main .sign_up #policy .title {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #policy #service_policy {
+  margin-bottom: 50px;
+}
+
+body #app main #main .sign_up #policy #info_policy {
+  margin-bottom: 30px;
+}
+
+body #app main #main .sign_up #policy #info_policy .policy p {
+  padding: 20px 0;
+}
+
+body #app main #main .sign_up #policy .policy_wrap .grey_header {
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+body #app main #main .sign_up #policy .policy_wrap .policy {
+  overflow: auto;
+  padding: 30px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  height: 180px;
+  color: #717171;
+}
+
+body #app main #main .sign_up #policy .policy_wrap .policy p {
+  font-size: 12px;
+}
+
+body #app main #main .sign_up #policy .policy_wrap .policy::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+  background-color: #fff;
+}
+
+body #app main #main .sign_up #policy .policy_wrap .policy::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+body #app main #main .sign_up #policy .policy_wrap .policy::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body #app main #main .sign_up #policy .radio_wrap {
+  color: #888888;
+}
+
+body #app main #main .sign_up #policy .radio_wrap .title p {
+  font-size: 15px;
+}
+
+body #app main #main .sign_up #policy .radio_wrap .radio input {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+body #app main #main .sign_up #policy .radio_wrap .radio label {
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+body #app main #main .sign_up #policy .radio_wrap #radio_email {
+  margin-bottom: 10px;
+}
+
+body #app main #main .sign_up #policy .radio_wrap #radio_email span {
+  margin-right: 53px;
+  font-size: 15px;
+}
+
+body #app main #main .sign_up #policy .radio_wrap #radio_sms span {
+  margin-right: 14px;
+  font-size: 15px;
+}
+
+body #app main #main .sign_up #info_input .title {
+  margin-bottom: 5px;
+}
+
+body #app main #main .sign_up #info_input .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #app main #main .sign_up #info_input .input input {
+  width: 100%;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12px 10px;
+  font-weight: bold;
+}
+
+body #app main #main .sign_up #info_input .input input::-webkit-input-placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .input input:-ms-input-placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .input input::-ms-input-placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .input input::placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .input input[name="name"] {
+  width: 355px;
+  margin-right: 10px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="ceo"] {
+  width: 215px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="business_num"] {
+  width: 217px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="business_num1"] {
+  width: 118px;
+}
+
+body #app main #main .sign_up #info_input .input input[name="business_num2"] {
+  width: 215px;
+}
+
+body #app main #main .sign_up #info_input #id {
+  margin-bottom: 5px;
+}
+
+body #app main #main .sign_up #info_input #id input {
+  width: 477px;
+  margin-right: 5px;
+}
+
+body #app main #main .sign_up #info_input #pw {
+  margin-bottom: 5px;
+}
+
+body #app main #main .sign_up #info_input #pw_check {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input #email {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input #business_num span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3.5px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .grey_header {
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification span {
+  font-size: 18px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .verification_desc {
+  color: #717171;
+  font-size: 15px;
+}
+
+body #app main #main .sign_up #info_input .radio_info {
+  background-color: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+}
+
+body #app main #main .sign_up #info_input .radio_info input {
+  margin-right: 5px;
+}
+
+body #app main #main .sign_up #info_input .radio_info label {
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+body #app main #main .sign_up #info_input #name {
+  margin-bottom: 15px;
+}
+
+body #app main #main .sign_up .bubble {
+  position: absolute;
+  width: 240px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px;
+  top: 120px;
+  right: 5px;
+}
+
+body #app main #main .sign_up .bubble span {
+  color: #f73e22;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+body #app main #main .sign_up .bubble span img {
+  vertical-align: middle;
+}
+
+body #app main #main .sign_up .bubble .bubble_desc {
+  color: #717171;
+  font-size: 10px;
+  padding-top: 3px;
+}
+
+body #app main #main .sign_up .bubble::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #707070;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+  top: 12px;
+}
+
+body #app main #main .sign_up .bubble::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 9px solid transparent;
+  border-right: 9px solid #fff;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  left: -18px;
+  top: 13px;
+}
+
+body #app main #main .blue_btn {
+  font-size: 18px;
+  background-color: #007dfb;
+  border: 0px solid #007dfb;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 17px;
+}
+
+body #app main #main .blue_btn span {
+  display: inline;
+}
+
+body #app main #main #sign_up_btn {
+  font-size: 25px;
+  padding: 10px 210px;
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up_etc {
+  font-size: 15px;
+  color: #878787;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #app main #main .sign_up_etc nav ul li {
+  float: left;
+  padding: 0px 5px;
+}
+
+body #app main #main .sign_up_etc nav ul li:not(:last-child) {
+  border-right: 2px solid #878787;
+}
+/*# sourceMappingURL=sign_up_school_style.css.map */

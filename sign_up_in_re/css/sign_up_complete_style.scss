@@ -188,6 +188,10 @@ body {
             text-align: center;
           }
         }
+        .congrat_text {
+          font-size: 23px;
+          margin-bottom: 30px;
+        }
 
         .sub_title {
           margin-bottom: 70px;
@@ -198,69 +202,20 @@ body {
             text-align: center;
           }
         }
-
-        .sign_up_wrap {
-          width: 434px;
-
-          .sign_up_btn {
-            display: flex;
-            padding: 15px 0;
-            justify-content: center;
-
-            span {
-              font-size: 20px;
-              color: #fff;
-            }
-          }
-
-          #twinbell_sign {
-            background-color: $color-btn-blue;
-            margin-bottom: 20px;
-          }
-
-          #kakao_sign {
-            background-color: $color-kakao;
-            margin-bottom: 20px;
-          }
-
-          #naver_sign {
-            background-color: $color-naver;
-            margin-bottom: 20px;
-          }
-
-          #facebook_sign {
-            background-color: $color-facebook;
-          }
-
-          .sign_up_etc {
-            margin-bottom: 80px;
-            font-size: 15px;
-            color: #878787;
-            display: flex;
-            justify-content: center;
-
-            nav {
-              ul {
-                li {
-                  float: left;
-                  padding: 0px 5px;
-                }
-                li:not(:last-child) {
-                  border-right: 2px solid #878787;
-                }
-              }
-            }
+        .blue_btn {
+          font-size: 18px;
+          background-color: $color-btn-blue;
+          border: 0px solid $color-btn-blue;
+          border-radius: 5px;
+          color: #fff;
+          padding: 15px 17px;
+          span {
+            display: inline;
           }
         }
-        .sns_btn_wrap {
-          nav {
-            ul {
-              li {
-                float: left;
-                margin-right: 10px;
-              }
-            }
-          }
+        #goto_main {
+          width: 440px;
+          text-align: center;
         }
       }
     }

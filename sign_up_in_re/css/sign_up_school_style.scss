@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+//font-size
+$login-btn-size: 14px;
+
+//header_color
+$color-header-border: #e0e0e0;
+$color-grey-header: #e7e7e7;
+//main_color
+$color-subtitle: #c4c4c4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007dfb;
+$color-naver: #19ce60;
+$color-facebook: #3a5ca9;
+$color-kakao: #f7e600;
+//input 컬러
+$color-input-bg: #f9f9f9;
+$color-input-font: #cfcfcf;
+$color-header-grey: #e7e7e7;
+
+//css reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body {
+  #app {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    height: 100%;
+
+    //header
+    header {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .upper_menu {
+        width: 100%;
+        border-bottom: 1px solid $color-header-border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+
+        nav {
+          ul {
+            list-style: none;
+
+            .quick_menu {
+              border: 1px solid $color-header-border;
+              float: left;
+              padding: 15px 30px;
+            }
+          }
+        }
+
+        .login_btn_wrap {
+          nav {
+            ul {
+              list-style: none;
+
+              .login_btn {
+                font-size: $login-btn-size;
+                float: left;
+                padding: 0 10px;
+              }
+
+              .login_btn:not(:last-child) {
+                border-right: 1px solid #000;
+              }
+            }
+          }
+        }
+      }
+
+      //2번째 메뉴 네비바
+      #menu {
+        border-bottom: 1px solid $color-header-border;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+
+        .logo_menu_wrap {
+          display: flex;
+
+          .logo {
+            display: flex;
+            align-items: center;
+            padding-right: 80px;
+          }
+
+          .menu {
+            display: flex;
+
+            nav {
+              ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                  float: left;
+                  padding: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //main
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+
+      #main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 0% 10%;
+
+        .title {
+          margin-bottom: 10px;
+
+          h2 {
+            text-align: center;
+          }
+        }
+
+        .sub_title {
+          margin-bottom: 10px;
+
+          p {
+            color: #5d5d5d;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+
+        .line {
+          width: 100%;
+          margin-bottom: 50px;
+
+          hr {
+            border: 1px solid #9f9f9f;
+          }
+        }
+
+        .sign_up {
+          width: 1288px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 40px;
+          position: relative;
+          .sign_up_wrap {
+            width: 580px;
+
+            .title {
+              p {
+                font-size: 20px;
+
+                span {
+                  color: red;
+                  vertical-align: middle;
+                }
+              }
+            }
+
+            .sub_title {
+              color: #21d59b;
+            }
+          }
+
+          #policy {
+            .title {
+              margin-bottom: 20px;
+            }
+
+            #service_policy {
+              margin-bottom: 50px;
+            }
+
+            #info_policy {
+              margin-bottom: 30px;
+              .policy {
+                p {
+                  padding: 20px 0;
+                }
+              }
+            }
+
+            .policy_wrap {
+              .grey_header {
+                background-color: $color-grey-header;
+                padding: 10px 20px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+              }
+
+              .policy {
+                overflow: auto;
+                padding: 30px 20px;
+                box-sizing: border-box;
+                border: 1px solid $color-grey-header;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                width: 100%;
+                height: 180px;
+                color: #717171;
+                p {
+                  font-size: 12px;
+                }
+              }
+
+              .policy::-webkit-scrollbar {
+                display: none;
+                width: 10px;
+                background-color: #fff;
+              }
+
+              .policy::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                border-radius: 5px;
+              }
+
+              .policy::-webkit-scrollbar-track {
+                background-color: #fff;
+              }
+            }
+
+            .radio_wrap {
+              color: #888888;
+
+              .title {
+                p {
+                  font-size: 15px;
+                }
+              }
+
+              .radio {
+                input {
+                  margin-right: 10px;
+                  vertical-align: middle;
+                }
+
+                label {
+                  font-size: 15px;
+                  margin-right: 20px;
+                }
+              }
+
+              #radio_email {
+                margin-bottom: 10px;
+
+                span {
+                  margin-right: 53px;
+                  font-size: 15px;
+                }
+              }
+
+              #radio_sms {
+                span {
+                  margin-right: 14px;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+
+          #info_input {
+            .title {
+              margin-bottom: 5px;
+            }
+
+            .input {
+              display: flex;
+
+              input {
+                width: 100%;
+                font-size: 16px;
+                background-color: $color-input-bg;
+                border: 1px solid #d5d5d5;
+                box-sizing: border-box;
+                border-radius: 5px;
+                padding: 12px 10px;
+                font-weight: bold;
+              }
+
+              input::placeholder {
+                color: #cfcfcf;
+              }
+              input[name="name"] {
+                width: 355px;
+                margin-right: 10px;
+              }
+              input[name="ceo"] {
+                width: 215px;
+              }
+              input[name="business_num"] {
+                width: 217px;
+              }
+              input[name="business_num1"] {
+                width: 118px;
+              }
+              input[name="business_num2"] {
+                width: 215px;
+              }
+            }
+
+            #id {
+              margin-bottom: 5px;
+
+              input {
+                width: 477px;
+                margin-right: 5px;
+              }
+            }
+
+            #pw {
+              margin-bottom: 5px;
+            }
+
+            #pw_check {
+              margin-bottom: 20px;
+            }
+            #email {
+              margin-bottom: 20px;
+            }
+            #business_num {
+              span {
+                display: flex;
+                align-items: center;
+                padding: 0 3.5px;
+              }
+            }
+
+            .verification_wrap {
+              margin-bottom: 20px;
+
+              .grey_header {
+                background-color: $color-grey-header;
+                padding: 10px 20px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+              }
+
+              .verification {
+                box-sizing: border-box;
+                border: 1px solid $color-grey-header;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                  font-size: 18px;
+                }
+                .verification_desc {
+                  color: #717171;
+                  font-size: 15px;
+                }
+              }
+            }
+
+            .radio_info {
+              background-color: #f9f9f9;
+              border: 1px solid #d5d5d5;
+              box-sizing: border-box;
+              border-radius: 5px;
+              padding: 12px 10px;
+              margin-bottom: 15px;
+
+              input {
+                margin-right: 5px;
+              }
+
+              label {
+                margin-right: 20px;
+                font-size: 15px;
+                font-weight: lighter;
+              }
+            }
+
+            #name {
+              margin-bottom: 15px;
+            }
+          }
+          .bubble {
+            position: absolute;
+            width: 240px;
+            height: 64px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #707070;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            top: 120px;
+            right: 5px;
+            // p:first-child{
+            //   color: #F73E22;
+            //   font-size: 13px;
+            //   font-weight: bold;
+            // }
+            span {
+              color: #f73e22;
+              font-size: 13px;
+              font-weight: bold;
+              img {
+                vertical-align: middle;
+              }
+            }
+            .bubble_desc {
+              color: #717171;
+              font-size: 10px;
+              padding-top: 3px;
+            }
+          }
+          .bubble::before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #707070;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            left: -20px;
+            top: 12px;
+          }
+          .bubble::after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 9px solid transparent;
+            border-right: 9px solid #fff;
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            left: -18px;
+            top: 13px;
+          }
+        }
+        .blue_btn {
+          font-size: 18px;
+          background-color: $color-btn-blue;
+          border: 0px solid $color-btn-blue;
+          border-radius: 5px;
+          color: #fff;
+          padding: 10px 17px;
+          span {
+            display: inline;
+          }
+        }
+        #sign_up_btn {
+          font-size: 25px;
+          padding: 10px 210px;
+          margin-bottom: 20px;
+        }
+        .sign_up_etc {
+          font-size: 15px;
+          color: #878787;
+          display: flex;
+          justify-content: center;
+
+          nav {
+            ul {
+              li {
+                float: left;
+                padding: 0px 5px;
+              }
+              li:not(:last-child) {
+                border-right: 2px solid #878787;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
