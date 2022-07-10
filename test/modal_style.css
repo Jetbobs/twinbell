@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.modal input[id="popup"] {
+  display: none;
+}
+
+.modal input[id="popup"] + label {
+  display: inline-block;
+  padding: 10px 17px;
+  background-color: #007dfb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.modal input[id="popup"] + label + div {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.modal input[id="popup"] + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.modal input[id="popup"] + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 630px;
+  height: 500px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone {
+  font-weight: bold;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .title {
+  background-color: #2C3845;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap {
+  padding: 30px 20px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input {
+  margin-bottom: 20px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input p {
+  font-size: 15px;
+  color: #2E2E2E;
+  margin-bottom: 10px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input input {
+  width: 100%;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12px 10px;
+  font-weight: bold;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input input::-webkit-input-placeholder {
+  color: #cfcfcf;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input input:-ms-input-placeholder {
+  color: #cfcfcf;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input input::-ms-input-placeholder {
+  color: #cfcfcf;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input input::placeholder {
+  color: #cfcfcf;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .input input:focus {
+  outline: none;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_phone input {
+  width: 94px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification p {
+  font-size: 15px;
+  color: #2E2E2E;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap input {
+  width: 471px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn span {
+  padding: 10px 17px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .blue_btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .blue_btn span {
+  background-color: #007dfb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .grey_btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #7d7d7d;
+  border-radius: 5px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap .grey_btn span {
+  background-color: #7d7d7d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #send {
+  margin-bottom: 20px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #send span {
+  padding: 10px 40px;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #close {
+  width: 100%;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone .info_wrap #close span {
+  padding: 10px 0;
+}
+
+.modal input[id="popup"] + label + div > div .modal_phone > label {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  -webkit-transform: translate(40%, -40%);
+          transform: translate(40%, -40%);
+  padding: 20px;
+  background-color: #dd5347;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.modal input[id="popup"]:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=modal_style.css.map */

@@ -465,6 +465,207 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .veri
   font-size: 15px;
 }
 
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] {
+  display: none;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 17px;
+  background-color: #007dfb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 630px;
+  height: 470px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone {
+  font-weight: bold;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .modal_title {
+  background-color: #2C3845;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap {
+  padding: 30px 20px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input p {
+  font-size: 15px;
+  color: #2E2E2E;
+  margin-bottom: 10px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input {
+  width: 100%;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12px 10px;
+  font-weight: bold;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input::-webkit-input-placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input:-ms-input-placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input::-ms-input-placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input::placeholder {
+  color: #cfcfcf;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input:focus {
+  outline: none;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_phone input {
+  width: 94px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification p {
+  font-size: 15px;
+  color: #2E2E2E;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap input {
+  width: 471px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn {
+  padding: 0;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn span {
+  padding: 10px 17px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .blue_btn {
+  padding: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .blue_btn span {
+  background-color: #007dfb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #send {
+  margin-bottom: 20px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #send span {
+  padding: 10px 40px;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap > label {
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #7d7d7d;
+  border-radius: 5px;
+  background-color: #7d7d7d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone > label {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  -webkit-transform: translate(40%, -40%);
+          transform: translate(40%, -40%);
+  padding: 20px;
+  background-color: #dd5347;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"]:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+
 body #app main #main .sign_up #info_input .radio_info {
   background-color: #f9f9f9;
   border: 1px solid #d5d5d5;
