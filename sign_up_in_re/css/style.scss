@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: "Pretendard-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -92,6 +91,7 @@ body {
       flex-direction: column;
       width: 100%;
 
+      // 상단 네비바
       .upper_menu {
         width: 100%;
         border-bottom: 1px solid $color-header-border;
@@ -104,6 +104,7 @@ body {
           ul {
             list-style: none;
 
+            // 상단 네비바 버튼
             .quick_menu {
               border: 1px solid $color-header-border;
               float: left;
@@ -112,11 +113,13 @@ body {
           }
         }
 
+        // 홈, 로그인 ,회원가입 wrap
         .login_btn_wrap {
           nav {
             ul {
               list-style: none;
 
+              // 홈, 로그인 ,회원가입 버튼
               .login_btn {
                 font-size: $login-btn-size;
                 float: left;
@@ -131,14 +134,14 @@ body {
         }
       }
 
-      //2번째 메뉴 네비바
+      //메인 메뉴 네비 바 wrap
       #menu {
         border-bottom: 1px solid $color-header-border;
         padding: 20px 10%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        // 로고
         .logo_menu_wrap {
           display: flex;
 
@@ -147,7 +150,7 @@ body {
             align-items: center;
             padding-right: 80px;
           }
-
+          // 메인 메뉴 네비바
           .menu {
             display: flex;
 
@@ -169,7 +172,7 @@ body {
       }
     }
 
-    //main
+// 메인 본문
     main {
       display: flex;
       justify-content: center;
@@ -180,7 +183,7 @@ body {
         align-items: center;
         flex-direction: column;
         margin-top: 80px;
-
+// 페이지 타이틀
         .title {
           margin-bottom: 50px;
 
@@ -188,7 +191,7 @@ body {
             text-align: center;
           }
         }
-
+// 페이지 서브 타이틀
         .sub_title {
           margin-bottom: 70px;
 
@@ -198,10 +201,10 @@ body {
             text-align: center;
           }
         }
-
+// 회원가입 wrap
         .sign_up_wrap {
           width: 434px;
-
+// 회원가입 버튼 사각형 기본
           .sign_up_btn {
             display: flex;
             padding: 15px 0;
@@ -212,26 +215,26 @@ body {
               color: #fff;
             }
           }
-
+// 트윈벨 회원가입
           #twinbell_sign {
             background-color: $color-btn-blue;
             margin-bottom: 20px;
           }
-
+// 카카오 회원가입
           #kakao_sign {
             background-color: $color-kakao;
             margin-bottom: 20px;
           }
-
+// 네이버 회원가입
           #naver_sign {
             background-color: $color-naver;
             margin-bottom: 20px;
           }
-
+// 페이스북 회원가입
           #facebook_sign {
             background-color: $color-facebook;
           }
-
+// home, 아이디 찾기, 비밀번호 찾기, 로그인하기 버튼
           .sign_up_etc {
             margin-bottom: 80px;
             font-size: 15px;
@@ -245,6 +248,7 @@ body {
                   float: left;
                   padding: 0px 5px;
                 }
+
                 li:not(:last-child) {
                   border-right: 2px solid #878787;
                 }
@@ -252,6 +256,7 @@ body {
             }
           }
         }
+// sns 로그인 / 회원가입 원형 버튼 wrap
         .sns_btn_wrap {
           nav {
             ul {

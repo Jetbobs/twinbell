@@ -677,7 +677,6 @@ body #app main #main .sign_up .bubble {
 }
 
 body #app main #main .sign_up .bubble span {
-  color: #f73e22;
   font-size: 13px;
   font-weight: bold;
 }
@@ -716,6 +715,38 @@ body #app main #main .sign_up .bubble::after {
   border-bottom: 9px solid transparent;
   left: -18px;
   top: 13px;
+}
+
+body #app main #main .sign_up #bubble_na {
+  display: none;
+}
+
+body #app main #main .sign_up #bubble_na span {
+  color: #f73e22;
+}
+
+body #app main #main .sign_up #bubble_low {
+  display: none;
+}
+
+body #app main #main .sign_up #bubble_low span {
+  color: #f73e22;
+}
+
+body #app main #main .sign_up #bubble_safe {
+  display: none;
+}
+
+body #app main #main .sign_up #bubble_safe span {
+  color: #49BA7C;
+}
+
+body #app main #main .sign_up #bubble_power {
+  display: none;
+}
+
+body #app main #main .sign_up #bubble_power span {
+  color: #49BA7C;
 }
 
 body #app main #main .blue_btn {

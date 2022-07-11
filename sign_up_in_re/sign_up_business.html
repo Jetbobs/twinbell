@@ -1,421 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="/sign_up_in_re/css/sign_up_business_style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="/sign_up_in_re/js/sign_up.js"></script>
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="app" id="app">
-      <header>
-        <div class="upper_menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/sign_up_in_re/css/sign_up_business_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/sign_up_in_re/js/sign_up.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- html 전체 wrap -->
+  <div class="app" id="app">
+    <!-- header -->
+    <header>
+      <!-- 상단 네비바 -->
+      <div class="upper_menu">
+        <nav>
+          <ul>
+            <a href="#">
+              <li class="quick_menu">주문을 쉽고 간단하게</li>
+            </a>
+            <a href="#">
+              <li class="quick_menu">NCS 교재</li>
+            </a>
+            <a href="#">
+              <li class="quick_menu">인쇄가이드</li>
+            </a>
+            <a href="#">
+              <li class="quick_menu">견적문의</li>
+            </a>
+          </ul>
+        </nav>
+        <!-- 홈, 로그인 ,회원가입 wrap -->
+        <div class="login_btn_wrap">
           <nav>
             <ul>
               <a href="#">
-                <li class="quick_menu">주문을 쉽고 간단하게</li>
+                <li class="login_btn">홈</li>
               </a>
               <a href="#">
-                <li class="quick_menu">NCS 교재</li>
+                <li class="login_btn">로그인</li>
               </a>
               <a href="#">
-                <li class="quick_menu">인쇄가이드</li>
-              </a>
-              <a href="#">
-                <li class="quick_menu">견적문의</li>
+                <li class="login_btn">회원가입</li>
               </a>
             </ul>
           </nav>
-          <div class="login_btn_wrap">
+        </div>
+      </div>
+      <!-- 메인 메뉴 네비 바 wrap -->
+      <div id="menu">
+        <!-- 로고 -->
+        <div class="logo_menu_wrap">
+          <div class="logo">
+            <a href="#"><img src="../logo/logo.png" alt="" /></a>
+          </div>
+          <div class="menu">
             <nav>
               <ul>
                 <a href="#">
-                  <li class="login_btn">홈</li>
+                  <li>디지털윤전</li>
                 </a>
                 <a href="#">
-                  <li class="login_btn">로그인</li>
+                  <li>고급인쇄</li>
                 </a>
                 <a href="#">
-                  <li class="login_btn">회원가입</li>
+                  <li>
+                    <span>상업인쇄</span>
+                    <span>(대량/옵셋)</span>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>마이페이지</li>
+                </a>
+                <a href="#">
+                  <li>고객지원</li>
+                </a>
+                <a href="#">
+                  <li>이벤트</li>
                 </a>
               </ul>
             </nav>
           </div>
         </div>
-        <div id="menu">
-          <div class="logo_menu_wrap">
-            <div class="logo">
-              <a href="#"><img src="../logo/logo.png" alt="" /></a>
-            </div>
-            <div class="menu">
-              <nav>
-                <ul>
-                  <a href="#">
-                    <li>디지털윤전</li>
-                  </a>
-                  <a href="#">
-                    <li>고급인쇄</li>
-                  </a>
-                  <a href="#">
-                    <li>
-                      <span>상업인쇄</span>
-                      <span>(대량/옵셋)</span>
-                    </li>
-                  </a>
-                  <a href="#">
-                    <li>마이페이지</li>
-                  </a>
-                  <a href="#">
-                    <li>고객지원</li>
-                  </a>
-                  <a href="#">
-                    <li>이벤트</li>
-                  </a>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div
-            class="category_menu_wrap"
-            OnClick="location.href ='#'"
-            style="cursor: pointer"
-          >
-            <i class="fa-solid fa-bars"></i>
-            <span>전체카테고리</span>
-          </div>
+        <!-- 전체 카테고리 햄버거 메뉴 버튼 -->
+        <div class="category_menu_wrap" OnClick="location.href ='#'" style="cursor: pointer">
+          <i class="fa-solid fa-bars"></i>
+          <span>전체카테고리</span>
         </div>
-      </header>
-      <main>
-        <section id="main">
-          <div class="title">
-            <h2>트윈벨미디어 웹사이트 회원 가입</h2>
-          </div>
-          <div class="sub_title">
-            <p>고객님의 만족을 위하여 최선을 다하겠습니다.</p>
-          </div>
-          <div class="line">
-            <hr />
-          </div>
-          <div class="sign_up">
-            <div class="sign_up_wrap" id="policy">
-              <div class="title">
-                <p><span>*</span> 이용약관 동의</p>
+      </div>
+    </header>
+    <main>
+      <section id="main">
+        <!-- 페이지 타이틀 -->
+        <div class="title">
+          <h2>트윈벨미디어 웹사이트 회원 가입</h2>
+        </div>
+        <!-- 페이지 서브 타이틀 -->
+        <div class="sub_title">
+          <p>고객님의 만족을 위하여 최선을 다하겠습니다.</p>
+        </div>
+        <!-- 가로선 -->
+        <div class="line">
+          <hr />
+        </div>
+        <!-- 회원가입 양식 -->
+        <div class="sign_up">
+          <!-- 회원 가입 양식 약관 관련 -->
+          <div class="sign_up_wrap" id="policy">
+            <!-- 이용약관 타이틀 -->
+            <div class="title">
+              <p><span>*</span> 이용약관 동의</p>
+            </div>
+            <!-- 이용약관 wrap -->
+            <div class="policy_wrap" id="service_policy">
+              <!-- 약관 상단 회색 섹션 -->
+              <div class="grey_header">
+                <!-- 약관 제목 -->
+                <p>서비스 이용약관</p>
               </div>
-              <div class="policy_wrap" id="service_policy">
-                <div class="grey_header">
-                  <p>서비스 이용약관</p>
-                </div>
-                <div class="policy">
-                  <h4>제1조(목적)</h4>
-                  <p>
-                    본 이용약관은 트윈벨미디어(전자상거래 사업자)가 운영하는
-                    사이트 (이하'트윈벨미디어몰')에서 제공하는 인터넷 관련
-                    서비스(이하 '서비스'))를 이용함에 있어 사이버몰과 이용자의
-                    권리,의무 및 책임사항을 규정정함을 목적으로 한다.
-                  </p>
-                </div>
-              </div>
-              <div class="policy_wrap" id="info_policy">
-                <div class="grey_header">
-                  <p>개인정보수집 · 이용동의 약관</p>
-                </div>
-                <div class="policy">
-                  <h4>1.개인정보란?</h4>
-                  <p>
-                    생존하는 개인에 관한 정보로서 당해 정보에 포함되어 있는
-                    성명, 핸드폰번호 등의 사항에 의하여 당해 개인을 식별할 수
-                    있는 정보 (당해 정보만으로는 특정 개인을 식별할 수 없더라도
-                    다른 정보와 용이하게 결합하여 식별할 수 있는 것을
-                    포함합니다)를 말합니다.
-                  </p>
-                  <h4>개인정보의 수집범위</h4>
-                </div>
-              </div>
-              <div class="radio_wrap">
-                <div class="title">
-                  <p>
-                    트윈벨미디어가 제공하는 혜택, 이벤트 등의 안내 정보 수신에
-                    대한 확인을 부탁드립니다.
-                  </p>
-                </div>
-                <div class="radio" id="radio_email">
-                  <span>이메일수신여부</span>
-                  <label for=""
-                    ><input
-                      type="radio"
-                      name="email"
-                      value="y"
-                      checked
-                    />수신함</label
-                  >
-                  <label for=""
-                    ><input type="radio" name="email" value="n" />미수신</label
-                  >
-                </div>
-                <div class="radio" id="radio_sms">
-                  <span>SMS등 문자 수신여부</span>
-                  <label for=""
-                    ><input
-                      type="radio"
-                      name="sms"
-                      value="y"
-                      checked
-                    />수신함</label
-                  >
-                  <label for=""
-                    ><input type="radio" name="sms" value="n" />미수신</label
-                  >
-                </div>
+              <!-- 약관 본문 -->
+              <div class="policy">
+                <h4>제1조(목적)</h4>
+                <p>
+                  본 이용약관은 트윈벨미디어(전자상거래 사업자)가 운영하는
+                  사이트 (이하'트윈벨미디어몰')에서 제공하는 인터넷 관련
+                  서비스(이하 '서비스'))를 이용함에 있어 사이버몰과 이용자의
+                  권리,의무 및 책임사항을 규정정함을 목적으로 한다.
+                </p>
               </div>
             </div>
-            <div class="sign_up_wrap" id="info_input">
+            <!-- 개인정보수집 및 이용동의 약관 wrap -->
+            <div class="policy_wrap" id="info_policy">
+              <!-- 약관 상단 회색 섹션 -->
+              <div class="grey_header">
+                <!-- 약관 제목 -->
+                <p>개인정보수집 · 이용동의 약관</p>
+              </div>
+              <!-- 약관 본문 -->
+              <div class="policy">
+                <h4>1.개인정보란?</h4>
+                <p>
+                  생존하는 개인에 관한 정보로서 당해 정보에 포함되어 있는
+                  성명, 핸드폰번호 등의 사항에 의하여 당해 개인을 식별할 수
+                  있는 정보 (당해 정보만으로는 특정 개인을 식별할 수 없더라도
+                  다른 정보와 용이하게 결합하여 식별할 수 있는 것을
+                  포함합니다)를 말합니다.
+                </p>
+                <h4>개인정보의 수집범위</h4>
+              </div>
+            </div>
+            <!-- 수신 관련 라디오 버튼 wrap -->
+            <div class="radio_wrap">
+              <!-- 수신 관련 라디오 버튼 타이틀 -->
               <div class="title">
-                <p><span>*</span>회원정보 입력</p>
+                <p>
+                  트윈벨미디어가 제공하는 혜택, 이벤트 등의 안내 정보 수신에
+                  대한 확인을 부탁드립니다.
+                </p>
               </div>
-              <div class="sub_title">· 회원 정보 입력을 부탁드립니다.</div>
-              <div class="input" id="id">
-                <input
-                  type="text"
-                  placeholder="트윈벨미디어에서 사용하실 아이디를 입력해 주세요"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '트윈벨미디어에서 사용하실 아이디를 입력해 주세요'"
-                />
-                <div
-                  class="blue_btn"
-                  OnClick="location.href ='#'"
-                  style="cursor: pointer"
-                >
-                  <span>중복확인</span>
-                </div>
+              <!-- 라디오 버튼 email 관련 -->
+              <div class="radio" id="radio_email">
+                <span>이메일수신여부</span>
+                <label for=""><input type="radio" name="email" value="y" checked />수신함</label>
+                <label for=""><input type="radio" name="email" value="n" />미수신</label>
               </div>
-              <div class="input" id="pw">
-                <input
-                  type="text"
-                  placeholder="비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요'"
-                />
+              <!-- 라디오 버튼 sms 관련 -->
+              <div class="radio" id="radio_sms">
+                <span>SMS등 문자 수신여부</span>
+                <label for=""><input type="radio" name="sms" value="y" checked />수신함</label>
+                <label for=""><input type="radio" name="sms" value="n" />미수신</label>
               </div>
-              <div class="input" id="pw_check">
-                <input
-                  type="text"
-                  placeholder="비밀번호 확인"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '비밀번호 확인'"
-                />
+            </div>
+          </div>
+          <!-- 회원 가입 양식 정보 입력 관련 -->
+          <div class="sign_up_wrap" id="info_input">
+            <!-- 회원정보 입력 타이틀 -->
+            <div class="title">
+              <p><span>*</span>회원정보 입력</p>
+            </div>
+            <!-- 회원정보 입력 서브 타이틀 -->
+            <div class="sub_title">· 회원 정보 입력을 부탁드립니다.</div>
+            <!-- 아이디 입력칸 -->
+            <div class="input" id="id">
+              <input type="text" placeholder="트윈벨미디어에서 사용하실 아이디를 입력해 주세요" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '트윈벨미디어에서 사용하실 아이디를 입력해 주세요'" />
+              <!-- 중복확인 버튼 -->
+              <div class="blue_btn" OnClick="location.href ='#'" style="cursor: pointer">
+                <span>중복확인</span>
               </div>
-              <div class="verification_wrap">
-                <div class="grey_header">
-                  <p>휴대폰 인증</p>
-                </div>
-                <div class="verification">
-                  <span class="verification_desc"
-                    >본인이 사용하고 계신 휴대폰으로 인증이 가능합니다. <br />
-                    가입을 원하시면 "인증하기"를 클릭해 주세요.</span
-                  >
-                  <div class="modal">
-                    <input type="checkbox" id="popup" />
-                    <label for="popup">인증하기</label>
+            </div>
+            <!-- 비밀번호 입력칸 -->
+            <div class="input" id="pw">
+              <input type="text" placeholder="비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '비밀번호(8~16자로 영문,숫자,특수문자 포함)를 입력해 주세요'" />
+            </div>
+            <!-- 비밀번호 확인 입력칸 -->
+            <div class="input" id="pw_check">
+              <input type="text" placeholder="비밀번호 확인" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '비밀번호 확인'" />
+            </div>
+            <!-- 휴대폰 인증 wrap -->
+            <div class="verification_wrap">
+              <!-- 휴대폰 인증 회색 섹션 -->
+              <div class="grey_header">
+                <p>휴대폰 인증</p>
+              </div>
+              <!-- 휴대폰 인증 본문 -->
+              <div class="verification">
+                <!-- 휴대폰 인증 설명 텍스트 -->
+                <span class="verification_desc">본인이 사용하고 계신 휴대폰으로 인증이 가능합니다. <br />
+                  가입을 원하시면 "인증하기"를 클릭해 주세요.</span>
+                <!-- 휴대폰 인증 모달 팝업 -->
+                <div class="modal">
+                  <input type="checkbox" id="popup" />
+                  <!-- 모달 팝업 버튼 -->
+                  <label for="popup">인증하기</label>
+                  <div>
                     <div>
-                      <div>
-                        <label for="popup"></label>
-                        <div class="modal_phone">
-                          <div class="modal_title">
-                            <span>※ 휴대폰 인증하기</span>
+                      <label for="popup"></label>
+                      <div class="modal_phone">
+                        <div class="modal_title">
+                          <!-- 모달 타이틀 -->
+                          <span>※ 휴대폰 인증하기</span>
+                        </div>
+                        <div class="info_wrap">
+                          <!--모달 이름 입력칸 -->
+                          <div class="modal_input" id="modal_name">
+                            <p>· 이름</p>
+                            <input type="text" placeholder="이름을 입력해주세요." onfocus="this.placeholder = ''"
+                              onblur="this.placeholder = '이름을 입력해주세요.'" />
                           </div>
-                          <div class="info_wrap">
-                            <div class="modal_input" id="modal_name">
-                              <p>· 이름</p>
-                              <input type="text" placeholder="이름을 입력해주세요." onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = '이름을 입력해주세요.'" />
-                            </div>
-                            <div class="modal_input" id="modal_phone">
-                              <p>· 휴대폰 번호</p>
-                              <input type="phone" placeholder="" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = ''" />
-                              <span>-</span>
-                              <input type="phone" placeholder="" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = ''" />
-                              <span>-</span>
-                              <input type="phone" placeholder="" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = ''" />
-                            </div>
-                            <div class="blue_btn" id="send">
-                              <span>인증번호 문자 발송하기</span>
-                            </div>
-                            <div class="modal_input" id="modal_verification">
-                              <p>· 휴대폰으로 수신한 인증번호를 입력해 주시기 바랍니다.</p>
-                              <div class="input_wrap">
-                                <input type="text" placeholder="이름을 입력해주세요." onfocus="this.placeholder = ''"
-                                  onblur="this.placeholder = '이름을 입력해주세요.'" />
-                                <div class="blue_btn">
-                                  <span>인증확인</span>
-                                </div>
+                          <!--모달 휴대폰 입력칸 -->
+                          <div class="modal_input" id="modal_phone">
+                            <p>· 휴대폰 번호</p>
+                            <input type="phone" placeholder="" onfocus="this.placeholder = ''"
+                              onblur="this.placeholder = ''" />
+                            <span>-</span>
+                            <input type="phone" placeholder="" onfocus="this.placeholder = ''"
+                              onblur="this.placeholder = ''" />
+                            <span>-</span>
+                            <input type="phone" placeholder="" onfocus="this.placeholder = ''"
+                              onblur="this.placeholder = ''" />
+                          </div>
+                          <!-- 모달 인증번호 문자 발송 버튼 -->
+                          <div class="blue_btn" id="send">
+                            <span>인증번호 문자 발송하기</span>
+                          </div>
+                          <div class="modal_input" id="modal_verification">
+                            <p>· 휴대폰으로 수신한 인증번호를 입력해 주시기 바랍니다.</p>
+                            <div class="input_wrap">
+                              <!-- 인증번호 입력칸 -->
+                              <input type="text" placeholder="인증번호 입력" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '인증번호 입력'" />
+                              <!-- 인증번호 확인 버튼 -->
+                              <div class="blue_btn">
+                                <span>인증확인</span>
                               </div>
                             </div>
-                            <label for="popup">
-                              창닫기
-                            </label>
                           </div>
+                          <!-- 창닫기 버튼 -->
+                          <label for="popup">
+                            창닫기
+                          </label>
                         </div>
                       </div>
-                      <label for="popup"></label>
                     </div>
+                    <label for="popup"></label>
                   </div>
                 </div>
               </div>
-              <div class="title">
-                <p><span>*</span>추가 정보 입력</p>
-              </div>
-              <div class="sub_title">· 필수 추가 정보 입력을 부탁드립니다.</div>
-              <div class="radio_info">
-                <label for=""
-                  ><input type="radio" name="type" value="p" />개인</label
-                >
-                <label for=""
-                  ><input
-                    type="radio"
-                    name="type"
-                    value="b"
-                    checked
-                  />사업자</label
-                >
-                <label for=""
-                  ><input type="radio" name="type" value="s" />학교/학원</label
-                >
-                <label for=""
-                  ><input type="radio" name="type" value="e" />기타</label
-                >
-              </div>
-              <div class="input" id="name">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="회사명을 입력해 주세요"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '회사명을 입력해 주세요'"
-                />
-                <input
-                  type="text"
-                  name="ceo"
-                  placeholder="대표자명을 입력해 주세요"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '대표자명을 입력해 주세요'"
-                />
-              </div>
-              <div class="input" id="email">
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="이메일을 입력해 주세요"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '이메일을 입력해 주세요'"
-                />
-              </div>
-              <div class="input" id="business_num">
-                <input
-                  type="text"
-                  name="business_num"
-                  placeholder="사업자번호 입력"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '사업자번호 입력'"
-                />
-                <span>-</span>
-                <input
-                  type="text"
-                  name="business_num1"
-                  placeholder=""
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = ''"
-                />
-                <span>-</span>
-                <input
-                  type="text"
-                  name="business_num2"
-                  placeholder=""
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = ''"
-                />
-              </div>
-              <div class="bubble" id="bubble_na">
-                <span>사용불가</span>
-                <span
-                  ><img src="/sign_up_in_re/icon/pw/not_available.png" alt=""
-                /></span>
-                <p class="bubble_desc">비밀번호를 동일하게 입력해주세요.</p>
-              </div>
-              <div class="bubble" id="bubble_low">
-                <span>낮은 보안수준</span>
-                <span
-                  ><img src="/sign_up_in_re/icon/pw/low.png" alt=""
-                /></span>
-                <p class="bubble_desc">좀 더 안전한 비밀번호로 설정해 주세요</p>
-                <p class="bubble_desc">
-                  숫자, 특수문자를 같이 설정해 주세요.
-                </p>
-              </div>
-              <div class="bubble" id="bubble_safe">
-                <span>안전한 비밀번호</span>
-                <span
-                  ><img src="/sign_up_in_re/icon/pw/safe.png" alt=""
-                /></span>
-                <p class="bubble_desc">사용 가능한 안전한 비밀번호 입니다.</p>
-              </div>
-              <div class="bubble" id="bubble_power">
-                <span>강력한 비밀번호</span>
-                <span
-                  ><img src="/sign_up_in_re/icon/pw/power.png" alt=""
-                /></span>
-                <p class="bubble_desc">예측이 어려운 강력한 비밀번호입니다.</p>
-              </div>
+            </div>
+            <!-- 추가 정보 입력 타이틀 -->
+            <div class="title">
+              <p><span>*</span>추가 정보 입력</p>
+            </div>
+            <!-- 추가 정보 입력 서브 타이틀 -->
+            <div class="sub_title">· 필수 추가 정보 입력을 부탁드립니다.</div>
+            <!-- 회원가입 유형 선택 -->
+            <div class="radio_info">
+              <label for=""><input type="radio" name="type" value="p" />개인</label>
+              <label for=""><input type="radio" name="type" value="b" checked />사업자</label>
+              <label for=""><input type="radio" name="type" value="s" />학교/학원</label>
+              <label for=""><input type="radio" name="type" value="e" />기타</label>
+            </div>
+            <!-- 회사명 입력칸 -->
+            <div class="input" id="name">
+              <input type="text" name="name" placeholder="회사명을 입력해 주세요" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '회사명을 입력해 주세요'" />
+                <!-- 대표자명 입력칸 -->
+              <input type="text" name="ceo" placeholder="대표자명을 입력해 주세요" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '대표자명을 입력해 주세요'" />
+            </div>
+            <!-- 이메일 입력칸 -->
+            <div class="input" id="email">
+              <input type="text" name="email" placeholder="이메일을 입력해 주세요" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '이메일을 입력해 주세요'" />
+            </div>
+            <!-- 사업자 번호 입력칸 -->
+            <div class="input" id="business_num">
+              <input type="text" name="business_num" placeholder="사업자번호 입력" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '사업자번호 입력'" />
+              <span>-</span>
+              <input type="text" name="business_num1" placeholder="" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = ''" />
+              <span>-</span>
+              <input type="text" name="business_num2" placeholder="" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = ''" />
+            </div>
+            <!-- 비밀번호 입력칸 말풍선 -->
+            <div class="bubble" id="bubble_na">
+              <span>사용불가</span>
+              <span><img src="/sign_up_in_re/icon/pw/not_available.png" alt="" /></span>
+              <p class="bubble_desc">비밀번호를 동일하게 입력해주세요.</p>
+            </div>
+            <div class="bubble" id="bubble_low">
+              <span>낮은 보안수준</span>
+              <span><img src="/sign_up_in_re/icon/pw/low.png" alt="" /></span>
+              <p class="bubble_desc">좀 더 안전한 비밀번호로 설정해 주세요</p>
+              <p class="bubble_desc">
+                숫자, 특수문자를 같이 설정해 주세요.
+              </p>
+            </div>
+            <div class="bubble" id="bubble_safe">
+              <span>안전한 비밀번호</span>
+              <span><img src="/sign_up_in_re/icon/pw/safe.png" alt="" /></span>
+              <p class="bubble_desc">사용 가능한 안전한 비밀번호 입니다.</p>
+            </div>
+            <div class="bubble" id="bubble_power">
+              <span>강력한 비밀번호</span>
+              <span><img src="/sign_up_in_re/icon/pw/power.png" alt="" /></span>
+              <p class="bubble_desc">예측이 어려운 강력한 비밀번호입니다.</p>
             </div>
           </div>
-          <div
-            class="blue_btn"
-            id="sign_up_btn"
-            OnClick="location.href ='#'"
-            style="cursor: pointer"
-          >
-            <span> 약관 동의하고 가입하기 </span>
-          </div>
-          <div class="sign_up_etc">
-            <nav>
-              <ul>
-                <li OnClick="location.href ='#'" style="cursor: pointer">
-                  HOME
-                </li>
-                <li OnClick="location.href ='#'" style="cursor: pointer">
-                  아이디찾기
-                </li>
-                <li OnClick="location.href ='#'" style="cursor: pointer">
-                  비밀번호 찾기
-                </li>
-                <li OnClick="location.href ='#'" style="cursor: pointer">
-                  로그인 하기
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
+        </div>
+        <!-- 약관 동의 가입 버튼 -->
+        <div class="blue_btn" id="sign_up_btn" OnClick="location.href ='#'" style="cursor: pointer">
+          <span> 약관 동의하고 가입하기 </span>
+        </div>
+        <!-- home, 아이디 찾기, 비밀번호 찾기, 로그인하기 버튼 -->
+        <div class="sign_up_etc">
+          <nav>
+            <ul>
+              <li OnClick="location.href ='#'" style="cursor: pointer">
+                HOME
+              </li>
+              <li OnClick="location.href ='#'" style="cursor: pointer">
+                아이디찾기
+              </li>
+              <li OnClick="location.href ='#'" style="cursor: pointer">
+                비밀번호 찾기
+              </li>
+              <li OnClick="location.href ='#'" style="cursor: pointer">
+                로그인 하기
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>

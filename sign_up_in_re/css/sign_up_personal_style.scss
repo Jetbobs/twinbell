@@ -96,7 +96,7 @@ body {
       display: flex;
       flex-direction: column;
       width: 100%;
-
+      // 상단 네비바
       .upper_menu {
         width: 100%;
         border-bottom: 1px solid $color-header-border;
@@ -108,7 +108,7 @@ body {
         nav {
           ul {
             list-style: none;
-
+            // 상단 네비바 버튼
             .quick_menu {
               border: 1px solid $color-header-border;
               float: left;
@@ -116,12 +116,12 @@ body {
             }
           }
         }
-
+        // 홈, 로그인 ,회원가입 wrap
         .login_btn_wrap {
           nav {
             ul {
               list-style: none;
-
+              // 홈, 로그인 ,회원가입 버튼
               .login_btn {
                 font-size: $login-btn-size;
                 float: left;
@@ -136,7 +136,7 @@ body {
         }
       }
 
-      //2번째 메뉴 네비바
+      //메인 메뉴 네비 바 wrap
       #menu {
         border-bottom: 1px solid $color-header-border;
         padding: 20px 10%;
@@ -146,13 +146,13 @@ body {
 
         .logo_menu_wrap {
           display: flex;
-
+        // 로고
           .logo {
             display: flex;
             align-items: center;
             padding-right: 80px;
           }
-
+          // 메인 메뉴 네비바
           .menu {
             display: flex;
 
@@ -174,7 +174,7 @@ body {
       }
     }
 
-    //main
+// 메인 본문
     main {
       width: 100%;
       display: flex;
@@ -188,7 +188,7 @@ body {
         flex-direction: column;
         margin-top: 80px;
         padding: 0% 10%;
-
+// 페이지 타이틀
         .title {
           margin-bottom: 10px;
 
@@ -196,7 +196,7 @@ body {
             text-align: center;
           }
         }
-
+// 페이지 서브 타이틀
         .sub_title {
           margin-bottom: 10px;
 
@@ -215,16 +215,17 @@ body {
             border: 1px solid #9f9f9f;
           }
         }
-
+// 회원가입 양식
         .sign_up {
           width: 1288px;
           display: flex;
           justify-content: space-between;
           margin-bottom: 40px;
           position: relative;
+          // 회원 가입 양식 
           .sign_up_wrap {
             width: 580px;
-
+            // 회원 가입 양식 타이틀
             .title {
               p {
                 font-size: 20px;
@@ -235,21 +236,21 @@ body {
                 }
               }
             }
-
+            // 회원 가입 양식 서브타이틀
             .sub_title {
               color: #21d59b;
             }
           }
-
+// 회원 가입 양식 약관 관련
           #policy {
             .title {
               margin-bottom: 20px;
             }
-
+// 이용약관 wrap
             #service_policy {
               margin-bottom: 50px;
             }
-
+//개인정보수집 및 이용동의 약관 wrap
             #info_policy {
               margin-bottom: 30px;
               .policy {
@@ -260,13 +261,14 @@ body {
             }
 
             .policy_wrap {
+              // 상단 회색 섹션
               .grey_header {
                 background-color: $color-grey-header;
                 padding: 10px 20px;
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
               }
-
+// 약관 본문
               .policy {
                 overflow: auto;
                 padding: 30px 20px;
@@ -281,7 +283,7 @@ body {
                   font-size: 12px;
                 }
               }
-
+// 약관 본문 스크롤바
               .policy::-webkit-scrollbar {
                 display: none;
                 width: 10px;
@@ -297,16 +299,16 @@ body {
                 background-color: #fff;
               }
             }
-
+// 수신 관련 라디오 버튼 wrap
             .radio_wrap {
               color: #888888;
-
+// 수신 관련 라디오 버튼 타이틀 
               .title {
                 p {
                   font-size: 15px;
                 }
               }
-
+// 라디오 버튼
               .radio {
                 input {
                   margin-right: 10px;
@@ -318,7 +320,7 @@ body {
                   margin-right: 20px;
                 }
               }
-
+// 라디오 버튼 email 관련
               #radio_email {
                 margin-bottom: 10px;
 
@@ -327,7 +329,7 @@ body {
                   font-size: 15px;
                 }
               }
-
+// 라디오 버튼 sms 관련
               #radio_sms {
                 span {
                   margin-right: 14px;
@@ -336,12 +338,13 @@ body {
               }
             }
           }
-
+// 회원 가입 양식 정보 입력 관련
           #info_input {
+            // 회원정보 입력 타이틀
             .title {
               margin-bottom: 5px;
             }
-
+// 장버 입력
             .input {
               display: flex;
 
@@ -363,7 +366,7 @@ body {
                 outline:none;
               }
             }
-
+// 아이디 입력칸
             #id {
               margin-bottom: 5px;
 
@@ -372,15 +375,15 @@ body {
                 margin-right: 5px;
               }
             }
-
+// 비밀번호 입력칸
             #pw {
               margin-bottom: 5px;
             }
-
+// 비밀번호 확인 입력칸
             #pw_check {
               margin-bottom: 20px;
             }
-
+// 휴대폰 인증 wrap
             .verification_wrap {
               margin-bottom: 20px;
 
@@ -390,7 +393,7 @@ body {
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
               }
-
+// 휴대폰 인증 본문
               .verification {
                 box-sizing: border-box;
                 border: 1px solid $color-grey-header;
@@ -404,10 +407,12 @@ body {
                 span {
                   font-size: 18px;
                 }
+                // 휴대폰 인증 설명 텍스트
                 .verification_desc {
                   color: #717171;
                   font-size: 15px;
                 }
+                // 휴대폰 인증 모달 팝업
                 .modal{
                   input[id="popup"] {
                       display: none;
@@ -456,7 +461,7 @@ body {
                   
                                   .modal_phone {
                                       font-weight: bold;
-                  
+                  // 모달 타이틀
                                       .modal_title {
                                           background-color: #2C3845;
                                           color: #fff;
@@ -466,7 +471,7 @@ body {
                   
                                       .info_wrap {
                                           padding: 30px 20px;
-                  
+                  // 모달 휴대폰 입력칸
                                           .modal_input {
                                               margin-bottom: 20px;
                                               p {
@@ -534,6 +539,7 @@ body {
                                                   text-align: center;
                                               }
                                           }
+                                          // 모달 인증번호 문자 발송 버튼
                                           #send{
                                               margin-bottom: 20px;
                                               span{
@@ -582,7 +588,7 @@ body {
               }
               }
             }
-
+// 회원가입 유형 선택
             .radio_info {
               background-color: #f9f9f9;
               border: 1px solid #d5d5d5;
@@ -606,6 +612,7 @@ body {
               margin-bottom: 15px;
             }
           }
+          // 비밀번호 입력칸 말풍선
           .bubble {
             position: absolute;
             width: 240px;
@@ -623,7 +630,6 @@ body {
             //   font-weight: bold;
             // }
             span {
-              color: #f73e22;
               font-size: 13px;
               font-weight: bold;
               img {
@@ -660,7 +666,32 @@ body {
             left: -18px;
             top: 13px;
           }
+          #bubble_na{
+            display: none;
+            span{
+              color: #f73e22;
+            }
+          }
+          #bubble_low{
+            display: none;
+            span{
+              color: #f73e22;
+            }
+          }
+          #bubble_safe{
+            display: none;
+            span{
+              color: #49BA7C;
+            }
+          }
+          #bubble_power{
+            display: none;
+            span{
+              color: #49BA7C;
+            }
+          }
         }
+        // 파랑 기본 버튼
         .blue_btn {
           cursor: pointer;
           font-size: 18px;
@@ -673,11 +704,13 @@ body {
             display: inline;
           }
         }
+        //약관 동의 가입 버튼
         #sign_up_btn {
           font-size: 25px;
           padding: 10px 210px;
           margin-bottom: 20px;
         }
+        // home, 아이디 찾기, 비밀번호 찾기, 로그인하기 버튼
         .sign_up_etc {
           font-size: 15px;
           color: #878787;

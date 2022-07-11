@@ -12,8 +12,11 @@
 </head>
 
 <body>
+    <!-- html 전체 wrap -->
     <div class="app" id="app">
+        <!-- header -->
     <header>
+        <!-- 상단 네비바 -->
         <div class="upper_menu">
             <nav>
                 <ul>
@@ -23,6 +26,7 @@
                     <a href="#"><li class="quick_menu">견적문의</li></a>
                 </ul>
             </nav>
+            <!-- 홈, 로그인 ,회원가입 wrap -->
             <div class="login_btn_wrap">
                 <nav>
                     <ul>
@@ -33,11 +37,14 @@
                 </nav>
             </div>
         </div>
+        <!-- 메인 메뉴 네비 바 wrap -->
         <div id="menu">
+            <!-- 로고 -->
             <div class="logo_menu_wrap">
                 <div class="logo">
                         <a href="#"><img src="../logo/logo.png" alt=""></a>
                 </div>
+                <!-- 메인 메뉴 네비바 -->
                 <div class="menu">
                     <nav>
                         <ul>
@@ -54,25 +61,32 @@
                     </nav>
                 </div>
             </div>
+            <!-- 전체 카테고리 햄버거 메뉴 버튼 -->
             <div class="category_menu_wrap" OnClick="location.href ='#'" style="cursor:pointer;">
                 <i class="fa-solid fa-bars"></i>
                 <span>전체카테고리</span>
             </div>
         </div>
     </header>
+    <!-- 메인 본문 -->
     <main>
         <section id="main">
+            <!-- 페이지 타이틀 -->
             <div class="title">
                 <h2>트윈벨미디어의 서비스를 경험해보세요</h2>
             </div>
+            <!-- 페이지 서브 타이틀 -->
             <div class="sub_title">
                 <p>트윈벨 미디어의 회원으로 가입하시면</p>
                 <p>쿠폰 및 다양한 이벤트 혜택을 받을 수 있습니다.</p>
             </div>
+            <!-- 회원가입  wrap -->
             <div class="sign_up_wrap">
+                <!-- 트윈벨 기본 회원가입 사각형 -->
                 <div class="sign_up_btn" id="twinbell_sign" OnClick="location.href ='#'" style="cursor:pointer;">
                     <span>트윈벨 미디어 회원 가입</span>
                 </div>
+                <!-- home, 아이디 찾기, 비밀번호 찾기, 로그인하기 버튼 -->
                 <div class="sign_up_etc">
                     <nav>
                         <ul>
@@ -83,22 +97,28 @@
                         </ul>
                     </nav>
                 </div>
+                <!-- sns 카카오 로그인 사각형 -->
                 <div class="sign_up_btn" OnClick="location.href ='#'" id="kakao_sign" style="cursor:pointer;">
                     <span>카카오 로그인 / 회원가입</span>
                 </div>
+                <!-- sns 네이버 로그인 사각형 -->
                 <div class="sign_up_btn" OnClick="location.href ='#'" id="naver_sign" style="cursor:pointer;">
                     <span>NAVER 로그인 / 회원가입</span>
                 </div>
             </div>
+            <!-- sns 로그인 / 회원가입 원형 버튼 wrap -->
             <div class="sns_btn_wrap">
                 <nav>
                     <ul>
+                        <!-- sns 페이스북 로그인 원형 -->
                         <li class="sns_btn">
                             <a href="#"><img src="./icon/sns/facebook_sns_btn.png" alt="페이스북"></a>
                         </li>
+                        <!-- sns 애플 로그인 원형 -->
                         <li class="sns_btn">
                             <a href="#"><img src="./icon/sns/apple_sns_btn.png" alt="애플"></a>
                         </li>
+                        <!-- sns 구글 로그인 원형 -->
                         <li class="sns_btn">
                             <a href="#"><img src="./icon/sns/google_sns_btn.png" alt="구글"></a>
                         </li>

@@ -92,6 +92,7 @@ body {
       flex-direction: column;
       width: 100%;
 
+      // 상단 네비바
       .upper_menu {
         width: 100%;
         border-bottom: 1px solid $color-header-border;
@@ -104,6 +105,7 @@ body {
           ul {
             list-style: none;
 
+            // 상단 네비바 버튼
             .quick_menu {
               border: 1px solid $color-header-border;
               float: left;
@@ -112,11 +114,13 @@ body {
           }
         }
 
+        // 홈, 로그인 ,회원가입 wrap
         .login_btn_wrap {
           nav {
             ul {
               list-style: none;
 
+              // 홈, 로그인 ,회원가입 버튼
               .login_btn {
                 font-size: $login-btn-size;
                 float: left;
@@ -131,7 +135,7 @@ body {
         }
       }
 
-      //2번째 메뉴 네비바
+      //메인 메뉴 네비 바 wrap
       #menu {
         border-bottom: 1px solid $color-header-border;
         padding: 20px 10%;
@@ -142,12 +146,14 @@ body {
         .logo_menu_wrap {
           display: flex;
 
+          // 로고
           .logo {
             display: flex;
             align-items: center;
             padding-right: 80px;
           }
 
+          // 메인 메뉴 네비바
           .menu {
             display: flex;
 
@@ -169,7 +175,7 @@ body {
       }
     }
 
-    //main
+    // 메인 본문
     main {
       display: flex;
       justify-content: center;
@@ -180,7 +186,7 @@ body {
         align-items: center;
         flex-direction: column;
         margin-top: 80px;
-
+// 페이지 타이틀
         .title {
           margin-bottom: 50px;
 
@@ -188,11 +194,12 @@ body {
             text-align: center;
           }
         }
+        // 회원가입 축하 텍스트
         .congrat_text {
           font-size: 23px;
           margin-bottom: 30px;
         }
-
+        // 페이지 서브 타이틀
         .sub_title {
           margin-bottom: 70px;
 
@@ -213,6 +220,7 @@ body {
             display: inline;
           }
         }
+        // 메인으로 돌아가기 버튼
         #goto_main {
           width: 440px;
           text-align: center;
