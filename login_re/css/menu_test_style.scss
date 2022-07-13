@@ -157,7 +157,7 @@ body {
 
           .menu {
             display: flex;
-            nav.main_menu {
+            nav {
               ul {
                 display: flex;
                 justify-content: center;
@@ -166,6 +166,7 @@ body {
                 li {
                   float: left;
                   padding: 20px;
+
                   // .sub_menu_wrap {
                   //   #sub_menu {
                   //     padding: 15px 10%;
@@ -197,42 +198,42 @@ body {
                   //   }
                   // }
                   .sub_menu_wrapper{
-                    display: none;
+                    display: flex;
                     position: absolute;
                     width: 100%;
                     left: 0px;
                     background-color: #fff;
                     z-index: 1;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 1s ease-in;
                     cursor: default;
-                    ul{
-                      display: flex;
-                      flex-direction: column;
-                      align-items: flex-start;
-                      padding: 0 calc(10% + 235px);
+                    nav{
+                      width: 100%;
+                      ul{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding-left:calc(10% + 235px);
+                      }
+                      }
+                      .menu_img{
+                        visibility: hidden;
+                        opacity: 0;
+                        margin-right: calc(10%);
+                        img{
+                          padding-top: 50px;
+                          width: 100%;
+                        }
                     }
-                  }
-                  .bg_dark{
-                    display: none;
-                    width: 100%;
-                    position: absolute;
-                    height: 100vh;
-                    background-color: #000;
-                    left: 0;
-                    opacity: 0.8;
-                    cursor: default;
                   }
                 }
                 li:hover{
-                  // .bg_dark{
-                  //   display: block;
-                  // }
                 }
-                #digital_print:hover{
-                  .sub_menu_wrapper{
-                    display: block;
-                  }
-                  .bg_dark{
-                    display: block;
+                #digital_print:hover, #high_print:hover, #commercial_print:hover, #mypage:hover, #customer_service:hover, #event:hover{
+                  .sub_menu_wrapper, .menu_img{
+                    opacity: 1;
+                    visibility: visible;
                   }
                 }
               }
