@@ -5,7 +5,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,26 +12,26 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -40,8 +39,7 @@ html *[lang="en"] body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -77,112 +75,66 @@ h2 {
 body #app {
   height: 100%;
 }
-
 body #app a {
   text-decoration: none;
   color: inherit;
 }
-
 body #app header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 80px;
 }
-
 body #app header .upper_menu {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 10%;
 }
-
 body #app header .upper_menu nav ul .quick_menu {
   border: 1px solid #e0e0e0;
   float: left;
   padding: 15px 30px;
 }
-
 body #app header .upper_menu .login_btn_wrap nav ul .login_btn {
   font-size: 14px;
   float: left;
   padding: 0 10px;
 }
-
 body #app header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
   border-right: 1px solid #000;
 }
-
 body #app header #menu {
   border-bottom: 1px solid #e0e0e0;
   padding: 20px 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 }
-
 body #app header #menu .logo_menu_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 body #app header #menu .logo_menu_wrap .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-right: 80px;
 }
-
 body #app header #menu .logo_menu_wrap .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul li {
   float: left;
   padding: 20px;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 100%;
@@ -191,45 +143,31 @@ body #app header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper {
   z-index: 1;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
   cursor: default;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper nav {
   width: 100%;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: calc(10% + 235px);
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper .menu_img {
   visibility: hidden;
   opacity: 0;
-  margin-right: calc(10%);
+  margin-right: 10%;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper .menu_img img {
   padding-top: 50px;
   width: 100%;
 }
-
 body #app header #menu .logo_menu_wrap .menu nav ul #digital_print:hover .sub_menu_wrapper, body #app header #menu .logo_menu_wrap .menu nav ul #digital_print:hover .menu_img, body #app header #menu .logo_menu_wrap .menu nav ul #high_print:hover .sub_menu_wrapper, body #app header #menu .logo_menu_wrap .menu nav ul #high_print:hover .menu_img, body #app header #menu .logo_menu_wrap .menu nav ul #commercial_print:hover .sub_menu_wrapper, body #app header #menu .logo_menu_wrap .menu nav ul #commercial_print:hover .menu_img, body #app header #menu .logo_menu_wrap .menu nav ul #mypage:hover .sub_menu_wrapper, body #app header #menu .logo_menu_wrap .menu nav ul #mypage:hover .menu_img, body #app header #menu .logo_menu_wrap .menu nav ul #customer_service:hover .sub_menu_wrapper, body #app header #menu .logo_menu_wrap .menu nav ul #customer_service:hover .menu_img, body #app header #menu .logo_menu_wrap .menu nav ul #event:hover .sub_menu_wrapper, body #app header #menu .logo_menu_wrap .menu nav ul #event:hover .menu_img {
   opacity: 1;
   visibility: visible;
 }
-
 body #app header .all_menu {
   display: none;
   position: fixed;
@@ -239,90 +177,62 @@ body #app header .all_menu {
   padding: 0px 10%;
   z-index: 1;
 }
-
 body #app header .all_menu .close_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   padding: 15px 0;
 }
-
 body #app header .all_menu .close_btn img {
   width: 40px;
   height: 40px;
 }
-
 body #app header .all_menu nav .menu_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 body #app header .all_menu nav .menu_wrap .menu {
   width: 230px;
 }
-
 body #app header .all_menu nav .menu_wrap .menu .title {
   border-bottom: 1px solid #868686;
   margin-bottom: 10px;
 }
-
 body #app header .all_menu nav .menu_wrap .menu .title p {
   color: #007dfb;
   font-size: 24px;
   padding-bottom: 15px;
 }
-
 body #app header .all_menu nav .menu_wrap .menu .sub_menu ul li {
   color: #959595;
   padding: 10px 0;
 }
-
 body #app header .all_menu nav .menu_wrap:first-child {
   margin-bottom: 15px;
 }
-
 body #app main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
 }
-
 body #app main #main {
   width: 434px;
 }
-
 body #app main #main .title {
   margin-bottom: 100px;
 }
-
 body #app main #main .title h2 {
   text-align: center;
 }
-
 body #app main #main .input_wrap {
   width: 430px;
 }
-
 body #app main #main .input_wrap #id_input {
   margin-bottom: 30px;
 }
-
 body #app main #main .input_wrap .info_input {
   width: 100%;
   border-bottom: 1px solid #999;
 }
-
 body #app main #main .input_wrap .info_input input {
   width: 100%;
   font-size: 18px;
@@ -331,93 +241,61 @@ body #app main #main .input_wrap .info_input input {
   padding: 10px 0;
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
-
 body #app main #main .input_wrap .info_input input:focus {
   outline: none;
 }
-
-body #app main #main .input_wrap .info_input input::-webkit-input-placeholder {
+body #app main #main .input_wrap .info_input input::-moz-placeholder {
   font-size: 15px;
   color: #c4c4c4;
   font-weight: bolder;
 }
-
 body #app main #main .input_wrap .info_input input:-ms-input-placeholder {
   font-size: 15px;
   color: #c4c4c4;
   font-weight: bolder;
 }
-
-body #app main #main .input_wrap .info_input input::-ms-input-placeholder {
-  font-size: 15px;
-  color: #c4c4c4;
-  font-weight: bolder;
-}
-
 body #app main #main .input_wrap .info_input input::placeholder {
   font-size: 15px;
   color: #c4c4c4;
   font-weight: bolder;
 }
-
 body #app main #main .input_etc_wrap {
   padding: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 430px;
 }
-
 body #app main #main .input_etc_wrap span,
 body #app main #main .input_etc_wrap label {
   font-size: 16px;
   color: #222;
 }
-
 body #app main #main .input_etc_wrap label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 body #app main #main .input_etc_wrap input {
   margin-right: 10px;
 }
-
 body #app main #main .input_etc_wrap .id_remember {
   width: 100%;
 }
-
-body #app main #main .input_etc_wrap .id_remember input[type="checkbox"] {
+body #app main #main .input_etc_wrap .id_remember input[type=checkbox] {
   width: 20px;
   height: 20px;
 }
-
 body #app main #main .input_etc_wrap .find_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   width: 100%;
 }
-
 body #app main #main .input_etc_wrap .find_wrap .find_btn:first-child span {
   padding-right: 10px;
   border-right: 1px solid #000;
 }
-
 body #app main #main .input_etc_wrap .find_wrap .find_btn:last-child span {
   padding-left: 10px;
 }
-
 body #app main #main .login_btn {
   background-color: #000;
   border-radius: 20px;
@@ -425,26 +303,17 @@ body #app main #main .login_btn {
   padding: 10px 0;
   margin: 30px 0;
 }
-
 body #app main #main .login_btn span {
   color: #fff;
   font-size: 18px;
 }
-
 body #app main #main .sns_btn_wrap nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body #app main #main .sns_btn_wrap nav ul li {
   float: left;
 }
-
 body #app main #main .sns_btn_wrap nav ul li:not(:last-child) {
   margin-right: 10px;
-}
-/*# sourceMappingURL=menu_test_style.css.map */
+}/*# sourceMappingURL=menu_test_style.css.map */

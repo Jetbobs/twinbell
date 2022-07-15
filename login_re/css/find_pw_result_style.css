@@ -5,7 +5,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,26 +12,26 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -40,8 +39,7 @@ html *[lang="en"] body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -62,57 +60,42 @@ h2 {
 body #app {
   height: 100%;
 }
-
 body #app a {
   text-decoration: none;
   color: inherit;
 }
-
 body #app main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
 }
-
 body #app main #main {
   width: 434px;
 }
-
 body #app main #main .title {
   margin-bottom: 15px;
 }
-
 body #app main #main .title h2 {
   text-align: center;
 }
-
 body #app main #main .sub_title {
   text-align: center;
   font-size: 18px;
   color: #c4c4c4;
   margin-bottom: 40px;
 }
-
 body #app main #main .find_wrap {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 15px;
   margin-bottom: 40px;
 }
-
 body #app main #main .find_wrap .find_active {
   width: 215px;
   background-color: #000;
   color: #fff;
   padding: 10px 0;
 }
-
 body #app main #main .find_wrap .find_disabled {
   width: 215px;
   background-color: #f9f9f9;
@@ -120,56 +103,42 @@ body #app main #main .find_wrap .find_disabled {
   padding: 10px 0;
   border: 1px solid #d5d5d5;
 }
-
 body #app main #main .result_desc {
   margin-bottom: 30px;
 }
-
 body #app main #main .result_desc p {
   text-align: center;
   font-size: 17px;
   color: #636363;
 }
-
 body #app main #main .result_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 5px;
 }
-
 body #app main #main .result_wrap .result span {
   font-size: 40px;
   text-align: center;
 }
-
 body #app main #main .result_wrap .copy_btn span {
   font-size: 12px;
   background-color: #007dfb;
   color: #fff;
   padding: 5px;
 }
-
 body #app main #main .input_wrap {
   width: 430px;
 }
-
 body #app main #main .input_wrap #name_input,
 body #app main #main .input_wrap #phone_input {
   margin-bottom: 30px;
 }
-
 body #app main #main .input_wrap .info_input {
   width: 100%;
   border-bottom: 1px solid #999;
 }
-
 body #app main #main .input_wrap .info_input input {
   width: 100%;
   font-size: 18px;
@@ -178,35 +147,24 @@ body #app main #main .input_wrap .info_input input {
   padding: 10px 0;
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
-
 body #app main #main .input_wrap .info_input input:focus {
   outline: none;
 }
-
-body #app main #main .input_wrap .info_input input::-webkit-input-placeholder {
+body #app main #main .input_wrap .info_input input::-moz-placeholder {
   font-size: 15px;
   color: #c4c4c4;
   font-weight: bolder;
 }
-
 body #app main #main .input_wrap .info_input input:-ms-input-placeholder {
   font-size: 15px;
   color: #c4c4c4;
   font-weight: bolder;
 }
-
-body #app main #main .input_wrap .info_input input::-ms-input-placeholder {
-  font-size: 15px;
-  color: #c4c4c4;
-  font-weight: bolder;
-}
-
 body #app main #main .input_wrap .info_input input::placeholder {
   font-size: 15px;
   color: #c4c4c4;
   font-weight: bolder;
 }
-
 body #app main #main .login_btn {
   background-color: #000;
   border-radius: 20px;
@@ -214,9 +172,7 @@ body #app main #main .login_btn {
   padding: 10px 0;
   margin-top: 40px;
 }
-
 body #app main #main .login_btn span {
   color: #fff;
   font-size: 18px;
-}
-/*# sourceMappingURL=find_pw_result_style.css.map */
+}/*# sourceMappingURL=find_pw_result_style.css.map */

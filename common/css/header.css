@@ -5,7 +5,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,180 +12,121 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 80px;
 }
-
 header .upper_menu {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 10%;
 }
-
 header .upper_menu nav ul {
   list-style: none;
 }
-
 header .upper_menu nav ul .quick_menu {
   border: 1px solid #e0e0e0;
   float: left;
   padding: 15px 30px;
 }
-
 header .upper_menu .login_btn_wrap nav ul {
   list-style: none;
 }
-
 header .upper_menu .login_btn_wrap nav ul .login_btn {
   font-size: 14px;
   float: left;
   padding: 0 10px;
 }
-
 header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
   border-right: 1px solid #000;
 }
-
 header #menu {
   border-bottom: 1px solid #e0e0e0;
   padding: 20px 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 }
-
 header #menu .logo_menu_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header #menu .logo_menu_wrap .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-right: 80px;
 }
-
 header #menu .logo_menu_wrap .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header #menu .logo_menu_wrap .menu nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 header #menu .logo_menu_wrap .menu nav ul li {
   float: left;
   padding: 20px;
 }
-
 header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 100%;
   left: 0px;
   background-color: #fff;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
   cursor: default;
 }
-
 header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper nav {
   width: 100%;
 }
-
 header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: calc(10% + 235px);
 }
-
 header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper .menu_img {
   visibility: hidden;
   opacity: 0;
-  margin-right: calc(10%);
+  margin-right: 10%;
 }
-
 header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper .menu_img img {
   padding-top: 50px;
   width: 100%;
 }
-
 header #menu .logo_menu_wrap .menu nav ul #digital_print:hover .sub_menu_wrapper,
 header #menu .logo_menu_wrap .menu nav ul #digital_print:hover .menu_img,
 header #menu .logo_menu_wrap .menu nav ul #high_print:hover .sub_menu_wrapper,
@@ -202,7 +142,6 @@ header #menu .logo_menu_wrap .menu nav ul #event:hover .menu_img {
   opacity: 1;
   visibility: visible;
 }
-
 header .all_menu {
   display: none;
   position: fixed;
@@ -212,52 +151,35 @@ header .all_menu {
   padding: 0px 10%;
   z-index: 1;
 }
-
 header .all_menu .close_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   padding: 15px 0;
 }
-
 header .all_menu .close_btn img {
   width: 40px;
   height: 40px;
 }
-
 header .all_menu nav .menu_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header .all_menu nav .menu_wrap .menu {
   width: 230px;
 }
-
 header .all_menu nav .menu_wrap .menu .title {
   border-bottom: 1px solid #868686;
   margin-bottom: 10px;
 }
-
 header .all_menu nav .menu_wrap .menu .title p {
   color: #007dfb;
   font-size: 24px;
   padding-bottom: 15px;
 }
-
 header .all_menu nav .menu_wrap .menu .sub_menu ul li {
   color: #959595;
   padding: 10px 0;
 }
-
 header .all_menu nav .menu_wrap:first-child {
   margin-bottom: 15px;
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

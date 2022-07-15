@@ -1,0 +1,11 @@
+header {
+  margin-bottom: 0;
+}
+
+.slide_banner .swiper {
+  width: 1920px;
+  height: 425px;
+}
+.slide_banner .swiper .swiper-button-prev, .slide_banner .swiper .swiper-button-next {
+  color: #fff;
+}/*# sourceMappingURL=slide.css.map */

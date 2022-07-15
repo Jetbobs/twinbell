@@ -5,7 +5,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,26 +12,26 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -40,8 +39,7 @@ html *[lang="en"] body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -62,114 +60,76 @@ h2 {
 body #app {
   height: 100%;
 }
-
 body #app a {
   text-decoration: none;
   color: inherit;
 }
-
 body #app main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
 }
-
 body #app main #main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
-
 body #app main #main .title {
   margin-bottom: 50px;
 }
-
 body #app main #main .title h2 {
   text-align: center;
 }
-
 body #app main #main .sub_title {
   margin-bottom: 70px;
 }
-
 body #app main #main .sub_title p {
   color: #5d5d5d;
   font-size: 20px;
   text-align: center;
 }
-
 body #app main #main .sign_up_wrap {
   width: 434px;
 }
-
 body #app main #main .sign_up_wrap .sign_up_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body #app main #main .sign_up_wrap .sign_up_btn span {
   font-size: 20px;
   color: #fff;
 }
-
 body #app main #main .sign_up_wrap #twinbell_sign {
   background-color: #007dfb;
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up_wrap #kakao_sign {
   background-color: #f7e600;
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up_wrap #naver_sign {
   background-color: #19ce60;
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up_wrap #facebook_sign {
   background-color: #3a5ca9;
 }
-
 body #app main #main .sign_up_wrap .sign_up_etc {
   margin-bottom: 80px;
   font-size: 15px;
   color: #878787;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body #app main #main .sign_up_wrap .sign_up_etc nav ul li {
   float: left;
   padding: 0px 5px;
 }
-
 body #app main #main .sign_up_wrap .sign_up_etc nav ul li:not(:last-child) {
   border-right: 2px solid #878787;
 }
-
 body #app main #main .sns_btn_wrap nav ul li {
   float: left;
   margin-right: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

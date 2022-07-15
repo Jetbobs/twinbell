@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,26 +12,26 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -40,8 +39,7 @@ html *[lang="en"] body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -53,176 +51,121 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
 .all .header_wrap {
   width: 100%;
   height: 10%;
 }
-
 .all .header_wrap .header1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 1px solid #E0E0E0;
 }
-
 .all .header_wrap .header1 .h1_wrap {
   width: 40%;
 }
-
 .all .header_wrap .header1 .h1_wrap .h1_sec1 {
   width: 30%;
 }
-
 .all .header_wrap .header1 .h1_wrap .h1_sec2 {
   width: 20%;
 }
-
 .all .header_wrap .header1 .h1_wrap .h1_sec3 {
   width: 25%;
 }
-
 .all .header_wrap .header1 .h1_wrap .h1_sec4 {
   width: 25%;
 }
-
 .all .header_wrap .header1 .h1_wrap .h1_sec1 p, .all .header_wrap .header1 .h1_wrap .h1_sec2 p, .all .header_wrap .header1 .h1_wrap .h1_sec3 p, .all .header_wrap .header1 .h1_wrap .h1_sec4 p {
   padding: 5px 10px;
   text-align: center;
   border: 1px solid #E0E0E0;
 }
-
 .all .header_wrap .header2 {
   width: 100%;
   height: 70%;
   border: 1px solid #E0E0E0;
 }
-
 .all .header_wrap .header2 .h2_wrap {
   height: 100%;
 }
-
 .all .header_wrap .header2 .h2_wrap .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: start;
+  align-items: center;
   padding: 0 70px 5px 5px;
 }
-
 .all .header_wrap .header2 .h2_wrap .h2_menu_wrap {
   height: 100%;
   width: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .all .header_wrap .header2 .h2_wrap .h2_menu_wrap .menu1, .all .header_wrap .header2 .h2_wrap .h2_menu_wrap .menu2, .all .header_wrap .header2 .h2_wrap .h2_menu_wrap .menu3, .all .header_wrap .header2 .h2_wrap .h2_menu_wrap .menu4, .all .header_wrap .header2 .h2_wrap .h2_menu_wrap .menu5, .all .header_wrap .header2 .h2_wrap .h2_menu_wrap .menu6 {
   text-align: center;
   height: 100%;
   padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .all .main {
   height: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .all .main .find_wrap {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 430px;
 }
-
 .all .main .find_wrap .id_pw_title_wrap {
   width: 100%;
   padding: 20px 0;
 }
-
 .all .main .find_wrap .id_pw_title_wrap .id_pw_title p {
   text-align: center;
   font-size: 40px;
   color: #000;
   padding: 10px 0;
 }
-
 .all .main .find_wrap .id_pw_title_wrap .id_pw_subtitle p {
   text-align: center;
   font-size: 18px;
   color: #C4C4C4;
 }
-
 .all .main .find_wrap .find_id_pw_wrap {
   height: 45%;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .all .main .find_wrap .find_id_pw_wrap .id_pw_btn_wrap .find_id_btn {
   width: 50%;
   background-color: #000;
   padding: 10px 0;
 }
-
 .all .main .find_wrap .find_id_pw_wrap .id_pw_btn_wrap .find_id_btn p {
   text-align: center;
   font-size: 15px;
   color: #fff;
 }
-
 .all .main .find_wrap .find_id_pw_wrap .id_pw_btn_wrap .find_pw_btn {
   width: 50%;
   background-color: #f9f9f9;
   padding: 10px 0;
 }
-
 .all .main .find_wrap .find_id_pw_wrap .id_pw_btn_wrap .find_pw_btn p {
   color: #AEAEAE;
   text-align: center;
   font-size: 15px;
 }
-
 .all .main .find_wrap .id_pw_input_wrap {
   width: 100%;
 }
-
 .all .main .find_wrap .id_pw_input_wrap .id_input, .all .main .find_wrap .id_pw_input_wrap .phone_input, .all .main .find_wrap .id_pw_input_wrap .email_input {
   width: 100%;
   border-bottom: 1px solid #999999;
   margin-bottom: 15px;
 }
-
 .all .main .find_wrap .id_pw_input_wrap .id_input input, .all .main .find_wrap .id_pw_input_wrap .phone_input input, .all .main .find_wrap .id_pw_input_wrap .email_input input {
   font-size: 18px;
   border: none;
@@ -230,71 +173,54 @@ html, body {
   font-weight: bold;
   padding: 10px 0;
 }
-
 .all .main .find_wrap .id_pw_input_wrap .id_input input:focus, .all .main .find_wrap .id_pw_input_wrap .phone_input input:focus, .all .main .find_wrap .id_pw_input_wrap .email_input input:focus {
   outline: none;
 }
-
-.all .main .find_wrap .id_pw_input_wrap .id_input input::-webkit-input-placeholder, .all .main .find_wrap .id_pw_input_wrap .phone_input input::-webkit-input-placeholder, .all .main .find_wrap .id_pw_input_wrap .email_input input::-webkit-input-placeholder {
+.all .main .find_wrap .id_pw_input_wrap .id_input input::-moz-placeholder, .all .main .find_wrap .id_pw_input_wrap .phone_input input::-moz-placeholder, .all .main .find_wrap .id_pw_input_wrap .email_input input::-moz-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
-
 .all .main .find_wrap .id_pw_input_wrap .id_input input:-ms-input-placeholder, .all .main .find_wrap .id_pw_input_wrap .phone_input input:-ms-input-placeholder, .all .main .find_wrap .id_pw_input_wrap .email_input input:-ms-input-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
-
-.all .main .find_wrap .id_pw_input_wrap .id_input input::-ms-input-placeholder, .all .main .find_wrap .id_pw_input_wrap .phone_input input::-ms-input-placeholder, .all .main .find_wrap .id_pw_input_wrap .email_input input::-ms-input-placeholder {
-  font-size: 15px;
-  color: #C4C4C4;
-  font-weight: bolder;
-}
-
 .all .main .find_wrap .id_pw_input_wrap .id_input input::placeholder, .all .main .find_wrap .id_pw_input_wrap .phone_input input::placeholder, .all .main .find_wrap .id_pw_input_wrap .email_input input::placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
-
 .all .main .find_btn {
   border-radius: 20px;
   background-color: #000;
   padding: 10px 0;
 }
-
 .all .main .find_btn p {
   text-align: center;
   color: #fff;
 }
-
 .all .main .find_result_wrap .find_result_text {
   padding: 15px 0;
 }
-
 .all .main .find_result_wrap .find_result_text p {
   color: #636363;
   font-size: 17px;
   text-align: center;
 }
-
 .all .main .find_result_wrap .find_result {
   border-bottom: 1px solid #999;
 }
-
 .all .main .find_result_wrap .find_result p {
   padding: 5px 0;
   text-align: center;
   font-size: 40px;
 }
-
 .all .main .sns_btn_wrap .sns_btn:not(:last-child) {
   margin-right: 15px;
 }
 
-input::-webkit-input-placeholder {
+input::-moz-placeholder {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
@@ -302,11 +228,6 @@ input:-ms-input-placeholder {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-input::-ms-input-placeholder {
-  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
-}
-
 input::placeholder {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

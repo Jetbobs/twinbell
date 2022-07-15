@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,22 +12,22 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"], html[lang="ko"] {
+html[lang=ko-KR], html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body, html[lang="ko"] body {
+html[lang=ko-KR] body, html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"], html *[lang="en"] {
+html[lang=en], html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body, html *[lang="en"] body {
+html[lang=en] body, html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -42,39 +41,31 @@ html[lang="en"] body, html *[lang="en"] body {
   width: 100vw;
   height: 100vh;
 }
-
 .all_wrap .sign_up_wrap {
   height: 480px;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .title {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .title p {
   font-size: 50px;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .sub_title p {
   font-size: 20px;
   color: #5D5D5D;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .sub_title p:first-child {
   font-size: 23px;
   color: #222;
   padding: 20px 0;
 }
-
 .all_wrap .sign_up_wrap .goto_main_btn {
   width: 440px;
   height: 60px;
   background-color: #007DFB;
 }
-
 .all_wrap .sign_up_wrap .goto_main_btn span {
   color: #fff;
   font-size: 20px;
-}
-/*# sourceMappingURL=sign_up_complete_style.css.map */
+}/*# sourceMappingURL=sign_up_complete_style.css.map */

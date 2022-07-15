@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,26 +12,26 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -40,8 +39,7 @@ html *[lang="en"] body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -61,50 +59,35 @@ h2 {
 body #app {
   height: 100%;
 }
-
 body #app a {
   text-decoration: none;
   color: inherit;
 }
-
 body #app main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
-
 body #app main #main {
   width: 434px;
 }
-
 body #app main #main .title {
   margin-bottom: 100px;
 }
-
 body #app main #main .title h2 {
   text-align: center;
 }
-
 body #app main #main .input_wrap {
   width: 430px;
 }
-
 body #app main #main .input_wrap #id_input {
   margin-bottom: 30px;
 }
-
 body #app main #main .input_wrap .info_input {
   width: 100%;
   border-bottom: 1px solid #999;
 }
-
 body #app main #main .input_wrap .info_input input {
   width: 100%;
   font-size: 18px;
@@ -113,93 +96,61 @@ body #app main #main .input_wrap .info_input input {
   padding: 10px 0;
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
-
 body #app main #main .input_wrap .info_input input:focus {
   outline: none;
 }
-
-body #app main #main .input_wrap .info_input input::-webkit-input-placeholder {
+body #app main #main .input_wrap .info_input input::-moz-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
-
 body #app main #main .input_wrap .info_input input:-ms-input-placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
-
-body #app main #main .input_wrap .info_input input::-ms-input-placeholder {
-  font-size: 15px;
-  color: #C4C4C4;
-  font-weight: bolder;
-}
-
 body #app main #main .input_wrap .info_input input::placeholder {
   font-size: 15px;
   color: #C4C4C4;
   font-weight: bolder;
 }
-
 body #app main #main .input_etc_wrap {
   padding: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 430px;
 }
-
 body #app main #main .input_etc_wrap span,
 body #app main #main .input_etc_wrap label {
   font-size: 16px;
   color: #222;
 }
-
 body #app main #main .input_etc_wrap label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 body #app main #main .input_etc_wrap input {
   margin-right: 10px;
 }
-
 body #app main #main .input_etc_wrap .id_remember {
   width: 100%;
 }
-
-body #app main #main .input_etc_wrap .id_remember input[type="checkbox"] {
+body #app main #main .input_etc_wrap .id_remember input[type=checkbox] {
   width: 20px;
   height: 20px;
 }
-
 body #app main #main .input_etc_wrap .find_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   width: 100%;
 }
-
 body #app main #main .input_etc_wrap .find_wrap .find_btn:first-child span {
   padding-right: 10px;
   border-right: 1px solid #000;
 }
-
 body #app main #main .input_etc_wrap .find_wrap .find_btn:last-child span {
   padding-left: 10px;
 }
-
 body #app main #main .login_btn {
   background-color: #000;
   border-radius: 20px;
@@ -207,26 +158,17 @@ body #app main #main .login_btn {
   padding: 10px 0;
   margin: 30px 0;
 }
-
 body #app main #main .login_btn span {
   color: #fff;
   font-size: 18px;
 }
-
 body #app main #main .sns_btn_wrap nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body #app main #main .sns_btn_wrap nav ul li {
   float: left;
 }
-
 body #app main #main .sns_btn_wrap nav ul li:not(:last-child) {
   margin-right: 10px;
-}
-/*# sourceMappingURL=menu_test_style.css.map */
+}/*# sourceMappingURL=menu_test_style.css.map */

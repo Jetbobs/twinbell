@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
 }
 
 html, body {
@@ -26,47 +26,30 @@ html, body {
 
 .header_section {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .header_section .header1 {
   width: 100%;
   height: 80px;
   background-color: #000;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu {
   padding-left: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 80px;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li .hamburger_menu img {
   width: 10px;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li img {
   color: #B6B6B6;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li span {
   color: #B6B6B6;
   padding-left: 5px;
@@ -74,35 +57,25 @@ html, body {
 }
 
 .all {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .all .sidebar {
   width: 3.5%;
   background-color: #2D2E33;
 }
-
 .all .main {
   width: 96.5%;
   background-color: #3E3E3E;
   padding: 0 5%;
   overflow: auto;
 }
-
 .all .main .btn_unit_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 1022px;
   margin-top: 40px;
 }
-
 .all .main .btn_unit_price .digital_printing,
 .all .main .btn_unit_price .single_printing,
 .all .main .btn_unit_price .name_card_printing,
@@ -114,29 +87,17 @@ html, body {
   height: 58px;
   background-color: #4F4F50;
   font-size: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-collapse: collapse;
 }
-
 .all .main .btn_unit_price_group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 1022px;
   margin-top: 30px;
 }
-
 .all .main .btn_unit_price_group .group_s,
 .all .main .btn_unit_price_group .group_a,
 .all .main .btn_unit_price_group .group_b,
@@ -148,37 +109,27 @@ html, body {
   height: 58px;
   background-color: #4F4F50;
   font-size: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-collapse: collapse;
 }
-
 .all .main .digital_printing_title {
   color: #fff;
   font-size: 30px;
   margin: 40px 0;
 }
-
 .all .main .book_cover_price .book_cover_price_table table {
   color: #fff;
   border-collapse: collapse;
   text-align: center;
   vertical-align: middle;
 }
-
 .all .main .book_cover_price .book_cover_price_table table thead th {
   border: 1px solid #929293;
   text-align: center;
   vertical-align: middle;
 }
-
 .all .main .book_cover_price .book_cover_price_table table tbody tr td {
   text-align: center;
   vertical-align: middle;
@@ -232,35 +183,27 @@ html, body {
 .printing_price_table {
   width: 1162px;
 }
-
 .printing_price_table th {
   height: 52px;
   background-color: #2C3845;
 }
-
 .printing_price_table tbody tr:first-child {
   background-color: #343a41;
 }
-
 .printing_price_table tbody tr:not(:first-child) {
   background-color: #4f4f50;
 }
-
 .printing_price_table tbody td {
   height: 52px;
   width: 300px;
 }
 
 .printing_price_table_wrap1, .printing_price_table_wrap2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .printing_price_table_wrap1 {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .btn_printing_price_table_edit {
@@ -269,15 +212,9 @@ html, body {
   height: 40px;
   background-color: #fea929;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 1220px;
 }
 
@@ -288,11 +225,9 @@ html, body {
 #book_printing_price, #book_printing_price_spring, #book_printing_price_saddle_stitching, #book_printing_price_case_binding, #book_printing_price_special_printing {
   margin-bottom: 50px;
 }
-
 #book_printing_price table tbody tr td, #book_printing_price_spring table tbody tr td, #book_printing_price_saddle_stitching table tbody tr td, #book_printing_price_case_binding table tbody tr td, #book_printing_price_special_printing table tbody tr td {
   height: 52px;
 }
-
 #book_printing_price .printing_way_per, #book_printing_price_spring .printing_way_per, #book_printing_price_saddle_stitching .printing_way_per, #book_printing_price_case_binding .printing_way_per, #book_printing_price_special_printing .printing_way_per {
   width: 317px;
   background-color: #202932;
@@ -302,15 +237,12 @@ html, body {
 #book_cover_price_hot_stamping .printing_price, #book_cover_price_hot_stamping .each_group, #book_cover_price_hot_stamping .both_sides, #book_cover_price_hot_stamping .color_categories, #book_cover_price_uv_epoxy .printing_price, #book_cover_price_uv_epoxy .each_group, #book_cover_price_uv_epoxy .both_sides, #book_cover_price_uv_epoxy .color_categories, #book_cover_price_ganji .printing_price, #book_cover_price_ganji .each_group, #book_cover_price_ganji .both_sides, #book_cover_price_ganji .color_categories, #book_cover_price_end_papers .printing_price, #book_cover_price_end_papers .each_group, #book_cover_price_end_papers .both_sides, #book_cover_price_end_papers .color_categories, #book_cover_price_spring_cover .printing_price, #book_cover_price_spring_cover .each_group, #book_cover_price_spring_cover .both_sides, #book_cover_price_spring_cover .color_categories, #book_cover_price_coating .printing_price, #book_cover_price_coating .each_group, #book_cover_price_coating .both_sides, #book_cover_price_coating .color_categories, #book_cover_price_wing .printing_price, #book_cover_price_wing .each_group, #book_cover_price_wing .both_sides, #book_cover_price_wing .color_categories, #book_cover_price_oshi .printing_price, #book_cover_price_oshi .each_group, #book_cover_price_oshi .both_sides, #book_cover_price_oshi .color_categories, #book_cover_price_fold .printing_price, #book_cover_price_fold .each_group, #book_cover_price_fold .both_sides, #book_cover_price_fold .color_categories {
   background-color: #5e5433;
 }
-
 #book_cover_price_hot_stamping .printing_price_table thead tr th, #book_cover_price_uv_epoxy .printing_price_table thead tr th, #book_cover_price_ganji .printing_price_table thead tr th, #book_cover_price_end_papers .printing_price_table thead tr th, #book_cover_price_spring_cover .printing_price_table thead tr th, #book_cover_price_coating .printing_price_table thead tr th, #book_cover_price_wing .printing_price_table thead tr th, #book_cover_price_oshi .printing_price_table thead tr th, #book_cover_price_fold .printing_price_table thead tr th {
   background-color: #877744;
 }
-
 #book_cover_price_hot_stamping .printing_price_table tbody tr:first-child td, #book_cover_price_uv_epoxy .printing_price_table tbody tr:first-child td, #book_cover_price_ganji .printing_price_table tbody tr:first-child td, #book_cover_price_end_papers .printing_price_table tbody tr:first-child td, #book_cover_price_spring_cover .printing_price_table tbody tr:first-child td, #book_cover_price_coating .printing_price_table tbody tr:first-child td, #book_cover_price_wing .printing_price_table tbody tr:first-child td, #book_cover_price_oshi .printing_price_table tbody tr:first-child td, #book_cover_price_fold .printing_price_table tbody tr:first-child td {
   background-color: rgba(135, 119, 68, 0.5);
 }
-
 #book_cover_price_hot_stamping .both_sides, #book_cover_price_uv_epoxy .both_sides, #book_cover_price_ganji .both_sides, #book_cover_price_end_papers .both_sides, #book_cover_price_spring_cover .both_sides, #book_cover_price_coating .both_sides, #book_cover_price_wing .both_sides, #book_cover_price_oshi .both_sides, #book_cover_price_fold .both_sides {
   width: 317px;
   height: 103px;
@@ -327,27 +259,22 @@ html, body {
 #paper_print_price .printing_price_table {
   width: 1335px;
 }
-
 #paper_print_price table tbody tr td {
   height: 35px;
   width: 140px;
 }
-
 #paper_print_price .each_group {
   width: 332px;
   height: 146px;
 }
-
 #paper_print_price .printing_price_table thead th {
   height: 48px;
   width: 140px;
 }
-
 #paper_print_price .printing_price_table_categories1 td {
   height: 55px;
   width: 140px;
 }
-
 #paper_print_price .printing_price_table_categories2 td {
   height: 42px;
   width: 140px;
@@ -366,5 +293,4 @@ html, body {
 
 .main::-webkit-scrollbar-track {
   background-color: #3e3e3e;
-}
-/*# sourceMappingURL=unit_price_style.css.map */
+}/*# sourceMappingURL=unit_price_style.css.map */

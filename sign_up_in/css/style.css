@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,22 +12,22 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"], html[lang="ko"] {
+html[lang=ko-KR], html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body, html[lang="ko"] body {
+html[lang=ko-KR] body, html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"], html *[lang="en"] {
+html[lang=en], html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body, html *[lang="en"] body {
+html[lang=en] body, html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -42,29 +41,23 @@ html[lang="en"] body, html *[lang="en"] body {
   width: 100vw;
   height: 100vh;
 }
-
 .all_wrap .sign_up_wrap {
   height: 650px;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .title {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .title p {
   font-size: 50px;
 }
-
 .all_wrap .sign_up_wrap .title_wrap .sub_title p {
   font-size: 20px;
   color: #5D5D5D;
 }
-
 .all_wrap .sign_up_wrap .twinbell_sign_up_wrap a {
   text-decoration: none;
 }
-
 .all_wrap .sign_up_wrap .twinbell_sign_up_wrap button {
   color: #fff;
   font-size: 20px;
@@ -74,27 +67,22 @@ html[lang="en"] body, html *[lang="en"] body {
   font-weight: bold;
   border: 0px solid #fff;
 }
-
 .all_wrap .sign_up_wrap .twinbell_sign_up_wrap .sign_up_twinbell {
   width: 440px;
   height: 60px;
   background-color: #007DFB;
 }
-
 .all_wrap .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap {
   margin-top: 25px;
   font-size: 15px;
 }
-
 .all_wrap .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap a {
   text-decoration: none;
   color: #878787;
 }
-
 .all_wrap .sign_up_wrap .twinbell_sign_up_wrap .text_btn_wrap span {
   color: #878787;
 }
-
 .all_wrap .sign_up_wrap .sns_sign_up button {
   color: #fff;
   font-size: 20px;
@@ -104,45 +92,33 @@ html[lang="en"] body, html *[lang="en"] body {
   font-weight: bold;
   border: 0px solid #fff;
 }
-
 .all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_kakao {
   width: 440px;
   height: 60px;
   background-color: #F7E600;
   margin-bottom: 20px;
 }
-
 .all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_naver {
   width: 440px;
   height: 60px;
   background-color: #19CE60;
   margin-bottom: 20px;
 }
-
 .all_wrap .sign_up_wrap .sns_sign_up .sns_sign_up_wrap .sign_up_facebook {
   width: 440px;
   height: 60px;
   background-color: #3A5CA9;
 }
-
 .all_wrap .sign_up_wrap .goto_main_btn {
   width: 440px;
   height: 60px;
   background-color: #007DFB;
 }
-
 .all_wrap .sign_up_wrap .goto_main_btn span {
   color: #fff;
   font-size: 20px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

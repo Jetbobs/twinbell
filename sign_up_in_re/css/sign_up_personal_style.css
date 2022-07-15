@@ -5,7 +5,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -13,26 +12,26 @@ html {
   font-size: 10px;
 }
 
-html[lang="ko-KR"],
-html[lang="ko"] {
+html[lang=ko-KR],
+html[lang=ko] {
   font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
 }
 
-html[lang="ko-KR"] body,
-html[lang="ko"] body {
+html[lang=ko-KR] body,
+html[lang=ko] body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-html[lang="en"],
-html *[lang="en"] {
+html[lang=en],
+html *[lang=en] {
   font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
 }
 
-html[lang="en"] body,
-html *[lang="en"] body {
+html[lang=en] body,
+html *[lang=en] body {
   font-size: 18px;
   font-weight: 400;
 }
@@ -40,8 +39,7 @@ html *[lang="en"] body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -62,122 +60,86 @@ h2 {
 body #app {
   height: 100%;
 }
-
 body #app a {
   text-decoration: none;
   color: inherit;
 }
-
 body #app main {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
 }
-
 body #app main #main {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   padding: 0% 10%;
 }
-
 body #app main #main .title {
   margin-bottom: 10px;
 }
-
 body #app main #main .title h2 {
   text-align: center;
 }
-
 body #app main #main .sub_title {
   margin-bottom: 10px;
 }
-
 body #app main #main .sub_title p {
   color: #5d5d5d;
   font-size: 20px;
   text-align: center;
 }
-
 body #app main #main .line {
   width: 100%;
   margin-bottom: 50px;
 }
-
 body #app main #main .line hr {
   border: 1px solid #9f9f9f;
 }
-
 body #app main #main .sign_up {
   width: 1288px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 40px;
   position: relative;
 }
-
 body #app main #main .sign_up .sign_up_wrap {
   width: 580px;
 }
-
 body #app main #main .sign_up .sign_up_wrap .title p {
   font-size: 20px;
 }
-
 body #app main #main .sign_up .sign_up_wrap .title p span {
   color: red;
   vertical-align: middle;
 }
-
 body #app main #main .sign_up .sign_up_wrap .sub_title {
   color: #21d59b;
 }
-
 body #app main #main .sign_up #policy .title {
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up #policy #service_policy {
   margin-bottom: 50px;
 }
-
 body #app main #main .sign_up #policy #info_policy {
   margin-bottom: 30px;
 }
-
 body #app main #main .sign_up #policy #info_policy .policy p {
   padding: 20px 0;
 }
-
 body #app main #main .sign_up #policy .policy_wrap .grey_header {
   background-color: #e7e7e7;
   padding: 10px 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
 body #app main #main .sign_up #policy .policy_wrap .policy {
   overflow: auto;
   padding: 30px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #e7e7e7;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -185,158 +147,117 @@ body #app main #main .sign_up #policy .policy_wrap .policy {
   height: 180px;
   color: #717171;
 }
-
 body #app main #main .sign_up #policy .policy_wrap .policy p {
   font-size: 12px;
 }
-
 body #app main #main .sign_up #policy .policy_wrap .policy::-webkit-scrollbar {
   display: none;
   width: 10px;
   background-color: #fff;
 }
-
 body #app main #main .sign_up #policy .policy_wrap .policy::-webkit-scrollbar-thumb {
   background-color: #fff;
   border-radius: 5px;
 }
-
 body #app main #main .sign_up #policy .policy_wrap .policy::-webkit-scrollbar-track {
   background-color: #fff;
 }
-
 body #app main #main .sign_up #policy .radio_wrap {
   color: #888888;
 }
-
 body #app main #main .sign_up #policy .radio_wrap .title p {
   font-size: 15px;
 }
-
 body #app main #main .sign_up #policy .radio_wrap .radio input {
   margin-right: 10px;
   vertical-align: middle;
 }
-
 body #app main #main .sign_up #policy .radio_wrap .radio label {
   font-size: 15px;
   margin-right: 20px;
 }
-
 body #app main #main .sign_up #policy .radio_wrap #radio_email {
   margin-bottom: 10px;
 }
-
 body #app main #main .sign_up #policy .radio_wrap #radio_email span {
   margin-right: 53px;
   font-size: 15px;
 }
-
 body #app main #main .sign_up #policy .radio_wrap #radio_sms span {
   margin-right: 14px;
   font-size: 15px;
 }
-
 body #app main #main .sign_up #info_input .title {
   margin-bottom: 5px;
 }
-
 body #app main #main .sign_up #info_input .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 body #app main #main .sign_up #info_input .input input {
   width: 100%;
   font-size: 16px;
   background-color: #f9f9f9;
   border: 1px solid #d5d5d5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 12px 10px;
   font-weight: bold;
 }
-
-body #app main #main .sign_up #info_input .input input::-webkit-input-placeholder {
+body #app main #main .sign_up #info_input .input input::-moz-placeholder {
   color: #cfcfcf;
 }
-
 body #app main #main .sign_up #info_input .input input:-ms-input-placeholder {
   color: #cfcfcf;
 }
-
-body #app main #main .sign_up #info_input .input input::-ms-input-placeholder {
-  color: #cfcfcf;
-}
-
 body #app main #main .sign_up #info_input .input input::placeholder {
   color: #cfcfcf;
 }
-
 body #app main #main .sign_up #info_input .input input:focus {
   outline: none;
 }
-
 body #app main #main .sign_up #info_input #id {
   margin-bottom: 5px;
 }
-
 body #app main #main .sign_up #info_input #id input {
   width: 477px;
   margin-right: 5px;
 }
-
 body #app main #main .sign_up #info_input #pw {
   margin-bottom: 5px;
 }
-
 body #app main #main .sign_up #info_input #pw_check {
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up #info_input .verification_wrap {
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up #info_input .verification_wrap .grey_header {
   background-color: #e7e7e7;
   padding: 10px 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
 body #app main #main .sign_up #info_input .verification_wrap .verification {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #e7e7e7;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   width: 100%;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 body #app main #main .sign_up #info_input .verification_wrap .verification span {
   font-size: 18px;
 }
-
 body #app main #main .sign_up #info_input .verification_wrap .verification .verification_desc {
   color: #717171;
   font-size: 15px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] {
   display: none;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label {
   cursor: pointer;
   display: inline-block;
   padding: 10px 17px;
@@ -346,11 +267,9 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   border-radius: 5px;
   font-weight: bold;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 1s;
   transition: all 1s;
   position: fixed;
   top: 0;
@@ -359,8 +278,7 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   height: 100%;
   z-index: 100;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > label {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > label {
   position: absolute;
   top: 0;
   left: 0;
@@ -369,118 +287,85 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 630px;
   height: 470px;
   background-color: #fff;
   z-index: 2;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone {
   font-weight: bold;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .modal_title {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .modal_title {
   background-color: #2C3845;
   color: #fff;
   font-size: 20px;
   padding: 10px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap {
   padding: 30px 20px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input {
   margin-bottom: 20px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input p {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input p {
   font-size: 15px;
   color: #2E2E2E;
   margin-bottom: 10px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input {
   width: 100%;
   font-size: 16px;
   background-color: #f9f9f9;
   border: 1px solid #d5d5d5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 12px 10px;
   font-weight: bold;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input::-webkit-input-placeholder {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input::-moz-placeholder {
   color: #cfcfcf;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input:-ms-input-placeholder {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input:-ms-input-placeholder {
   color: #cfcfcf;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input::-ms-input-placeholder {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input::placeholder {
   color: #cfcfcf;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input::placeholder {
-  color: #cfcfcf;
-}
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .modal_input input:focus {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input:focus {
   outline: none;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_phone input {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #modal_phone input {
   width: 94px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification p {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #modal_verification p {
   font-size: 15px;
   color: #2E2E2E;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap input {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap input {
   width: 471px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn {
   padding: 0;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn span {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #modal_verification .input_wrap .blue_btn span {
   padding: 10px 17px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .blue_btn {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .blue_btn {
   padding: 0;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap .blue_btn span {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .blue_btn span {
   background-color: #007dfb;
   color: #fff;
   font-size: 18px;
@@ -488,24 +373,17 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   font-weight: bold;
   text-align: center;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #send {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #send {
   margin-bottom: 20px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap #send span {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #send span {
   padding: 10px 40px;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone .info_wrap > label {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap > label {
   width: 100%;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #7d7d7d;
   border-radius: 5px;
   background-color: #7d7d7d;
@@ -515,48 +393,39 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   text-align: center;
   padding: 10px 0;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"] + label + div > div .modal_phone > label {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone > label {
   position: absolute;
   top: 0%;
   right: 0%;
-  -webkit-transform: translate(40%, -40%);
-          transform: translate(40%, -40%);
+  transform: translate(40%, -40%);
   padding: 20px;
   background-color: #dd5347;
   border-radius: 100%;
   z-index: 1;
 }
-
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id="popup"]:checked + label + div {
+body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup]:checked + label + div {
   opacity: 1;
   visibility: visible;
 }
-
 body #app main #main .sign_up #info_input .radio_info {
   background-color: #f9f9f9;
   border: 1px solid #d5d5d5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 12px 10px;
   margin-bottom: 15px;
 }
-
 body #app main #main .sign_up #info_input .radio_info input {
   margin-right: 5px;
 }
-
 body #app main #main .sign_up #info_input .radio_info label {
   margin-right: 20px;
   font-size: 15px;
   font-weight: lighter;
 }
-
 body #app main #main .sign_up #info_input #name {
   margin-bottom: 15px;
 }
-
 body #app main #main .sign_up .bubble {
   position: absolute;
   width: 240px;
@@ -564,28 +433,23 @@ body #app main #main .sign_up .bubble {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #707070;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 5px 10px;
   top: 120px;
   right: 5px;
 }
-
 body #app main #main .sign_up .bubble span {
   font-size: 13px;
   font-weight: bold;
 }
-
 body #app main #main .sign_up .bubble span img {
   vertical-align: middle;
 }
-
 body #app main #main .sign_up .bubble .bubble_desc {
   color: #717171;
   font-size: 10px;
   padding-top: 3px;
 }
-
 body #app main #main .sign_up .bubble::before {
   content: "";
   width: 0px;
@@ -598,7 +462,6 @@ body #app main #main .sign_up .bubble::before {
   left: -20px;
   top: 12px;
 }
-
 body #app main #main .sign_up .bubble::after {
   content: "";
   width: 0px;
@@ -611,39 +474,30 @@ body #app main #main .sign_up .bubble::after {
   left: -18px;
   top: 13px;
 }
-
 body #app main #main .sign_up #bubble_na {
   display: none;
 }
-
 body #app main #main .sign_up #bubble_na span {
   color: #f73e22;
 }
-
 body #app main #main .sign_up #bubble_low {
   display: none;
 }
-
 body #app main #main .sign_up #bubble_low span {
   color: #f73e22;
 }
-
 body #app main #main .sign_up #bubble_safe {
   display: none;
 }
-
 body #app main #main .sign_up #bubble_safe span {
   color: #49BA7C;
 }
-
 body #app main #main .sign_up #bubble_power {
   display: none;
 }
-
 body #app main #main .sign_up #bubble_power span {
   color: #49BA7C;
 }
-
 body #app main #main .blue_btn {
   cursor: pointer;
   font-size: 18px;
@@ -653,34 +507,24 @@ body #app main #main .blue_btn {
   color: #fff;
   padding: 10px 17px;
 }
-
 body #app main #main .blue_btn span {
   display: inline;
 }
-
 body #app main #main #sign_up_btn {
   font-size: 25px;
   padding: 10px 210px;
   margin-bottom: 20px;
 }
-
 body #app main #main .sign_up_etc {
   font-size: 15px;
   color: #878787;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body #app main #main .sign_up_etc nav ul li {
   float: left;
   padding: 0px 5px;
 }
-
 body #app main #main .sign_up_etc nav ul li:not(:last-child) {
   border-right: 2px solid #878787;
-}
-/*# sourceMappingURL=sign_up_personal_style.css.map */
+}/*# sourceMappingURL=sign_up_personal_style.css.map */

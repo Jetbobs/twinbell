@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,OAAO,EAAE,IAAI;CAChB;;AACD,AAAA,SAAS,CAAA;EACL,cAAc,EAAE,MAAM;CACzB;;AACD,AAAA,SAAS,CAAA;EACL,eAAe,EAAE,MAAM;CAC1B;;AACD,AAAA,SAAS,CAAA;EACL,WAAW,EAAE,MAAM;CACtB;;AACD,AAAA,UAAU,CAAA;EACN,eAAe,EAAE,aAAa;CACjC;;AACD,AAAA,UAAU,CAAA;EACN,eAAe,EAAE,YAAY;CAChC",
-    "sources": [
-        "flex.scss"
-    ],
-    "names": [],
-    "file": "flex.css"
-}
+{"version":3,"sources":["flex.scss","flex.css"],"names":[],"mappings":"AAAA;EACI,aAAA;ACCJ;;ADCA;EACI,sBAAA;ACEJ;;ADAA;EACI,uBAAA;ACGJ;;ADDA;EACI,mBAAA;ACIJ;;ADFA;EACI,8BAAA;ACKJ;;ADHA;EACI,6BAAA;ACMJ","file":"flex.css"}

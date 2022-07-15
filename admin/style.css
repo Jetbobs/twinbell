@@ -1,52 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
 }
 
 .header_section {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .header_section .header1 {
   width: 100%;
   height: 80px;
   background-color: #000;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu {
   padding-left: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 80px;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li .hamburger_menu img {
   width: 10px;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li img {
   color: #B6B6B6;
 }
-
 .header_section .header1 .header_icon_wrap .header_menu li span {
   color: #B6B6B6;
   padding-left: 5px;
@@ -54,31 +37,22 @@
 }
 
 .all {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .all .sidebar {
   width: 3.5%;
   background-color: #2D2E33;
 }
-
 .all .main {
   width: 96.5%;
   background-color: #3E3E3E;
 }
-
 .all .main .card_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 30px;
 }
-
 .all .main .card_wrap .card_period_revenue {
   background-color: #F56954;
   width: 395px;
@@ -87,37 +61,23 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .all .main .card_wrap .card_period_revenue .card_period_revenue_wrap {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .all .main .card_wrap .card_period_revenue .card_period_revenue_wrap .revenue {
   font-size: 45px;
 }
-
 .all .main .card_wrap .card_period_revenue .card_period_revenue_wrap .period_revenue {
   font-size: 28px;
 }
-
 .all .main .card_wrap .card_period_revenue .card_period_revenue_wrap .revenue_analysis {
   font-size: 13px;
 }
-
 .all .main .card_wrap .card_period_payments {
   background-color: #FFA812;
   width: 395px;
@@ -126,37 +86,23 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .all .main .card_wrap .card_period_payments .period_payments_wrap {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .all .main .card_wrap .card_period_payments .period_payments_wrap .payments {
   font-size: 45px;
 }
-
 .all .main .card_wrap .card_period_payments .period_payments_wrap .period_payments {
   font-size: 28px;
 }
-
 .all .main .card_wrap .card_period_payments .period_payments_wrap .payments_analysis {
   font-size: 13px;
 }
-
 .all .main .card_wrap .card_period_accidents {
   background-color: #00C0F0;
   width: 395px;
@@ -165,37 +111,23 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .all .main .card_wrap .card_period_accidents .number_accidents_wrap {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .all .main .card_wrap .card_period_accidents .number_accidents_wrap .accidents {
   font-size: 45px;
 }
-
 .all .main .card_wrap .card_period_accidents .number_accidents_wrap .period_accidents {
   font-size: 28px;
 }
-
 .all .main .card_wrap .card_period_accidents .number_accidents_wrap .accidents_analysis {
   font-size: 13px;
 }
-
 .all .main .card_wrap .card_period_users {
   background-color: #00A65A;
   width: 395px;
@@ -204,89 +136,54 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .all .main .card_wrap .card_period_users .number_users_wrap {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .all .main .card_wrap .card_period_users .number_users_wrap .users {
   font-size: 45px;
 }
-
 .all .main .card_wrap .card_period_users .number_users_wrap .period_users {
   font-size: 28px;
 }
-
 .all .main .card_wrap .card_period_users .number_users_wrap .users_analysis {
   font-size: 13px;
 }
-
 .all .main .card_wrap .btn_date .btn_date_wrap {
   height: 145px;
   color: #B6B6B6;
   width: 77px;
 }
-
 .all .main .card_wrap .btn_date .btn_date_wrap .btn_date_yesterday {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #fff;
   height: 33.3%;
   border-bottom: 1px solid #707070;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .all .main .card_wrap .btn_date .btn_date_wrap .btn_date_today {
   background-color: #fff;
   height: 33.3%;
   border-bottom: 1px solid #707070;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .all .main .card_wrap .btn_date .btn_date_wrap .btn_date_this_month {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #fff;
   height: 33.3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .chart_title {
@@ -296,144 +193,106 @@
 }
 
 .chart_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .chart_wrap .revenue_analysis_chart {
   width: 802px;
 }
-
 .chart_wrap .revenue_analysis_chart .sales_chart {
   height: 410px;
   background-color: #707070;
   border-radius: 5px;
 }
-
 .chart_wrap .orders_analysis_chart {
   width: 621px;
 }
-
 .chart_wrap .orders_analysis_chart .orders_chart {
   height: 410px;
   background-color: #707070;
   border-radius: 5px;
 }
-
 .chart_wrap .accidents_analysis_chart {
   width: 257px;
 }
-
 .chart_wrap .accidents_analysis_chart .accidents_chart {
   height: 410px;
   background-color: #707070;
   border-radius: 5px;
 }
-
 .chart_wrap .table_wrap .orders_table {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .chart_wrap .table_wrap .orders_table .orders_table2 {
   padding-left: 80px;
 }
-
 .chart_wrap .table_wrap table {
   text-align: center;
   border-collapse: collapse;
   margin-top: 10px;
 }
-
 .chart_wrap .table_wrap table thead th:not(:last-child) {
   border-right: 1px solid #707070;
 }
-
 .chart_wrap .table_wrap table thead th {
   border-bottom: 1px solid #707070;
   color: #fff;
   font-size: 12px;
   padding: 10px;
 }
-
 .chart_wrap .table_wrap table tbody tr {
   font-size: 12px;
 }
-
 .chart_wrap .table_wrap table tbody tr td:not(:last-child) {
   border-right: 1px solid #707070;
 }
-
 .chart_wrap .table_wrap table tbody tr td {
   padding: 9px;
   color: #fff;
 }
-
 .chart_wrap .table_wrap p {
   color: #fff;
   font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .chart_wrap2 {
   color: #fff;
   margin-bottom: 30px;
 }
-
 .chart_wrap2 .current_chart_tapmenu {
   width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   margin-bottom: 30px;
 }
-
 .chart_wrap2 .current_chart_tapmenu .current_daily_sales, .chart_wrap2 .current_chart_tapmenu .current_order_processing, .chart_wrap2 .current_chart_tapmenu .current_order_processing, .chart_wrap2 .current_chart_tapmenu .current_customer_emoney, .chart_wrap2 .current_chart_tapmenu .current_coupon, .chart_wrap2 .current_chart_tapmenu .current_post {
   width: 110px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
 }
-
 .chart_wrap2 .tap_daily_sales {
   width: 679px;
   height: 454px;
-  background-color: #707070;
+  background-color: rgb(112, 112, 112);
   border-radius: 5px;
 }
-
 .chart_wrap2 .tap_current_daily_sales_table table {
   width: 1062px;
   height: 431px;
   border-collapse: collapse;
   text-align: center;
 }
-
 .chart_wrap2 .tap_current_daily_sales_table table thead th {
   color: #fff;
   font-size: 12px;
   padding: 10px;
   border: 1px solid #707070;
 }
-
 .chart_wrap2 .tap_current_daily_sales_table table tbody tr td {
   color: #fff;
   font-size: 12px;
@@ -441,20 +300,13 @@
   border: 1px solid #707070;
   background: #4F4F50;
 }
-
 .chart_wrap2 .daily_sales_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .chart_wrap2 .daily_sales_wrap .tap_current_daily_sales_table {
   margin-left: 50px;
 }
-
 .chart_wrap2 .chart_title, .chart_wrap2 .current_chart_tapmenu, .chart_wrap2 .tap_chart1 {
   margin-left: 25px;
 }
@@ -464,38 +316,26 @@
   margin-left: 25px;
   margin-bottom: 30px;
 }
-
 .chart_wrap3 .current_chart_tapmenu {
   width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   margin-bottom: 30px;
 }
-
 .chart_wrap3 .current_chart_tapmenu .current_daily_sales, .chart_wrap3 .current_chart_tapmenu .current_order_processing, .chart_wrap3 .current_chart_tapmenu .current_order_processing, .chart_wrap3 .current_chart_tapmenu .current_customer_emoney, .chart_wrap3 .current_chart_tapmenu .current_coupon, .chart_wrap3 .current_chart_tapmenu .current_post {
   width: 110px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
 }
-
 .chart_wrap3 .tap_current_order_processing_table table {
   width: 1782px;
   height: 431px;
   border-collapse: collapse;
   text-align: center;
 }
-
 .chart_wrap3 .tap_current_order_processing_table table thead th {
   vertical-align: middle;
   color: #fff;
@@ -503,7 +343,6 @@
   padding: 10px;
   border: 1px solid #707070;
 }
-
 .chart_wrap3 .tap_current_order_processing_table table tbody tr td {
   vertical-align: middle;
   color: #fff;
@@ -518,58 +357,39 @@
   margin-left: 25px;
   margin-bottom: 30px;
 }
-
 .chart_wrap4 .current_chart_tapmenu {
   width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   margin-bottom: 30px;
 }
-
 .chart_wrap4 .current_chart_tapmenu .current_daily_sales, .chart_wrap4 .current_chart_tapmenu .current_order_processing, .chart_wrap4 .current_chart_tapmenu .current_order_processing, .chart_wrap4 .current_chart_tapmenu .current_customer_emoney, .chart_wrap4 .current_chart_tapmenu .current_coupon, .chart_wrap4 .current_chart_tapmenu .current_post {
   width: 110px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
 }
-
 .chart_wrap4 .customer_emoney_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .chart_wrap4 .customer_emoney_wrap .tap_customer_emoney {
   width: 679px;
   height: 454px;
-  background-color: #707070;
+  background-color: rgb(112, 112, 112);
   border-radius: 5px;
 }
-
 .chart_wrap4 .customer_emoney_wrap .current_customer_emoney_table {
   margin-left: 50px;
 }
-
 .chart_wrap4 .customer_emoney_wrap .current_customer_emoney_table table {
   width: 436px;
   height: 431px;
   border-collapse: collapse;
   text-align: center;
 }
-
 .chart_wrap4 .customer_emoney_wrap .current_customer_emoney_table table thead th {
   vertical-align: middle;
   color: #fff;
@@ -577,7 +397,6 @@
   padding: 10px;
   border: 1px solid #707070;
 }
-
 .chart_wrap4 .customer_emoney_wrap .current_customer_emoney_table table tbody tr td {
   vertical-align: middle;
   color: #fff;
@@ -592,58 +411,39 @@
   margin-left: 25px;
   margin-bottom: 30px;
 }
-
 .chart_wrap5 .current_chart_tapmenu {
   width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   margin-bottom: 30px;
 }
-
 .chart_wrap5 .current_chart_tapmenu .current_daily_sales, .chart_wrap5 .current_chart_tapmenu .current_order_processing, .chart_wrap5 .current_chart_tapmenu .current_order_processing, .chart_wrap5 .current_chart_tapmenu .current_customer_emoney, .chart_wrap5 .current_chart_tapmenu .current_coupon, .chart_wrap5 .current_chart_tapmenu .current_post {
   width: 110px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
 }
-
 .chart_wrap5 .coupon_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .chart_wrap5 .coupon_wrap .tap_coupon {
   width: 679px;
   height: 454px;
-  background-color: #707070;
+  background-color: rgb(112, 112, 112);
   border-radius: 5px;
 }
-
 .chart_wrap5 .coupon_wrap .current_coupon_table {
   margin-left: 50px;
 }
-
 .chart_wrap5 .coupon_wrap .current_coupon_table table {
   width: 876px;
   height: 431px;
   border-collapse: collapse;
   text-align: center;
 }
-
 .chart_wrap5 .coupon_wrap .current_coupon_table table thead th {
   vertical-align: middle;
   color: #fff;
@@ -651,7 +451,6 @@
   padding: 10px;
   border: 1px solid #707070;
 }
-
 .chart_wrap5 .coupon_wrap .current_coupon_table table tbody tr td {
   vertical-align: middle;
   color: #fff;
@@ -666,47 +465,30 @@
   margin-left: 25px;
   margin-bottom: 30px;
 }
-
 .chart_wrap6 .current_chart_tapmenu {
   width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   margin-bottom: 30px;
 }
-
 .chart_wrap6 .current_chart_tapmenu .current_daily_sales, .chart_wrap6 .current_chart_tapmenu .current_order_processing, .chart_wrap6 .current_chart_tapmenu .current_order_processing, .chart_wrap6 .current_chart_tapmenu .current_customer_emoney, .chart_wrap6 .current_chart_tapmenu .current_coupon, .chart_wrap6 .current_chart_tapmenu .current_post {
   width: 110px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
 }
-
 .chart_wrap6 .post_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .chart_wrap6 .post_wrap .current_post_table table {
   width: 1782px;
   height: 431px;
   border-collapse: collapse;
   text-align: center;
 }
-
 .chart_wrap6 .post_wrap .current_post_table table thead th {
   vertical-align: middle;
   color: #fff;
@@ -714,7 +496,6 @@
   padding: 10px;
   border: 1px solid #707070;
 }
-
 .chart_wrap6 .post_wrap .current_post_table table tbody tr td {
   vertical-align: middle;
   color: #fff;
@@ -722,5 +503,4 @@
   padding: 10px 0;
   border: 1px solid #707070;
   background: #4F4F50;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
