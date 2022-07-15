@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/login_re/css/change_pw_style.css" />
+    <link rel="stylesheet" href="/common/css/header.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,12 +18,16 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="/login_re/js/menu.js"></script>
     <title>Document</title>
   </head>
 
   <body>
+    <!-- html 전체 wrap -->
     <div class="app" id="app">
+        <!-- header -->
       <header>
+        <!-- 상단 네비바 -->
         <div class="upper_menu">
           <nav>
             <ul>
@@ -32,6 +37,7 @@
               <a href="#"><li class="quick_menu">견적문의</li></a>
             </ul>
           </nav>
+          <!-- 홈, 로그인 ,회원가입 wrap -->
           <div class="login_btn_wrap">
             <nav>
               <ul>
@@ -47,23 +53,141 @@
             <div class="logo">
               <a href="#"><img src="../logo/logo.png" alt="" /></a>
             </div>
-            <div class="menu">
-              <nav>
-                <ul>
-                  <a href="#"><li>디지털윤전</li></a>
-                  <a href="#"><li>고급인쇄</li></a>
-                  <a href="#"
-                    ><li>
-                      <span>상업인쇄</span>
-                      <span>(대량/옵셋)</span>
-                    </li></a
-                  >
-                  <a href="#"><li>마이페이지</li></a>
-                  <a href="#"><li>고객지원</li></a>
-                  <a href="#"><li>이벤트</li></a>
-                </ul>
-              </nav>
-            </div>
+                    <!-- 메인메뉴 -->
+                    <div class="menu">
+                      <nav>
+                          <ul>
+                              <a href="#">
+                                  <li id="digital_print">디지털윤전
+                                      <!-- 디지털 윤전 서브메뉴 -->
+                                      <div class="sub_menu_wrapper">
+                                          <nav>
+                                              <ul>
+                                                  <li>책 만들기</li>
+                                                  <li>학원/교육교재</li>
+                                                  <li>정기간행물</li>
+                                                  <li>문제집</li>
+                                                  <li>무선제본</li>
+                                                  <li>링제본</li>
+                                                  <li>보고서/메뉴얼</li>
+                                              </ul>
+                                          </nav>
+                                          <div class="menu_img">
+                                              <img src="/login_re/img/study-g4a108279d_640.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </li>
+                              </a>
+                              <a href="#">
+                                  <li id="high_print">고급인쇄
+                                      <!-- 고급인쇄 서브메뉴 -->
+                                      <div class="sub_menu_wrapper">
+                                          <nav>
+                                              <ul>
+                                                  <li>책 만들기</li>
+                                                  <li>리플렛/팜플렛(전단지)</li>
+                                                  <li>카탈로그/브로셔</li>
+                                                  <li>표지인쇄</li>
+                                                  <li>포스터</li>
+                                              </ul>
+                                          </nav>
+                                          <div class="menu_img">
+                                              <img src="/login_re/img/study-g4a108279d_640.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </li>
+                              </a>
+                              <a href="#">
+                                  <li id="commercial_print">
+                                      <span>상업인쇄</span>
+                                      <span>(대량/옵셋)</span>
+                                      <!-- 상업인쇄 서브메뉴 -->
+                                      <div class="sub_menu_wrapper">
+                                          <nav>
+                                              <ul>
+                                                  <li>책 만들기</li>
+                                                  <li>학원교재</li>
+                                                  <li>출판 전문서적</li>
+                                                  <li>리플렛/팜플렛</li>
+                                                  <li>카달로그/브로셔</li>
+                                                  <li>포스터</li>
+                                              </ul>
+                                          </nav>
+                                          <div class="menu_img">
+                                              <img src="/login_re/img/study-g4a108279d_640.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </li>
+                              </a>
+                              <a href="#">
+                                  <li id="mypage">마이페이지
+                                      <!-- 마이페이지 서브메뉴 -->
+                                      <div class="sub_menu_wrapper">
+                                          <nav>
+                                              <ul>
+                                                  <li>내정보</li>
+                                                  <li>주문/배송조회</li>
+                                                  <li>거래내역</li>
+                                                  <li>장바구니 내역</li>
+                                                  <li>견적서 관리</li>
+                                                  <li>시안확인</li>
+                                                  <li>문의하기</li>
+                                                  <li>배송지 관리</li>
+                                                  <li>세금 계산서</li>
+                                                  <li>포인트 및 쿠폰</li>
+                                                  <li>E-머니 관리</li>
+                                              </ul>
+                                          </nav>
+                                          <div class="menu_img">
+                                              <img src="/login_re/img/study-g4a108279d_640.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </li>
+                              </a>
+                              <a href="#">
+                                  <li id="customer_service">고객지원
+                                      <!-- 고객지원 서브메뉴 -->
+                                      <div class="sub_menu_wrapper">
+                                          <nav>
+                                              <ul>
+                                                  <li>책 만들기</li>
+                                                  <li>리플렛/팜플렛(전단지)</li>
+                                                  <li>카탈로그/브로셔</li>
+                                                  <li>표지인쇄</li>
+                                                  <li>포스터</li>
+                                              </ul>
+                                          </nav>
+                                          <div class="menu_img">
+                                              <img src="/login_re/img/study-g4a108279d_640.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </li>
+                              </a>
+                              <a href="#">
+                                  <li id="event">이벤트
+                                      <!-- 이벤트 서브메뉴 -->
+                                      <div class="sub_menu_wrapper">
+                                          <nav>
+                                              <ul>
+                                                  <li>공지사항</li>
+                                                  <li>1:1 문의</li>
+                                                  <li>자주하는 질문(FAQ)</li>
+                                                  <li>제휴문의</li>
+                                                  <li>자료실</li>
+                                                  <li>이용약관</li>
+                                                  <li>개인정보 취급방침</li>
+                                                  <li>이메일 수집 거부 방침</li>
+                                              </ul>
+                                          </nav>
+                                          <div class="menu_img">
+                                              <img src="/login_re/img/study-g4a108279d_640.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </li>
+                              </a>
+                          </ul>
+                      </nav>
+                  </div>
           </div>
           <div
             class="category_menu_wrap"
@@ -74,26 +198,266 @@
             <span>전체카테고리</span>
           </div>
         </div>
+                    <!-- 전체 카테고리 -->
+                    <div class="all_menu">
+                      <div class="close_btn">
+                          <a href="#"><img src="./icon/click/cancel (1).png" alt=""></a>
+                      </div>
+                      <nav>
+                          <div class="menu_wrap">
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>디지털 윤전</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>책 만들기</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>학원/교육교재</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>정기간행물</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>문제집</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>무선제본</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>링제본</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>보고서/메뉴얼</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>고급인쇄</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>책 만들기</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>리플리세/팜플렛(전단지)</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>카탈로그/브로셔</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>표지인쇄</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>포스터</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>상업인쇄(대량/옵셋)</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>책 만들기</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>학원교재</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>출판 전문서적</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>리플렛/팜플렛</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>카탈로그/브로셔</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>포스터</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>고객센터</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>공지사항</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>1:1 문의</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>자주하는 질문(FAQ)</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>제휴문의</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>자료실</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>이용약관</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>개인정보 취급방침</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>이메일 수집 거부 방침</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="menu_wrap">
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>바로가기</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>주문을 쉽고 간단하게</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>NCS 교재 주문</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>견적문의 게시판</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>트윈벨미디어</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>회사소개</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>파트너</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>언론보도</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>주요실적</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>조직도 / 연혁</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>오시는 길</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>마이페이지</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>내정보</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>주문/배송조회</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>거래내역</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>장바구니 내역</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>견적서 관리</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>시안확인</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>문의하기</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>배송지 관리</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>세금 계산서</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>포인트 및 쿠폰</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>E-머니 관리</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="menu">
+                                  <div class="title">
+                                      <p>이벤트</p>
+                                  </div>
+                                  <div class="sub_menu">
+                                      <ul>
+                                          <a href="#">
+                                              <li>이벤트</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>제작후기</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>포트폴리오</li>
+                                          </a>
+                                          <a href="#">
+                                              <li>인쇄가이드</li>
+                                          </a>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </nav>
+                  </div>
       </header>
       <main>
+        <!-- 메인 본문 -->
         <section id="main">
+            <!-- 페이지 타이틀 -->
           <div class="title">
             <h2>아이디 찾기 / 비밀번호 찾기</h2>
           </div>
+          <!-- 페이지 sub 타이틀 -->
           <div class="sub_title">
             <p>정보 확인을 위하여 회원가입 시 입력한</p>
             <p>정보를 입력해 주시기 바랍니다.</p>
           </div>
           <div class="find_wrap">
+            <!-- 찾기 버튼 비활성화 상태 -->
             <div class="find_disabled" style="cursor: pointer">
               <span>아이디 찾기</span>
             </div>
+            <!-- 찾기 버튼 활성화 상태 -->
             <div class="find_active" style="cursor: pointer">
               <span>비밀번호 변경</span>
             </div>
           </div>
           <div class="radio_wrap">
-            <div class="radio_verification">
+            <!-- 인증 방식 버튼 휴대폰 -->
+            <div class="radio_verification" id="radio_phone">
               <label for=""
                 ><input
                   type="radio"
@@ -103,7 +467,8 @@
                 /><span>휴대폰으로 인증</span></label
               >
             </div>
-            <div class="radio_verification">
+            <!-- 인증 방식 버튼 이메일 -->
+            <div class="radio_verification" id="radio_email">
               <label for=""
                 ><input type="radio" name="veri" value="veri_email" /><span
                   >이메일로 인증</span
@@ -112,6 +477,7 @@
             </div>
           </div>
           <div class="input_wrap">
+            <!-- 이름 입력칸 -->
             <div class="info_input" id="name_input">
               <input
                 type="text"
@@ -122,6 +488,7 @@
                 onblur="this.placeholder = '이름을 입력하여 주십시오'"
               />
             </div>
+            <!-- 핸드폰 번호 입력칸 -->
             <div class="info_input" id="phone_input">
               <input
                 type="text"
@@ -132,6 +499,7 @@
                 onblur="this.placeholder = '아이디를 입력하여 주십시오'"
               />
             </div>
+            <!-- 이메일 입력칸 -->
             <div class="info_input" id="email_input">
               <input
                 type="text"
@@ -141,10 +509,12 @@
                 onfocus="this.placeholder = ''"
                 onblur="this.placeholder = '가입 시 기입한 이메일 주소 입력'"
               />
+              <!-- 인증번호 발송 버튼 -->
               <div class="send_btn" style="cursor: pointer">
                 <span>인증번호 발송</span>
               </div>
             </div>
+            <!-- 인증번호 입력칸 -->
             <div class="info_input" id="verification_input">
               <input
                 type="text"
@@ -159,6 +529,7 @@
               </div>
             </div>
           </div>
+          <!-- 임시 비밀번호 발급 버튼 -->
           <div
             class="login_btn"
             OnClick="location.href ='#'"

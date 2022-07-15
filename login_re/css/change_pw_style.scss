@@ -64,6 +64,10 @@ body {
   height: 100%;
   width: 100%;
 }
+ul,
+li {
+  list-style: none;
+}
 
 h2 {
   font-size: 40px;
@@ -78,90 +82,8 @@ body {
 
     height: 100%;
 
-    //header
-    header {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-
-      .upper_menu {
-        width: 100%;
-        border-bottom: 1px solid $color-header-border;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10%;
-
-        nav {
-          ul {
-            list-style: none;
-
-            .quick_menu {
-              border: 1px solid $color-header-border;
-              float: left;
-              padding: 15px 30px;
-            }
-          }
-        }
-
-        .login_btn_wrap {
-          nav {
-            ul {
-              list-style: none;
-
-              .login_btn {
-                font-size: $login-btn-size;
-                float: left;
-                padding: 0 10px;
-              }
-
-              .login_btn:not(:last-child) {
-                border-right: 1px solid #000;
-              }
-            }
-          }
-        }
-      }
-
-      //2번째 메뉴 네비바
-      #menu {
-        border-bottom: 1px solid $color-header-border;
-        padding: 20px 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .logo_menu_wrap {
-          display: flex;
-
-          .logo {
-            display: flex;
-            align-items: center;
-            padding-right: 80px;
-          }
-
-          .menu {
-            display: flex;
-
-            nav {
-              ul {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                li {
-                  float: left;
-                  padding: 20px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    //main
+ 
+// 메인 본문
     main {
       display: flex;
       justify-content: center;
@@ -169,8 +91,7 @@ body {
 
       #main {
         width: 434px;
-        margin-top: 80px;
-
+        // 페이지 타이틀
         .title {
           margin-bottom: 15px;
 
@@ -178,7 +99,7 @@ body {
             text-align: center;
           }
         }
-
+        // 페이지 서브타이틀
         .sub_title {
           text-align: center;
           font-size: $font-subtitle;
@@ -191,14 +112,14 @@ body {
           display: flex;
           font-size: 15px;
           margin-bottom: 20px;
-
+          // 찾기 버튼 활성화 상태
           .find_active {
             width: 215px;
             background-color: #000;
             color: #fff;
             padding: 10px 0;
           }
-
+          // 찾기 버튼 비활성화 상태
           .find_disabled {
             width: 215px;
             background-color: #f9f9f9;
@@ -207,7 +128,7 @@ body {
             border: 1px solid #d5d5d5;
           }
         }
-
+        // 라디오 버튼 
         .radio_wrap {
           display: flex;
           justify-content: space-around;
@@ -230,7 +151,7 @@ body {
 
         .input_wrap {
           width: 430px;
-
+          // 이름, 휴대폰번호, 이메일 입력칸
           #name_input,
           #phone_input,
           #email_input {
@@ -240,7 +161,7 @@ body {
           .info_input {
             width: 100%;
             border-bottom: 1px solid #999;
-
+            // 입력칸
             input {
               font-size: $font-subtitle;
               border: none;
@@ -248,25 +169,25 @@ body {
               padding: 10px 0;
               font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
             }
-
+            // 입력칸 focus
             input:focus {
               outline: none;
             }
-
+            // 입력칸 placeholder
             input::placeholder {
               font-size: 15px;
               color: $color-subtitle;
               font-weight: bolder;
             }
           }
-
+          // 이메일 입력칸
           #email_input {
             display: flex;
             justify-content: space-between;
             align-items: center;
             input {
             }
-
+            // 인증번호 발송 버튼
             .send_btn {
               span {
                 color: #fff;
@@ -277,7 +198,7 @@ body {
               }
             }
           }
-
+          // 인증번호 입력칸
           #verification_input {
             display: flex;
             align-items: center;
@@ -291,7 +212,7 @@ body {
             }
           }
         }
-
+        // 임시 비밀번호 발급 버튼
         .login_btn {
           background-color: #000;
           border-radius: 20px;

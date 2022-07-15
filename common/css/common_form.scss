@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+//font-size
+$login-btn-size: 14px;
+
+//header_color
+$color-header-border: #e0e0e0;
+//main_color
+$color-subtitle: #c4c4c4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007dfb;
+$color-naver: #19ce60;
+$color-facebook: #3a5ca9;
+$color-kakao: #f7e600;
+
+//css reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

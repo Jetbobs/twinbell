@@ -91,88 +91,6 @@ body {
 
     height: 100%;
 
-    //header
-    header {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      // 상단 네비바
-      .upper_menu {
-        width: 100%;
-        border-bottom: 1px solid $color-header-border;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10%;
-
-        nav {
-          ul {
-            list-style: none;
-            // 상단 네비바 버튼
-            .quick_menu {
-              border: 1px solid $color-header-border;
-              float: left;
-              padding: 15px 30px;
-            }
-          }
-        }
-        // 홈, 로그인 ,회원가입 wrap
-        .login_btn_wrap {
-          nav {
-            ul {
-              list-style: none;
-              // 홈, 로그인 ,회원가입 버튼
-              .login_btn {
-                font-size: $login-btn-size;
-                float: left;
-                padding: 0 10px;
-              }
-
-              .login_btn:not(:last-child) {
-                border-right: 1px solid #000;
-              }
-            }
-          }
-        }
-      }
-
-      //메인 메뉴 네비 바 wrap
-      #menu {
-        border-bottom: 1px solid $color-header-border;
-        padding: 20px 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .logo_menu_wrap {
-          display: flex;
-        // 로고
-          .logo {
-            display: flex;
-            align-items: center;
-            padding-right: 80px;
-          }
-          // 메인 메뉴 네비바
-          .menu {
-            display: flex;
-
-            nav {
-              ul {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                li {
-                  float: left;
-                  padding: 20px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
 
 // 메인 본문
     main {
@@ -186,7 +104,6 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 80px;
         padding: 0% 10%;
 // 페이지 타이틀
         .title {
@@ -521,9 +438,6 @@ body {
                                                       }
                                                   }
                                               }
-                                          }
-                                          .title{
-                  
                                           }
                                           .blue_btn{
                                             padding: 0;

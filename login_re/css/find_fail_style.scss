@@ -64,6 +64,10 @@ body {
   height: 100%;
   width: 100%;
 }
+ul,
+li {
+  list-style: none;
+}
 
 h2 {
   font-size: 40px;
@@ -78,90 +82,8 @@ body {
 
     height: 100%;
 
-    //header
-    header {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
 
-      .upper_menu {
-        width: 100%;
-        border-bottom: 1px solid $color-header-border;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10%;
-
-        nav {
-          ul {
-            list-style: none;
-
-            .quick_menu {
-              border: 1px solid $color-header-border;
-              float: left;
-              padding: 15px 30px;
-            }
-          }
-        }
-
-        .login_btn_wrap {
-          nav {
-            ul {
-              list-style: none;
-
-              .login_btn {
-                font-size: $login-btn-size;
-                float: left;
-                padding: 0 10px;
-              }
-
-              .login_btn:not(:last-child) {
-                border-right: 1px solid #000;
-              }
-            }
-          }
-        }
-      }
-
-      //2번째 메뉴 네비바
-      #menu {
-        border-bottom: 1px solid $color-header-border;
-        padding: 20px 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .logo_menu_wrap {
-          display: flex;
-
-          .logo {
-            display: flex;
-            align-items: center;
-            padding-right: 80px;
-          }
-
-          .menu {
-            display: flex;
-
-            nav {
-              ul {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                li {
-                  float: left;
-                  padding: 20px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    //main
+// 메인 본문
     main {
       display: flex;
       justify-content: center;
@@ -169,8 +91,7 @@ body {
 
       #main {
         width: 434px;
-        margin-top: 80px;
-
+        // 페이지 타이틀
         .title {
           margin-bottom: 15px;
 
@@ -178,6 +99,7 @@ body {
             text-align: center;
           }
         }
+        // 페이지 서브타이틀
         .sub_title {
           text-align: center;
           font-size: $font-subtitle;
@@ -189,12 +111,14 @@ body {
           display: flex;
           font-size: 15px;
           margin-bottom: 40px;
+          // 찾기 버튼 활성화 상태
           .find_active {
             width: 215px;
             background-color: #000;
             color: #fff;
             padding: 10px 0;
           }
+          // 찾기 버튼 비활성화 상태
           .find_disabled {
             width: 215px;
             background-color: #f9f9f9;
@@ -203,6 +127,7 @@ body {
             border: 1px solid #d5d5d5;
           }
         }
+        // 비밀번호 변경 결과 텍스트
         .result_desc {
           margin-bottom: 30px;
           p {
@@ -214,7 +139,7 @@ body {
 
         .input_wrap {
           width: 430px;
-
+// 이름, 핸드폰 번호 입력칸
           #name_input,
           #phone_input {
             margin-bottom: 30px;
@@ -223,7 +148,7 @@ body {
           .info_input {
             width: 100%;
             border-bottom: 1px solid #999;
-
+            // 입력칸
             input {
               width: 100%;
               font-size: $font-subtitle;
@@ -232,11 +157,11 @@ body {
               padding: 10px 0;
               font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
             }
-
+            // 입력칸 focus
             input:focus {
               outline: none;
             }
-
+            // 입력칸 placeholder
             input::placeholder {
               font-size: 15px;
               color: $color-subtitle;
@@ -244,6 +169,7 @@ body {
             }
           }
         }
+        // 원형 SNS 버튼 wrap
         .sns_btn_wrap {
           nav {
             display: flex;

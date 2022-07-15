@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+//font-size
+$login-btn-size: 14px;
+
+//header_color
+$color-header-border: #e0e0e0;
+//main_color
+$color-subtitle: #c4c4c4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007dfb;
+  //header
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 80px;
+        .upper_menu {
+            width: 100%;
+            border-bottom: 1px solid $color-header-border;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+
+            nav {
+                ul {
+                    list-style: none;
+
+                    .quick_menu {
+                        border: 1px solid $color-header-border;
+                        float: left;
+                        padding: 15px 30px;
+                    }
+                }
+            }
+
+            .login_btn_wrap {
+                nav {
+                    ul {
+                        list-style: none;
+
+                        .login_btn {
+                            font-size: $login-btn-size;
+                            float: left;
+                            padding: 0 10px;
+                        }
+
+                        .login_btn:not(:last-child) {
+                            border-right: 1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        //2번째 메뉴 네비바
+        #menu {
+            border-bottom: 1px solid $color-header-border;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .logo_menu_wrap {
+                display: flex;
+
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 80px;
+                }
+                .menu {
+                    display: flex;
+
+                    nav {
+                        ul {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            li {
+                                float: left;
+                                padding: 20px;
+                                .sub_menu_wrapper {
+                                    display: flex;
+                                    position: absolute;
+                                    width: 100%;
+                                    left: 0px;
+                                    background-color: #fff;
+                                    z-index: 1;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: all 1s ease-in;
+                                    cursor: default;
+
+                                    nav {
+                                        width: 100%;
+
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            padding-left: calc(10% + 235px);
+                                        }
+                                    }
+
+                                    .menu_img {
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        margin-right: calc(10%);
+
+                                        img {
+                                            padding-top: 50px;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            #digital_print:hover,
+                            #high_print:hover,
+                            #commercial_print:hover,
+                            #mypage:hover,
+                            #customer_service:hover,
+                            #event:hover {
+
+                                .sub_menu_wrapper,
+                                .menu_img {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 전체 카테고리
+        .all_menu {
+            display: none;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(25, 25, 25, 0.9);
+            padding: 0px 10%;
+            z-index: 1;
+
+            .close_btn {
+                display: flex;
+                justify-content: end;
+                padding: 15px 0;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            nav {
+                .menu_wrap {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .menu {
+                        width: 230px;
+
+                        .title {
+                            border-bottom: 1px solid #868686;
+                            margin-bottom: 10px;
+
+                            p {
+                                color: $color-btn-blue;
+                                font-size: 24px;
+                                padding-bottom: 15px;
+                            }
+                        }
+
+                        .sub_menu {
+                            ul {
+                                li {
+                                    color: #959595;
+                                    padding: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .menu_wrap:first-child {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }

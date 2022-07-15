@@ -228,8 +228,6 @@ body {
                     }
                   }
                 }
-                li:hover{
-                }
                 #digital_print:hover, #high_print:hover, #commercial_print:hover, #mypage:hover, #customer_service:hover, #event:hover{
                   .sub_menu_wrapper, .menu_img{
                     opacity: 1;
@@ -241,43 +239,15 @@ body {
           }
         }
       }
-      .sub_menu_wrap {
-        #sub_menu {
-          padding: 15px 10%;
-          background-color: #fff;
-          display: flex;
-          justify-content: space-between;
-          .menu {
-            padding-left: 255px;
-            nav {
-              ul {
-                li {
-                  color: #666666;
-                  font-size: 17px;
-                  padding-bottom: 15px;
-                }
-              }
-            }
-          }
-          .menu_img {
-            background-color: #fd9898;
-            width: 300px;
-            height: 100%;
-          }
-        }
-        #sub_menu_rest {
-          background-color: rgba(25, 25, 25, 0.9);
-          height: 100vh;
-          width: 100vw;
-        }
-      }
+      // 전체 카테고리
       .all_menu {
         display: none;
         position: fixed;
         width: 100vw;
         height: 100vh;
         background-color: rgba(25, 25, 25, 0.9);
-        padding: 0px 190px;
+        padding: 0px 10%;
+        z-index: 1  ;      
         .close_btn {
           display: flex;
           justify-content: end;
@@ -403,8 +373,6 @@ body {
             justify-content: end;
             width: 100%;
 
-            .find_btn {
-            }
 
             .find_btn:first-child {
               span {
