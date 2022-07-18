@@ -1,0 +1,151 @@
+#main_page_nav, #easy_order, #best_product {
+  padding: 0 16.3%;
+}
+
+#slide .slide_banner {
+  position: relative;
+}
+#slide .slide_banner .banner_btn_wrap {
+  position: absolute;
+  display: flex;
+  top: 87%;
+  z-index: 4;
+  align-items: center;
+  right: 20%;
+}
+#slide .slide_banner .banner_btn_wrap .banner_player {
+  background-color: #2c2c2c;
+  padding: 7px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  opacity: 0.8;
+}
+#slide .slide_banner .banner_btn_wrap .banner_player img:not(:last-child) {
+  padding-right: 5px;
+}
+#slide .slide_banner .banner_btn_wrap .more_btn span {
+  display: flex;
+  align-items: center;
+}
+#slide .slide_banner .banner_btn_wrap .more_btn span img {
+  opacity: 0.8;
+  background-color: #2C2C2C;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+}
+
+#main_page_nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+#main_page_nav nav ul {
+  display: flex;
+}
+#main_page_nav nav ul .main_nav_disable {
+  width: 215px;
+  height: 198px;
+  border: 1px solid #707070;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#main_page_nav nav ul .main_nav_disable span {
+  color: #093C71;
+  font-size: 20px;
+  font-weight: semi-bold;
+}
+#main_page_nav nav ul .main_nav_disable:not(:last-child) {
+  margin-right: -1px;
+}
+#main_page_nav nav ul .main_nav_active {
+  width: 215px;
+  height: 198px;
+  border: 1px solid #707070;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #093c71;
+  margin-right: -1px;
+}
+#main_page_nav nav ul .main_nav_active span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: semi-bold;
+}
+
+#easy_order .title {
+  margin-bottom: 10px;
+}
+#easy_order .title p {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+#easy_order .subtitle p {
+  font-size: 18px;
+  text-align: center;
+}
+#easy_order .banner {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+#easy_order .banner img:first-child {
+  margin-right: 50px;
+}
+
+#best_product .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#best_product .title hr {
+  width: 479px;
+  height: 1px;
+}
+#best_product .title p {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0 48px;
+}
+#best_product .subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#best_product .product_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#best_product .product_wrap .product .product_img {
+  width: 377px;
+  height: 294px;
+  border: 1px solid #000;
+}
+#best_product .product_wrap .product .product_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 377px;
+  height: 98px;
+}
+#best_product .product_wrap .product .product_desc .desc_title {
+  font-size: 23px;
+}
+#best_product .product_wrap .product .product_desc .desc_subtitle {
+  font-size: 15px;
+}
+#best_product #best_product_wrap_01 {
+  margin-bottom: 20px;
+}
+#best_product #best_product_wrap_02 {
+  margin-bottom: 60px;
+}/*# sourceMappingURL=style.css.map */

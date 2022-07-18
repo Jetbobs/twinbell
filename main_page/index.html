@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="/common/css/header.css">
     <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -448,21 +449,210 @@
                 </nav>
             </div>
         </header>
-        <div class="slide_banner">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/img/slide_banner/slide_banner_01.png" alt=""></div>
-                    <div class="swiper-slide"><img src="/img/slide_banner/slide_banner_01.png" alt=""></div>
-                    <div class="swiper-slide"><img src="/img/slide_banner/slide_banner_01.png" alt=""></div>
+        <!-- 슬라이드 배너 섹션-->
+        <section id="slide">
+            <div class="slide_banner">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/img/slide_banner/slide_banner_01.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/slide_banner/slide_banner_01.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/slide_banner/slide_banner_01.png" alt=""></div>
+                    </div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="banner_btn_wrap">
+                    <div class="banner_player">
+                        <span>
+                            <img src="/icon/play_white.png" alt="">
+                            <img src="/icon/2   -   3.png" alt="">
+                            <img src="/icon/arrow_right_white.png" alt="">
+                            <img src="/icon/stop_white.png" alt="">
+                        </span>
+                    </div>
+                    <div class="more_btn">
+                        <span><img src="/icon/plus_white.png" alt=""></span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- 메인페이지 네비 버튼 섹션-->
+        <section id="main_page_nav">
+            <nav>
+                <ul>
+                    <!-- FAQ -->
+                    <li class="main_nav_disable"  id="faq_nav">
+                        <img src="/icon/nav/faq_nav.png" alt="">
+                        <span>FAQ</span>
+                    </li>
+                    <!-- 배송조회 -->
+                    <li class="main_nav_disable"  id="shipping_nav">
+                        <img src="/icon/nav/shipping_nav.png" alt="">
+                        <span>배송조회</span>
+                    </li>
+                    <!-- 문의현황 -->
+                    <li class="main_nav_active"  id="inquiry_nav">
+                        <img src="/icon/nav/inquiry_nav.png" alt="">
+                        <span>문의현황</span>
+                    </li>
+                    <!-- 공지사항 / 안내 -->
+                    <li class="main_nav_disable"  id="board_nav">
+                        <img src="/icon/nav/board_nav.png" alt="">
+                        <span>공지사항 / 안내</span>
+                    </li>
+                    <!-- 이벤트 -->
+                    <li class="main_nav_disable"  id="event_nav">
+                        <img src="/icon/nav/event_nav.png" alt="">
+                        <span>이벤트</span>
+                    </li>
+                    <!-- 자료실 -->
+                    <li class="main_nav_disable"  id="download_nav">
+                        <img src="/icon/nav/download_nav.png" alt="">
+                        <span>자료실</span>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- 주문을 쉽게 섹션 -->
+        <section id="easy_order">
+            <!-- 타이틀 -->
+            <div class="title">
+                <p>질문이 어려우신가요? 주문을 쉽고 간단하게!</p>
+            </div>
+            <!-- 서브타이틀 -->
+            <div class="subtitle">
+                <p>인쇄 주문에 관하여 어려워하시는 분들을 위하여 주문을 쉽고 간단하게 하실 수 있도록 하였습니다. 하단의 두가지의 옵션 중에서 선택하여 주시기 바랍니다.</p>
+            </div>
+            <!-- 배너 이미지 -->
+            <div class="banner">
+                <img src="/img/easy_order/easy_order_01.png" alt="">
+                <img src="/img/easy_order/easy_order_02.png" alt="">
+            </div>
+        </section>
+        <!-- 베스트 상품 섹션 -->
+        <section id="best_product">
+            <!-- 타이틀 -->
+            <div class="title">
+                <hr>
+                <p>베스트 상품</p>
+                <hr>
+            </div>
+            <!-- 서브타이틀 -->
+            <div class="subtitle">
+                <p>트윈벨미디어의 고객님들이 많이 선택한 상품입니다.</p>
+            </div>
+            <!-- 베스트 상품 wrap 첫번째 -->
+            <div class="product_wrap" id="best_product_wrap_01">
+                <!-- 베스트 상품 -->
+                <div class="product"  id="product_school">
+                    <!-- 베스트 상품 이미지 -->
+                    <div class="product_img">
+                        <img src="#" alt="">
+                    </div>
+                    <!-- 베스트 상품 설명 -->
+                    <div class="product_desc">
+                        <!-- 베스트 상품 설명 타이틀 -->
+                        <p class="desc_title">학교ㆍ학원 교육교재</p>
+                        <!-- 베스트 상품 설명 서브타이틀 -->
+                        <p class="desc_subtitle">교육 콘텐츠와 목적에 맞게 완성도 높은 교재를 위해</p>
+                        <p class="desc_subtitle">
+                            최선을 다하여 제작합니다.</p>
+                    </div>
+                </div>
+                <!-- 베스트 상품 -->
+                <div class="product"  id="product_report">
+                    <!-- 베스트 상품 이미지 -->
+                    <div class="product_img">
+                        <img src="#" alt="">
+                    </div>
+                    <!-- 베스트 상품 설명 -->
+                    <div class="product_desc">
+                        <!-- 베스트 상품 설명 타이틀 -->
+                        <p class="desc_title">보고서ㆍ메뉴얼</p>
+                        <!-- 베스트 상품 설명 서브타이틀 -->
+                        <p class="desc_subtitle">고퀄리티의 제본으로
+                        </p>
+                        <p class="desc_subtitle">
+                            만족도 높은 책자를 만나보세요.</p>
+                    </div>
+                </div>
+                <!-- 베스트 상품 -->
+                <div class="product"  id="">
+                    <!-- 베스트 상품 이미지 -->
+                    <div class="product_img">
+                        <img src="#" alt="">
+                    </div>
+                    <!-- 베스트 상품 설명 -->
+                    <div class="product_desc">
+                        <!-- 베스트 상품 설명 타이틀 -->
+                        <p class="desc_title">책자</p>
+                        <!-- 베스트 상품 설명 서브타이틀 -->
+                        <p class="desc_subtitle">고퀄리티의 제본으로
+                        </p>
+                        <p class="desc_subtitle">
+                            만족도 높은 책자를 만나보세요.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 베스트 상품 wrap 두번째 -->
+            <div class="product_wrap" id="best_product_wrap_02">
+                <!-- 베스트 상품 -->
+                <div class="product"  id="">
+                    <!-- 베스트 상품 이미지 -->
+                    <div class="product_img">
+                        <img src="#" alt="">
+                    </div>
+                    <!-- 베스트 상품 설명 -->
+                    <div class="product_desc">
+                        <!-- 베스트 상품 설명 타이틀 -->
+                        <p class="desc_title">책자</p>
+                        <!-- 베스트 상품 설명 서브타이틀 -->
+                        <p class="desc_subtitle">고퀄리티의 제본으로
+                        </p>
+                        <p class="desc_subtitle">
+                            만족도 높은 책자를 만나보세요.</p>
+                    </div>
+                </div>
+                <!-- 베스트 상품 -->
+                <div class="product"  id="">
+                    <!-- 베스트 상품 이미지 -->
+                    <div class="product_img">
+                        <img src="#" alt="">
+                    </div>
+                    <!-- 베스트 상품 설명 -->
+                    <div class="product_desc">
+                        <!-- 베스트 상품 설명 타이틀 -->
+                        <p class="desc_title">책자</p>
+                        <!-- 베스트 상품 설명 서브타이틀 -->
+                        <p class="desc_subtitle">고퀄리티의 제본으로
+                        </p>
+                        <p class="desc_subtitle">
+                            만족도 높은 책자를 만나보세요.</p>
+                    </div>
+                </div>
+                <!-- 베스트 상품 -->
+                <div class="product"  id="">
+                    <!-- 베스트 상품 이미지 -->
+                    <div class="product_img">
+                        <img src="#" alt="">
+                    </div>
+                    <!-- 베스트 상품 설명 -->
+                    <div class="product_desc">
+                        <!-- 베스트 상품 설명 타이틀 -->
+                        <p class="desc_title">책자</p>
+                        <!-- 베스트 상품 설명 서브타이틀 -->
+                        <p class="desc_subtitle">고퀄리티의 제본으로
+                        </p>
+                        <p class="desc_subtitle">
+                            만족도 높은 책자를 만나보세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
 <script src="/main_page/js/slide.js"></script>
 
