@@ -1,4 +1,76 @@
-#main_page_nav, #easy_order, #best_product {
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#main_page_nav,
+#easy_order,
+#best_product,
+#customer_service {
   padding: 0 16.3%;
 }
 
@@ -55,10 +127,13 @@
   flex-direction: column;
   align-items: center;
 }
+#main_page_nav nav ul .main_nav_disable img {
+  margin-bottom: 15px;
+}
 #main_page_nav nav ul .main_nav_disable span {
   color: #093C71;
   font-size: 20px;
-  font-weight: semi-bold;
+  font-weight: 600;
 }
 #main_page_nav nav ul .main_nav_disable:not(:last-child) {
   margin-right: -1px;
@@ -74,10 +149,13 @@
   background-color: #093c71;
   margin-right: -1px;
 }
+#main_page_nav nav ul .main_nav_active img {
+  margin-bottom: 15px;
+}
 #main_page_nav nav ul .main_nav_active span {
   color: #fff;
   font-size: 20px;
-  font-weight: semi-bold;
+  font-weight: 600;
 }
 
 #easy_order .title {
@@ -120,6 +198,7 @@
   font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
+  color: #444;
 }
 #best_product .product_wrap {
   display: flex;
@@ -139,6 +218,7 @@
 }
 #best_product .product_wrap .product .product_desc .desc_title {
   font-size: 23px;
+  font-weight: 600;
 }
 #best_product .product_wrap .product .product_desc .desc_subtitle {
   font-size: 15px;
@@ -148,4 +228,40 @@
 }
 #best_product #best_product_wrap_02 {
   margin-bottom: 60px;
+}
+
+#customer_service .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#customer_service .title hr {
+  width: 479px;
+  height: 1px;
+}
+#customer_service .title p {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0 75px;
+}
+#customer_service .subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+#customer_service .cs_wrap .cs_box {
+  width: 300px;
+  height: 465px;
+}
+#customer_service .cs_wrap .cs_box p {
+  font-size: 28px;
+  color: white;
+}
+#customer_service .cs_wrap .cs_box p strong {
+  font-weight: bold;
+}
+#customer_service .cs_wrap #sign_up {
+  background-color: #093c71;
 }/*# sourceMappingURL=style.css.map */

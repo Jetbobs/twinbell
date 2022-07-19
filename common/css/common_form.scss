@@ -6,6 +6,11 @@
   font-weight: 700;
   font-style: normal;
 }
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
 
 /* ====================================================================== */
 /* [Web Font]
@@ -29,7 +34,7 @@ html[lang="ko"] body {
 
 html[lang="en"],
 html *[lang="en"] {
-  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
 html[lang="en"] body,
@@ -37,7 +42,9 @@ html *[lang="en"] body {
   font-size: 18px;
   font-weight: 400;
 }
-
+//font-weight
+$semi-bold: 600;
+$regular: 500;
 //font-size
 $login-btn-size: 14px;
 
