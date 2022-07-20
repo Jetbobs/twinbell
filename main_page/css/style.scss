@@ -1,10 +1,17 @@
 @import "../../common/css/common_form.scss";
+
+* {
+    font-weight: $semi-bold;
+}
+
 // 슬라이드 제외 양 옆 padding 조절
 #main_page_nav,
 #easy_order,
 #best_product,
-#customer_service {
+#customer_service,
+#figure_out, #blank {
     padding: 0 16.3%;
+    margin-bottom: 60px;
 }
 
 // 슬라이드배너
@@ -57,7 +64,6 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 60px;
 
     nav {
         ul {
@@ -72,7 +78,8 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                img{
+
+                img {
                     margin-bottom: 15px;
                 }
 
@@ -98,7 +105,8 @@
                 align-items: center;
                 background-color: #093c71;
                 margin-right: -1px;
-                img{
+
+                img {
                     margin-bottom: 15px;
                 }
 
@@ -138,7 +146,7 @@
     .banner {
         display: flex;
         justify-content: center;
-        margin: 60px 0;
+        margin-top: 60px;
 
         img:first-child {
             margin-right: 50px;
@@ -220,11 +228,10 @@
     }
 
     // 베스트 상품 wrap 두번째
-    #best_product_wrap_02 {
-        margin-bottom: 60px;
-    }
+    #best_product_wrap_02 {}
 }
 
+// 고객지원 섹션
 #customer_service {
 
     // 고객지원 섹션 타이틀
@@ -254,21 +261,195 @@
         margin-bottom: 20px;
         color: #444;
     }
+
     //고객지원 박스 wrap
-    .cs_wrap{
-        .cs_box{
+    .cs_wrap {
+        display: flex;
+        justify-content: space-between;
+
+        // 컨텐츠 박스
+        .cs_box {
             width: 300px;
             height: 465px;
-            p{
-                font-size: 28px;
-                color: #ffff;
-                strong{
-                    font-weight: bold;
+            padding: 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #707070;
+
+            // 컨텐츠 텍스트 font-size 28px
+            .cs_box_text {
+                p {
+                    font-size: 28px;
+                    margin-bottom: 5px;
+
+                    strong {
+                        font-weight: bold;
+                    }
+                }
+
+                // 컨텐츠 서브 텍스트 font-size 15px;
+                .cs_box_subtext {
+                    p {
+                        font-size: 15px;
+                        color: #929292;
+                        font-weight: $semi-bold;
+                    }
+                }
+            }
+
+            // 컨텐츠 박스 버튼
+            .cs_btn {
+                border: 1px solid #DDDDDD;
+                border-radius: 10px;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            // 배경 남색 버튼
+            #cs_faq,
+            #cs_ask,
+            #cs_template_download,
+            #cs_location,
+            #cs_estimate {
+                padding: 15px;
+                background-color: #093c71;
+                color: #fff;
+            }
+
+            // 가입하기 버튼
+            #cs_sign_up {
+                border: 1px solid #fff;
+                padding: 15px;
+                color: #fff;
+            }
+
+            // faq 버튼
+            #cs_faq {
+                margin-bottom: 5px;
+            }
+
+            // 흰색 바탕 작은 버튼
+            #cs_download,
+            #cs_bookcover_design,
+            #cs_print_status,
+            #cs_shipping_status,
+            #cs_shipping_location,
+            #cs_tax_bill {
+                width: 120px;
+                padding: 15px;
+                color: #093C71;
+                background-color: #fff;
+            }
+
+            // 주문/배송조회 글자 길이때문에 따로 설정해야함
+            #cs_shipping_status {
+                padding: 15px 9px;
+            }
+        }
+
+        // 컨텐츠 박스 가입 관련
+        #sign_up {
+            background-color: #093c71;
+
+            .cs_box_text {
+                color: #fff;
+            }
+        }
+
+        // 컨텐츠 박스 문의 관련
+        #ask {
+            background-color: #f6f6f6;
+
+            .cs_box_text {
+                color: #000;
+
+                >p {
+                    margin-bottom: 15px;
                 }
             }
         }
-        #sign_up{
-            background-color: #093c71;
+
+        // 컨텐츠 박스 다운로드 및 오시는 길 관련
+        #download {
+            background-color: #f6f6f6;
+
+            .cs_contents_wrap {
+                .cs_box_text {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .cs_smallbtn_wrap {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        // 컨텐츠 박스 고객지원 관련
+        #cs {
+            background-color: #f6f6f6;
+
+            .cs_contents_wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                .cs_box_text {
+                    margin-bottom: 20px;
+                }
+
+                .cs_smallbtn_wrap {
+                    display: flex;
+                    flex-direction: column;
+
+                    .cs_smallbtn {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#figure_out {
+    .figure_out_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .slide_title {
+            margin-bottom: 10px;
+
+            p {
+                font-size: 26px;
+                color: #222222;
+            }
+        }
+
+        .more_btn {
+            span {
+                border: 1px solid #707070;
+                font-size: 12px;
+                color: #707070;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+#blank{
+    .img_wrap{
+        display: flex;
+        justify-content: space-between;
+        .img{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #707070;
         }
     }
 }
