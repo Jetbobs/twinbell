@@ -23,7 +23,7 @@
             position: absolute;
             display: flex;
             top: 87%;
-            z-index: 4;
+            z-index: 3;
             align-items: center;
             right: 20%;
 
@@ -40,18 +40,75 @@
                     padding-right: 5px;
                 }
             }
-
-            .more_btn {
-                span {
-                    display: flex;
-                    align-items: center;
-
-                    img {
-                        opacity: 0.8;
-                        background-color: #2C2C2C;
-                        border-radius: 50%;
-                        color: #fff;
-                        padding: 10px;
+            .more_btn{
+                input[id="banner_popup"] {
+                    display: none;
+                
+                    +label {
+                        display: inline-block;
+                        font-weight: bold;
+                        span{
+                            display: flex;
+                            img{
+                                background: #2c2c2c;
+                                opacity: 0.8;
+                                padding: 10px;
+                                border-radius: 50%;
+                            }
+                        }
+                        +div {
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all 0.5s;
+                            position: fixed;
+                            ;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 100;
+                
+                            >label {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, .9);
+                                z-index: 1;
+                            }
+                
+                            >div {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 1100px;
+                                height: 818px;
+                                z-index: 2;
+                
+                                .modal_banner_popup{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                            }
+                        }
+                    }
+                }
+                input[id="popup"]:checked {
+                    +label {
+                        +div {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                input[id="banner_popup"]:checked {
+                    +label {
+                        +div {
+                            opacity: 1;
+                            visibility: visible;
+                        }
                     }
                 }
             }
@@ -78,7 +135,7 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-
+                cursor: pointer;
                 img {
                     margin-bottom: 15px;
                 }
@@ -105,7 +162,7 @@
                 align-items: center;
                 background-color: #093c71;
                 margin-right: -1px;
-
+                cursor: pointer;
                 img {
                     margin-bottom: 15px;
                 }

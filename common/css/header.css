@@ -103,7 +103,7 @@ header #menu .logo_menu_wrap .menu nav ul li .sub_menu_wrapper {
   width: 100%;
   left: 0px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 4;
   opacity: 0;
   visibility: hidden;
   transition: all 1s ease-in;
