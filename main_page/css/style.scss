@@ -513,13 +513,20 @@
 //플로팅 배너
 #floating_banner{
     // 배너 wrap
+    #floating_more_btn{
+        display: none;
+    }
     .banner_wrap{
+        background-color: #fff;
+        transition: all 0.3s;
         width: 140px;
         position: fixed;
         z-index: 5;
-        right: 2%;
-        top: 54px;
+        right: 0px;
+        top: 0px;
         border: 1px solid #DDDDDD;
+        height: 100vh;
+        //펼치기 버튼 input
         // 플로팅 배너 맨위 상단 부분
         .banner_top{
             background-color: #fe4648;
@@ -536,8 +543,7 @@
         // 플로팅 배너 네비버튼 wrap
         .banner_nav_wrap{
             position: relative;
-            padding: 150px 0;
-            background-color: #fff;
+            margin-top: 150px;
             nav{
                 ul{
                     a{
@@ -551,7 +557,7 @@
                 }
             }
             // 플로팅 배너 왼쪽 펼치기 버튼
-            .floating_more_btn{
+            label[for="floating_more_btn"]{
                 border-top: 1px solid #ddd;
                 border-left: 1px solid #ddd;
                 border-bottom: 1px solid #ddd;
@@ -560,8 +566,37 @@
                 left: -20px;
                 top: 45%;
                 padding: 10px 5px;
-                cursor: pointer;
+                cursor:pointer;
+            }
+            // 가로 구분선
+            hr{
+                border: 1px solid #eee;
+                height: 1px;
+                margin: 0 auto;
+                width: 100px;
             }
         }
+        .banner_nav_wrap2{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+    input#floating_more_btn:checked ~ .banner_wrap{
+        right: -140px;
+    }
+}
+//top button
+.top_btn{
+    display: none;
+    cursor: pointer;
+    img{
+        background-color: #003B70;
+        padding: 10px 12.5px;
+        position: fixed;
+        right: 15%;
+        bottom: 5%;
+        z-index: 5;
+        opacity: 0.8;
     }
 }
