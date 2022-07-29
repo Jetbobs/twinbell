@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @font-face {
   font-family: "Pretendard-Bold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
 /* ====================================================================== */
 /* [Web Font]
 /* ====================================================================== */
@@ -14,7 +19,7 @@ html {
 
 html[lang=ko-KR],
 html[lang=ko] {
-  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
 }
 
 html[lang=ko-KR] body,
@@ -27,7 +32,7 @@ html[lang=ko] body {
 
 html[lang=en],
 html *[lang=en] {
-  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
 html[lang=en] body,
@@ -40,6 +45,7 @@ html *[lang=en] body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 html,
@@ -55,6 +61,11 @@ li {
 
 h2 {
   font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body #app {
@@ -126,8 +137,11 @@ body #app main #main .sign_up_wrap .sign_up_etc nav ul li {
   float: left;
   padding: 0px 5px;
 }
-body #app main #main .sign_up_wrap .sign_up_etc nav ul li:not(:last-child) {
+body #app main #main .sign_up_wrap .sign_up_etc nav ul a li {
   border-right: 2px solid #878787;
+}
+body #app main #main .sign_up_wrap .sign_up_etc nav ul a:last-child li {
+  border-right: 0px;
 }
 body #app main #main .sns_btn_wrap nav ul li {
   float: left;
