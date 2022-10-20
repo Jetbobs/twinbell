@@ -1,0 +1,28 @@
+@use '../font/font_mixin';
+
+.btn{
+    width: 170px;
+    height: 54px;    
+}
+.btn2{
+    width: 130px;
+    height: 54px;
+}
+
+@mixin btn_basic($bg,$fc) {
+    @extend .btn;
+    background-color: $bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font_mixin.f14S($fc);
+};
+
+@mixin btn_blue($bg,$fc){
+    @extend .btn2;
+    background-color: $bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font_mixin.f14S($fc);
+}

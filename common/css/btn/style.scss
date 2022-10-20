@@ -1,0 +1,16 @@
+@use './btn_mixin';
+.btn_black{
+    @include btn_mixin.btn_basic(#000,#fff );
+}
+.btn_white{
+    @include btn_mixin.btn_basic(#fff,#000);
+}
+.btn_blue{
+    @include btn_mixin.btn_blue(#007DFB,#fff);
+}
+.btn_blue_over{
+    @include btn_mixin.btn_blue(#004EA2,#fff);
+}
+.btn_test{
+    @extend .btn_black;
+}

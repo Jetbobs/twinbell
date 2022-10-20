@@ -1,0 +1,126 @@
+//font-mixin
+
+//font-size 10
+@mixin f10R($color) {
+    font-size: 10px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f10S($color) {
+    font-size: 10px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f10B($color) {
+    font-size: 10px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 12
+@mixin f12R($color) {
+    font-size: 12px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f12S($color) {
+    font-size: 12px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f12B($color) {
+    font-size: 12px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 14
+@mixin f14R($color) {
+    font-size: 14px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f14S($color) {
+    font-size: 14px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f14B($color) {
+    font-size: 14px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 15
+@mixin f15R($color) {
+    font-size: 15px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f15S($color) {
+    font-size: 15px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f15B($color) {
+    font-size: 15px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 18
+@mixin f18R($color) {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f18S($color) {
+    font-size: 18px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f18B($color) {
+    font-size: 18px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 21
+@mixin f21R($color) {
+    font-size: 21px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f21S($color) {
+    font-size: 21px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f21B($color) {
+    font-size: 21px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 24
+@mixin f24R($color) {
+    font-size: 24px;
+    font-weight: 400;
+    color: $color;
+}
+@mixin f24S($color) {
+    font-size: 24px;
+    font-weight: 600;
+    color: $color;
+}
+@mixin f24B($color) {
+    font-size: 24px;
+    font-weight: bold;
+    color: $color;
+}
+//font-size 50
+@mixin f50S($color) {
+    font-size: 50px;
+    font-weight: 600;
+    color: $color;
+}
+//font-size 72
+@mixin f72S($color) {
+    font-size: 72px;
+    font-weight: 600;
+    color: $color;
+}

@@ -68,27 +68,6 @@ a {
   color: inherit;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-ul,
-li {
-  list-style: none;
-}
-
-h2 {
-  font-size: 40px;
-}
-
 body #app {
   height: 100%;
 }

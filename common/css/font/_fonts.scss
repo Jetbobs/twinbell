@@ -1,0 +1,556 @@
+@use './font_mixin.scss';
+@use '/common/css/color/color';
+//font-size 10 regular
+.f10R{
+    .f10R222{
+        @include f10R($color-222);
+    };
+    .f10R666{
+        @include f10R($color-666)
+    };
+    .f10R888{
+        @include f10R($color-888);   
+    }
+    .f10RFFF{
+        @include f10R($color-FFF);   
+    }
+    .f10R004{
+        @include f10R($color-004);   
+    }
+    .f10RFF0{
+        @include f10R($color-ff0);   
+    }
+    .f10R093{
+        @include f10R($color-093);   
+    }
+}
+// font-size 10 semi-bold
+.f10S{
+    .f10S222{
+        @include f10S($color-222);
+    };
+    .f10S666{
+        @include f10S($color-666)
+    };
+    .f10S888{
+        @include f10S($color-888);   
+    }
+    .f10SFFF{
+        @include f10S($color-FFF);   
+    }
+    .f10S004{
+        @include f10S($color-004);   
+    }
+    .f10SFF0{
+        @include f10S($color-ff0);   
+    }
+    .f10S093{
+        @include f10S($color-093);   
+    }
+}
+//font-size 10 bold
+.f10B{
+    .f10B222{
+        @include f10B($color-222);
+    };
+    .f10B666{
+        @include f10B($color-666)
+    };
+    .f10B888{
+        @include f10B($color-888);   
+    }
+    .f10BFFF{
+        @include f10B($color-FFF);   
+    }
+    .f10B004{
+        @include f10B($color-004);   
+    }
+    .f10BFF0{
+        @include f10B($color-ff0);   
+    }
+    .f10B093{
+        @include f10B($color-093);   
+    }
+}
+//font-size 12 regular
+.f12R{
+    .f12R222{
+        @include f12R($color-222);
+    };
+    .f12R666{
+        @include f12R($color-666)
+    };
+    .f12R888{
+        @include f12R($color-888);   
+    }
+    .f12RFFF{
+        @include f12R($color-FFF);   
+    }
+    .f12R004{
+        @include f12R($color-004);   
+    }
+    .f12RFF0{
+        @include f12R($color-ff0);   
+    }
+    .f12R093{
+        @include f12R($color-093);   
+    }
+}
+// font-size 12 semi-bold
+.f12S{
+    .f12S222{
+        @include f12S($color-222);
+    };
+    .f12S666{
+        @include f12S($color-666)
+    };
+    .f12S888{
+        @include f12S($color-888);   
+    }
+    .f12SFFF{
+        @include f12S($color-FFF);   
+    }
+    .f12S004{
+        @include f12S($color-004);   
+    }
+    .f12SFF0{
+        @include f12S($color-ff0);   
+    }
+    .f12S093{
+        @include f12S($color-093);   
+    }
+}
+//font-size 12 bold
+.f12B{
+    .f12B222{
+        @include f12B($color-222);
+    };
+    .f12B666{
+        @include f12B($color-666)
+    };
+    .f12B888{
+        @include f12B($color-888);   
+    }
+    .f12BFFF{
+        @include f12B($color-FFF);   
+    }
+    .f12B004{
+        @include f12B($color-004);   
+    }
+    .f12BFF0{
+        @include f12B($color-ff0);   
+    }
+    .f12B093{
+        @include f12B($color-093);   
+    }
+}
+//font-size 14 regular
+.f14R{
+    .f14R222{
+        @include f14R($color-222);
+    };
+    .f14R666{
+        @include f14R($color-666)
+    };
+    .f14R888{
+        @include f14R($color-888);   
+    }
+    .f14RFFF{
+        @include f14R($color-FFF);   
+    }
+    .f14R004{
+        @include f14R($color-004);   
+    }
+    .f14RFF0{
+        @include f14R($color-ff0);   
+    }
+    .f14R093{
+        @include f14R($color-093);   
+    }
+}
+// font-size 14 semi-bold
+.f14S{
+    .f14S222{
+        @include f14S($color-222);
+    };
+    .f14S666{
+        @include f14S($color-666)
+    };
+    .f14S888{
+        @include f14S($color-888);   
+    }
+    .f14SFFF{
+        @include f14S($color-FFF);   
+    }
+    .f14S004{
+        @include f14S($color-004);   
+    }
+    .f14SFF0{
+        @include f14S($color-ff0);   
+    }
+    .f14S093{
+        @include f14S($color-093);   
+    }
+}
+//font-size 14 bold
+.f14B{
+    .f14B222{
+        @include f14B($color-222);
+    };
+    .f14B666{
+        @include f14B($color-666)
+    };
+    .f14B888{
+        @include f14B($color-888);   
+    }
+    .f14BFFF{
+        @include f14B($color-FFF);   
+    }
+    .f14B004{
+        @include f14B($color-004);   
+    }
+    .f14BFF0{
+        @include f14B($color-ff0);   
+    }
+    .f14B093{
+        @include f14B($color-093);   
+    }
+}
+//font-size 15 regular
+.f15R{
+    .f15R222{
+        @include f15R($color-222);
+    };
+    .f15R666{
+        @include f15R($color-666)
+    };
+    .f15R888{
+        @include f15R($color-888);   
+    }
+    .f15RFFF{
+        @include f15R($color-FFF);   
+    }
+    .f15R004{
+        @include f15R($color-004);   
+    }
+    .f15RFF0{
+        @include f15R($color-ff0);   
+    }
+    .f15R093{
+        @include f15R($color-093);   
+    }
+}
+// font-size 15 semi-bold
+.f15S{
+    .f15S222{
+        @include f15S($color-222);
+    };
+    .f15S666{
+        @include f15S($color-666)
+    };
+    .f15S888{
+        @include f15S($color-888);   
+    }
+    .f15SFFF{
+        @include f15S($color-FFF);   
+    }
+    .f15S004{
+        @include f15S($color-004);   
+    }
+    .f15SFF0{
+        @include f15S($color-ff0);   
+    }
+    .f15S093{
+        @include f15S($color-093);   
+    }
+}
+//font-size 15 bold
+.f15B{
+    .f15B222{
+        @include f15B($color-222);
+    };
+    .f15B666{
+        @include f15B($color-666)
+    };
+    .f15B888{
+        @include f15B($color-888);   
+    }
+    .f15BFFF{
+        @include f15B($color-FFF);   
+    }
+    .f15B004{
+        @include f15B($color-004);   
+    }
+    .f15BFF0{
+        @include f15B($color-ff0);   
+    }
+    .f15B093{
+        @include f15B($color-093);   
+    }
+}
+//font-size 18 regular
+.f18R{
+    .f18R222{
+        @include f18R($color-222);
+    };
+    .f18R666{
+        @include f18R($color-666)
+    };
+    .f18R888{
+        @include f18R($color-888);   
+    }
+    .f18RFFF{
+        @include f18R($color-FFF);   
+    }
+    .f18R004{
+        @include f18R($color-004);   
+    }
+    .f18RFF0{
+        @include f18R($color-ff0);   
+    }
+    .f18R093{
+        @include f18R($color-093);   
+    }
+}
+// font-size 18 semi-bold
+.f18S{
+    .f18S222{
+        @include f18S($color-222);
+    };
+    .f18S666{
+        @include f18S($color-666)
+    };
+    .f18S888{
+        @include f18S($color-888);   
+    }
+    .f18SFFF{
+        @include f18S($color-FFF);   
+    }
+    .f18S004{
+        @include f18S($color-004);   
+    }
+    .f18SFF0{
+        @include f18S($color-ff0);   
+    }
+    .f18S093{
+        @include f18S($color-093);   
+    }
+}
+//font-size 18 bold
+.f18B{
+    .f18B222{
+        @include f18B($color-222);
+    };
+    .f18B666{
+        @include f18B($color-666)
+    };
+    .f18B888{
+        @include f18B($color-888);   
+    }
+    .f18BFFF{
+        @include f18B($color-FFF);   
+    }
+    .f18B004{
+        @include f18B($color-004);   
+    }
+    .f18BFF0{
+        @include f18B($color-ff0);   
+    }
+    .f18B093{
+        @include f18B($color-093);   
+    }
+}
+//font-size 21 regular
+.f21R{
+    .f21R222{
+        @include f21R($color-222);
+    };
+    .f21R666{
+        @include f21R($color-666)
+    };
+    .f21R888{
+        @include f21R($color-888);   
+    }
+    .f21RFFF{
+        @include f21R($color-FFF);   
+    }
+    .f21R004{
+        @include f21R($color-004);   
+    }
+    .f21RFF0{
+        @include f21R($color-ff0);   
+    }
+    .f21R093{
+        @include f21R($color-093);   
+    }
+}
+// font-size 21 semi-bold
+.f21S{
+    .f21S222{
+        @include f21S($color-222);
+    };
+    .f21S666{
+        @include f21S($color-666)
+    };
+    .f21S888{
+        @include f21S($color-888);   
+    }
+    .f21SFFF{
+        @include f21S($color-FFF);   
+    }
+    .f21S004{
+        @include f21S($color-004);   
+    }
+    .f21SFF0{
+        @include f21S($color-ff0);   
+    }
+    .f21S093{
+        @include f21S($color-093);   
+    }
+}
+//font-size 21 bold
+.f21B{
+    .f21B222{
+        @include f21B($color-222);
+    };
+    .f21B666{
+        @include f21B($color-666)
+    };
+    .f21B888{
+        @include f21B($color-888);   
+    }
+    .f21BFFF{
+        @include f21B($color-FFF);   
+    }
+    .f21B004{
+        @include f21B($color-004);   
+    }
+    .f21BFF0{
+        @include f21B($color-ff0);   
+    }
+    .f21B093{
+        @include f21B($color-093);   
+    }
+}
+//font-size 24 bold
+.f24B{
+    .f24B222{
+        @include f24B($color-222);
+    };
+    .f24B666{
+        @include f24B($color-666)
+    };
+    .f24B888{
+        @include f24B($color-888);   
+    }
+    .f24BFFF{
+        @include f24B($color-FFF);   
+    }
+    .f24B004{
+        @include f24B($color-004);   
+    }
+    .f24BFF0{
+        @include f24B($color-ff0);   
+    }
+    .f24B093{
+        @include f24B($color-093);   
+    }
+}
+//font-size 28 bold
+.f28B{
+    .f28B222{
+        @include f28B($color-222);
+    };
+    .f28B666{
+        @include f28B($color-666)
+    };
+    .f28B888{
+        @include f28B($color-888);   
+    }
+    .f28BFFF{
+        @include f28B($color-FFF);   
+    }
+    .f28B004{
+        @include f28B($color-004);   
+    }
+    .f28BFF0{
+        @include f28B($color-ff0);   
+    }
+    .f28B093{
+        @include f28B($color-093);   
+    }
+}
+// font-size 34 semi-bold
+.f34S{
+    .f34S222{
+        @include f34S($color-222);
+    };
+    .f34S666{
+        @include f34S($color-666)
+    };
+    .f34S888{
+        @include f34S($color-888);   
+    }
+    .f34SFFF{
+        @include f34S($color-FFF);   
+    }
+    .f34S004{
+        @include f34S($color-004);   
+    }
+    .f34SFF0{
+        @include f34S($color-ff0);   
+    }
+    .f34S093{
+        @include f34S($color-093);   
+    }
+}
+// font-size 50 semi-bold
+.f50S{
+    .f50S222{
+        @include f50S($color-222);
+    };
+    .f50S666{
+        @include f50S($color-666)
+    };
+    .f50S888{
+        @include f50S($color-888);   
+    }
+    .f50SFFF{
+        @include f50S($color-FFF);   
+    }
+    .f50S004{
+        @include f50S($color-004);   
+    }
+    .f50SFF0{
+        @include f50S($color-ff0);   
+    }
+    .f50S093{
+        @include f50S($color-093);   
+    }
+}
+// font-size 72 semi-bold
+.f72S{
+    .f72S222{
+        @include f72S($color-222);
+    };
+    .f72S666{
+        @include f72S($color-666)
+    };
+    .f72S888{
+        @include f72S($color-888);   
+    }
+    .f72SFFF{
+        @include f72S($color-FFF);   
+    }
+    .f72S004{
+        @include f72S($color-004);   
+    }
+    .f72SFF0{
+        @include f72S($color-ff0);   
+    }
+    .f72S093{
+        @include f72S($color-093);   
+    }
+}
+
+

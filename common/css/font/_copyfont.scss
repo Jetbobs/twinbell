@@ -1,0 +1,48 @@
+// font-size 72 semi-bold
+.f72S{
+    .f72S222{
+        @include f72S($color-222);
+    };
+    .f72S666{
+        @include f72S($color-666)
+    };
+    .f72S888{
+        @include f72S($color-888);   
+    }
+    .f72SFFF{
+        @include f72S($color-FFF);   
+    }
+    .f72S004{
+        @include f72S($color-004);   
+    }
+    .f72SFF0{
+        @include f72S($color-ff0);   
+    }
+    .f72S093{
+        @include f72S($color-093);   
+    }
+}
+//font-size 72 bold
+.f72B{
+    .f72B222{
+        @include f72B($color-222);
+    };
+    .f72B666{
+        @include f72B($color-666)
+    };
+    .f72B888{
+        @include f72B($color-888);   
+    }
+    .f72BFFF{
+        @include f72B($color-FFF);   
+    }
+    .f72B004{
+        @include f72B($color-004);   
+    }
+    .f72BFF0{
+        @include f72B($color-ff0);   
+    }
+    .f72B093{
+        @include f72B($color-093);   
+    }
+}

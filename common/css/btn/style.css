@@ -1,0 +1,49 @@
+.btn, .btn_black, .btn_white, .btn_test {
+  width: 170px;
+  height: 54px;
+}
+
+.btn2, .btn_blue, .btn_blue_over {
+  width: 130px;
+  height: 54px;
+}
+
+.btn_black, .btn_test {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn_white {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn_blue {
+  background-color: #007DFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn_blue_over {
+  background-color: #004EA2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
