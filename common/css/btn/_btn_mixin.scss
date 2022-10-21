@@ -1,28 +1,182 @@
 @use '../font/font_mixin';
 
-.btn{
-    width: 170px;
-    height: 54px;    
+.align_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.btn2{
+
+.btn {
+    width: 170px;
+    height: 54px;
+}
+
+.btn_b {
     width: 130px;
     height: 54px;
 }
 
-@mixin btn_basic($bg,$fc) {
+.btn_c {
+    width: 239px;
+    height: 100px;
+}
+
+.btn_c_w {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    @extend .align_center;
+    border: none
+}
+
+.btn_r {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+@mixin btn_basic($bg, $fc) {
     @extend .btn;
     background-color: $bg;
     display: flex;
     justify-content: center;
     align-items: center;
     @include font_mixin.f14S($fc);
-};
+}
 
-@mixin btn_blue($bg,$fc){
-    @extend .btn2;
+;
+
+@mixin btn_blue($bg, $fc) {
+    @extend .btn_b;
     background-color: $bg;
     display: flex;
     justify-content: center;
     align-items: center;
     @include font_mixin.f14S($fc);
+    border: none;
+}
+
+@mixin comment_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    @extend .btn_c;
+}
+
+@mixin comment {
+    border: none;
+}
+
+@mixin btn_comment($bg) {
+    @extend .btn_c_w;
+    background-color: $bg;
+}
+
+@mixin btn_r($bg, $fc) {
+    @extend .btn_r;
+    background-color: $bg;
+    @include font_mixin.f14S($fc);
+}
+
+//단순 표기
+
+.btn_ask_51 {
+    width: 51px;
+    height: 21px;
+    @extend .align_center;
+}
+
+.btn_ask_71 {
+    width: 71px;
+    height: 30px;
+    @extend .align_center;
+}
+
+.btn_event {
+    width: 71px;
+    height: 30px;
+    @extend .align_center;
+}
+
+.btn_mypage {
+    width: 71px;
+    height: 24px;
+    @extend .align_center;
+}
+
+.btn_faq {
+    width: 71px;
+    height: 30px;
+    @extend .align_center;
+}
+
+@mixin btn_ask_51($bg, $fc) {
+    @extend.btn_ask_51;
+    background-color: $bg;
+    @include font_mixin.f10S($fc);
+}
+
+@mixin btn_ask_71($bg, $fc) {
+    @extend.btn_ask_71;
+    background-color: $bg;
+    @include font_mixin.f15S($fc);
+}
+
+@mixin btn_event($bg, $fc) {
+    @extend.btn_event;
+    background-color: $bg;
+    @include font_mixin.f15S($fc);
+}
+
+@mixin btn_mypage($bg, $fc) {
+    @extend.btn_mypage;
+    background-color: $bg;
+    @include font_mixin.f12S($fc);
+}
+
+@mixin btn_faq($bg, $fc) {
+    @extend.btn_faq;
+    background-color: $bg;
+    @include font_mixin.f15S($fc);
+}
+
+// 높이24 버튼
+@mixin btn_h24($bg, $fc, $wd) {
+    height: 24px;
+    background-color: $bg;
+    @include font_mixin.f12R($fc);
+    width: $wd;
+    @extend .align_center;
+}
+
+@mixin btn_h24_border($bg, $fc, $wd, $border_color) {
+    height: 24px;
+    background-color: $bg;
+    @include font_mixin.f12R($fc);
+    width: $wd;
+    @extend .align_center;
+    border: 1px solid $border_color;
+}
+
+//paging
+@mixin paging_prev_next {
+    width: 35px;
+    height: 35px;
+}
+
+@mixin paging_prev_next_s {
+    width: 20px;
+    height: 20px;
+}
+
+//etc button
+@mixin btn_normal($bg) {
+    width: 71px;
+    height: 24px;
+    background-color: $bg;
+    @include font_mixin.f12R(#fff);
+    border: 1px solid $bg;
 }

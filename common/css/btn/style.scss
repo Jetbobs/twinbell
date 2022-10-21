@@ -1,4 +1,12 @@
 @use './btn_mixin';
+@use '../color/color';
+*{
+    padding: 0;
+    margin: 0;
+}
+input[name='ckbox1']{
+    display: none
+}
 .btn_black{
     @include btn_mixin.btn_basic(#000,#fff );
 }
@@ -8,9 +16,68 @@
 .btn_blue{
     @include btn_mixin.btn_blue(#007DFB,#fff);
 }
+.btn_blue:hover{
+    @include btn_mixin.btn_blue(#004EA2,#fff);
+}
 .btn_blue_over{
     @include btn_mixin.btn_blue(#004EA2,#fff);
 }
 .btn_test{
     @extend .btn_black;
+}
+.btn_test:hover{
+    @extend .btn_white;
+}
+
+.comment_container{
+    @include btn_mixin.comment_container;
+    .comment{
+        @include btn_mixin.comment;
+    }
+    .btn_comment{
+        @include btn_mixin.btn_comment(#666);
+    }
+}
+.comment_container:hover{
+    .btn_comment{
+        @include btn_mixin.btn_comment(#000);
+    }
+}
+.btn_r{
+    @include btn_mixin.btn_r(#fff,#000);
+}
+.btn_r:hover{
+    @include btn_mixin.btn_r(#000,#fff);
+}
+.btn_r_blue{
+    @include btn_mixin.btn_r(color.$color-093,#fff);
+    border: 1px solid color.$color-093;
+}
+.btn_r_blue:hover{
+    @include btn_mixin.btn_r(#000,#fff);
+    border: 1px solid #000;
+}
+
+input[name='ckbox1']{
+   + label{
+    content: "";
+    display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #DDDDDD;
+    }
+}
+input[name='ckbox1']:checked{
+    + label::before{
+     content: "";
+     display: inline-block;
+        width: 100px;
+        height: 100px;
+     }
+ }
+.tag{
+    @include btn_mixin.btn_ask_71(#F52F23,#fff);
+}
+.h24{
+    @include btn_mixin.btn_h24(#888888,#fff,115px)
 }

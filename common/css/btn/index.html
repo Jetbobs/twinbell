@@ -9,10 +9,33 @@
 </head>
 <body>
     <div class="test">
-        <button class="btn_test" onclick = "location.href" = '#'>
+        <button class="btn_test" onclick = "location.href"  onmouseover="write.src='/assets_oct/btn_icon/write_black.png'" onmouseout="write.src='/assets_oct/btn_icon/write_white.png'">
             <span>글 작성하기</span>
-            <img src="/assets_oct/btn_icon/write_white.png" alt="">
+            <img src="/assets_oct/btn_icon/write_white.png" name="write" alt="">
         </button>
+        <button class="btn_blue" onclick="location.href">
+            <span>상품후기 운영원칙</span>     
+        </button>
+        <button class="comment_container">
+            <div class="comment"></div>
+            <div class="btn_comment">
+                <span>댓글쓰기</span>
+            </div>
+        </button>
+        <button class="btn_r">
+            <span>정보수정</span>
+        </button>
+        <button class="btn_r_blue">
+            <span>정보수정</span>
+        </button>
+        <input type="checkbox" name="ckbox1">
+        <label for="ckbox1"><span></span></label>
+        <div class="tag">
+            <span>미답변</span>
+        </div>
+        <div class="h24">
+            <span>종이사이즈 비교</span>
+        </div>
     </div>
 </body>
 </html>
