@@ -880,6 +880,12 @@
   color: #007dfb;
 }
 
+.f34S003 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #003B70;
+}
+
 .f50S222 {
   font-size: 50px;
   font-weight: 600;
@@ -919,6 +925,48 @@
 .f50S093 {
   font-size: 50px;
   font-weight: 600;
+  color: #007dfb;
+}
+
+.f50B222 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #222;
+}
+
+.f50B666 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #666;
+}
+
+.f50B888 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #888;
+}
+
+.f50BFFF {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.f50B004 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #004ea2;
+}
+
+.f50BFF0 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.f50B093 {
+  font-size: 50px;
+  font-weight: bold;
   color: #007dfb;
 }
 

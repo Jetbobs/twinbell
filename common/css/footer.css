@@ -12,16 +12,10 @@ footer .footer_wrap .info_wrap {
 footer .footer_wrap .info_wrap .logo {
   margin-bottom: 15px;
 }
-footer .footer_wrap .info_wrap .info {
-  color: #1A1A1A;
-}
 footer .footer_wrap .info_wrap .info .title {
-  font-size: 18px;
-  font-weight: bold;
   margin-bottom: 10px;
 }
 footer .footer_wrap .info_wrap .info .info_desc {
-  font-size: 15px;
   margin-bottom: 5px;
 }
 footer .footer_wrap .info_wrap #corp_info {
@@ -30,17 +24,12 @@ footer .footer_wrap .info_wrap #corp_info {
 footer .footer_wrap .footer_nav {
   padding: 40px 30px;
   width: 16.6%;
-  color: #222222;
   border-right: 1px solid #E0E0E0;
 }
 footer .footer_wrap .footer_nav .title {
   margin-bottom: 30px;
 }
-footer .footer_wrap .footer_nav .title p {
-  font-size: 20px;
-}
 footer .footer_wrap .footer_nav nav ul a li {
-  font-size: 15px;
   margin-bottom: 20px;
 }
 footer .footer_wrap .footer_contact {
@@ -49,18 +38,10 @@ footer .footer_wrap .footer_contact {
   border-right: 1px solid #E0E0E0;
 }
 footer .footer_wrap .footer_contact .title {
-  font-size: 20px;
-  color: #222222;
   margin-bottom: 20px;
 }
 footer .footer_wrap .footer_contact .phone {
-  font-size: 34px;
-  color: #003B70;
   margin-bottom: 20px;
-}
-footer .footer_wrap .footer_contact .subtitle {
-  font-size: 15px;
-  color: #222222;
 }
 footer .footer_wrap .footer_contact .subtitle:not(:last-child) {
   margin-bottom: 10px;
@@ -77,11 +58,7 @@ footer .footer_policy nav.policy {
 footer .footer_policy nav.policy ul {
   display: flex;
 }
-footer .footer_policy nav.policy ul a li {
-  font-size: 16px;
-}
 footer .footer_policy nav.policy ul a:first-child li {
-  font-weight: bold;
   padding-left: 60px;
 }
 footer .footer_policy nav.policy ul a:not(:last-child) {
@@ -98,7 +75,6 @@ footer .footer_policy nav.sns_wrap ul li {
   margin-right: 20px;
 }
 footer .footer_company_info .info_wrap {
-  font-size: 13px;
   display: flex;
 }
 footer .footer_company_info .info_wrap .info:first-child {
@@ -126,10 +102,6 @@ footer .footer_company_info .info_wrap:last-child .info:nth-child(3) p::after {
 }
 footer .footer_company_info .copyright {
   padding: 15px 60px;
-}
-footer .footer_company_info .copyright p {
-  font-size: 15px;
-  font-weight: bold;
 }
 footer .footer_wrap,
 footer .footer_policy,

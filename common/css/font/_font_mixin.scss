@@ -130,6 +130,11 @@
     font-weight: 600;
     color: $color;
 }
+@mixin f50B($color) {
+    font-size: 50px;
+    font-weight: bold;
+    color: $color;
+}
 //font-size 72
 @mixin f72S($color) {
     font-size: 72px;

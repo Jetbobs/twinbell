@@ -84,7 +84,6 @@ $color-btn-blue: #007dfb;
                         list-style: none;
 
                         .login_btn {
-                            font-size: $login-btn-size;
                             float: left;
                             padding: 0 10px;
                         }
@@ -216,7 +215,6 @@ $color-btn-blue: #007dfb;
 
                             p {
                                 color: $color-btn-blue;
-                                font-size: 24px;
                                 padding-bottom: 15px;
                             }
                         }
@@ -224,7 +222,7 @@ $color-btn-blue: #007dfb;
                         .sub_menu {
                             ul {
                                 li {
-                                    color: #959595;
+                                    // color: #959595;
                                     padding: 10px 0;
                                 }
                             }

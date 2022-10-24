@@ -502,6 +502,9 @@
     .f34S093{
         @include font_mixin.f34S(color.$color-093);   
     }
+    .f34S003{
+        @include font_mixin.f34S(color.$color-003);
+    }
 
 // font-size 50 semi-bold
 
@@ -525,6 +528,29 @@
     }
     .f50S093{
         @include font_mixin.f50S(color.$color-093);   
+    }
+    // font-size 50 bold
+
+    .f50B222{
+        @include font_mixin.f50B(color.$color-222);
+    };
+    .f50B666{
+        @include font_mixin.f50B(color.$color-666)
+    };
+    .f50B888{
+        @include font_mixin.f50B(color.$color-888);   
+    }
+    .f50BFFF{
+        @include font_mixin.f50B(color.$color-FFF);   
+    }
+    .f50B004{
+        @include font_mixin.f50B(color.$color-004);   
+    }
+    .f50BFF0{
+        @include font_mixin.f50B(color.$color-ff0);   
+    }
+    .f50B093{
+        @include font_mixin.f50B(color.$color-093);   
     }
 
 // font-size 72 semi-bold

@@ -17,16 +17,12 @@ footer {
             }
 
             .info {
-                color: #1A1A1A;
 
                 .title {
-                    font-size: 18px;
-                    font-weight: bold;
                     margin-bottom: 10px;
                 }
 
                 .info_desc {
-                    font-size: 15px;
                     margin-bottom: 5px;
                 }
             }
@@ -39,14 +35,12 @@ footer {
         .footer_nav {
             padding: 40px 30px;
             width: 16.6%;
-            color: #222222;
             border-right: 1px solid #E0E0E0;
 
             .title {
                 margin-bottom: 30px;
 
                 p {
-                    font-size: 20px;
                 }
             }
 
@@ -54,7 +48,6 @@ footer {
                 ul {
                     a {
                         li {
-                            font-size: 15px;
                             margin-bottom: 20px;
                         }
                     }
@@ -68,20 +61,14 @@ footer {
             border-right: 1px solid #E0E0E0;
 
             .title {
-                font-size: 20px;
-                color: #222222;
                 margin-bottom: 20px;
             }
 
             .phone {
-                font-size: 34px;
-                color: #003B70;
                 margin-bottom: 20px;
             }
 
             .subtitle {
-                font-size: 15px;
-                color: #222222;
             }
 
             .subtitle:not(:last-child) {
@@ -105,12 +92,10 @@ footer {
 
                     a {
                         li {
-                            font-size: 16px;
                         }
 
                         &:first-child {
                             li {
-                                font-weight: bold;
                                 padding-left: 60px;
                             }
                         }
@@ -142,7 +127,6 @@ footer {
     .footer_company_info {
         // 회사 정보 wrap
         .info_wrap {
-            font-size: 13px;
             display: flex;
 
             .info:first-child {
@@ -185,8 +169,6 @@ footer {
         .copyright{
             padding: 15px 60px;
             p{
-                font-size: 15px;
-                font-weight: bold;
             }
         }
     }
