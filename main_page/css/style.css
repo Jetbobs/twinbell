@@ -183,6 +183,12 @@ a {
 #main_page_nav nav ul .main_nav_disable img {
   margin-bottom: 15px;
 }
+#main_page_nav nav ul .main_nav_disable .active_nav {
+  display: none;
+}
+#main_page_nav nav ul .main_nav_disable .disable_nav {
+  display: block;
+}
 #main_page_nav nav ul .main_nav_disable:hover {
   background-color: #004ea2;
   margin-right: -1px;
@@ -190,10 +196,16 @@ a {
 #main_page_nav nav ul .main_nav_disable:hover img {
   margin-bottom: 15px;
 }
+#main_page_nav nav ul .main_nav_disable:hover .disable_nav {
+  display: none;
+}
 #main_page_nav nav ul .main_nav_disable:hover span {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+}
+#main_page_nav nav ul .main_nav_disable:hover .active_nav {
+  display: block;
 }
 #main_page_nav nav ul .main_nav_disable:not(:last-child) {
   margin-right: -1px;
@@ -465,11 +477,6 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 30px 25px;
-}
-#floating_banner .banner_wrap .banner_top p {
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
 }
 #floating_banner .banner_wrap .banner_nav_wrap {
   position: relative;

@@ -142,6 +142,12 @@
                 img {
                     margin-bottom: 15px;
                 }
+                .active_nav{
+                    display: none;
+                }
+                .disable_nav{
+                    display: block;
+                }
 
             }
             .main_nav_disable:hover{
@@ -150,14 +156,34 @@
                 img {
                     margin-bottom: 15px;
                 }
+                .disable_nav{
+                    display: none;
+                }
 
                 span {
                     color: #fff;
                     font-size: 20px;
                     font-weight: $semi-bold;
                 }
+                .active_nav{
+                    display: block;
+                }
             }
-
+            // #faq_nav{
+                
+            //     img{
+            //         width: 51px;
+            //         height: 51px;
+            //         background: url('/icon/nav/faq.png') no-repeat;
+            //         background-size: cover;
+            //         border: none;
+            //     }
+            // }
+            // #faq_nav:hover{
+            //     img{
+            //         background: url('/icon/nav/faq_active.png');
+            //     }
+            // }
             .main_nav_disable:not(:last-child) {
                 margin-right: -1px;
             }
@@ -545,11 +571,6 @@
             flex-direction: column;
             align-items: center;
             padding: 30px 25px;
-            p{
-                color: #fff;
-                font-size: 32px;
-                font-weight: bold;
-            }
         }
         // 플로팅 배너 네비버튼 wrap
         .banner_nav_wrap{
