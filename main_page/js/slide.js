@@ -13,6 +13,10 @@ const first_swiper = new Swiper('.swiper_first', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  }
 
 });
 

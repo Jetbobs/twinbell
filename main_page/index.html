@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts -->
     <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- header -->
     <link rel="stylesheet" href="/common/css/header.css">
     <link rel="stylesheet" href="/common/css/footer.css">
@@ -52,38 +54,50 @@
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
+                    <div class="banner_btn_wrap">
+                        <div class="banner_controller_wrap">
+                            <div class="banner_controller_play_wrap">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination pagination-custom f14RFFF"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="more_btn">
+                            <input type="checkbox" id="banner_popup">
+                            <label for="banner_popup"><span><i class="fa-regular fa-plus"></i></span></label>
+                            <div>
+                                <div>
+                                    <label for="banner_popup"></label>
+                                    <!-- 배너 이미지 -->
+                                    <div class="modal_banner_popup">
+                                        <img src="/img/banner_modal_popup/banner_popup1.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup2.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup3.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup4.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup5.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup6.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup7.png" alt="">
+                                        <img src="/img/banner_modal_popup/banner_popup8.png" alt="">
+                                    </div>
+                                </div>
+                                <label for="banner_popup"></label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="banner_btn_wrap">
-                    <div class="banner_player">
+                    <!-- <div class="banner_player">
                         <span>
                             <img src="/icon/play_white.png" alt="">
                             <img src="/icon/2   -   3.png" alt="">
                             <img src="/icon/arrow_right_white.png" alt="">
                             <img src="/icon/stop_white.png" alt="">
                         </span>
-                    </div>
+                    </div> -->
                     <!-- 배너 더보기 버튼 모달 -->
-                    <div class="more_btn">
-                        <input type="checkbox" id="banner_popup">
-                        <label for="banner_popup"><span><img src="/icon/plus_white.png" alt=""></span></label>
-                        <div>
-                            <div>
-                                <label for="banner_popup"></label>
-                                <!-- 배너 이미지 -->
-                                <div class="modal_banner_popup">
-                                    <img src="/img/banner_modal_popup/banner_popup1.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup2.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup3.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup4.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup5.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup6.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup7.png" alt="">
-                                    <img src="/img/banner_modal_popup/banner_popup8.png" alt="">
-                                </div>
-                            </div>
-                            <label for="banner_popup"></label>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -93,32 +107,32 @@
                 <ul>
                     <!-- FAQ -->
                     <li class="main_nav_disable" id="faq_nav" onclick="main_nav_active(event);">
-                        <img class="disable_nav" src="/icon/nav/faq.png" alt="" name="faq_nav">
-                        <img class="active_nav" src="/icon/nav/faq_active.png" alt="">
+                        <img class="disable_nav" src="/icon/nav/faq.png" alt="faq" name="faq_nav">
+                        <img class="active_nav" src="/icon/nav/faq_active.png" alt="faq">
                         <span class="f18S004">FAQ</span>
                     </li>
                     <!-- 배송조회 -->
                     <li class="main_nav_disable" id="shipping_nav" onclick="main_nav_active(event);">
-                        <img class="disable_nav" src="/icon/nav/shipping.png" alt="" name="shipping_nav">
+                        <img class="disable_nav" src="/icon/nav/shipping.png" alt="shipping" name="shipping_nav">
                         <img class="active_nav" src="/icon/nav/shipping_active.png" alt="">
                         <span class="f18S004">배송조회</span>
                     </li>
                     <!-- 문의현황 -->
                     <li class="main_nav_disable" id="inquiry_nav" onclick="main_nav_active(event);">
-                        <img class="disable_nav" src="/icon/nav/inquiry.png" alt="" name="inquiry_nav">
-                        <img class="active_nav" src="/icon/nav/inquiry_active.png" alt="">
+                        <img class="disable_nav" src="/icon/nav/inquiry.png" alt="inquiry" name="inquiry_nav">
+                        <img class="active_nav" src="/icon/nav/inquiry_active.png" alt="inquiry">
                         <span class="f18S004">문의현황</span>
                     </li>
                     <!-- 공지사항 / 안내 -->
                     <li class="main_nav_disable" id="board_nav" onclick="main_nav_active(event);">
-                        <img class="disable_nav" src="/icon/nav/board.png" alt="" name="board_nav">
-                        <img class="active_nav" src="/icon/nav/board_active.png" alt="">
+                        <img class="disable_nav" src="/icon/nav/board.png" alt="board" name="board_nav">
+                        <img class="active_nav" src="/icon/nav/board_active.png" alt="board">
                         <span class="f18S004">공지사항 / 안내</span>
                     </li>
                     <!-- 이벤트 -->
                     <li class="main_nav_disable" id="event_nav" onclick="main_nav_active(event);">
-                        <img class="disable_nav" src="/icon/nav/event.png" alt="" name="event_nav">
-                        <img class="active_nav" src="/icon/nav/event_active.png" alt="">
+                        <img class="disable_nav" src="/icon/nav/event.png" alt="event " name="event_nav">
+                        <img class="active_nav" src="/icon/nav/event_active.png" alt="event ">
                         <span class="f18S004">이벤트</span>
                     </li>
                     <!-- 자료실 -->
