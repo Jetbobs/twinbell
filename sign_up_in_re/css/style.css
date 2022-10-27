@@ -84,9 +84,10 @@ body #app main #main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
 }
 body #app main #main .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 body #app main #main .title h2 {
   text-align: center;
@@ -123,13 +124,11 @@ body #app main #main .sign_up_wrap #naver_sign {
   background-color: #19ce60;
   margin-bottom: 20px;
 }
-body #app main #main .sign_up_wrap #facebook_sign {
+body #app main #main .sign_up_wrap #fb_sign {
   background-color: #3a5ca9;
 }
 body #app main #main .sign_up_wrap .sign_up_etc {
   margin-bottom: 80px;
-  font-size: 15px;
-  color: #878787;
   display: flex;
   justify-content: center;
 }

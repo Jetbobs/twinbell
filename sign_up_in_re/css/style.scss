@@ -20,9 +20,10 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-top: 50px;
 // 페이지 타이틀
         .title {
-          margin-bottom: 50px;
+          margin-bottom: 30px;
 
           h2 {
             text-align: center;
@@ -68,14 +69,12 @@ body {
             margin-bottom: 20px;
           }
 // 페이스북 회원가입
-          #facebook_sign {
+          #fb_sign {
             background-color: $color-facebook;
           }
 // home, 아이디 찾기, 비밀번호 찾기, 로그인하기 버튼
           .sign_up_etc {
             margin-bottom: 80px;
-            font-size: 15px;
-            color: #878787;
             display: flex;
             justify-content: center;
 

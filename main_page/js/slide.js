@@ -44,4 +44,18 @@ const second_swiper = new Swiper('.swiper_second', {
   },
 });
 
+function swiperPause(){
+  let pause_play = document.querySelector('.swiper i');
+  if(pause_play.classList.contains('fa-pause')){
+    first_swiper.autoplay.pause();
+    pause_play.classList.remove('fa-pause');
+    pause_play.classList.add('fa-play');
+  } else if (pause_play.classList.contains('fa-play')){
+    first_swiper.autoplay.run();
+    pause_play.classList.remove('fa-play');
+    pause_play.classList.add('fa-pause');
+  };
+
+}
+
 
