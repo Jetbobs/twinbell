@@ -1,0 +1,5 @@
+@use '../font/font_mixin';
+@use '../btn/btn_mixin';
+.btn_w_r_52_000{
+    @include btn_mixin.btn_w_r_52(#000,#fff);
+}
