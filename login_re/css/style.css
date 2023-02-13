@@ -99,7 +99,6 @@ body #app a {
 body #app main {
   display: flex;
   justify-content: center;
-  height: 100%;
 }
 body #app main #main {
   width: 434px;

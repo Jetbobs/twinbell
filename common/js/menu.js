@@ -8,6 +8,6 @@ $(function(){
         $('.all_menu').css("display","block");
     })
     let menu_height = $('#menu').outerHeight();
-    $('.sub_menu_wrapper').css('top', menu_height);
-    $('.bg_dark').css('top', menu_height);
+    $('.sub_menu_wrapper').css('top', '102px');
+    $('.bg_dark').css('top', '102px');
 })

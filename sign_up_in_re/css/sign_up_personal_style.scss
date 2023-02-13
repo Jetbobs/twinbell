@@ -15,7 +15,6 @@ body {
       width: 100%;
       display: flex;
       justify-content: center;
-      height: 100%;
 
       #main {
         width: 100%;
@@ -26,7 +25,6 @@ body {
 // 페이지 타이틀
         .title {
           margin-bottom: 10px;
-
           h2 {
             text-align: center;
           }
@@ -36,15 +34,13 @@ body {
           margin-bottom: 10px;
 
           p {
-            color: #5d5d5d;
-            font-size: 20px;
             text-align: center;
           }
         }
 
         .line {
           width: 100%;
-          margin-bottom: 50px;
+          // margin-bottom: 30px;
 
           hr {
             border: 1px solid #9f9f9f;
@@ -57,13 +53,13 @@ body {
           justify-content: space-between;
           margin-bottom: 40px;
           position: relative;
+          margin-top: 30px;
           // 회원 가입 양식 
           .sign_up_wrap {
             width: 580px;
             // 회원 가입 양식 타이틀
             .title {
               p {
-                font-size: 20px;
 
                 span {
                   color: red;
@@ -73,7 +69,7 @@ body {
             }
             // 회원 가입 양식 서브타이틀
             .sub_title {
-              color: #21d59b;
+
             }
           }
 // 회원 가입 양식 약관 관련
@@ -195,7 +191,6 @@ body {
               }
 
               input::placeholder {
-                color: #cfcfcf;
               }
               input:focus{
                 outline:none;
@@ -209,6 +204,9 @@ body {
                 width: 477px;
                 margin-right: 5px;
               }
+            }
+            #name{
+              margin-bottom: 5px;
             }
 // 비밀번호 입력칸
             #pw {
@@ -254,13 +252,6 @@ body {
                   
                       +label {
                         cursor: pointer;
-                          display: inline-block;
-                          padding: 10px 17px;
-                          background-color: #007dfb;
-                          color: #fff;
-                          font-size: 18px;
-                          border-radius: 5px;
-                          font-weight: bold;
                   
                           +div {
                               opacity: 0;
@@ -290,7 +281,7 @@ body {
                                   left: 50%;
                                   transform: translate(-50%, -50%);
                                   width: 630px;
-                                  height: 470px;
+                                  height: 490px;
                                   background-color: #fff;
                                   z-index: 2;
                   
@@ -326,7 +317,7 @@ body {
                                                   font-weight: bold;
                                               }
                                               input::placeholder {
-                                                  color: #cfcfcf;
+                                           
                                                 }
                                               input:focus{
                                                   outline:none;
@@ -364,10 +355,7 @@ body {
                                               justify-content: center;
                                               span{
                                                   background-color: #007dfb;
-                                                  color: #fff;
-                                                  font-size: 18px;
                                                   border-radius: 5px;
-                                                  font-weight: bold;
                                                   text-align: center;
                                               }
                                           }
@@ -438,10 +426,6 @@ body {
                 font-size: 15px;
                 font-weight: lighter;
               }
-            }
-
-            #name {
-              margin-bottom: 15px;
             }
           }
           // 비밀번호 입력칸 말풍선
@@ -526,11 +510,9 @@ body {
         // 파랑 기본 버튼
         .blue_btn {
           cursor: pointer;
-          font-size: 18px;
           background-color: $color-btn-blue;
           border: 0px solid $color-btn-blue;
           border-radius: 5px;
-          color: #fff;
           padding: 10px 17px;
           span {
             display: inline;
@@ -538,7 +520,6 @@ body {
         }
         //약관 동의 가입 버튼
         #sign_up_btn {
-          font-size: 25px;
           padding: 10px 210px;
           margin-bottom: 20px;
         }
@@ -563,5 +544,10 @@ body {
         }
       }
     }
+  }
+  input::placeholder{
+    font-size: 18px;
+    color: #888;
+    font-weight: 400;
   }
 }

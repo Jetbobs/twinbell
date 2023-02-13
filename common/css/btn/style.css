@@ -1,4 +1,4 @@
-.align_center, .h24, .btn_faq, .btn_mypage, .btn_event, .btn_ask_71, .tag, .btn_ask_51, .btn_c_w, .comment_container .btn_comment, .comment_container:hover .btn_comment {
+.align_center, .h24, .btn_faq, .btn_mypage, .btn_event, .btn_ask_71, .tag, .btn_ask_51, .btn_w_r, .btn_w_r_52_test, .btn_c_w, .comment_container .btn_comment, .comment_container:hover .btn_comment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +30,10 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
+}
+
+.btn_w_r, .btn_w_r_52_test {
+  border-radius: 5px;
 }
 
 .btn_ask_51 {
@@ -197,4 +201,13 @@ input[name=ckbox1]:checked + label::before {
   font-weight: 400;
   color: #fff;
   width: 115px;
+}
+
+.btn_w_r_52_test {
+  background-color: #000;
+  width: 100px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+.align_center, .btn_faq, .btn_mypage, .btn_event, .btn_ask_71, .btn_ask_51, .btn_w_r, .btn_w_r_52_000, .btn_c_w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 170px;
+  height: 54px;
+}
+
+.btn_b {
+  width: 130px;
+  height: 54px;
+}
+
+.btn_c {
+  width: 239px;
+  height: 100px;
+}
+
+.btn_c_w {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  border: none;
+}
+
+.btn_r {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.btn_w_r, .btn_w_r_52_000 {
+  border-radius: 5px;
+}
+
+.btn_ask_51 {
+  width: 51px;
+  height: 21px;
+}
+
+.btn_ask_71 {
+  width: 71px;
+  height: 30px;
+}
+
+.btn_event {
+  width: 71px;
+  height: 30px;
+}
+
+.btn_mypage {
+  width: 71px;
+  height: 24px;
+}
+
+.btn_faq {
+  width: 71px;
+  height: 30px;
+}
+
+.btn_w_r_52_000 {
+  background-color: #000;
+  width: 100px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}/*# sourceMappingURL=btn.css.map */

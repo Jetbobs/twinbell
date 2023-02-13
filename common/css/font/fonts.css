@@ -34,7 +34,7 @@
   color: #ff0000;
 }
 
-.f10R093 {
+.f10R007 {
   font-size: 10px;
   font-weight: 400;
   color: #007dfb;
@@ -76,7 +76,7 @@
   color: #ff0000;
 }
 
-.f10S093 {
+.f10S007 {
   font-size: 10px;
   font-weight: 600;
   color: #007dfb;
@@ -118,7 +118,7 @@
   color: #ff0000;
 }
 
-.f10B093 {
+.f10B007 {
   font-size: 10px;
   font-weight: bold;
   color: #007dfb;
@@ -160,7 +160,7 @@
   color: #ff0000;
 }
 
-.f12R093 {
+.f12R007 {
   font-size: 12px;
   font-weight: 400;
   color: #007dfb;
@@ -202,7 +202,7 @@
   color: #ff0000;
 }
 
-.f12S093 {
+.f12S007 {
   font-size: 12px;
   font-weight: 600;
   color: #007dfb;
@@ -244,7 +244,7 @@
   color: #ff0000;
 }
 
-.f12B093 {
+.f12B007 {
   font-size: 12px;
   font-weight: bold;
   color: #007dfb;
@@ -286,7 +286,7 @@
   color: #ff0000;
 }
 
-.f14R093 {
+.f14R007 {
   font-size: 14px;
   font-weight: 400;
   color: #007dfb;
@@ -328,7 +328,7 @@
   color: #ff0000;
 }
 
-.f14S093 {
+.f14S007 {
   font-size: 14px;
   font-weight: 600;
   color: #007dfb;
@@ -370,7 +370,7 @@
   color: #ff0000;
 }
 
-.f14B093 {
+.f14B007 {
   font-size: 14px;
   font-weight: bold;
   color: #007dfb;
@@ -412,7 +412,7 @@
   color: #ff0000;
 }
 
-.f15R093 {
+.f15R007 {
   font-size: 15px;
   font-weight: 400;
   color: #007dfb;
@@ -454,7 +454,7 @@
   color: #ff0000;
 }
 
-.f15S093 {
+.f15S007 {
   font-size: 15px;
   font-weight: 600;
   color: #007dfb;
@@ -496,7 +496,7 @@
   color: #ff0000;
 }
 
-.f15B093 {
+.f15B007 {
   font-size: 15px;
   font-weight: bold;
   color: #007dfb;
@@ -538,7 +538,7 @@
   color: #ff0000;
 }
 
-.f18R093 {
+.f18R007 {
   font-size: 18px;
   font-weight: 400;
   color: #007dfb;
@@ -580,7 +580,7 @@
   color: #ff0000;
 }
 
-.f18S093 {
+.f18S007 {
   font-size: 18px;
   font-weight: 600;
   color: #007dfb;
@@ -622,7 +622,7 @@
   color: #ff0000;
 }
 
-.f18B093 {
+.f18B007 {
   font-size: 18px;
   font-weight: bold;
   color: #007dfb;
@@ -664,7 +664,7 @@
   color: #ff0000;
 }
 
-.f21R093 {
+.f21R007 {
   font-size: 21px;
   font-weight: 400;
   color: #007dfb;
@@ -706,7 +706,7 @@
   color: #ff0000;
 }
 
-.f21S093 {
+.f21S007 {
   font-size: 21px;
   font-weight: 600;
   color: #007dfb;
@@ -748,7 +748,7 @@
   color: #ff0000;
 }
 
-.f21B093 {
+.f21B007 {
   font-size: 21px;
   font-weight: bold;
   color: #007dfb;
@@ -790,8 +790,50 @@
   color: #ff0000;
 }
 
-.f24B093 {
+.f24B007 {
   font-size: 24px;
+  font-weight: bold;
+  color: #007dfb;
+}
+
+.f25B222 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+}
+
+.f25B666 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #666;
+}
+
+.f25B888 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #888;
+}
+
+.f25BFFF {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.f25B004 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #004ea2;
+}
+
+.f25BFF0 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.f25B007 {
+  font-size: 25px;
   font-weight: bold;
   color: #007dfb;
 }
@@ -832,7 +874,7 @@
   color: #ff0000;
 }
 
-.f28B093 {
+.f28B007 {
   font-size: 28px;
   font-weight: bold;
   color: #007dfb;
@@ -874,7 +916,7 @@
   color: #ff0000;
 }
 
-.f34S093 {
+.f34S007 {
   font-size: 34px;
   font-weight: 600;
   color: #007dfb;
@@ -922,7 +964,7 @@
   color: #ff0000;
 }
 
-.f50S093 {
+.f50S007 {
   font-size: 50px;
   font-weight: 600;
   color: #007dfb;
@@ -964,7 +1006,7 @@
   color: #ff0000;
 }
 
-.f50B093 {
+.f50B007 {
   font-size: 50px;
   font-weight: bold;
   color: #007dfb;
@@ -1006,7 +1048,7 @@
   color: #ff0000;
 }
 
-.f72S093 {
+.f72S007 {
   font-size: 72px;
   font-weight: 600;
   color: #007dfb;

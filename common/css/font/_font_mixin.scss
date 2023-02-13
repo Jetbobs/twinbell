@@ -112,6 +112,12 @@
     font-weight: bold;
     color: $color;
 }
+//font-size 25
+@mixin f25B($color){
+    font-size: 25px;
+    font-weight: bold;
+    color: $color;
+}
 //font-size 28
 @mixin f28B($color) {
     font-size: 28px;

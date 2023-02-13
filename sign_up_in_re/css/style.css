@@ -108,10 +108,6 @@ body #app main #main .sign_up_wrap .sign_up_btn {
   padding: 15px 0;
   justify-content: center;
 }
-body #app main #main .sign_up_wrap .sign_up_btn span {
-  font-size: 20px;
-  color: #fff;
-}
 body #app main #main .sign_up_wrap #twinbell_sign {
   background-color: #007dfb;
   margin-bottom: 20px;

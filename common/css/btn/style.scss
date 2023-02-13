@@ -50,8 +50,8 @@ input[name='ckbox1']{
     @include btn_mixin.btn_r(#000,#fff);
 }
 .btn_r_blue{
-    @include btn_mixin.btn_r(color.$color-093,#fff);
-    border: 1px solid color.$color-093;
+    @include btn_mixin.btn_r(color.$color-007,#fff);
+    border: 1px solid color.$color-007;
 }
 .btn_r_blue:hover{
     @include btn_mixin.btn_r(#000,#fff);
@@ -80,4 +80,7 @@ input[name='ckbox1']:checked{
 }
 .h24{
     @include btn_mixin.btn_h24(#888888,#fff,115px)
+}
+.btn_w_r_52_test{
+    @include btn_mixin.btn_w_r_52(#000,#fff);
 }

@@ -79,7 +79,6 @@ body #app main {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 100%;
 }
 body #app main #main {
   width: 100%;
@@ -98,13 +97,10 @@ body #app main #main .sub_title {
   margin-bottom: 10px;
 }
 body #app main #main .sub_title p {
-  color: #5d5d5d;
-  font-size: 20px;
   text-align: center;
 }
 body #app main #main .line {
   width: 100%;
-  margin-bottom: 50px;
 }
 body #app main #main .line hr {
   border: 1px solid #9f9f9f;
@@ -115,19 +111,14 @@ body #app main #main .sign_up {
   justify-content: space-between;
   margin-bottom: 40px;
   position: relative;
+  margin-top: 30px;
 }
 body #app main #main .sign_up .sign_up_wrap {
   width: 580px;
 }
-body #app main #main .sign_up .sign_up_wrap .title p {
-  font-size: 20px;
-}
 body #app main #main .sign_up .sign_up_wrap .title p span {
   color: red;
   vertical-align: middle;
-}
-body #app main #main .sign_up .sign_up_wrap .sub_title {
-  color: #21d59b;
 }
 body #app main #main .sign_up #policy .title {
   margin-bottom: 20px;
@@ -214,15 +205,6 @@ body #app main #main .sign_up #info_input .input input {
   padding: 12px 10px;
   font-weight: bold;
 }
-body #app main #main .sign_up #info_input .input input::-moz-placeholder {
-  color: #cfcfcf;
-}
-body #app main #main .sign_up #info_input .input input:-ms-input-placeholder {
-  color: #cfcfcf;
-}
-body #app main #main .sign_up #info_input .input input::placeholder {
-  color: #cfcfcf;
-}
 body #app main #main .sign_up #info_input .input input:focus {
   outline: none;
 }
@@ -232,6 +214,9 @@ body #app main #main .sign_up #info_input #id {
 body #app main #main .sign_up #info_input #id input {
   width: 477px;
   margin-right: 5px;
+}
+body #app main #main .sign_up #info_input #name {
+  margin-bottom: 5px;
 }
 body #app main #main .sign_up #info_input #pw {
   margin-bottom: 5px;
@@ -270,13 +255,6 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
 }
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label {
   cursor: pointer;
-  display: inline-block;
-  padding: 10px 17px;
-  background-color: #007dfb;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 5px;
-  font-weight: bold;
 }
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div {
   opacity: 0;
@@ -304,7 +282,7 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   left: 50%;
   transform: translate(-50%, -50%);
   width: 630px;
-  height: 470px;
+  height: 490px;
   background-color: #fff;
   z-index: 2;
 }
@@ -338,15 +316,6 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   padding: 12px 10px;
   font-weight: bold;
 }
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input::-moz-placeholder {
-  color: #cfcfcf;
-}
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input:-ms-input-placeholder {
-  color: #cfcfcf;
-}
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input::placeholder {
-  color: #cfcfcf;
-}
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input:focus {
   outline: none;
 }
@@ -378,10 +347,7 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
 }
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .blue_btn span {
   background-color: #007dfb;
-  color: #fff;
-  font-size: 18px;
   border-radius: 5px;
-  font-weight: bold;
   text-align: center;
 }
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap #send {
@@ -433,9 +399,6 @@ body #app main #main .sign_up #info_input .radio_info label {
   margin-right: 20px;
   font-size: 15px;
   font-weight: lighter;
-}
-body #app main #main .sign_up #info_input #name {
-  margin-bottom: 15px;
 }
 body #app main #main .sign_up .bubble {
   position: absolute;
@@ -511,18 +474,15 @@ body #app main #main .sign_up #bubble_power span {
 }
 body #app main #main .blue_btn {
   cursor: pointer;
-  font-size: 18px;
   background-color: #007dfb;
   border: 0px solid #007dfb;
   border-radius: 5px;
-  color: #fff;
   padding: 10px 17px;
 }
 body #app main #main .blue_btn span {
   display: inline;
 }
 body #app main #main #sign_up_btn {
-  font-size: 25px;
   padding: 10px 210px;
   margin-bottom: 20px;
 }
@@ -538,4 +498,19 @@ body #app main #main .sign_up_etc nav ul li {
 }
 body #app main #main .sign_up_etc nav ul li:not(:last-child) {
   border-right: 2px solid #878787;
+}
+body input::-moz-placeholder {
+  font-size: 18px;
+  color: #888;
+  font-weight: 400;
+}
+body input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+  font-weight: 400;
+}
+body input::placeholder {
+  font-size: 18px;
+  color: #888;
+  font-weight: 400;
 }/*# sourceMappingURL=sign_up_personal_style.css.map */
