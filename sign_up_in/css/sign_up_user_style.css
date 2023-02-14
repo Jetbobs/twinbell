@@ -229,11 +229,6 @@ html *[lang=en] body {
   font-size: 15px;
   font-weight: bold;
 }
-.all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_id input:-ms-input-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
 .all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_id input::placeholder {
   color: #cfcfcf;
   font-size: 15px;
@@ -277,11 +272,6 @@ html *[lang=en] body {
   font-size: 15px;
   font-weight: bold;
 }
-.all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_pw input:-ms-input-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
 .all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_pw input::placeholder {
   color: #cfcfcf;
   font-size: 15px;
@@ -297,11 +287,6 @@ html *[lang=en] body {
   flex: 1;
 }
 .all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_pw input::-moz-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
-.all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_pw input:-ms-input-placeholder {
   color: #cfcfcf;
   font-size: 15px;
   font-weight: bold;
@@ -329,11 +314,6 @@ html *[lang=en] body {
   outline: none;
 }
 .all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_pw_check input::-moz-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
-.all_wrap .sign_up_wrap2 .input_sign_up_wrap .input_information_wrap .sign_up_input_wrap .input_type_pw_check input:-ms-input-placeholder {
   color: #cfcfcf;
   font-size: 15px;
   font-weight: bold;
@@ -448,11 +428,6 @@ html *[lang=en] body {
   font-size: 15px;
   font-weight: bold;
 }
-.all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_name .company_name input:-ms-input-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
 .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_name .company_name input::placeholder {
   color: #cfcfcf;
   font-size: 15px;
@@ -477,11 +452,6 @@ html *[lang=en] body {
   outline: none;
 }
 .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_name .ceo_name input::-moz-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
-.all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_name .ceo_name input:-ms-input-placeholder {
   color: #cfcfcf;
   font-size: 15px;
   font-weight: bold;
@@ -516,11 +486,6 @@ html *[lang=en] body {
   font-size: 15px;
   font-weight: bold;
 }
-.all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_email .email input:-ms-input-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
 .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_email .email input::placeholder {
   color: #cfcfcf;
   font-size: 15px;
@@ -541,11 +506,6 @@ html *[lang=en] body {
   outline: none;
 }
 .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_business .business1 input::-moz-placeholder, .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_business .business2 input::-moz-placeholder, .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_business .business3 input::-moz-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
-.all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_business .business1 input:-ms-input-placeholder, .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_business .business2 input:-ms-input-placeholder, .all_wrap .sign_up_wrap2 .input_more_information_wrap .more_sign_up_input_wrap .input_company_wrap .input_business .business3 input:-ms-input-placeholder {
   color: #cfcfcf;
   font-size: 15px;
   font-weight: bold;

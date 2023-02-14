@@ -91,11 +91,6 @@ html *[lang=en] body {
   font-size: 15px;
   font-weight: bold;
 }
-.all_modal .all_wrap_modal .modal_inside_wrap .input_wrap .modal_name .name_input input:-ms-input-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
 .all_modal .all_wrap_modal .modal_inside_wrap .input_wrap .modal_name .name_input input::placeholder {
   color: #cfcfcf;
   font-size: 15px;
@@ -125,11 +120,6 @@ html *[lang=en] body {
   flex: 1;
 }
 .all_modal .all_wrap_modal .modal_inside_wrap .input_wrap .modal_phone .phone_input input::-moz-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
-.all_modal .all_wrap_modal .modal_inside_wrap .input_wrap .modal_phone .phone_input input:-ms-input-placeholder {
   color: #cfcfcf;
   font-size: 15px;
   font-weight: bold;
@@ -196,11 +186,6 @@ html *[lang=en] body {
   flex: 1;
 }
 .all_modal .all_wrap_modal .modal_inside_wrap .verification_wrap .verification_input_wrap .verification_input input::-moz-placeholder {
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: bold;
-}
-.all_modal .all_wrap_modal .modal_inside_wrap .verification_wrap .verification_input_wrap .verification_input input:-ms-input-placeholder {
   color: #cfcfcf;
   font-size: 15px;
   font-weight: bold;

@@ -196,8 +196,8 @@
     // 베스트 상품 wrap
     .product_wrap {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: center;
+        gap: 90px;
         // 베스트 상품
         .product {
 
@@ -302,7 +302,8 @@
     //고객지원 박스 wrap
     .cs_wrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 25px;
 
         // 컨텐츠 박스
         .cs_box {
@@ -448,7 +449,8 @@
 #blank{
     .img_wrap{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 15px;
         .img{
             width: 200px;
             height: 200px;
@@ -480,6 +482,10 @@
             flex-direction: column;
             align-items: center;
             padding: 30px 25px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            gap: 8px;
         }
         // 플로팅 배너 네비버튼 wrap
         .banner_nav_wrap{

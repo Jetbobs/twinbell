@@ -78,9 +78,6 @@
 .modal input[id=popup] + label + div > div .modal_phone .info_wrap .input input::-moz-placeholder {
   color: #cfcfcf;
 }
-.modal input[id=popup] + label + div > div .modal_phone .info_wrap .input input:-ms-input-placeholder {
-  color: #cfcfcf;
-}
 .modal input[id=popup] + label + div > div .modal_phone .info_wrap .input input::placeholder {
   color: #cfcfcf;
 }

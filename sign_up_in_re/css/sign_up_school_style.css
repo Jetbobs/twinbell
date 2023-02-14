@@ -217,9 +217,6 @@ body #app main #main .sign_up #info_input .input input {
 body #app main #main .sign_up #info_input .input input::-moz-placeholder {
   color: #cfcfcf;
 }
-body #app main #main .sign_up #info_input .input input:-ms-input-placeholder {
-  color: #cfcfcf;
-}
 body #app main #main .sign_up #info_input .input input::placeholder {
   color: #cfcfcf;
 }
@@ -352,9 +349,6 @@ body #app main #main .sign_up #info_input .verification_wrap .verification .moda
   font-weight: bold;
 }
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input::-moz-placeholder {
-  color: #cfcfcf;
-}
-body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input:-ms-input-placeholder {
   color: #cfcfcf;
 }
 body #app main #main .sign_up #info_input .verification_wrap .verification .modal input[id=popup] + label + div > div .modal_phone .info_wrap .modal_input input::placeholder {

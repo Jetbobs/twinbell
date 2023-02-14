@@ -175,6 +175,7 @@ header .all_menu nav .menu_wrap .menu .title p {
   padding-bottom: 15px;
 }
 header .all_menu nav .menu_wrap .menu .sub_menu ul li {
+  color: #888888;
   padding: 10px 0;
 }
 header .all_menu nav .menu_wrap:first-child {

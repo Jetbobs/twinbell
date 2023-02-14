@@ -162,11 +162,6 @@ body #app main #main .input_wrap .info_input input::-moz-placeholder {
   color: #c4c4c4;
   font-weight: bolder;
 }
-body #app main #main .input_wrap .info_input input:-ms-input-placeholder {
-  font-size: 15px;
-  color: #c4c4c4;
-  font-weight: bolder;
-}
 body #app main #main .input_wrap .info_input input::placeholder {
   font-size: 15px;
   color: #c4c4c4;

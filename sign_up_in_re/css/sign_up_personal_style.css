@@ -504,11 +504,6 @@ body input::-moz-placeholder {
   color: #888;
   font-weight: 400;
 }
-body input:-ms-input-placeholder {
-  font-size: 18px;
-  color: #888;
-  font-weight: 400;
-}
 body input::placeholder {
   font-size: 18px;
   color: #888;
