@@ -501,7 +501,7 @@ body #app main #main .sign_up .bubble::after {
   top: 13px;
 }
 body #app main #main .sign_up #bubble_na {
-  display: none;
+  display: block;
 }
 body #app main #main .sign_up #bubble_na span {
   color: #f73e22;
