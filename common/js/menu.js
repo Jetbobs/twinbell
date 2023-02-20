@@ -10,4 +10,5 @@ $(function(){
     let menu_height = $('#menu').outerHeight();
     $('.sub_menu_wrapper').css('top', '102px');
     $('.bg_dark').css('top', '102px');
+    console.log('index')
 })

@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app #my_page_header {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_header #page_location {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#app #my_page_header #title {
+  font-size: 72px;
+  color: #222;
+}
+#app #my_page_header #title span {
+  color: #007dfb;
+}
+#app #my_page_nav {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_nav ul {
+  display: flex;
+}
+#app #my_page_nav ul .nav_item {
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #my_page_nav ul .active {
+  background-color: #7E746C;
+  color: #fff;
+}
+#app #my_page_nav ul .nav_item:first-child {
+  border-left: 1px solid #ddd;
+}
+#app #user_info {
+  padding: 0 16.3%;
+  margin-bottom: 15px;
+}
+#app #user_info .info_wrap {
+  padding: 30px 0px;
+  border: 1px solid #ddd;
+  display: flex;
+}
+#app #user_info .info_wrap .info_item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+#app #user_info .info_wrap .info_item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#app #user_info .info_wrap .info_item:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+#app #user_info .info_wrap #user_email {
+  height: 70px;
+}
+#app #user_info .info_wrap #user_phone .info_edit {
+  border: 2px solid #222;
+  border-radius: 50%;
+  padding: 25px 10px;
+  cursor: pointer;
+}
+#app #user_info .info_wrap #user_asset .charge {
+  background-color: #007dfb;
+  border: 2px solid #007dfb;
+  border-radius: 50%;
+  padding: 25px 10px;
+  cursor: pointer;
+}
+#app #user_info .info_wrap #user_coupon .check_coupon {
+  border: 2px solid #222;
+  border-radius: 50%;
+  padding: 25px 10px;
+  cursor: pointer;
+}
+#app #shipping_state {
+  padding: 0% 16.3%;
+  margin-bottom: 30px;
+}
+#app #shipping_state #shipping_address {
+  display: flex;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+#app #shipping_state #shipping_address .title {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+#app #shipping_state #shipping_address .address_wrap {
+  padding: 8px 16px;
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#app #shipping_state #shipping_address .address_wrap .edit {
+  background-color: #222;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+#app #shipping_state #shipping_level .title_wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+#app #shipping_state #shipping_level .title_wrap .title li {
+  list-style: disc;
+}
+#app #shipping_state #shipping_level .title_wrap .desc {
+  align-self: flex-end;
+}
+#app #shipping_state #shipping_level .level_wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#app #shipping_state #shipping_level .level_wrap .level {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+#app #shipping_state #shipping_level .level_wrap .level img {
+  width: 40px;
+  height: 40px;
+}
+#app #shipping_state #shipping_level .level_wrap span {
+  top: -10px;
+  right: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 2px;
+  position: absolute;
+}
+#app #accepted_order {
+  padding: 0% 16.3%;
+  margin-bottom: 40px;
+}
+#app #accepted_order .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+#app #accepted_order .header .etc_wrap {
+  display: flex;
+  gap: 4px;
+}
+#app #accepted_order .header .etc_wrap .desc {
+  background-color: #222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+#app #accepted_order .header .etc_wrap .in_order select {
+  border: 1px solid #D6DAE1;
+  padding: 4px 4px;
+  color: #888;
+}
+#app #accepted_order #a_order_list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#app #accepted_order #a_order_list table thead tr {
+  width: 100%;
+}
+#app #accepted_order #a_order_list table thead tr th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table thead tr .th_00 {
+  width: 15%;
+  border-left: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table thead tr .th_01 {
+  width: 35%;
+  text-align: left;
+  padding: 8px;
+}
+#app #accepted_order #a_order_list table thead tr .th_02, #app #accepted_order #a_order_list table thead tr .th_03, #app #accepted_order #a_order_list table thead tr .th_04, #app #accepted_order #a_order_list table thead tr .th_05 {
+  width: 10%;
+}
+#app #accepted_order #a_order_list table thead tr th {
+  padding: 8px 0px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table tbody {
+  text-align: center;
+  line-height: 1.6;
+}
+#app #accepted_order #a_order_list table tbody tr {
+  border: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table tbody tr td {
+  padding: 16px 16px;
+}
+#app #accepted_order #a_order_list table tbody tr td .file_red {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 8px;
+}
+#app #accepted_order #a_order_list table tbody tr td .confirm_blue {
+  background-color: #007dfb;
+  color: #fff;
+  padding: 8px 20px;
+}
+#app #accepted_order #a_order_list table tbody tr td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table tbody tr td:last-child span {
+  padding: 8px 15px;
+  background-color: #222;
+  cursor: pointer;
+}
+#app #accepted_order #a_order_list table tbody tr .progress_red {
+  color: #ff0000;
+}
+#app #unaccepted_order {
+  margin-bottom: 40px;
+  padding: 0% 16.3%;
+}
+#app #unaccepted_order .header {
+  display: flex;
+  margin-bottom: 8px;
+}
+#app #unaccepted_order .header .etc_wrap {
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+  width: calc(100% - 147.72px);
+}
+#app #unaccepted_order .header .etc_wrap .desc {
+  color: #222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+#app #unaccepted_order .header .etc_wrap .desc img {
+  padding-right: 4px;
+}
+#app #unaccepted_order .header .etc_wrap .in_order select {
+  border: 1px solid #D6DAE1;
+  padding: 4px 4px;
+  color: #888;
+}
+#app #unaccepted_order #u_order_list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#app #unaccepted_order #u_order_list table thead tr {
+  width: 100%;
+}
+#app #unaccepted_order #u_order_list table thead tr th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#app #unaccepted_order #u_order_list table thead tr .th_00 {
+  width: 15%;
+  border-left: 1px solid #ddd;
+}
+#app #unaccepted_order #u_order_list table thead tr .th_01 {
+  width: 45%;
+  text-align: left;
+  padding: 8px;
+}
+#app #unaccepted_order #u_order_list table thead tr .th_02, #app #unaccepted_order #u_order_list table thead tr .th_03, #app #unaccepted_order #u_order_list table thead tr .th_04, #app #unaccepted_order #u_order_list table thead tr .th_05 {
+  width: 10%;
+}
+#app #unaccepted_order #u_order_list table thead tr th {
+  padding: 8px 0px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #ddd;
+}
+#app #unaccepted_order #u_order_list table tbody {
+  text-align: center;
+  line-height: 1.6;
+}
+#app #unaccepted_order #u_order_list table tbody tr {
+  border: 1px solid #ddd;
+}
+#app #unaccepted_order #u_order_list table tbody tr td {
+  padding: 16px 16px;
+}
+#app #unaccepted_order #u_order_list table tbody tr td .file_red {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 8px;
+}
+#app #unaccepted_order #u_order_list table tbody tr td .confirm_blue {
+  background-color: #007dfb;
+  color: #fff;
+  padding: 8px 20px;
+}
+#app #unaccepted_order #u_order_list table tbody tr td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+#app #unaccepted_order #u_order_list table tbody tr td:last-child span {
+  padding: 8px 15px;
+  background-color: #222;
+  cursor: pointer;
+}
+#app #unaccepted_order #u_order_list table tbody tr .progress_red {
+  color: #ff0000;
+}
+#app #ask_record {
+  padding: 0% 16.3%;
+}
+#app #ask_record .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+#app #ask_record .header .etc_wrap {
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+  width: calc(100% - 147.72px);
+}
+#app #ask_record .header .etc_wrap .desc {
+  color: #222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+#app #ask_record .header .etc_wrap .desc img {
+  padding-right: 4px;
+}
+#app #ask_record .header .etc_wrap .in_order select {
+  border: 1px solid #D6DAE1;
+  padding: 4px 4px;
+  color: #888;
+}
+#app #ask_record #ask_list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#app #ask_record #ask_list table thead tr {
+  width: 100%;
+}
+#app #ask_record #ask_list table thead tr th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#app #ask_record #ask_list table thead tr .th_00 {
+  width: 10%;
+  border-left: 1px solid #ddd;
+}
+#app #ask_record #ask_list table thead tr .th_02 {
+  width: 60%;
+  text-align: left;
+  padding: 8px;
+}
+#app #ask_record #ask_list table thead tr .th_01, #app #ask_record #ask_list table thead tr .th_03, #app #ask_record #ask_list table thead tr .th_04, #app #ask_record #ask_list table thead tr .th_05 {
+  width: 10%;
+}
+#app #ask_record #ask_list table thead tr th {
+  padding: 16px 0px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #ddd;
+}
+#app #ask_record #ask_list table tbody {
+  text-align: center;
+  line-height: 1.6;
+}
+#app #ask_record #ask_list table tbody tr {
+  border: 1px solid #ddd;
+}
+#app #ask_record #ask_list table tbody tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 8px;
+}
+#app #ask_record #ask_list table tbody tr td .red {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 4px 8px;
+}
+#app #ask_record #ask_list table tbody tr td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+#app #ask_record #ask_list table tbody tr .progress_red {
+  color: #ff0000;
+}/*# sourceMappingURL=style.css.map */
