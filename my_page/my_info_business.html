@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/my_info_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">마이페이지</span>
+                ··
+                <span class="last_location f15S007">마이페이지 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+            내 정보<span>.</span>
+                <div class="subtitle f18R222">
+                    고객님의 소중한 정보 보호를 위해 힘쓰겠습니다.
+                </div>
+            </div>
+        </section>
+        <section id="my_page_nav">
+            <nav>
+                <ul>
+                    <li OnClick="location.href = '#'" class="nav_item">마이페이지</li>
+                    <li OnClick="location.href = '#'" class="nav_item active">주문 / 배송조회</li>
+                    <li OnClick="location.href = '#'" class="nav_item">완료된 거래내역</li>
+                    <li OnClick="location.href = '#'" class="nav_item">견적서 관리</li>
+                    <li OnClick="location.href = '#'" class="nav_item">내 정보</li>
+                    <li OnClick="location.href = '#'" class="nav_item">가상계좌관리</li>
+                </ul>
+                <ul>
+                    <li OnClick="location.href = '#'" class="nav_item">문의하기</li>
+                    <li OnClick="location.href = '#'" class="nav_item">배송지 관리</li>
+                    <li oOnClick="location.href = '#'" class="nav_item">세금계산서</li>
+                    <li OnClick="location.href = '#'" class="nav_item">장바구니 내역</li>
+                    <li OnClick="location.href = '#'" class="nav_item">포인트 및 쿠폰</li>
+                    <li OnClick="location.href = '#'" class="nav_item">E 머니 관리</li>
+                </ul>
+            </nav>
+        </section>
+        <section class="contents" id="b_info">
+            <div class="header">
+                <div class="title f21S222">
+                    · 기본정보
+                    <!-- <div class="desc f12R222">
+                        <img src="./img/index/icon_00.png" alt="">
+                        주문 후 7일내 결제하시지 않으면 주문이 자동취소됩니다.
+                    </div> -->
+                </div>
+                <!-- <div class="etc_wrap">
+                    <div class="desc f12RFFF black">
+                        진행상황이란?
+                    </div>
+                    <div class="in_order">
+                        <select name="" id="">
+                            <option value="10">10개씩</option>
+                            <option value="20">20개씩</option>
+                            <option value="30">30개씩</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+            <div class="contents_list" id="b_info_list">
+                <table id="table_00">
+                    <!-- <thead class="f14R222">
+                        <tr>
+                            <th class="th_00">개설일</th>
+                            <th class="th_01">은행</th>
+                            <th class="th_02">예금주명</th>
+                            <th class="th_03">계좌번호</th>
+                            <th class="th_04">계좌상태</th>
+                            <th class="th_05">최근거래시간</th>
+                            <th class="th_06">입금한도액</th>
+                            <th class="th_07">수정</th>
+                        </tr>
+                    </thead> -->
+                    <tbody class="f14R222">
+                        <div class="tr_wrap" id="tr_w_00">
+                            <tr id="name_input">
+                                <td>
+                                    이름
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="name_wrap">
+                                            <div class="name">
+                                                이름 출력 (수정 불가)
+                                            </div>
+                                            <div class="box_btn green" id="user_type">
+                                                <span>개인회원</span>
+                                            </div>
+                                        </div>
+                                        <div class="box_btn black" id="pw_change">
+                                            <span>비밀번호 변경</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="id_input">
+                                <td>
+                                    아이디
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <span>jsdjiajdijiadfijaifjiajdflja@hotmaiul.com</span> (수정 불가)
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="phone_input">
+                                <td>
+                                    휴대폰
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="phone_wrap">
+                                            <div class="phone_number_wrap">
+                                                <select name="" id="">
+                                                    <option value="0">010</option>
+                                                    <option value="1">011</option>
+                                                </select>
+                                                -
+                                                <input type="number">
+                                                -
+                                                <input type="number">
+                                            </div>
+                                            <div class="box_btn white" id="phone_info_change">
+                                                <span>휴대폰 정보변경</span>
+                                            </div>
+                                        </div>
+                                        <div class="phone_wrap">
+                                            <div class="radio_wrap">
+                                                <input type="radio" id="y">
+                                                <label for="y">수신함</label>
+                                                <input type="radio" id="n">
+                                                <label for="n">수신거부</label>
+                                            </div>
+                                            <div class="desc f12R888">
+                                                <img src="./img/index/icon_00.png" alt="">
+                                                주문, 결제와 관련된 문자는 발송 됩니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="email_input">
+                                <td>
+                                    이메일
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="email_wrap">
+                                            <div class="text">
+                                                <span>jsdjiajdijiadfijaifjiajdflja@hotmaiul.com</span> (수정 불가) 
+                                            </div>
+                                             
+                                            <div class="box_btn white" id="email_change">
+                                                <span>수신 이메일 변경</span>
+                                            </div>
+                                        </div>
+                                        <div class="email_wrap">
+                                            <div class="radio_wrap">
+                                                <input type="radio" id="p_y">
+                                                <label for="p_y">수신함</label>
+                                                <input type="radio" id="p_n">
+                                                <label for="p_n">수신거부</label>
+                                            </div>
+                                            <div class="desc f12R888">
+                                                <img src="./img/index/icon_00.png" alt="">
+                                                
+                                                이메일 수신 동의 여부는 이벤트/홍보성 메시지 발송에 대한 동의입니다.<br/>주문과 관련된 메일은 수신동의 여부와 관계없이 발송됩니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="location_input">
+                                <td>
+                                    기본 배송지
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="text f14R888">
+                                            배송지를 등록하지 않은 상태입니다.
+                                        </div>
+                                        <div class="box_btn white" id="location_change">
+                                            <span>기본 배송지 변경</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+
+                    </tbody>
+                </table>
+                <table id="table_01">
+                    <tbody class="f14R222">
+                        <div class="tr_wrap">
+
+                            <tr id="user_type_input">
+                                <td>
+                                    회원타입변경
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="input_wrap">
+                                            <select name="" id="">
+                                                <option value="0">회원타입변경</option>
+                                                <option value="1">일반회원</option>
+                                                <option value="2">기업회원</option>
+                                            </select>
+                                        </div>
+                                        <div class="desc f12R888">
+                                            <img src="./img/index/icon_00.png" alt="">
+                                            사업자 또는 학교/학원으로 변경하실 경우 개인회원으로 전환은 불가합니다.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="contents" id="business_info">
+            <div class="header">
+                <div class="title f21S222">
+                    · 사업자 정보
+                    <div class="desc f14R222">
+                        <input type="checkbox" id="b_i_check">
+                        <label for="b_i_check">기본정보와 동일</label>
+                    </div>
+                </div>
+                <!-- <div class="etc_wrap">
+                    <div class="desc f12RFFF black">
+                        진행상황이란?
+                    </div>
+                    <div class="in_order">
+                        <select name="" id="">
+                            <option value="10">10개씩</option>
+                            <option value="20">20개씩</option>
+                            <option value="30">30개씩</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+            <div class="contents_list" id="business_info_list">
+                <table id="table_00">
+                    <!-- <thead class="f14R222">
+                        <tr>
+                            <th class="th_00">개설일</th>
+                            <th class="th_01">은행</th>
+                            <th class="th_02">예금주명</th>
+                            <th class="th_03">계좌번호</th>
+                            <th class="th_04">계좌상태</th>
+                            <th class="th_05">최근거래시간</th>
+                            <th class="th_06">입금한도액</th>
+                            <th class="th_07">수정</th>
+                        </tr>
+                    </thead> -->
+                    <tbody class="f14R222">
+                        <div class="tr_wrap" id="tr_w_00">
+                            <tr id="b_number_input">
+                                <td>
+                                    사업자 번호
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <input type="number">
+                                        -
+                                        <input type="number">
+                                        -
+                                        <input type="number">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="c_name_input">
+                                <td>
+                                    회사명
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="ceo_input">
+                                <td>
+                                    대표자명
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="category_input">
+                                <td>
+                                    업태/업종
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <input type="text" placeholder="업태 입력" id="business_category">
+                                        <input type="text" placeholder="업종 입력" id="sectors_category">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="c_location_input">
+                                <td>
+                                    사업장 주소
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="addr_search">
+                                            <div class="search_text">
+                                                <input type="text">
+                                            </div>
+
+                                            <div class="search f12R222">
+                                                우편 번호 검색
+                                            </div>
+                                        </div>
+                                        <div class="addr">
+                                            <input type="text">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+
+                    </tbody>
+                </table>
+                <table id="table_01">
+                    <tbody class="f14R222">
+                        <div class="tr_wrap">
+                            <tr id="b_paper_input">
+                                <td>
+                                    사업등록증 사본
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <div class="input_box">
+                                            <input type="file" id="business_paper">
+                                            이미지 최대 업로드 용량 15 MB / 업로드 가능 확장자 jpg,gif,png,jpeg,webp
+                                        </div>
+                                        <div class="btn">
+                                            <label for="business_paper">찾아보기</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+
+                    </tbody>
+                </table>
+                <div class="file_desc">
+                    * 파일명에 일부 특수문자(. / \ % * ? | " < >)를 포함하는 경우 제휴 제안이 정상적으로 저장되지 않을 수 있습니다.
+                </div>
+                <div class="attached_file">
+                    <div class="a_f_title">
+                        첨부파일 2개
+                    </div>
+                    <div class="file_wrapper">
+                        <div class="file red">
+                            <i class="fa-solid fa-paperclip"></i>
+                            <div class="file_name">
+                                트윈벨미디어_사업자등록증 사본(파일명과 똑같은 이름 출력) .pdf
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contents" id="manager_info">
+            <div class="header">
+                <div class="title f21S222">
+                    · 담당자 정보
+                    <div class="desc f14R222">
+                        <input type="checkbox" id="m_i_check">
+                        <label for="m_i_check">기본정보와 동일</label>
+                    </div>
+                </div>
+                <!-- <div class="etc_wrap">
+                    <div class="desc f12RFFF black">
+                        진행상황이란?
+                    </div>
+                    <div class="in_order">
+                        <select name="" id="">
+                            <option value="10">10개씩</option>
+                            <option value="20">20개씩</option>
+                            <option value="30">30개씩</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+            <div class="contents_list" id="manager_info_list">
+                <table id="table_00">
+                    <!-- <thead class="f14R222">
+                        <tr>
+                            <th class="th_00">개설일</th>
+                            <th class="th_01">은행</th>
+                            <th class="th_02">예금주명</th>
+                            <th class="th_03">계좌번호</th>
+                            <th class="th_04">계좌상태</th>
+                            <th class="th_05">최근거래시간</th>
+                            <th class="th_06">입금한도액</th>
+                            <th class="th_07">수정</th>
+                        </tr>
+                    </thead> -->
+                    <tbody class="f14R222">
+                        <div class="tr_wrap" id="tr_w_00">
+                            <tr id="m_name_input">
+                                <td>
+                                    담당자명
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="m_phone_input">
+                                <td>
+                                    담당자 연락처
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        내선 번호
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="m_fax_input">
+                                <td>
+                                    담당자 FAX
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <select name="" id="">
+                                            <option value="">서울 02</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                        -
+                                        <input type="number">
+                                        -
+                                        <input type="number">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="m_email_input">
+                                <td>
+                                    담당자 이메일
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                       <input type="text">
+                                       @
+                                       <input type="text">
+                                       <select name="" id="">
+                                        <option value="">메일 선택</option>
+                                       </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="contents" id="a_manager_info">
+            <div class="header">
+                <div class="title f21S222">
+                    · 담당자 정보
+                    <div class="desc f14R222">
+                        <input type="checkbox" id="a_m_i_check">
+                        <label for="a_m_i_check">기본정보와 동일</label>
+                    </div>
+                </div>
+                <!-- <div class="etc_wrap">
+                    <div class="desc f12RFFF black">
+                        진행상황이란?
+                    </div>
+                    <div class="in_order">
+                        <select name="" id="">
+                            <option value="10">10개씩</option>
+                            <option value="20">20개씩</option>
+                            <option value="30">30개씩</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+            <div class="contents_list" id="a_manager_info_list">
+                <table id="table_00">
+                    <!-- <thead class="f14R222">
+                        <tr>
+                            <th class="th_00">개설일</th>
+                            <th class="th_01">은행</th>
+                            <th class="th_02">예금주명</th>
+                            <th class="th_03">계좌번호</th>
+                            <th class="th_04">계좌상태</th>
+                            <th class="th_05">최근거래시간</th>
+                            <th class="th_06">입금한도액</th>
+                            <th class="th_07">수정</th>
+                        </tr>
+                    </thead> -->
+                    <tbody class="f14R222">
+                        <div class="tr_wrap" id="tr_w_00">
+                            <tr id="m_name_input">
+                                <td>
+                                    회계 담당자명
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="m_phone_input">
+                                <td>
+                                    담당자 연락처
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        내선 번호
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="m_fax_input">
+                                <td>
+                                    담당자 FAX
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                        <select name="" id="">
+                                            <option value="">서울 02</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                        -
+                                        <input type="number">
+                                        -
+                                        <input type="number">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="m_email_input">
+                                <td>
+                                    담당자 이메일
+                                </td>
+                                <td class="input">
+                                    <div class="wrap">
+                                       <input type="text">
+                                       @
+                                       <input type="text">
+                                       <select name="" id="">
+                                        <option value="">메일 선택</option>
+                                       </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap">
+                <div class="btn" id="save">
+                    <div class="text">
+                        저장하기
+                    </div> 
+                    <div class="icon">
+                        <img src="./img/index/save.png" alt="">
+                    </div>
+                </div>
+                <div class="btn" id="cancel">
+                    <div class="text">
+                        저장하기
+                    </div> 
+                    <div class="icon">
+                        <img src="./img/index/cancel.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function() {
+        $( ".datepicker" ).datepicker({
+        closeText: "닫기",
+        currentText: "오늘",
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        weekHeader: "주",
+        yearSuffix: '년'
+        });
+    });
+    </script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

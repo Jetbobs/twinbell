@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app #my_page_header {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_header #page_location {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#app #my_page_header #title {
+  font-size: 72px;
+  color: #222;
+}
+#app #my_page_header #title span {
+  color: #007dfb;
+}
+#app #my_page_nav {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_nav ul {
+  display: flex;
+}
+#app #my_page_nav ul .nav_item {
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #my_page_nav ul .active {
+  background-color: #7E746C;
+  color: #fff;
+}
+#app #my_page_nav ul .nav_item:first-child {
+  border-left: 1px solid #ddd;
+}
+#app #shipping_state {
+  padding: 0% 16.3%;
+  margin-bottom: 30px;
+}
+#app #shipping_state #shipping_level .title_wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+#app #shipping_state #shipping_level .title_wrap .title li {
+  list-style: disc;
+}
+#app #shipping_state #shipping_level .title_wrap .desc {
+  align-self: flex-end;
+}
+#app #shipping_state #shipping_level .level_wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#app #shipping_state #shipping_level .level_wrap .level {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+#app #shipping_state #shipping_level .level_wrap .level img {
+  width: 40px;
+  height: 40px;
+}
+#app #shipping_state #shipping_level .level_wrap span {
+  top: -10px;
+  right: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 2px;
+  position: absolute;
+}
+#app #accepted_order,
+#app #unaccepted_order {
+  padding: 0% 16.3%;
+  margin-bottom: 40px;
+}
+#app #accepted_order .header,
+#app #unaccepted_order .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+#app #accepted_order .header .title,
+#app #unaccepted_order .header .title {
+  display: flex;
+}
+#app #accepted_order .header .title .desc,
+#app #unaccepted_order .header .title .desc {
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+}
+#app #accepted_order .header .title .desc img,
+#app #unaccepted_order .header .title .desc img {
+  padding-right: 4px;
+}
+#app #accepted_order .header .etc_wrap,
+#app #unaccepted_order .header .etc_wrap {
+  display: flex;
+  gap: 4px;
+}
+#app #accepted_order .header .etc_wrap .desc,
+#app #unaccepted_order .header .etc_wrap .desc {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+#app #accepted_order .header .etc_wrap .black,
+#app #unaccepted_order .header .etc_wrap .black {
+  background-color: #222;
+}
+#app #accepted_order .header .etc_wrap .in_order select,
+#app #unaccepted_order .header .etc_wrap .in_order select {
+  border: 1px solid #D6DAE1;
+  padding: 4px 4px;
+  color: #888;
+}
+#app #accepted_order #a_order_list table,
+#app #accepted_order #u_order_list table,
+#app #unaccepted_order #a_order_list table,
+#app #unaccepted_order #u_order_list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#app #accepted_order #a_order_list table thead tr,
+#app #accepted_order #u_order_list table thead tr,
+#app #unaccepted_order #a_order_list table thead tr,
+#app #unaccepted_order #u_order_list table thead tr {
+  width: 100%;
+}
+#app #accepted_order #a_order_list table thead tr th,
+#app #accepted_order #u_order_list table thead tr th,
+#app #unaccepted_order #a_order_list table thead tr th,
+#app #unaccepted_order #u_order_list table thead tr th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table thead tr .th_00,
+#app #accepted_order #u_order_list table thead tr .th_00,
+#app #unaccepted_order #a_order_list table thead tr .th_00,
+#app #unaccepted_order #u_order_list table thead tr .th_00 {
+  width: 10%;
+  border-left: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table thead tr .th_01,
+#app #accepted_order #u_order_list table thead tr .th_01,
+#app #unaccepted_order #a_order_list table thead tr .th_01,
+#app #unaccepted_order #u_order_list table thead tr .th_01 {
+  width: 40%;
+  text-align: left;
+  padding: 8px;
+}
+#app #accepted_order #a_order_list table thead tr .th_00,
+#app #accepted_order #a_order_list table thead tr .th_02,
+#app #accepted_order #a_order_list table thead tr .th_03,
+#app #accepted_order #a_order_list table thead tr .th_04,
+#app #accepted_order #u_order_list table thead tr .th_00,
+#app #accepted_order #u_order_list table thead tr .th_02,
+#app #accepted_order #u_order_list table thead tr .th_03,
+#app #accepted_order #u_order_list table thead tr .th_04,
+#app #unaccepted_order #a_order_list table thead tr .th_00,
+#app #unaccepted_order #a_order_list table thead tr .th_02,
+#app #unaccepted_order #a_order_list table thead tr .th_03,
+#app #unaccepted_order #a_order_list table thead tr .th_04,
+#app #unaccepted_order #u_order_list table thead tr .th_00,
+#app #unaccepted_order #u_order_list table thead tr .th_02,
+#app #unaccepted_order #u_order_list table thead tr .th_03,
+#app #unaccepted_order #u_order_list table thead tr .th_04 {
+  width: 15%;
+}
+#app #accepted_order #a_order_list table thead tr th,
+#app #accepted_order #u_order_list table thead tr th,
+#app #unaccepted_order #a_order_list table thead tr th,
+#app #unaccepted_order #u_order_list table thead tr th {
+  padding: 8px 0px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table tbody,
+#app #accepted_order #u_order_list table tbody,
+#app #unaccepted_order #a_order_list table tbody,
+#app #unaccepted_order #u_order_list table tbody {
+  text-align: center;
+  line-height: 1.6;
+}
+#app #accepted_order #a_order_list table tbody tr,
+#app #accepted_order #u_order_list table tbody tr,
+#app #unaccepted_order #a_order_list table tbody tr,
+#app #unaccepted_order #u_order_list table tbody tr {
+  border: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table tbody tr td,
+#app #accepted_order #u_order_list table tbody tr td,
+#app #unaccepted_order #a_order_list table tbody tr td,
+#app #unaccepted_order #u_order_list table tbody tr td {
+  padding: 16px 16px;
+}
+#app #accepted_order #a_order_list table tbody tr td .order_number,
+#app #accepted_order #a_order_list table tbody tr td .price,
+#app #accepted_order #a_order_list table tbody tr td .order_state,
+#app #accepted_order #u_order_list table tbody tr td .order_number,
+#app #accepted_order #u_order_list table tbody tr td .price,
+#app #accepted_order #u_order_list table tbody tr td .order_state,
+#app #unaccepted_order #a_order_list table tbody tr td .order_number,
+#app #unaccepted_order #a_order_list table tbody tr td .price,
+#app #unaccepted_order #a_order_list table tbody tr td .order_state,
+#app #unaccepted_order #u_order_list table tbody tr td .order_number,
+#app #unaccepted_order #u_order_list table tbody tr td .price,
+#app #unaccepted_order #u_order_list table tbody tr td .order_state {
+  margin-bottom: 8px;
+}
+#app #accepted_order #a_order_list table tbody tr td .green,
+#app #accepted_order #u_order_list table tbody tr td .green,
+#app #unaccepted_order #a_order_list table tbody tr td .green,
+#app #unaccepted_order #u_order_list table tbody tr td .green {
+  display: inline;
+  background-color: #27AB34;
+  color: #fff;
+  padding: 4px 11px;
+  width: 71px;
+  cursor: pointer;
+}
+#app #accepted_order #a_order_list table tbody tr td .pink,
+#app #accepted_order #u_order_list table tbody tr td .pink,
+#app #unaccepted_order #a_order_list table tbody tr td .pink,
+#app #unaccepted_order #u_order_list table tbody tr td .pink {
+  display: inline;
+  background-color: #F600DE;
+  color: #fff;
+  padding: 4px 17px;
+  width: 71px;
+}
+#app #accepted_order #a_order_list table tbody tr td .red,
+#app #accepted_order #u_order_list table tbody tr td .red,
+#app #unaccepted_order #a_order_list table tbody tr td .red,
+#app #unaccepted_order #u_order_list table tbody tr td .red {
+  display: inline-block;
+  padding: 4px 0px;
+  color: #fff;
+  width: 71px;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+#app #accepted_order #a_order_list table tbody tr td .blue,
+#app #accepted_order #u_order_list table tbody tr td .blue,
+#app #unaccepted_order #a_order_list table tbody tr td .blue,
+#app #unaccepted_order #u_order_list table tbody tr td .blue {
+  display: inline-block;
+  padding: 4px 0px;
+  width: 71px;
+  background-color: #007dfb;
+  cursor: pointer;
+}
+#app #accepted_order #a_order_list table tbody tr td .red_text,
+#app #accepted_order #u_order_list table tbody tr td .red_text,
+#app #unaccepted_order #a_order_list table tbody tr td .red_text,
+#app #unaccepted_order #u_order_list table tbody tr td .red_text {
+  color: #ff0000;
+}
+#app #accepted_order #a_order_list table tbody tr td .desc,
+#app #accepted_order #u_order_list table tbody tr td .desc,
+#app #unaccepted_order #a_order_list table tbody tr td .desc,
+#app #unaccepted_order #u_order_list table tbody tr td .desc {
+  margin-top: 16px;
+}
+#app #accepted_order #a_order_list table tbody tr td:not(:last-child),
+#app #accepted_order #u_order_list table tbody tr td:not(:last-child),
+#app #unaccepted_order #a_order_list table tbody tr td:not(:last-child),
+#app #unaccepted_order #u_order_list table tbody tr td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+#app #accepted_order #a_order_list table tbody tr td:last-child div,
+#app #accepted_order #u_order_list table tbody tr td:last-child div,
+#app #unaccepted_order #a_order_list table tbody tr td:last-child div,
+#app #unaccepted_order #u_order_list table tbody tr td:last-child div {
+  margin: 0 auto;
+  width: 71px;
+  padding: 4px 0px;
+  background-color: #222;
+  cursor: pointer;
+}
+#app #accepted_order #a_order_list table tbody tr td:last-child div:not(:last-child),
+#app #accepted_order #u_order_list table tbody tr td:last-child div:not(:last-child),
+#app #unaccepted_order #a_order_list table tbody tr td:last-child div:not(:last-child),
+#app #unaccepted_order #u_order_list table tbody tr td:last-child div:not(:last-child) {
+  margin-bottom: 4px;
+}
+#app #accepted_order #a_order_list table tbody tr td:last-child .gray,
+#app #accepted_order #u_order_list table tbody tr td:last-child .gray,
+#app #unaccepted_order #a_order_list table tbody tr td:last-child .gray,
+#app #unaccepted_order #u_order_list table tbody tr td:last-child .gray {
+  background-color: #999999;
+}
+#app #accepted_order #a_order_list table tbody tr td:last-child .dark_gray,
+#app #accepted_order #u_order_list table tbody tr td:last-child .dark_gray,
+#app #unaccepted_order #a_order_list table tbody tr td:last-child .dark_gray,
+#app #unaccepted_order #u_order_list table tbody tr td:last-child .dark_gray {
+  background-color: #666666;
+}
+#app #accepted_order #a_order_list table tbody tr .progress_red,
+#app #accepted_order #u_order_list table tbody tr .progress_red,
+#app #unaccepted_order #a_order_list table tbody tr .progress_red,
+#app #unaccepted_order #u_order_list table tbody tr .progress_red {
+  color: #ff0000;
+}/*# sourceMappingURL=shipping_style.css.map */

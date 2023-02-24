@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app #my_page_header {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_header #page_location {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#app #my_page_header #title {
+  font-size: 72px;
+  color: #222;
+}
+#app #my_page_header #title span {
+  color: #007dfb;
+}
+#app #my_page_nav {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_nav ul {
+  display: flex;
+}
+#app #my_page_nav ul .nav_item {
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #my_page_nav ul .active {
+  background-color: #7E746C;
+  color: #fff;
+}
+#app #my_page_nav ul .nav_item:first-child {
+  border-left: 1px solid #ddd;
+}
+#app .period_contents {
+  padding: 0% 16.3%;
+  margin-bottom: 16px;
+}
+#app .period_contents #shipping_level .title_wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+#app .period_contents #shipping_level .title_wrap .title li {
+  list-style: disc;
+}
+#app .period_contents #shipping_level .title_wrap .desc {
+  align-self: flex-end;
+}
+#app .period_contents #shipping_level .level_wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#app .period_contents #shipping_level .level_wrap .level {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+#app .period_contents #shipping_level .level_wrap .level img {
+  width: 40px;
+  height: 40px;
+}
+#app .period_contents #shipping_level .level_wrap span {
+  top: -10px;
+  right: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 2px;
+  position: absolute;
+}
+#app .period_contents .header .title_wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+#app .period_contents .header .title_wrap .title li {
+  list-style: disc;
+}
+#app .period_contents .header .title_wrap .desc {
+  align-self: flex-end;
+}
+#app .period_contents .filter_wrap {
+  border: 1px solid #ddd;
+  padding: 32px;
+  border-radius: 5px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+#app .period_contents .filter_wrap .date_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#app .period_contents .filter_wrap .date_wrap .date_btn_wrap {
+  display: flex;
+  gap: 8px;
+}
+#app .period_contents .filter_wrap .date_wrap .date_btn_wrap .date_btn {
+  width: 51px;
+  background-color: #999;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+#app .period_contents .filter_wrap .date_wrap .date_picker_wrap input {
+  width: 133px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 16px;
+  background-image: url(../img/index/callendar.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+#app .period_contents .filter_wrap .input_wrap {
+  display: flex;
+  gap: 16px;
+}
+#app .period_contents .filter_wrap .input_wrap select {
+  font-size: 15px;
+  color: #222;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-align: left;
+  width: 138px;
+}
+#app .period_contents .filter_wrap .input_wrap input {
+  width: 348px;
+  text-align: left;
+  font-size: 15px;
+  color: #222;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+#app .period_contents .filter_wrap .check_wrap span {
+  background-color: #007dfb;
+  border-radius: 50%;
+  padding: 27px 11px;
+  cursor: pointer;
+}
+#app .contents {
+  padding: 0% 16.3%;
+  margin-bottom: 40px;
+}
+#app .contents .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+#app .contents .header .title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#app .contents .header .title .desc {
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+}
+#app .contents .header .title .desc input {
+  margin-right: 4px;
+}
+#app .contents .header .etc_wrap {
+  display: flex;
+  gap: 4px;
+}
+#app .contents .header .etc_wrap .desc {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+#app .contents .header .etc_wrap .black {
+  background-color: #222;
+}
+#app .contents .header .etc_wrap .in_order select {
+  border: 1px solid #D6DAE1;
+  padding: 4px 4px;
+  color: #888;
+}
+#app .contents .contents_list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#app .contents .contents_list table thead tr {
+  width: 100%;
+}
+#app .contents .contents_list table thead tr th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#app .contents .contents_list table thead tr .th_00 {
+  border-left: 1px solid #ddd;
+}
+#app .contents .contents_list table thead tr .th_01, #app .contents .contents_list table thead tr .th_04, #app .contents .contents_list table thead tr .th_06, #app .contents .contents_list table thead tr .th_07 {
+  width: 10%;
+}
+#app .contents .contents_list table thead tr .th_00, #app .contents .contents_list table thead tr .th_02, #app .contents .contents_list table thead tr .th_03, #app .contents .contents_list table thead tr .th_05 {
+  width: 15%;
+}
+#app .contents .contents_list table thead tr th {
+  padding: 8px 0px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #ddd;
+}
+#app .contents .contents_list table tbody {
+  text-align: center;
+  line-height: 1.6;
+}
+#app .contents .contents_list table tbody tr {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+#app .contents .contents_list table tbody tr td:first-child {
+  width: 15.8%;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  padding: 16px 0px;
+}
+#app .contents .contents_list table tbody tr td:nth-child(2) {
+  width: 74.2%;
+}
+#app .contents .contents_list table tbody tr .input {
+  padding: 0px 16px;
+}
+#app .contents .contents_list table tbody tr .box_btn span {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+#app .contents .contents_list table tbody tr .green span {
+  background-color: #9CC441;
+}
+#app .contents .contents_list table tbody tr .black span {
+  background-color: #222;
+}
+#app .contents .contents_list table tbody tr .white span {
+  border: 1px solid #222;
+  color: #222;
+}
+#app .contents .contents_list table tbody tr:nth-child(4) {
+  margin-bottom: 16px;
+}
+#app .contents .contents_list table tbody #name_input .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#app .contents .contents_list table tbody #name_input .wrap .name_wrap {
+  display: flex;
+  gap: 16px;
+}
+#app .contents .contents_list table tbody #name_input .wrap #pw_change {
+  border-left: 1px solid #ddd;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+#app .contents .contents_list table tbody #id_input .wrap {
+  text-align: left;
+}
+#app .contents .contents_list table tbody #phone_input .input {
+  padding: 8px 16px;
+}
+#app .contents .contents_list table tbody #phone_input .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap .phone_number_wrap select {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap .phone_number_wrap input {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap #phone_info_change {
+  border-left: 1px solid #ddd;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap .radio_wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap .radio_wrap input {
+  margin-left: 4px;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap .radio_wrap #n {
+  margin-left: 16px;
+}
+#app .contents .contents_list table tbody #phone_input .phone_wrap .desc {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#app .contents .contents_list table tbody #email_input .input {
+  padding: 8px 16px;
+}
+#app .contents .contents_list table tbody #email_input .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#app .contents .contents_list table tbody #email_input .email_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#app .contents .contents_list table tbody #email_input .email_wrap #email_change {
+  border-left: 1px solid #ddd;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+#app .contents .contents_list table tbody #email_input .email_wrap .radio_wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#app .contents .contents_list table tbody #email_input .email_wrap .radio_wrap input {
+  margin-left: 4px;
+}
+#app .contents .contents_list table tbody #email_input .email_wrap .radio_wrap #n {
+  margin-left: 16px;
+}
+#app .contents .contents_list table tbody #email_input .email_wrap .desc {
+  text-align: left;
+  display: flex;
+  align-items: start;
+  gap: 4px;
+  justify-content: start;
+}
+#app .contents .contents_list table tbody #location_input .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#app .contents .contents_list table tbody #location_input .wrap .name_wrap {
+  display: flex;
+  gap: 16px;
+}
+#app .contents .contents_list table tbody #location_input .wrap #location_change {
+  border-left: 1px solid #ddd;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+#app .contents .contents_list table tbody #user_type_input .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#app .contents .contents_list table tbody #user_type_input .wrap .input_wrap select {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #user_type_input .wrap .desc {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#app .contents .contents_list table tbody #b_number_input .wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+#app .contents .contents_list table tbody #b_number_input .wrap input {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #c_name_input .wrap {
+  text-align: left;
+}
+#app .contents .contents_list table tbody #c_name_input .wrap input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #ceo_input .wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+#app .contents .contents_list table tbody #ceo_input .wrap input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #category_input .input {
+  padding: 8px 16px;
+}
+#app .contents .contents_list table tbody #category_input .wrap {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+#app .contents .contents_list table tbody #category_input .wrap input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #c_location_input .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+  margin: 8px 0px;
+}
+#app .contents .contents_list table tbody #c_location_input .wrap input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #c_location_input .wrap .addr_search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#app .contents .contents_list table tbody #c_location_input .wrap .addr_search input {
+  width: 110px;
+}
+#app .contents .contents_list table tbody #c_location_input .wrap .addr_search .search {
+  border: 1px solid #222;
+  width: 91px;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+#app .contents .contents_list table tbody #c_location_input .wrap .addr input {
+  flex: 1;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #b_paper_input .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin: 8px 0px;
+}
+#app .contents .contents_list table tbody #b_paper_input .wrap input {
+  display: none;
+}
+#app .contents .contents_list table tbody #b_paper_input .wrap .input_box {
+  font-size: 15px;
+  color: #d9d9d9;
+}
+#app .contents .contents_list table tbody #b_paper_input .wrap .btn label {
+  background-color: #222;
+  color: #fff;
+  height: 55.39px;
+  width: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app .contents .contents_list table tbody #user_type_input .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#app .contents .contents_list table tbody #user_type_input .wrap .input_wrap select {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #user_type_input .wrap .desc {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#app .contents .contents_list table tbody #m_name_input .wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+#app .contents .contents_list table tbody #m_name_input .wrap input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #m_phone_input .wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+#app .contents .contents_list table tbody #m_phone_input .wrap input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #m_fax_input .wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+#app .contents .contents_list table tbody #m_fax_input .wrap input {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #m_fax_input .wrap select {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #m_email_input .wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+#app .contents .contents_list table tbody #m_email_input .wrap input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px 8px;
+}
+#app .contents .contents_list table tbody #m_email_input .wrap select {
+  width: 110px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 8px;
+}
+#app .contents .contents_list #table_00 {
+  margin-bottom: 16px;
+}
+#app .contents .contents_list .file_desc {
+  font-size: 15px;
+  color: #ff0000;
+  padding-left: 227px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+#app .contents .contents_list .attached_file {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+#app .contents .contents_list .attached_file .a_f_title {
+  width: 227px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+#app .contents .contents_list .attached_file .file_wrapper {
+  padding: 16px;
+}
+#app .contents .contents_list .attached_file .file_wrapper .file {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+}
+#app .contents .contents_list .attached_file .file_wrapper .red {
+  color: #ff0000;
+}
+#app .contents #b_info_list {
+  margin-bottom: 40px;
+}
+#app .contents .btn_wrap {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+#app .contents .btn_wrap .btn {
+  width: 170px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  cursor: pointer;
+}
+#app .contents .btn_wrap #save {
+  border: 1px solid #222;
+  background-color: #222;
+  color: #fff;
+}
+#app .contents .btn_wrap #cancel {
+  border: 1px solid #222;
+}/*# sourceMappingURL=my_info_style.css.map */
