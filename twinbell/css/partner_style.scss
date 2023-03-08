@@ -1,0 +1,68 @@
+@use '../../common/css/color/color';
+@use '../../common/css/font/font_mixin';
+@import "../../common/css/common_form.scss";
+
+
+#app{
+    #my_page_header{
+        padding: 0 16.3%;
+        margin-bottom: 80px;
+        #page_location{
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        #title{
+            font-size: 72px;
+            color: color.$color-222;
+            span{
+                color: color.$color-007;
+            }
+        }
+    }
+    #my_page_nav{
+        padding: 0 16.3%;
+        margin-bottom: 30px;
+        ul{
+            display: flex;
+            .nav_item{
+                padding: 12px 0;
+                flex: 1;
+                text-align: center;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+            .active{
+                background-color: #7E746C;
+                color: #fff;
+            }
+            .nav_item:first-child{
+                border-left: 1px solid #ddd;
+            }
+        }
+
+    }
+    #partner{
+        padding: 0px 16.3%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .partner_wrap{
+            display: flex;
+            // gap: 118px;
+            gap: 16px;
+            flex-wrap: wrap;
+            .partner{
+                box-shadow: 0 3px 3px 0 rgba($color: #000000, $alpha: 0.1608);
+                width: 235px;
+                height: 145px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

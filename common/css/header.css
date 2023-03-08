@@ -50,6 +50,13 @@ header .upper_menu {
   align-items: center;
   padding: 0 10%;
 }
+header .upper_menu .menu_wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1294px;
+}
 header .upper_menu nav ul {
   list-style: none;
 }
@@ -71,10 +78,14 @@ header .upper_menu .login_btn_wrap nav ul .login_btn:not(:last-child) {
 header #menu {
   border-bottom: 1px solid #e0e0e0;
   padding: 20px 10%;
+  position: relative;
+}
+header #menu .menu_wrap {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  width: 1294px;
 }
 header #menu .logo_menu_wrap {
   display: flex;

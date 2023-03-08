@@ -65,7 +65,13 @@ $color-btn-blue: #007dfb;
             justify-content: space-between;
             align-items: center;
             padding: 0 10%;
-
+            .menu_wrap{
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 1294px;
+            }
             nav {
                 ul {
                     list-style: none;
@@ -100,11 +106,15 @@ $color-btn-blue: #007dfb;
         #menu {
             border-bottom: 1px solid $color-header-border;
             padding: 20px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
 
+            position: relative;
+            .menu_wrap{
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 1294px;
+            }
             .logo_menu_wrap {
                 display: flex;
 

@@ -204,6 +204,7 @@
                     align-items: center;
                     justify-content: center;
                     padding: 4px 8px;
+                    cursor: pointer;
                 }
                 .black{
                     background-color: color.$color-222;
@@ -253,227 +254,145 @@
                     text-align: center;
                     line-height: 1.6;
                     tr{
-                        height: 100%;
                         border: 1px solid #ddd;
-                        td:first-child{
-                            width: 15.8%;
-                            background-color: #f9f9f9;
-                            border-right: 1px solid #ddd;
-                            padding: 16px 0px;
-                        }
-                        td:nth-child(2){
-                            width: 74.2%;
-                        }
-
-                        .input{
-                            padding: 0px 16px;
-                        }
-                        .box_btn{
-                            span{
-                                padding: 5px 15px;
-                                text-align: center;
-                                font-size: 12px;
+                        td{
+                            padding: 16px 16px;
+                            .order_number, .price,.order_state{
+                                margin-bottom: 8px;
+                            }
+                            .green{
+                                display: inline;
+                                background-color: #27AB34;
                                 color: color.$color-FFF;
+                                padding: 4px 11px;
+                                width: 71px;
+                                cursor: pointer;
                             }
-                        }
-                        .green{
-                            span{
-                                background-color: #9CC441;
+                            .pink{
+                                display: inline;
+                                background-color: #F600DE;
+                                color: color.$color-FFF;
+                                padding: 4px 17px;
+                                width: 71px;
                             }
-                        }
-                        .black{
-                            span{
-                                background-color: #222;
+                            .red{
+                                display: inline-block;
+                                padding: 4px 0px;
+                                color: color.$color-FFF;
+                                width: 71px;
+                                background-color: color.$color-ff0;
+                                cursor: pointer;
                             }
-                        }
-                        .white{
-                            span{
-                                border: 1px solid #222;
+                            .blue{
+                                display: inline-block;
+                                padding: 4px 0px;
+                                width: 71px;
+                                background-color: color.$color-007;
+                                cursor: pointer;
+                            }
+                            .white{
+                                background-color: color.$color-FFF;
                                 color: color.$color-222;
                             }
-                        }
-                    }
-                    tr:nth-child(4){
-                        margin-bottom: 16px;
-                    }
-                    #name_input{
-                        .wrap{
-                            display: flex;
-                            justify-content: space-between;
-                            .name_wrap{
-                                display: flex;
-                                gap: 16px;
-                            }
-                            #pw_change{
-                                border-left: 1px solid #ddd;
-                                padding: 0px 12px;
-                                cursor: pointer;
-                            }
-                        }
-
-                    }
-                    #id_input{
-                        .wrap{
-                            text-align: left;
-                        }
-                    }
-                    #phone_input{
-                        .input{
-                            padding: 8px 16px;
-                        }
-                        .wrap{
-                            display: flex;
-                            flex-direction: column;
-                            gap: 4px;
-                        }
-                        .phone_wrap{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            .phone_number_wrap{
-                                select{
-                                    width: 110px;
-                                    height: 40px;
-                                    border: 1px solid #ddd;
-                                    border-radius: 5px;
-                                    padding: 0px 8px;
-                                }
-                                input{
-                                    width: 110px;
-                                    height: 40px;
-                                    border-radius: 5px;
-                                    border: 1px solid #ddd;
-                                    padding: 0px 8px;
-                                }
-                            }
-                            #phone_info_change{
-                                border-left: 1px solid #ddd;
-                                padding: 0px 12px;
-                                cursor: pointer;
-                            }
-                            .radio_wrap{
-                                display: flex;
-                                align-items: center;
-                                gap: 12px;
-                                input{
-                                    margin-left: 4px;
-                                }
-                                #n{
-                                    margin-left: 16px;
-                                }
+                            .red_text{
+                                color: color.$color-ff0;
                             }
                             .desc{
-                                display: flex;
-                                align-items: center;
-                                gap: 4px;
+                                margin-top: 16px;
+                            }
+                            .page_space{
+                                margin: 8px 0px;
                             }
                         }
-                    }
-                    #email_input{
-                        .input{
-                            padding: 8px 16px;
+                        td:not(:last-child){
+                            border-right: 1px solid #ddd;
                         }
-                        .wrap{
-                            display: flex;
-                            flex-direction: column;
-                            gap: 4px;
-                        }
-                        .email_wrap{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            #email_change{
-                                border-left: 1px solid #ddd;
-                                padding: 0px 12px;
+                        td:last-child{
+                            div{
+                                margin: 0 auto;
+                                width: 71px;
+                                padding: 4px 0px;
+                                background-color: #222;
                                 cursor: pointer;
                             }
-                            .radio_wrap{
-                                display: flex;
-                                align-items: center;
-                                gap: 12px;
-                                input{
-                                    margin-left: 4px;
-                                }
-                                #n{
-                                    margin-left: 16px;
-                                }
+                            div:not(:last-child){
+                                margin-bottom: 4px;
                             }
-                            .desc{
-                                text-align: left;
-                                display: flex;
-                                align-items: start;
-                                gap: 4px;
-                                justify-content: start;
+                            .gray{
+                                background-color: #999999;
+                            }
+                            .dark_gray{
+                                background-color: #666666;
+                            }
+                            .white{
+                                width: fit-content;
+                                background-color: color.$color-FFF;
                             }
                         }
-                    }
-                    #location_input{
-                        .wrap{
-                            display: flex;
-                            justify-content: space-between;
-                            .name_wrap{
-                                display: flex;
-                                gap: 16px;
-                            }
-                            #location_change{
-                                border-left: 1px solid #ddd;
-                                padding: 0px 12px;
+                        td:nth-child(6){
+                            div{
+                                margin: 0 auto;
+                                width: 71px;
+                                padding: 4px 0px;
+                                background-color: #222;
                                 cursor: pointer;
                             }
+                            div:not(:last-child){
+                                margin-bottom: 4px;
+                            }
+                            .gray{
+                                background-color: #999999;
+                            }
+                            .dark_gray{
+                                background-color: #666666;
+                            }
+                            .white{
+                                width: fit-content;
+                                background-color: color.$color-FFF;
+                            }
                         }
-
-                    }
-                    #user_type_input{
-                        .wrap{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            .input_wrap{
-                                select{
-                                    width: 110px;
-                                    height: 40px;
-                                    border: 1px solid #ddd;
-                                    border-radius: 5px;
-                                    padding: 0px 8px;
-                                }
-                            }
-                            .desc{
-                                display: flex;
-                                align-items: center;
-                                gap: 4px;
-                            }
+                        .progress_red{
+                            color: color.$color-ff0;
                         }
                     }
                 }
             }
-            #table_00{
-                margin-bottom: 16px;
-            }
         }
-        #b_info_list{
-            margin-bottom: 40px;
+
+    }
+    #shipping_m_list{
+        .th_00{
+            border-left: 1px solid #ddd;
         }
-        .btn_wrap{
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            .btn{
-                width: 170px;
-                height: 54px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0px 16px;
-                cursor: pointer;
-            }
-            #save{
-                border: 1px solid color.$color-222;
-                background-color: color.$color-222;
-                color: color.$color-FFF;
-            }
-            #cancel{
-                border: 1px solid color.$color-222;
-            }
+        .th_00,.th_01{
+            width: 5%;    
+        }
+        .th_02,.th_03{
+            width: 20%;
+        }
+        .th_04{
+            width: 50%;
+        }
+        .th_05{
+            // width: 40%;
+            // text-align: left;
+            // padding: 8px;
+            width: 5%;
+        }
+    }
+    .btn_wrap{
+        margin-top: 8px;
+        display: flex;
+        justify-content: end;
+        gap: 8px;
+        .btn{
+            border: 1px solid #222;
+            text-align: center;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+        .black{
+            background-color: #222;
         }
     }
 }

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/equipment_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">보유장비현황 / 증명서 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                보유장비현황<span>.</span>
+                <div class="subtitle f18R222">
+                    트윈벨미디어의 특허 및 장비를 소개 드립니다.
+                </div>
+            </div>
+        </section>
+        <section id="tab">
+            <div class="tab_wrap">
+                <div class="tab f15S666 active" id="web_printing">
+                    윤전인쇄
+                </div>
+                <div class="tab f15S666" id="commerce_printing">
+                    상업인쇄
+                </div>
+                <div class="tab f15S666" id="post_processing">
+                    후가공 기계
+                </div>
+                <div class="tab f15S666" id="patent">
+                    특허 및 증명서
+                </div>
+            </div>
+        </section>
+        <section class="owned" id="web_printing_equip">
+            <div class="equip_wrap">
+                <div class="equip" id="w_p_e_00">
+                    <div class="img">
+                        <img src="./img/eqip/web/1_01_bg_groupintro_01.png" alt="">
+                    </div>
+                    <div class="equip_desc">
+                        <div class="number f50B007">01</div>
+                        <div class="title f28B222">
+                            Xerox 1400 lnkjet<br>Color(디지털윤전기) 2대보유
+                        </div>
+                        <div class="desc f18R666">
+                            양면칼라 / A4 시간당 80,000page<br>해상도 600dpi / 고속대량출력(단납기)
+                        </div>
+                    </div>
+                </div>
+                <div class="equip" id="w_p_e_01">
+                    <div class="equip_desc">
+                        <div class="number f50B007">02</div>
+                        <div class="title f28B222">
+                            Truepress Jet 520<br>(고급윤전기:스크린기)
+                        </div>
+                        <div class="desc f18R666">
+                            옵셋에 가까운 고급퀄리티 양면칼라<br>해상도 1200dpi<br>일반윤전기 보다 빠른 고속 대량 출력
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/eqip/web/1_02_bg_groupintro_02.png" alt="">
+                    </div>
+                </div>
+                <div class="equip" id="w_p_e_02">
+                    <div class="img">
+                        <img src="./img/eqip/web/1_03_bg_groupintro_03.png" alt="">
+                    </div>
+                    <div class="equip_desc">
+                        <div class="number f50B007">03</div>
+                        <div class="title f28B222">
+                            Xerox Nuvera
+                        </div>
+                        <div class="desc f18R666">
+                            양면흑색 / 해상도 1200dpi<br>A4 시간당 18,840 page
+                        </div>
+                    </div>
+                </div>
+                <div class="equip" id="w_p_e_03">
+
+                    <div class="equip_desc">
+                        <div class="number f50B007">03</div>
+                        <div class="title f28B222">
+                            TECNAU<br>디지털윤전 재단기
+                        </div>
+                        <div class="desc f18R666">
+                            A4 시간당 80,000 page<br>해상도 600dpi / 고속대량출력(단납기)
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/eqip/web/1_02_bg_groupintro_02.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="owned" id="commerce_printing_equip">
+            <div class="equip_wrap">
+                <div class="equip" id="c_p_e_00">
+                    <div class="img">
+                        <img src="./img/eqip/commerce/2_01_bg_groupintro_05.png" alt="">
+                    </div>
+                    <div class="equip_desc">
+                        <div class="number f50B007">01</div>
+                        <div class="title f28B222">
+                            Xerox Igen 150<br>디지털인쇄기 양면칼라 3대보유
+                        </div>
+                        <div class="desc f18R666">
+                            양면칼라 / A4 시간당 80,000page<br>해상도 600dpi / 고속대량출력(단납기)
+                        </div>
+                    </div>
+                </div>
+                <div class="equip" id="c_p_e_01">
+                    <div class="equip_desc">
+                        <div class="number f50B007">02</div>
+                        <div class="title f28B222">
+                            LITHRONE GLX-840RP
+                        </div>
+                        <div class="desc f18R666">
+                            양면 전용인괘에 특화된 최상의 자동화 사양 탑재<br>인쇄기 옵셋 온디맨드 세계를 확장시킨<br>LITHRONE GLX-840RP 의 새로운 등장
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/eqip/commerce/2_02_bg_groupintro_06.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="owned" id="post_processing_equip">
+            <div class="equip_wrap">
+                <div class="equip" id="p_p_e_00">
+                    <div class="img">
+                        <img src="./img/eqip/post_processing/3_01_bg_groupintro_07.png" alt="">
+                    </div>
+                    <div class="equip_desc">
+                        <div class="number f50B007">01</div>
+                        <div class="title f28B222">
+                            삼방재단기
+                        </div>
+                        <div class="desc f18R666">
+                            Vaviable Trimmer 시간당 1,000제작
+                        </div>
+                    </div>
+                </div>
+                <div class="equip" id="p_p_e_01">
+                    <div class="equip_desc">
+                        <div class="number f50B007">02</div>
+                        <div class="title f28B222">
+                            Hercules
+                        </div>
+                        <div class="desc f18R666">
+                            재단기
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/eqip/post_processing/3_02_bg_groupintro_08.png" alt="">
+                    </div>
+                </div>
+                <div class="equip" id="p_p_e_02">
+                    <div class="img">
+                        <img src="./img/eqip/post_processing/3_03_bg_groupintro_09.png" alt="">
+                    </div>
+                    <div class="equip_desc">
+                        <div class="number f50B007">03</div>
+                        <div class="title f28B222">
+                            무선제본기 2대 보유
+                        </div>
+                        <div class="desc f18R666">
+                            Horizon Book binder 시간당 1,000제작
+                        </div>
+                    </div>
+                </div>
+                <div class="equip" id="p_p_e_03">
+
+                    <div class="equip_desc">
+                        <div class="number f50B007">04</div>
+                        <div class="title f28B222">
+                           JETVANISH 3DS
+                        </div>
+                        <div class="desc f18R666">
+                           금박,은박,홀로그램박,부분코팅(에폭시)
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/eqip/post_processing/3_04_bg_groupintro_10.png" alt="">
+                    </div>
+                </div>
+                <div class="equip" id="p_p_e_04">
+                    <div class="img">
+                        <img src="./img/eqip/post_processing/3_05_bg_groupintro_11.png" alt="">
+                    </div>
+                    <div class="equip_desc">
+                        <div class="number f50B007">05</div>
+                        <div class="title f28B222">
+                            GMP 코팅기
+                        </div>
+                        <div class="desc f18R666">
+                            PROTOPIC AUTO-540
+                        </div>
+                    </div>
+                </div>
+                <div class="equip" id="p_p_e_05">
+
+                    <div class="equip_desc">
+                        <div class="number f50B007">06</div>
+                        <div class="title f28B222">
+                           중철기
+                        </div>
+                        <div class="desc f18R666">
+                           Stitch and Folder SPF-20A
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="./img/eqip/post_processing/3_06_bg_groupintro_12.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="patent">
+            <div class="patent_wrap">
+                <div class="patent" id="p_00">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 3.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        사업자 등록증
+                    </div>
+                </div>
+                <div class="patent" id="p_01">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 4.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        중소기업 확인서
+                    </div>
+                </div>
+                <div class="patent" id="p_02">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 5.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        벤처기업 확인서
+                    </div>
+                </div>
+                <div class="patent" id="p_03">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        구매안전 서비스이용 확인증
+                    </div>
+                </div>
+                <div class="patent" id="p_04">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 7.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        인쇄사 신고필증
+                    </div>
+                </div>
+                <div class="patent" id="p_05">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 8.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        창업기업 확인서
+                    </div>
+                </div>
+                <div class="patent" id="p_06">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 9.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        출판사 신고확인증
+                    </div>
+                </div>
+                <div class="patent" id="p_07">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 10.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        통신판매신고업증
+                    </div>
+                </div>
+                <div class="patent" id="p_08">
+                    <div class="img">
+                        <img src="./img/eqip/patent/마스크 그룹 11.png" alt="">
+                    </div>
+                    <div class="title f15R666">
+                        인쇄사 신고필증
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

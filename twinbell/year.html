@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/year_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">연혁 / 조직도 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                연혁/조직도<span>.</span>
+                <div class="subtitle f18R222">
+                    트윈벨미디어는 최선의 노력을 다하고 있으며 꾸준히 성장하는 디지털 프린팅 기업으로 성장하고 있습니다.
+                </div>
+            </div>
+        </section>
+        <!-- <section id="tab">
+            <div class="tab_wrap">
+                <div class="tab f15S666 active" id="web_printing">
+                    윤전인쇄
+                </div>
+                <div class="tab f15S666" id="commerce_printing">
+                    상업인쇄
+                </div>
+                <div class="tab f15S666" id="post_processing">
+                    후가공 기계
+                </div>
+                <div class="tab f15S666" id="patent">
+                    특허 및 증명서
+                </div>
+            </div>
+        </section> -->
+        <section id="history">
+            <div id="tab">
+                <div class="tab f15S666 active" id="t_h">
+                    기업연혁
+                </div>
+                <div class="tab f15S666" id="t_o">
+                    조직도
+                </div>
+            </div>
+            <div class="contents" id="history_chart">
+                <div class="history_wrap">
+                    <div class="year f21RFFF">
+                        2020
+                    </div>
+                    <img src="./img/history/line_00.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_00.png" alt="">
+                    <div class="year f21RFFF">
+                        2019
+                    </div>
+                    <img src="./img/history/line_00.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_01.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_02.png" alt="">
+                    <div class="year f21RFFF">
+                        2018
+                    </div>
+                    <img src="./img/history/line_00.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_01.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_00.png" alt="">
+                    <div class="year f21RFFF">
+                        2017
+                    </div>
+                    <img src="./img/history/line_00.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_00.png" alt="">
+                    <div class="year f21RFFF">
+                        2016
+                    </div>
+                    <img src="./img/history/line_00.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_02.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_02.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_02.png" alt="">
+                    <div class="year f21RFFF">
+                        2013
+                    </div>
+                    <img src="./img/history/line_00.png" alt="">
+                    <img src="./img/history/circle.png" alt="">
+                    <img src="./img/history/line_00.png" alt="">
+                    <div class="img" id="img_00">
+                        <img src="./img/history/마스크 그룹 12.png" alt="">
+                    </div>
+                    <div class="text_wrap" id="t_00">
+                        <div class="text">
+                            <div class="title f21S222">
+                                09월
+                            </div>
+                            <div class="desc f15R222">
+                                JETVANISH 3DS(금박,은박,홀로그램박,에폭시) 도입
+                                <br>
+                                Truepress Jet 520 HD(고급디지털윤전기) 3호기 도입
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="title f21S222">
+                                01월
+                            </div>
+                            <div class="desc f15R222">
+                                ROTC 회원명부록 제작
+                                <br>
+                                일본 인쇄물 수출
+                                <br>
+                                데이터 차원 배분을 통한 프린팅 오더 컨트롤 시스템 특허 취득
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_wrap" id="t_01">
+                        <div class="text">
+                            <div class="title f21S222">
+                                09월
+                            </div>
+                            <div class="desc f15R222">
+                                Xerox 1400 Inkjet Color(디지털윤전기) 2호기 도입
+                                <br>
+                                Horizon Book Binder BQ-470(제본기) 2호기 도입
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="title f21S222">
+                                05월
+                            </div>
+                            <div class="desc f15R222">
+                                고려대학교 학우회 MOU 채결
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_wrap" id="t_02">
+                        <div class="text">
+                            <div class="title f21S222">
+                                05월
+                            </div>
+                            <div class="desc f15R222">
+                                출판과학협회 MOU 채결
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_wrap" id="t_03">
+                        <div class="text">
+                            <div class="title f21S222">
+                                05월
+                            </div>
+                            <div class="desc f15R222">
+                                Horizon HT-1000V(삼방재단기)도입
+                                <br>
+                                Horizon Trimmer FC-200A(중철기)도입
+                                <br>
+                                LITHRONE GLX-84RP 도입
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="title f21S222">
+                                04월
+                            </div>
+                            <div class="desc f15R222">
+                                Horizon Trimmer FC-200A(중철기)도입
+                                <br>
+                                Horizon Book Binder BQ-470(제본기) 도입
+                                <br>
+                                Xerox Nuvera 도입
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="title f21S222">
+                                03월
+                            </div>
+                            <div class="desc f15R222">
+                                트윈벨미디어 법인 전환
+                                <br>
+                                Xerox Igen150 도입
+                                <br>
+                                LITHRONE GLX-84RP 도입
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_wrap" id="t_04">
+                        <div class="text">
+                            <div class="title f21S222">
+                                05월
+                            </div>
+                            <div class="desc f15R222">
+                                출판과학협회 MOU 채결
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img" id="img_01">
+                        <img src="./img/history/마스크 그룹 13.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contents" id="org_chart">
+                <div class="org grey" id="chairman">
+                    <div class="title f14SFFF">
+                        이사장
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/chairman.png" alt="">
+                    </div>
+                </div>
+                <div class="org black" id="ceo">
+                    <div class="title f14SFFF">
+                        이사장
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/ceo.png" alt="">
+                    </div>
+                </div>
+                <div class="org" id="bod">
+                    <div class="title f14S222">
+                        이사회
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/bod.png" alt="">
+                    </div>
+                </div>
+                <div class="org" id="audit">
+                    <div class="title f14S222">
+                        감사
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/audit.png" alt="">
+                    </div>
+                </div>
+                <div class="org" id="audit_office">
+                    <div class="title f14S222">
+                        감사실
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/audit_office.png" alt="">
+                    </div>
+                </div>
+                <div class="org grey" id="safe_depart">
+                    <div class="title f14SFFF">
+                        안전관리부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/safe_depart.png" alt="">
+                    </div>
+                </div>
+                <div class="org black w_170" id="support_hq">
+                    <div class="title f14SFFF">
+                        지원본부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/support_hq.png" alt="">
+                    </div>
+                </div>
+                <div class="org w_170 center" id="hr">
+                    <div class="title f14S222">
+                        인사팀
+                    </div>
+                </div>
+                <div class="org w_170 center" id="ga">
+                    <div class="title f14S222">
+                        총무팀
+                    </div>
+                </div>
+                <div class="org w_170 center" id="finance">
+                    <div class="title f14S222">
+                        재무팀
+                    </div>
+                </div>
+                <div class="org w_170 black" id="planning_hq">
+                    <div class="title f14SFFF">
+                        기획본부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/planning_hq.png" alt="">
+                    </div>
+                </div>
+                <div class="org w_170 center" id="policy">
+                    <div class="title f14S222">
+                        정책기획팀
+                    </div>
+                </div>
+                <div class="org w_170 center" id="marketing">
+                    <div class="title f14S222">
+                        마케팅팀
+                    </div>
+                </div>
+                <div class="org w_170 center" id="sales">
+                    <div class="title f14S222">
+                        영업팀
+                    </div>
+                </div>
+                <div class="org w_170 black" id="design_business">
+                    <div class="title f14SFFF">
+                        디자인 사업부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/design_business.png" alt="">
+                    </div>
+                </div>
+                <div class="org w_170 center" id="reception">
+                    <div class="title f14S222">
+                        접수부
+                    </div>
+                </div>
+                <div class="org w_170 center" id="design">
+                    <div class="title f14S222">
+                        디자인팀
+                    </div>
+                </div>
+                <div class="org w_170 black" id="print_business">
+                    <div class="title f14SFFF">
+                        인쇄 사업부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/print_business.png" alt="">
+                    </div>
+                </div>
+                <div class="org w_170 center" id="output">
+                    <div class="title f14S222">
+                        출력부
+                    </div>
+                </div>
+                <div class="org w_170 center" id="equip">
+                    <div class="title f14S222">
+                        설비부
+                    </div>
+                </div>
+                <div class="org w_170 black" id="production_business">
+                    <div class="title f14SFFF">
+                        제작관리 사업부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/production_business.png" alt="">
+                    </div>
+                </div>
+                <div class="org w_170 center" id="production">
+                    <div class="title f14S222">
+                        제작팀
+                    </div>
+                </div>
+                <div class="org w_170 black" id="online_business">
+                    <div class="title f14SFFF">
+                        온라인 사업부
+                    </div>
+                    <div class="img">
+                        <img src="./img/history/org/online_business.png" alt="">
+                    </div>
+                </div>
+                <div class="org w_170 center" id="web_design">
+                    <div class="title f14S222">
+                        웹디자인팀
+                    </div>
+                </div>
+                <div class="org w_170 center" id="develop">
+                    <div class="title f14S222">
+                        개발팀
+                    </div>
+                </div>
+                <div class="line_wrap">
+                    <div class="line" id="l_v_00">
+                        <img src="./img/history/org/line_v_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_01">
+                        <img src="./img/history/org/line_v_01.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_00">
+                        <img src="./img/history/org/line_h_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_01">
+                        <img src="./img/history/org/line_h_01.png" alt="">
+                    </div>
+                    <div class="line" id="l_long">
+                        <img src="./img/history/org/line_long.png" alt="">
+                    </div>
+                    <div class="line" id="l_c_00">
+                        <img src="./img/history/org/line_c_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_c_01">
+                        <img src="./img/history/org/line_c_01.png" alt="">
+                    </div>
+                    <div class="line" id="l_s_h_00">
+                        <img src="./img/history/org/line_s_h_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_s_00">
+                        <img src="./img/history/org/line_h_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_s_01">
+                        <img src="./img/history/org/line_h_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_s_02">
+                        <img src="./img/history/org/line_h_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_s_03">
+                        <img src="./img/history/org/line_h_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_h_s_04">
+                        <img src="./img/history/org/line_h_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_00">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_01">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_02">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_03">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_04">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_05">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_06">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_07">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_08">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_09">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                    <div class="line" id="l_v_s_10">
+                        <img src="./img/history/org/line_v_s_00.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

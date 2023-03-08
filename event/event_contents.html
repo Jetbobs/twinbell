@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/event_contents_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">이벤트 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <!-- <div id="title">
+                언론보도<span>.</span>
+                <div class="subtitle f18R222">
+                    끊임없는 도전과 혁신을 통하여 신뢰받는 기업으로 소개되겠습니다.
+                </div>
+            </div> -->
+        </section>
+        <!-- <section id="tab">
+            <div class="tab_wrap">
+                <div class="tab f15S666 active" id="web_printing">
+                    윤전인쇄
+                </div>
+                <div class="tab f15S666" id="commerce_printing">
+                    상업인쇄
+                </div>
+                <div class="tab f15S666" id="post_processing">
+                    후가공 기계
+                </div>
+                <div class="tab f15S666" id="patent">
+                    특허 및 증명서
+                </div>
+            </div>
+        </section> -->
+        <section class="contents" id="media_contents">
+            <div class="header">
+                <div class="category f21B222">
+                    언론보도
+                </div>
+                <div class="title f34S222">
+                    함께해요. 환경을 생각하는 친환경 그룹 트윈벨미디어입니다.
+                </div>
+            </div>
+            <div class="header_wrap">
+                <div class="tag f15SFFF red">
+                    진행중
+                </div>
+                <div class="sns_wrap">
+                    <div class="sns">
+                        <img src="./img/event/그룹 19333.png" alt="">
+                    </div>
+                    <div class="sns">
+                        <img src="./img/event/f.png" alt="">
+                    </div>
+                    <div class="sns">
+                        <img src="./img/event/패스 1157.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contents_wrap">
+                <div class="img">
+                    <img src="./img/event/이미지 57.png" alt="">
+                </div>
+                <div class="text f18R222">
+                    세계 곳곳에서 일어나는 이상고온과 폭염, 허리케인, 산불과 가뭄, 홍수 모두 심상치 않다고 느끼는 전문가가 많습니다.
+
+                    우리나라도 피해갈 수 없었죠.
+                    전문가들은 코로나 19와 같은 감염병이 점점 잦아지는 것도,
+                    기후변화나 환경파괴로 서식지를 잃은 야생동물들에 의해서 발생하기 때문에, 기후변화가 그 간접적인 원인으로 작용했을
+                    수 있다고 합니다.
+
+                    더 무서운 얼굴을 하고 있는 다음 상대! 기후변화가 더 큰 범주에 있는 것처럼 보입니다.
+                    어떻게 하면 우리 지구를 응원해서, 우리 아이들에게 그래도 깨끗한 지구를 선물해줄 수 있을까요?
+
+                    트윈벨미디어에서는 여기에 관심을 가지고, 나름대로 기후변화 대응을 하기 위해,
+                    여러가지 친환경 인쇄물을 도입하고 재생지 출력 테스트를 하고 있습니다.
+                    플라스틱프리 종이 배너부터 친환경 책자까지 다양한 방법으로 ...
+
+                </div>
+            </div>
+            <div class="attach_wrap">
+                <div class="text f18B222">
+                    첨부파일 총<span>4</span>개
+                </div>
+                <div class="attach">
+                    <div class="item f15R222">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <div class="file_title">
+                            이 파일이 제대로 출력이 되나요 .pdf
+                        </div>
+                    </div>
+                    <div class="item f15R222 red">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <div class="file_title">
+                            이 파일이 제대로 출력이 되나요 .pdf
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_btn f14S222">
+                목록으로
+                <i class="fa-solid fa-list-ul"></i>
+            </div>
+        </section>
+        <section id="media_more">
+            <div class="news_wrap">
+                <div class="news" id="n_00">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+
+                </div>
+                <div class="news" id="n_01">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+
+                </div>
+                <div class="news" id="n_02">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

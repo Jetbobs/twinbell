@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/event_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">보유장비현황 / 증명서 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                언론보도<span>.</span>
+                <div class="subtitle f18R222">
+                    끊임없는 도전과 혁신을 통하여 신뢰받는 기업으로 소개되겠습니다.
+                </div>
+            </div>
+        </section>
+        <!-- <section id="tab">
+            <div class="tab_wrap">
+                <div class="tab f15S666 active" id="web_printing">
+                    윤전인쇄
+                </div>
+                <div class="tab f15S666" id="commerce_printing">
+                    상업인쇄
+                </div>
+                <div class="tab f15S666" id="post_processing">
+                    후가공 기계
+                </div>
+                <div class="tab f15S666" id="patent">
+                    특허 및 증명서
+                </div>
+            </div>
+        </section> -->
+        <section id="event_list">
+            <div class="header">
+                <div class="total f18B222">
+                    총 <span>19</span>개
+                </div>
+                <div class="search_box">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">전체</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="search f18S222">
+                        <input type="search" placeholder="검색어를 입력하세요."  onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = '검색어를 입력하세요.'" >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="event_wrap">
+                <div class="event" id="e_00">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF green">
+                        예정
+                    </div>
+                </div>
+                <div class="event" id="e_01">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF red">
+                        진행중
+                    </div>
+                </div>
+                <div class="event" id="e_02">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF red">
+                        진행중
+                    </div>
+                </div>
+                <div class="event" id="e_03">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF black">
+                        종료
+                    </div>
+                </div>
+                <div class="event" id="e_04">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF black">
+                        종료
+                    </div>
+                </div>
+                <div class="event" id="e_05">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF black">
+                        종료
+                    </div>
+                </div>
+                <div class="event" id="e_06">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF black">
+                        종료
+                    </div>
+                </div>
+                <div class="event" id="e_07">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF black">
+                        종료
+                    </div>
+                </div>
+                <div class="event" id="e_08">
+                    <div class="img">
+                        <img src="./img/media/마스크 그룹 1.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            트윈벨미디어에서 새로운 웹페이지를 오픈하였습니다.새로운 기능을 만나볼 기회가 되었으면 좋겠습니다.
+                        </div>
+                        <div class="desc f14R666">
+                            글자수를 체크해야하겠지만 14font로 55자 정도 수준으
+                            로 맞추면 될 것 같음. 체크 후 적용 요망
+                        </div>
+                        <div class="date f14R666">
+                            2022.09.22
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF black">
+                        종료
+                    </div>
+                </div>
+            </div>
+            <div class="option_wrap">
+                <div class="option f12R888 active" id="15">
+                    15개
+                </div>
+                <div class="option f12R888" id="30">
+                    30개
+                </div>
+                <div class="option f12R888" id="50">
+                    50개
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

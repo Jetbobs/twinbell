@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/review_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">제작후기 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                제작후기<span>.</span>
+                <div class="subtitle f18R222">
+                    제품 주문 제죽 후 발송이 완료가 되면 작성 하실 수 있습니다. 솔직한 구매자들의 리뷰를 확인하세요.
+                </div>
+            </div>
+        </section>
+        <!-- <section id="tab">
+            <div class="tab_wrap">
+                <div class="tab f15S666 active" id="web_printing">
+                    윤전인쇄
+                </div>
+                <div class="tab f15S666" id="commerce_printing">
+                    상업인쇄
+                </div>
+                <div class="tab f15S666" id="post_processing">
+                    후가공 기계
+                </div>
+                <div class="tab f15S666" id="patent">
+                    특허 및 증명서
+                </div>
+            </div>
+        </section> -->
+        <section id="review">
+            <div class="header">
+
+                <div class="policy">
+                    <input type="checkbox" id="banner_popup">
+                    <label for="banner_popup"><span class="f14SFFF">상품후기 운영원칙</span></label>
+                    <div>
+                        <div>
+                            <label for="banner_popup"></label>
+                            <!-- 배너 이미지 -->
+                            <div class="modal_banner_popup">
+                                <div class="text_wrap">
+                                    <div class="title f25B222">
+                                        트윈벨미디어의 상품후기 운영 원칙은 아래와 같습니다.
+                                    </div>
+                                    <div class="header f14S007">
+                                        트윈벨미디어의 구매후기는 표시ㆍ광고의 공정화에 관한 법률 제 3조 (부당한 표시ㆍ광고 행위의 금지에 관한 법률)<br>
+                                        준수합니다. 실제구매와는 무관한 아르바이트 광고성 후기, 혹은 회사의 조작이 의심되는 후기는 구매 후기 옆에 노출된<br>
+                                        트윈벨미디어의 주문번호를 캡쳐하시어 실구매자의 거래완료 후기인지 여부를 감사기관을 통해 확인하시기 바랍니다.
+                                    </div>
+                                    <div class="contents_wrap">
+                                        <div class="text f14R222">
+                                            트윈벨미디어의 구매후기는 표시ㆍ광고의 공정화에 관한 법률 제 3조(부당한 표시ㆍ광고 행위의 금지)을 준수합니다.<br>
+                                            표시ㆍ광고의 공정화에 관한 법률 제 3조 1항은 ' 사업자등은 소비자를 속이거나 소비자로 하여금 잘못 알게 할 우려가<br>
+                                            있는 표시ㆍ광고 행위로서 공정한 거래질서를 해칠 우려가 있는 다음 각 호의 행위를 하거나 다른 사업자등으로 하여금<br>
+                                            하게 하여서는 아니 된다' 로 명시되어 있으며, 트윈벨미디어의 후기 정책의 법적 근간으로 합니다.<br>
+                                            실제구매와는 무관한 아르바이트 광고성 후기, 혹은 회사의 조작이 의심되는 후기는 구매 후기 옆에 노출된<br>
+                                            트윈벨미디어의 주문번호를 캡쳐하시어 실구매자의 거래완료 후기인지 여부를 감사기관을 통해 확인하시기 바랍니다.
+                                        </div>
+                                        <div class="text f14R222">
+                                            다음과 같은 내용은 상품후기에 허용되지 않는 경우로, 노출에 제한이 될 수 있습니다.<br>
+                                            a. 비방이나 욕설, 도배등의 게시물 또는 반복되는 동일 단어나 문장으로 작성된 후기<br>
+                                            b. 타인 또는 기타 기관이 작성, 공개한 정보를 복사하여 기재한 부분<br>
+                                            c. 그 밖에 상품후기 운영원칙에 위배되거나 그러하다고 사료되는 내용
+                                        </div>
+                                        <div class="text f14R222">
+                                            상품후기로 인해 다른 회원 또는 제3자에게 피해가 가해질 경우, 법적인 책임이 따를 수 있으며, 이에 대한 책임은<br>
+                                            상품후기를 게시한 당사자에게 있습니다.<br>
+                                            개인정보 보호와 관련된 피해를 방지하지 위해 주민번호, 전화번호, 이메일, 연락처 등의 내용 기입은 삼가해주시기<br>
+                                            바랍니다. 이 외 상품후기의 성격에 맞지 않는 내용은 관리자에 의해 노출제한, 비공개 전환이 될 수 있습니다.<br>
+                                            내용은 변경 예정
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="banner_popup"><img src="./img/review/그룹 18852.png" alt=""></i></label>
+                            </div>
+                        </div>
+                        <label for="banner_popup"></label>
+                    </div>
+                </div>
+                <div class="write">
+                    <div class="text f14SFFF">
+                        구매후기 등록
+                    </div>
+                    <div class="img">
+                        <img src="./img/review/그룹 19418.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="review_wrap">
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="contents_wrap">
+                            <div class="text_wrap">
+                                <div class="header">
+                                    <div class="star">
+                                        <div class="img">
+                                            <img src="./img/review/그룹 19384.png" alt="">
+                                        </div>
+                                        <div class="number f12R888">
+                                            5
+                                        </div>
+                                        <div class="category f12R888">
+                                            학원/교육교재(출력한 종류 출력)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text f14R888">
+                                    인쇄는 적반적으로 만족스럽습니다. 다저의 실수, 사진에 나온듯이 5개중 하나가 불량입니다. 첫장이 사진과 같이 번진 것을 확인 할 수 있습니
+                                    다. 또한, 저의 실수이기도 저의 실수이한데, 이지를 표지 뒷면으로 넣고 싶었지만 이런 작업을 처음하다보니 실수가 생겨서 아주 많이 아쉽습...
+                                </div>
+                                <div class="info_wrap">
+                                    <div class="info f12R888">jos****@n***.com </div>
+                                    <div class="info f12R888">작성일 : <span>2022-06-20</span></div>
+                                    <div class="info f12R888">주문번호 : 2210033728 </div>
+                                </div>
+                                <div class="more_wrap f12R888">
+                                    <div class="open">
+                                        더보기 <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="close">
+                                        접기 <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pic">
+                            </div>
+                        </div>
+                        <div class="upload_pic">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="option_wrap">
+                    <div class="option f12R888 active" id="15">
+                        15개
+                    </div>
+                    <div class="option f12R888" id="30">
+                        30개
+                    </div>
+                    <div class="option f12R888" id="50">
+                        50개
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

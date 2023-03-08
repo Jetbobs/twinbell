@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app #my_page_header {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+#app #my_page_header #page_location {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#app #my_page_header #title {
+  font-size: 72px;
+  color: #222;
+}
+#app #my_page_header #title span {
+  color: #007dfb;
+}
+#app #my_page_nav {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_nav ul {
+  display: flex;
+}
+#app #my_page_nav ul .nav_item {
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #my_page_nav ul .active {
+  background-color: #7E746C;
+  color: #fff;
+}
+#app #my_page_nav ul .nav_item:first-child {
+  border-left: 1px solid #ddd;
+}
+#app #review {
+  width: 1000px;
+  margin: 0 auto;
+}
+#app #review .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#app #review .header .write {
+  display: flex;
+  background-color: #000;
+  width: 170px;
+  height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+#app #review .header .policy {
+  width: 130px;
+  height: 54px;
+  position: initial;
+}
+#app #review .header .policy input[id=banner_popup] {
+  display: none;
+}
+#app #review .header .policy input[id=banner_popup] + label {
+  display: inline-block;
+  font-weight: bold;
+  display: flex;
+}
+#app #review .header .policy input[id=banner_popup] + label span {
+  display: flex;
+  background-color: #007dfb;
+  width: 130px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#app #review .header .policy input[id=banner_popup] + label span img {
+  z-index: 6;
+}
+#app #review .header .policy input[id=banner_popup] + label + div {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 653px;
+  z-index: 2;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div .modal_banner_popup {
+  width: 700px;
+  height: 653px;
+  position: relative;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div .modal_banner_popup .text_wrap {
+  text-align: left;
+  line-height: 2;
+  white-space: normal;
+  padding: 30px 30px;
+  width: 700px;
+  height: 653px;
+  background-color: #fff;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div .modal_banner_popup .text_wrap .title {
+  text-align: center;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div .modal_banner_popup .text_wrap .header {
+  margin-bottom: 10px;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div .modal_banner_popup .text_wrap .contents_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#app #review .header .policy input[id=banner_popup] + label + div > div .modal_banner_popup label {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  right: -80px;
+  top: 0;
+}
+#app #review .header .policy input[id=popup]:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+#app #review .header .policy input[id=banner_popup]:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+#app #review .contents .review_wrap {
+  margin-bottom: 30px;
+}
+#app #review .contents .review_wrap .review {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  padding: 30px;
+  border-top: 1px solid #707070;
+}
+#app #review .contents .review_wrap .review .contents_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#app #review .contents .review_wrap .review .text_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app #review .contents .review_wrap .review .text_wrap .header .star {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+#app #review .contents .review_wrap .review .text_wrap .text {
+  width: 762px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#app #review .contents .review_wrap .review .text_wrap .info_wrap {
+  display: flex;
+  gap: 10px;
+}
+#app #review .contents .review_wrap .review .text_wrap .info_wrap .info:not(:last-child) {
+  border-right: 1px solid #888;
+  padding-right: 10px;
+}
+#app #review .contents .review_wrap .review .pic {
+  width: 145px;
+  height: 110px;
+  background-color: #999;
+}
+#app #review .contents .review_wrap .review .upload_pic {
+  margin-top: 30px;
+  display: none;
+  background-color: #dcdcdc;
+  width: 900;
+  height: 666px;
+}
+#app #review .contents .review_wrap .review:last-child {
+  border-bottom: 1px solid #707070;
+}
+#app #review .contents .option_wrap {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+#app #review .contents .option_wrap .option {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app #review .contents .option_wrap .active {
+  background-color: #ff0000;
+  color: #fff;
+}/*# sourceMappingURL=review_style.css.map */

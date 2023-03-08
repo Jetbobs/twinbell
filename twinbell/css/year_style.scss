@@ -1,0 +1,473 @@
+@use '../../common/css/color/color';
+@use '../../common/css/font/font_mixin';
+@import "../../common/css/common_form.scss";
+
+
+#app {
+    #my_page_header {
+        width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+        #page_location {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        #title {
+            font-size: 72px;
+            color: color.$color-222;
+
+            span {
+                color: color.$color-007;
+            }
+        }
+    }
+
+    #my_page_nav {
+        width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        ul {
+            display: flex;
+
+            .nav_item {
+                padding: 12px 0;
+                flex: 1;
+                text-align: center;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+
+            .active {
+                background-color: #7E746C;
+                color: #fff;
+            }
+
+            .nav_item:first-child {
+                border-left: 1px solid #ddd;
+            }
+        }
+
+    }
+
+    // #tab{
+    //     padding: 0% 16.3%;
+    //     .tab_wrap{
+    //         display: flex;
+    //         .tab{
+    //             width: 120px;
+    //             padding: 5px 0px;
+    //             text-align: center;
+    //             border: 1px solid color.$color-666;
+    //         }
+    //         #web_printing,#commerce_printing,#post_processing{
+    //             border-right: 0px;
+    //         }
+    //         .active{
+    //             color: color.$color-FFF;
+    //             background-color: color.$color-666;
+    //         }
+    //     }
+    // }
+    #history {
+        width: 1000px;
+        margin: 0 auto;
+
+        #tab {
+            display: flex;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+
+            .tab {
+                width: 120px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #666;
+            }
+
+            #t_h {
+                border-right: none;
+            }
+
+            .active {
+                background-color: #666;
+                color: color.$color-FFF;
+            }
+        }
+
+        #history_chart {
+            display: none;
+            .history_wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+                position: relative;
+
+                .year {
+                    width: 110px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: color.$color-004;
+                    border-radius: 100px;
+                }
+            }
+
+            #img_00 {
+                position: absolute;
+                top: 275px;
+                left: 0;
+            }
+
+            #img_01 {
+                position: absolute;
+                bottom: 220px;
+                right: 0;
+            }
+
+            .text_wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .text {
+                    .title {
+                        padding-bottom: 8px;
+                    }
+
+                    .desc {
+                        line-height: 1.6;
+                    }
+                }
+            }
+
+            #t_00 {
+                position: absolute;
+                top: 275px;
+                right: 90px;
+            }
+
+            #t_01 {
+                position: absolute;
+                top: 630px;
+                left: 130px;
+                text-align: right;
+            }
+
+            #t_02 {
+                position: absolute;
+                top: 945px;
+                right: 295px;
+            }
+
+            #t_03 {
+                position: absolute;
+                bottom: 225px;
+                text-align: right;
+                left: 170px;
+
+            }
+
+            #t_04 {
+                position: absolute;
+                bottom: 25px;
+                right: 295px;
+
+            }
+        }
+
+        #org_chart {
+            height: 800px;
+            position: relative;
+
+            .org {
+                width: 200px;
+                height: 60px;
+                border: 1px solid #000;
+                padding: 0 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .grey {
+                background-color: #4e4e4e;
+                color: color.$color-FFF;
+            }
+
+            .black {
+                background-color: #000;
+            }
+            .w_170{
+                width: 170px;
+            }
+            .center{
+                justify-content: center;
+            }
+            #chairman {
+                position: absolute;
+                top: 0;
+                top: 0%;
+                left: 00%;
+                transform: translate(200%, 0%);
+            }
+            #ceo{
+                position: absolute;
+                top: 160px;
+                left: 00%;
+                transform: translate(200%, 0%);
+            }
+            //이사회
+            #bod{
+                position: absolute;
+                top: 73px;
+                left: 120px;
+            }
+            //감사
+            #audit{
+                position: absolute;
+                top: 73px;
+                right: 120px;
+            }
+            //감사실
+            #audit_office{
+                position: absolute;
+                top: 238px;
+                right: 120px;
+            }
+            #safe_depart{
+                position: absolute;
+                top: 325px;
+                right: 120px;
+            }
+            #support_hq{
+                position: absolute;
+                top: 325px;
+                left: 205px;
+            }
+            //인사
+            #hr{
+                position: absolute;
+                top: 184px;
+                left: 0px;
+            }
+            //총무
+            #ga{
+                position: absolute;
+                top: 255px;
+                left: 0px;
+            }
+            //재무팀
+            #finance{
+                position: absolute;
+                top: 325px;
+                left: 0px;
+            }
+            #planning_hq{
+                position: absolute;
+                bottom: 297px;
+                left: 0px;
+            }
+            #policy{
+                position: absolute;
+                bottom: 215px;
+                left: 0px;
+            }
+            #marketing{
+                position: absolute;
+                bottom: 135px;
+                left: 0px;
+            }
+            #sales{
+                position: absolute;
+                bottom: 55px;
+                left: 0px;
+            }
+            #design_business{
+                position: absolute;
+                bottom: 297px;
+                left: 215px;
+            }
+            #reception{
+                position: absolute;
+                bottom: 215px;
+                left: 215px;
+            }
+            #design{
+                position: absolute;
+                bottom: 135px;
+                left: 215px;
+            }
+            #print_business{
+                position: absolute;
+                bottom: 297px;
+                left: 420px;
+            }
+            #output{
+                position: absolute;
+                bottom: 215px;
+                left: 420px;
+            }
+            #equip{
+                position: absolute;
+                bottom: 135px;
+                left: 420px;
+            }
+            #production_business{
+                position: absolute;
+                bottom: 297px;
+                right: 205px;
+            }
+            #production{
+                position: absolute;
+                bottom: 215px;
+                right: 205px;
+            }
+            #online_business{
+                position: absolute;
+                bottom: 297px;
+                right: 0px;
+            }
+            #web_design{
+                position: absolute;
+                bottom: 215px;
+                right: 0px;
+            }
+            #develop{
+                position: absolute;
+                bottom: 135px;
+                right: 0px;
+            }
+            .line_wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: cneter;
+
+                #l_v_00 {
+                    position: absolute;
+                    top: 55px;
+                }
+                #l_v_01{
+                    position: absolute;
+                    top: 215px;
+                }
+                #l_h_00{
+                    position: absolute;
+                    top: 90px;
+                }
+                #l_h_01{
+                    position: absolute;
+                    top: 343px;
+                    left: 368px;
+                }
+                #l_long{
+                    position: absolute;
+                    top: 410px;
+                }
+                #l_c_01{
+                    position: absolute;
+                    top: 185px;
+                    right: 315px;
+                }
+                #l_c_00{
+                    position: absolute;
+                    top: 216px;
+                    left: 170px;
+                }
+                #l_s_h_00{
+                    position: absolute;
+                    top: 255px;
+                    right: 315px;
+                }
+                #l_h_s_00{
+                    position: absolute;
+                    bottom: 348px;
+                    left: 80px;
+                }
+                #l_h_s_01{
+                    position: absolute;
+                    bottom: 348px;
+                    left: 290px;
+                }
+                #l_h_s_02{
+                    position: absolute;
+                    bottom: 348px;
+                }
+                #l_h_s_03{
+                    position: absolute;
+                    bottom: 348px;
+                    right: 290px;
+                }
+                #l_h_s_04{
+                    position: absolute;
+                    bottom: 348px;
+                    right: 80px;
+                }
+                #l_v_s_00{
+                    position: absolute;
+                    bottom: 270px;
+                    left: 80px;
+                }
+                #l_v_s_01{
+                    position: absolute;
+                    bottom: 190px;
+                    left: 80px;
+                }
+                #l_v_s_02{
+                    position: absolute;
+                    bottom: 270px;
+                    left: 295px;
+                }
+                #l_v_s_03{
+                    position: absolute;
+                    bottom: 190px;
+                    left: 295px;
+                }
+                #l_v_s_04{
+                    position: absolute;
+                    bottom: 110px;
+                    left: 80px;
+                }
+                #l_v_s_05{
+                    position: absolute;
+                    bottom: 270px;
+                }
+                #l_v_s_06{
+                    position: absolute;
+                    bottom: 190px;
+                }
+                #l_v_s_07{
+                    position: absolute;
+                    bottom: 270px;
+                    right: 290px;
+                }
+                #l_v_s_08{
+                    display: none;
+                    position: absolute;
+                    bottom: 190px;
+                    right: 290px;
+                }
+                #l_v_s_09{
+                    position: absolute;
+                    bottom: 270px;
+                    right: 80px;
+                }
+                #l_v_s_10{
+                    position: absolute;
+                    bottom: 190px;
+                    right: 80px;
+                }
+            }
+        }
+    }
+}

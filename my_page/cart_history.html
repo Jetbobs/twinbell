@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/cart_history_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">마이페이지</span>
+                ··
+                <span class="last_location f15S007">마이페이지 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                장바구니 내역<span>.</span>
+                <div class="subtitle f18R222">
+                    장바구니에 담으신 고객님의 주문 내역입니다.
+                </div>
+            </div>
+        </section>
+        <section id="my_page_nav">
+            <nav>
+                <ul>
+                    <li OnClick="location.href = '#'" class="nav_item">마이페이지</li>
+                    <li OnClick="location.href = '#'" class="nav_item active">주문 / 배송조회</li>
+                    <li OnClick="location.href = '#'" class="nav_item">완료된 거래내역</li>
+                    <li OnClick="location.href = '#'" class="nav_item">견적서 관리</li>
+                    <li OnClick="location.href = '#'" class="nav_item">내 정보</li>
+                    <li OnClick="location.href = '#'" class="nav_item">가상계좌관리</li>
+                </ul>
+                <ul>
+                    <li OnClick="location.href = '#'" class="nav_item">문의하기</li>
+                    <li OnClick="location.href = '#'" class="nav_item">배송지 관리</li>
+                    <li oOnClick="location.href = '#'" class="nav_item">세금계산서</li>
+                    <li OnClick="location.href = '#'" class="nav_item">장바구니 내역</li>
+                    <li OnClick="location.href = '#'" class="nav_item">포인트 및 쿠폰</li>
+                    <li OnClick="location.href = '#'" class="nav_item">E 머니 관리</li>
+                </ul>
+            </nav>
+        </section>
+        <section class="contents" id="cart_history">
+            <div class="header">
+                <div class="title f21S222">
+                    · 장바구니 주문 내역
+                    <div class="desc f12R222">
+                        <img src="./img/index/icon_00.png" alt="">
+                        주문 후 7일내 결제하시지 않으면 주문이 자동취소됩니다.
+                    </div>
+                </div>
+                <div class="etc_wrap">
+                    <!-- <div class="desc f12RFFF black">
+                        진행상황이란?
+                    </div> -->
+                    <div class="in_order">
+                        <select name="" id="">
+                            <option value="10">10개씩</option>
+                            <option value="20">20개씩</option>
+                            <option value="30">30개씩</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="contents_list" id="cart_history_list">
+                <table>
+                    <thead class="f14R222">
+                        <tr>
+                            <th class="th_00">선택</th>
+                            <th class="th_01">주문일<br />(주문번호)</th>
+                            <th class="th_02">상품명<br />주문제목</th>
+                            <th class="th_03">주문금액<br />(VAT포함)</th>
+                            <th class="th_04">진행상황</th>
+                            <th class="th_05">조회</th>
+                        </tr>
+                    </thead>
+                    <tbody class="f14R222">
+                        <tr>
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">
+                                    2022.12.14
+                                </div>
+                                <div class="order_number">
+                                    (<span>221214-89999</span>)
+                                </div>
+                                <div class="order_charge red f12RFFF">
+                                    <span>주문결제</span>
+                                </div>
+                            </td>
+                            <td style=" text-align: left;">
+                                <div class="title">
+                                    <span class="f14RFF0">[디지털인쇄 - 책만들기]</span>
+                                    <br />
+                                    화영고등학교 수학 문제집
+                                </div>
+                                <div class="desc">
+                                    인쇄종류 출력, 서브메뉴명 출력, 무선제본, 제본방향 출력<br />
+                                    표지 - 용지사이즈 출력 / 컬러, 양면 / 스노우 250g<br />
+                                    무광코팅 / 에폭시 / 금박<br />
+                                    내지 - 용지사이즈 출력 / 컬러, 양면 / 백색모조 80g<br />
+                                    면지 - 용지사이즈 출력 / 앞뒤 2장씩
+                                </div>
+                            </td>
+                            <td>
+                                <div class="page">
+                                    8,910,000,000<span>원</span>
+                            </td>
+                            <td>
+                                <div class="process_state">
+                                    결제 <br> (결제대기)
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f12RFFF">상세보기</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">
+                                    2022.12.14
+                                </div>
+                                <div class="order_number">
+                                    (<span>221214-89999</span>)
+                                </div>
+                                <div class="order_charge red f12RFFF">
+                                    <span>주문결제</span>
+                                </div>
+                            </td>
+                            <td style=" text-align: left;">
+                                <div class="title">
+                                    <span class="f14RFF0">[디지털인쇄 - 책만들기]</span>
+                                    <br />
+                                    화영고등학교 수학 문제집
+                                </div>
+                                <div class="desc">
+                                    인쇄종류 출력, 서브메뉴명 출력, 무선제본, 제본방향 출력<br />
+                                    표지 - 용지사이즈 출력 / 컬러, 양면 / 스노우 250g<br />
+                                    무광코팅 / 에폭시 / 금박<br />
+                                    내지 - 용지사이즈 출력 / 컬러, 양면 / 백색모조 80g<br />
+                                    면지 - 용지사이즈 출력 / 앞뒤 2장씩
+                                </div>
+                            </td>
+                            <td>
+                                <div class="page">
+                                    8,910,000,000<span>원</span>
+                            </td>
+                            <td>
+                                <div class="process_state">
+                                    취소
+                                </div>
+                            </td>
+                            <td>
+                               -
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_wrap">
+                    <div class="btn_grey_wrap">
+                        <div class="btn f12RFFF grey" id="delete">
+                            선택상품 삭제
+                        </div>
+                        <div class="btn f12RFFF grey" id="empty">
+                            장바구니 비우기
+                        </div>
+                    </div>
+                    <div class="btn f12RFFF black" id="order">
+                        선택상품 주문하기
+                    </div>
+                </div>
+                <div class="desc">
+                    <ul>
+                        <li class="f12R222">· 장바구니 상품은 인쇄진행을 하지 않습니다. 주문 및 결제완료 후 인쇄제작과정이 진행됩니다.
+                        </li>
+                        <li class="f12R222">
+                            · 총 결제금액은 배송비가 포함되지 않은 금액입니다. 배송종류에 따라서 배송비는 최종결제시 추가됩니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function() {
+        $( ".datepicker" ).datepicker({
+        closeText: "닫기",
+        currentText: "오늘",
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        weekHeader: "주",
+        yearSuffix: '년'
+        });
+    });
+    </script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>
