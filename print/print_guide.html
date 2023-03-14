@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/book_create_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">책 만들기 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                책 만들기<span>.</span>
+                <div class="subtitle f18R222">
+                    신속하고 정확히 진행을 위하여 원하시는 인쇄의 옵션을 정확히 선택하여 주시기 바랍니다.
+                </div>
+            </div>
+        </section>
+        <section id="print_select">
+            <div class="contents_wrapper">
+                <div class="contents" id="t_00">
+                    <table>
+                        <tbody>
+                            <tr id="title_tr">
+                                <td>
+                                    제목 <span>*</span>
+                                </td>
+                                <td colspan="2">
+                                    <input id="title" type="text" placeholder="제목을 입력하세요. (저장되는 방식은 디지털윤전-책만들기-제목 순)"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = '제목을 입력하세요. (저장되는 방식은 디지털윤전-책만들기-제목 순)'" />
+                                </td>
+                            </tr>
+                            <tr id="size_tr">
+                                <td>
+                                    사이즈 <span>*</span>
+                                </td>
+                                <td colspan="2">
+                                    <div class="select_wrap" id="paper_size_select">
+                                        <div class="item active" id="a4">
+                                            <div class="img">
+                                                <img src="./img/book_create/a4.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    A4
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    210x297
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="a5">
+                                            <div class="img">
+                                                <img src="./img/book_create/a5.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    A5
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    148x210
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="a6">
+                                            <div class="img">
+                                                <img src="./img/book_create/a6.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    A6
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    105x148
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="b5">
+                                            <div class="img">
+                                                <img src="./img/book_create/b5.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    B5
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    182x257
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="b6">
+                                            <div class="img">
+                                                <img src="./img/book_create/b6.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    B6
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    128x182
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="inner">
+                                            <div class="img">
+                                                <img src="./img/book_create/inner.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    내부규격
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    215x300
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="free">
+                                            <div class="img">
+                                                <img src="./img/book_create/free.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    사이즈
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    직접입력
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="a3">
+                                            <div class="img">
+                                                <img src="./img/book_create/a3.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    A3
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    215x300
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="b4">
+                                            <div class="img">
+                                                <img src="./img/book_create/a3.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    B4
+                                                </div>
+                                                <div class="desc f10S222">
+                                                    257x364
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="size_input_wrap">
+                                        <div class="item" id="cutting">
+                                            <div class="title f14R666">
+                                                재단사이즈
+                                            </div>
+                                            <div class="input f14R666" id="x">
+                                                <input type="text">
+                                                <div class="text">
+                                                    X
+                                                </div>
+                                            </div>
+                                            <div class="input f14R666" id="mm">
+                                                <input type="text">
+                                                <div class="text">
+                                                    mm
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="work">
+                                            <div class="title f14R666">
+                                                작업사이즈
+                                            </div>
+                                            <div class="input f14R666" id="x">
+                                                <input type="text">
+                                                <div class="text">
+                                                    X
+                                                </div>
+                                            </div>
+                                            <div class="input f14R666" id="mm">
+                                                <input type="text">
+                                                <div class="text">
+                                                    mm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="paper_type_tr">
+                                <td>
+                                    제본 형태 <span>*</span>
+                                </td>
+                                <td>
+                                    <div class="select_wrap" id="paper_size_select">
+                                        <div class="item active" id="wireless">
+                                            <div class="img">
+                                                <img src="./img/book_create/wireless.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    무선제본
+                                                </div>
+                                                <div class="desc f10S222">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="saddle">
+                                            <div class="img">
+                                                <img src="./img/book_create/saddle.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    중철제본
+                                                </div>
+                                                <div class="desc f10S222">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="pur">
+                                            <div class="img">
+                                                <img src="./img/book_create/pur.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    PUR 제본
+                                                </div>
+                                                <div class="desc f10S222">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="ring">
+                                            <div class="img">
+                                                <img src="./img/book_create/ring.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    링(스프링) 제본
+                                                </div>
+                                                <div class="desc f10S222">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="hard_cover">
+                                            <div class="img">
+                                                <img src="./img/book_create/hard_cover.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    양장 제본
+                                                </div>
+                                                <div class="desc f10S222">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item" id="x">
+                                            <div class="img">
+                                                <img src="./img/book_create/x.png" alt="">
+                                            </div>
+                                            <div class="text_wrap">
+                                                <div class="title f10S222">
+                                                    제본 없음
+                                                </div>
+                                                <div class="desc f10S222">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td id="print_direction">
+                                    <div class="table_wrapper">
+                                        <div class="wrapper">
+                                            <div class="title">
+                                                제본 방향<span>*</span>
+                                            </div>
+                                            <div class="select">
+                                                <select name="" id="">
+                                                    <option value="0">제본방향</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="info_wrap">
+                                            <div class="info">
+                                                <div class="img">
+                                                    <img src="./img/book_create/info.png" alt="">
+                                                </div>
+                                                <div class="text f12SFFF">
+                                                    제본 방향 안내
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="img">
+                                                    <img src="./img/book_create/info.png" alt="">
+                                                </div>
+                                                <div class="text f12SFFF">
+                                                    제본 종류 안내
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="contents" id="t_01">
+                    <table>
+                        <tr>
+                            <td>제작 수량(부수)</td>
+                            <td>
+                                <div class="input f14R888">
+                                    <input type="text">부
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contents" id="t_02">
+                    <table>
+                        <tr>
+                            <td>세네카(책등)</td>
+                            <td>
+                                <div class="input f14R888">
+                                    <input type="text">mm
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contents" id="t_03">
+                    <table>
+                        <tr>
+                            <td>세네카(책등)</td>
+                            <td>
+                                <div class="select f14R888" id="ring">
+                                    <select name="" id="">
+                                        <option value="">링 색상선택</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>P.P 모양</td>
+                            <td>
+                                <div class="select f14R888" id="p_p_shape">
+                                    <select name="" id="">
+                                        <option value="">P.P 모양</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>P.P 위치</td>
+                            <td>
+                                <div class="select f14R888" id="p_p_location">
+                                    <select name="" id="">
+                                        <option value="">P.P 위치</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 표지 -->
+                <div class="contents" id="t_04">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    표지
+                                </td>
+                                <td>
+                                    <div class="cover_wrapper">
+                                        <div class="select_wrap" id="book_cover_size_select">
+                                            <div class="item active" id="both_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/both_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="one_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/one_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        단면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="color_8">
+                                                <div class="img">
+                                                    <img src="./img/book_create/color_8.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        컬러 8도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="black">
+                                                <div class="img">
+                                                    <img src="./img/book_create/black.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        흑백 2도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="check_box">
+                                                <label for="use_cover" class="f15S007">표지 사용</label>
+                                                <input type="checkbox" id="use_cover">
+                                            </div>
+                                            <div class="info_wrap">
+                                                <div class="info">
+                                                    <div class="img">
+                                                        <img src="./img/book_create/info.png" alt="">
+                                                    </div>
+                                                    <div class="text f12SFFF">
+                                                        양면/단면 인쇄
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="img">
+                                                        <img src="./img/book_create/info.png" alt="">
+                                                    </div>
+                                                    <div class="text f12SFFF">
+                                                        인쇄 색상
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>표지 종이</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="p_p_shape">
+                                            <select name="" id="">
+                                                <option value="">표지 종이 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="info">
+                                            <div class="img">
+                                                <img src="./img/book_create/info.png" alt="">
+                                            </div>
+                                            <div class="text f12SFFF">
+                                                재질보기
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>후가공</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select w_120 f14R888" id="p_p_shape">
+                                            <select class="" name="" id="">
+                                                <option value="">코팅 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                            <select class="" name="" id="">
+                                                <option value="">박 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="check_box_wrapper">
+                                            <div class="check_box">
+                                                <input type="checkbox" id="uv_efoxy">
+                                                <label for="uv_efoxy">UV 에폭시</label>
+                                            </div>
+                                            <div class="check_box">
+                                                <input type="checkbox" id="book_wing">
+                                                <label for="book_wing">책 날개</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>표지디자인 선택</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="p_p_shape">
+                                            <select name="" id="">
+                                                <option value="">디자인 표지</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="btn_wrapper">
+                                            <div class="btn f12SFFF" id="sample_btn">
+                                                샘플 선택
+                                            </div>
+                                            <div class="btn f12SFFF" id="text_btn">
+                                                문구 선택
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 내지 -->
+                <div class="contents" id="t_05">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    내지
+                                </td>
+                                <td>
+                                    <div class="cover_wrapper">
+                                        <div class="select_wrap" id="book_cover_size_select">
+                                            <div class="item active" id="both_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/both_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="one_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/one_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        단면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="color_8">
+                                                <div class="img">
+                                                    <img src="./img/book_create/color_8.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        컬러 8도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="black">
+                                                <div class="img">
+                                                    <img src="./img/book_create/black.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        흑백 2도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="check_box">
+
+                                            </div>
+                                            <div class="info_wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>내지 종이</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="inner_paper">
+                                            <select name="" id="">
+                                                <option value="">내지 종이 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="info">
+                                            <div class="img">
+                                                <img src="./img/book_create/info.png" alt="">
+                                            </div>
+                                            <div class="text f12SFFF">
+                                                재질보기
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                                </tr>
+                            <tr>
+                                <td>페이지 수</td>
+                                <td>
+                                    <div class="input f14R888">
+                                        <input type="text">page (표지 페이지 제외)
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 추가내지 -->
+                <div class="contents" id="t_06">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    추가 내지
+                                </td>
+                                <td>
+                                    <div class="cover_wrapper">
+                                        <div class="select_wrap" id="book_cover_size_select">
+                                            <div class="item active" id="both_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/both_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="one_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/one_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        단면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="color_8">
+                                                <div class="img">
+                                                    <img src="./img/book_create/color_8.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        컬러 8도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="black">
+                                                <div class="img">
+                                                    <img src="./img/book_create/black.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        흑백 2도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="check_box">
+                                                <label for="use_cover" class="f15S007">표지 사용</label>
+                                                <input type="checkbox" id="use_cover">
+                                            </div>
+                                            <div class="info_wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>내지 종이</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="more_inner_paper">
+                                            <select name="" id="">
+                                                <option value="">내지 종이 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="info">
+                                            <div class="img">
+                                                <img src="./img/book_create/info.png" alt="">
+                                            </div>
+                                            <div class="text f12SFFF">
+                                                재질보기
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>페이지 수</td>
+                                <td>
+                                    <div class="input f14R888">
+                                        <input type="text">page (표지 페이지 제외)
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 면지 -->
+                <div class="contents" id="t_07">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>면지</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="end_paper">
+                                            <select name="" id="">
+                                                <option value="">면지 종이 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="info">
+                                            <div class="img">
+                                                <img src="./img/book_create/info.png" alt="">
+                                            </div>
+                                            <div class="text f12SFFF">
+                                                재질보기
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>페이지</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="end_paper_page">
+                                            <select name="" id="">
+                                                <option value="">면지 장수</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    간지 인쇄
+                                </td>
+                                <td>
+                                    <div class="cover_wrapper">
+                                        <div class="select_wrap" id="book_cover_size_select">
+                                            <div class="item active" id="no_print">
+                                                <div class="img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="both_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/both_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="one_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/one_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        단면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="color_8">
+                                                <div class="img">
+                                                    <img src="./img/book_create/color_8.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        컬러 8도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="black">
+                                                <div class="img">
+                                                    <img src="./img/book_create/black.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        흑백 2도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="check_box">
+                                                <label for="use_cover" class="f15S007">표지 사용</label>
+                                                <input type="checkbox" id="use_cover">
+                                            </div>
+                                            <div class="info_wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 간지 -->
+                <div class="contents" id="t_08">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>간지</td>
+                                <td>
+                                    <div class="cover_paper_wrapper">
+                                        <div class="select f14R888" id="book_slips">
+                                            <select name="" id="">
+                                                <option value="">간지 종이 선택</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="info">
+                                            <div class="img">
+                                                <img src="./img/book_create/info.png" alt="">
+                                            </div>
+                                            <div class="text f12SFFF">
+                                                재질보기
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>페이지</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="input f14R888">
+                                            <input type="text">장
+                                        </div>
+                                        <div class="plus">
+                                            <img src="./img/book_create/plus.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    간지 인쇄
+                                </td>
+                                <td>
+                                    <div class="cover_wrapper">
+                                        <div class="select_wrap" id="book_cover_size_select">
+                                            <div class="item active" id="no_print">
+                                                <div class="img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="both_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/both_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        양면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="one_side">
+                                                <div class="img">
+                                                    <img src="./img/book_create/one_side.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        단면 인쇄
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="color_8">
+                                                <div class="img">
+                                                    <img src="./img/book_create/color_8.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        컬러 8도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="black">
+                                                <div class="img">
+                                                    <img src="./img/book_create/black.png" alt="">
+                                                </div>
+                                                <div class="text_wrap">
+                                                    <div class="title f10S222">
+                                                        흑백 2도
+                                                    </div>
+                                                    <div class="desc f10S222">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="check_box">
+                                                <label for="use_cover" class="f15S007">표지 사용</label>
+                                                <input type="checkbox" id="use_cover">
+                                            </div>
+                                            <div class="info_wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 요청사항 -->
+                <div id="t_09">
+                    <div class="request_wrapper">
+                        <div class="title f15R222">
+                            요청사항
+                        </div>
+                        <div class="textarea">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="btn f15RFFF">
+                            작성하기
+                        </div>
+                    </div>
+                </div>
+                <!-- 첨부파일 -->
+                <div id="t_10">
+                    <div class="attached">
+                        <div class="title f15S222">
+                            첨부파일 <span>2</span>개
+                        </div>
+                        <div class="item_wrapper">
+                            <div class="item f15R222">
+                                <i class="fa-solid fa-paperclip"></i> 
+                                <div class="text">
+                                    트윈벨미디어_사업자등록증 사본(파일명과 똑같은 이름 출력) .pdf
+                                </div>
+                            </div>
+                            <div class="item active f15R222">
+                                <i class="fa-solid fa-paperclip"></i> 
+                                <div class="text">
+                                    트윈벨미디어_사업자등록증 사본(파일명과 똑같은 이름 출력) .pdf
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 첨부파일 2번째 -->
+                <div id="t_11">
+                    <div class="upload_wrapper">
+                        <div class="title f15S222">
+                            첨부파일
+                        </div>
+                        <div class="name">
+                            pdf만 가능합니다.
+                        </div>
+                        <div class="btn f15SFFF">
+                            <input type="file" id="file_upload">
+                            <label for="file_upload">찾아보기</label>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="text">
+                            * 파일명에 일부 특수문자(. / \ % * ? | " < >)를 포함하는 경우 제휴 제안이 정상적으로 저장되지 않을 수 있습니다.
+                        </div>
+                        <div class="text">
+                            * .pdf 내의 폰트 속성을 이미지하여 업로드 하여 주시기 바랍니다. <br>
+  폰트를 이미지화 하지 않고 인쇄 할 경우 인쇄에 문제가 발생 할 수 있으며 해당 문제에 대하여서는 보상되지 않습니다.
+                        </div>
+                    </div>
+                </div>
+                <!-- 인쇄 선택 -->
+                <div id="t_12">
+                    <div class="wrapper">
+                        <div class="print_select active" id="super_express">
+                            <div class="header">
+                                <div class="title">
+                                    디지털 윤전 최고급 인쇄
+                                </div>
+                                <div class="desc">
+                                        SUPER EXPRESS <br>
+                                        인디고
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="price_wrapper">
+                                    <div class="unit f12S222">
+                                        ￦
+                                    </div>
+                                    <div class="price f34S888">
+                                        91,520,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="supply_value">
+                                        공급가액 : 56,700,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="vat">
+                                        부가세 : 56,700,00
+                                    </div>
+                                </div>
+                                <div class="btn_wrapper">
+                                    <div class="btn f14SFFF black">
+                                        주문하기
+                                    </div>
+                                    <div class="btn f14S222">
+                                        견적서 저장
+                                    </div>
+                                    <div class="btn f14S222 grey">
+                                        견적서 출력
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print_select" id="digital_high_quality">
+                            <div class="header">
+                                <div class="title">
+                                    디지털 윤전 최고급 인쇄
+                                </div>
+                                <div class="desc">
+                                        SUPER EXPRESS <br>
+                                        인디고
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="price_wrapper">
+                                    <div class="unit f12S222">
+                                        ￦
+                                    </div>
+                                    <div class="price f34S888">
+                                        62,370,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="supply_value">
+                                        공급가액 : 56,700,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="vat">
+                                        부가세 : 56,700,00
+                                    </div>
+                                </div>
+                                <div class="btn_wrapper">
+                                    <div class="btn f14SFFF black">
+                                        주문하기
+                                    </div>
+                                    <div class="btn f14S222">
+                                        견적서 저장
+                                    </div>
+                                    <div class="btn f14S222 grey">
+                                        견적서 출력
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print_select" id="high_quality">
+                            <div class="header">
+                                <div class="title">
+                                    디지털 윤전 최고급 인쇄
+                                </div>
+                                <div class="desc">
+                                        SUPER EXPRESS <br>
+                                        인디고
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="price_wrapper">
+                                    <div class="unit f12S222">
+                                        ￦
+                                    </div>
+                                    <div class="price f34S888">
+                                        91,520,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="supply_value">
+                                        공급가액 : 56,700,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="vat">
+                                        부가세 : 56,700,00
+                                    </div>
+                                </div>
+                                <div class="btn_wrapper">
+                                    <div class="btn f14SFFF black">
+                                        주문하기
+                                    </div>
+                                    <div class="btn f14S222">
+                                        견적서 저장
+                                    </div>
+                                    <div class="btn f14S222 grey">
+                                        견적서 출력
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print_select" id="general">
+                            <div class="header">
+                                <div class="title">
+                                    디지털 윤전 최고급 인쇄
+                                </div>
+                                <div class="desc">
+                                        SUPER EXPRESS <br>
+                                        인디고
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="price_wrapper">
+                                    <div class="unit f12S222">
+                                        ￦
+                                    </div>
+                                    <div class="price f34S888">
+                                        62,370,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="supply_value">
+                                        공급가액 : 56,700,000
+                                    </div>
+                                    <div class="etc_price f15S888" id="vat">
+                                        부가세 : 56,700,00
+                                    </div>
+                                </div>
+                                <div class="btn_wrapper">
+                                    <div class="btn f14SFFF black">
+                                        주문하기
+                                    </div>
+                                    <div class="btn f14S222">
+                                        견적서 저장
+                                    </div>
+                                    <div class="btn f14S222 grey">
+                                        견적서 출력
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="t_13">
+                    <div class="wrapper">
+                        <div class="file">
+                            noname01.png
+                        </div>
+                        <div class="file">
+                            noname02.png
+                        </div>
+                        <div class="file">
+                            noname03.png
+                        </div>
+                    </div>
+                </div>
+                <div id="t_14">
+                    <div class="img">
+                        <img src="./img/book_create/add_img.png" alt="">
+                    </div>
+                </div>
+                <div id="t_15">
+                    <div class="wrapper">
+                        <div class="order_wrapper">
+                            <div class="header f21SFFF">
+                                주문제작사양
+                            </div>
+                            <div class="body">
+                                <div class="contents">
+                                    <div class="item" id="name">
+                                        <div class="title">
+                                            상품명
+                                        </div>
+                                        <div class="desc">
+                                            책 만들기 - 디지털 책자(윤전)
+                                        </div>
+                                    </div>
+                                    <div class="item" id="size">
+                                        <div class="title">
+                                            사이즈
+                                        </div>
+                                        <div class="desc">
+                                           A4
+                                        </div>
+                                    </div>
+                                    <div class="item" id="binding">
+                                        <div class="title">
+                                            제본
+                                        </div>
+                                        <div class="desc">
+                                           무선
+                                        </div>
+                                    </div>
+                                    <div class="item" id="binding_direction">
+                                        <div class="title">
+                                            제본방향
+                                        </div>
+                                        <div class="desc">
+                                            세로형좌철
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item" id="page">
+                                        <div class="title">
+                                            페이지수
+                                        </div>
+                                        <div class="desc">
+                                            <span>50</span> Pages
+                                        </div>
+                                    </div>
+                                    <div class="item" id="amount">
+                                        <div class="title">
+                                            제작수량
+                                        </div>
+                                        <div class="desc">
+                                            <span>30</span> 부
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item" id="book_cover_side">
+                                        <div class="title">
+                                            표지 양/단면
+                                        </div>
+                                        <div class="desc">
+                                            양면인쇄
+                                        </div>
+                                    </div>
+                                    <div class="item" id="book_cover_color">
+                                        <div class="title">
+                                            표지인쇄컬러
+                                        </div>
+                                        <div class="desc">
+                                            컬러인쇄(4도)
+                                        </div>
+                                    </div>
+                                    <div class="item" id="book_cover_paper">
+                                        <div class="title">
+                                            표지용지
+                                        </div>
+                                        <div class="desc">
+                                            일반지 / 아트지 250g
+                                        </div>
+                                    </div>
+                                    <div class="item" id="book_cover_post_processing">
+                                        <div class="title">
+                                            표지후가공
+                                        </div>
+                                        <div class="desc">
+                                            무광코팅
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item" id="inner_paper_side">
+                                        <div class="title">
+                                            내지 양/단면
+                                        </div>
+                                        <div class="desc">
+                                            양면인쇄
+                                        </div>
+                                    </div>
+                                    <div class="item" id="inner_paper_color">
+                                        <div class="title">
+                                            내지인쇄컬러
+                                        </div>
+                                        <div class="desc">
+                                            컬러인쇄(4도)
+                                        </div>
+                                    </div>
+                                    <div class="item" id="inner_paper_paper">
+                                        <div class="title">
+                                            본문종이
+                                        </div>
+                                        <div class="desc">
+                                            윤전롤지-모조지(미색) 100g
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="request_wrapper">
+                            <div class="header">
+                                <div class="header f21SFFF">
+                                    주문제작사양
+                                </div>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="
+                                " id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

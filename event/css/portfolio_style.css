@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app #my_page_header {
+  padding: 0 16.3%;
+  margin-bottom: 80px;
+}
+#app #my_page_header #page_location {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#app #my_page_header #title {
+  font-size: 72px;
+  color: #222;
+}
+#app #my_page_header #title span {
+  color: #007dfb;
+}
+#app #my_page_nav {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_nav ul {
+  display: flex;
+}
+#app #my_page_nav ul .nav_item {
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #my_page_nav ul .active {
+  background-color: #7E746C;
+  color: #fff;
+}
+#app #my_page_nav ul .nav_item:first-child {
+  border-left: 1px solid #ddd;
+}
+#app #portfolio {
+  width: 1000px;
+  margin: 0 auto;
+}
+#app #portfolio .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#app #portfolio .header .search_box {
+  display: flex;
+  gap: 8px;
+}
+#app #portfolio .header .search_box .select {
+  border-bottom: 1px solid #222;
+}
+#app #portfolio .header .search_box .select select {
+  border: none;
+  width: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 4px;
+}
+#app #portfolio .header .search_box .search {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+#app #portfolio .header .search_box .search input {
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+#app #portfolio .header .search_box .search input::-moz-placeholder {
+  font-size: 18px;
+}
+#app #portfolio .header .search_box .search input::placeholder {
+  font-size: 18px;
+}
+#app #portfolio #tab {
+  display: flex;
+  margin-bottom: 50px;
+}
+#app #portfolio #tab .tab {
+  flex: 1;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  border-left: 1px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+#app #portfolio #tab .tab:last-child {
+  border-right: 1px solid #666;
+}
+#app #portfolio #tab .active {
+  background-color: #666;
+  color: #fff;
+}
+#app #portfolio .item_wrap {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+#app #portfolio .item_wrap .item {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+#app #portfolio .item_wrap .item .img {
+  border: 1px solid #222;
+  width: 310px;
+  height: 215px;
+}
+#app #portfolio .item_wrap .item .text_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#app #portfolio .item_wrap .item .text_wrap .title {
+  text-align: center;
+  width: 299px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#app #portfolio .item_wrap .item .tag {
+  background-color: #222;
+  width: 126px;
+  height: 30px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#app #portfolio .item_wrap .item .green {
+  background-color: #27AB34;
+}
+#app #portfolio .item_wrap .item .red {
+  background-color: #ff0000;
+}
+#app #portfolio .item_wrap .item .black {
+  background-color: #000;
+}
+#app #portfolio .item_wrap .item .hover {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #222;
+  opacity: 0.5;
+  width: 310px;
+  height: 215px;
+}
+#app #portfolio .item_wrap .item .hover label {
+  cursor: pointer;
+}
+#app #portfolio .item_wrap .item .modal {
+  width: 130px;
+  height: 54px;
+  position: initial;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] {
+  display: none;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label {
+  display: inline-block;
+  font-weight: bold;
+  display: flex;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label span {
+  display: none;
+  background-color: #007dfb;
+  width: 130px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label span img {
+  z-index: 6;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 653px;
+  z-index: 2;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div > div .modal_banner_popup {
+  padding: 30px 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 900px;
+  background-color: #fff;
+  height: 1977px;
+  overflow: scroll;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div > div .modal_banner_popup .contents_wrap .header {
+  display: flex;
+  justify-content: space-between;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div > div .modal_banner_popup .contents_wrap .item_img {
+  display: flex;
+  justify-content: center;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup] + label + div > div .modal_banner_popup::-webkit-scrollbar {
+  display: none;
+}
+#app #portfolio .item_wrap .item .modal input[id=popup]:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+#app #portfolio .item_wrap .item .modal input[id=banner_popup]:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+#app #portfolio .item_wrap .item:hover .hover {
+  display: flex;
+}
+#app #portfolio .option_wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+}
+#app #portfolio .option_wrap .option {
+  border: 1px solid #ddd;
+  padding: 7px 13px;
+  cursor: pointer;
+}
+#app #portfolio .option_wrap .active {
+  background-color: #ff0000;
+  color: #fff;
+}/*# sourceMappingURL=portfolio_style.css.map */

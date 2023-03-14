@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/print_guide_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">이벤트 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                인쇄가이드<span>.</span>
+                <div class="subtitle f18R222">
+                    인쇄 및 제작과 관련된 사이즈, 종이 종류, 종이 재질, 컬러설정, 서체설정, PDF 변환 등 제작에 도움을 드리기 위해 담았습니다.
+                </div>
+            </div>
+        </section>
+        <section id="tab">
+            <div class="tab f15S666 active">
+                전체
+            </div>
+            <div class="tab f15S666">
+                학원 / 교육교재
+            </div>
+            <div class="tab f15S666">
+                일반 / 출판도서
+            </div>
+            <div class="tab f15S666">
+                카달로그 / 브로셔
+            </div>
+            <div class="tab f15S666">
+                정기간행물
+            </div>
+            <div class="tab f15S666">
+                보고서 / 매뉴얼
+            </div>
+            <div class="tab f15S666">
+                리플렛 / 팜플렛
+            </div>
+            <div class="tab f15S666">
+                포스터 / 표지
+            </div>
+        </section>
+        <section class="contents" id="print_guide_print_basic">
+            <div id="header">
+                <div class="title f28S222">
+                    ■ 인쇄기본
+                </div>
+                <div class="desc f15R222">
+                    제작사이즈, 종이, 컬러설정, 서체설정, PDF 변환 등에 관한 정보입니다.
+                </div>
+            </div>
+            <div class="item_wrap" id="print_basic">
+                <div class="item" id="i_00">
+                    <div class="title f18S007">
+                        ▣ 판형 (제작사이즈)
+                    </div>
+                    <div class="desc f15R666">
+                        표준 재단치수(가로ⅹ세로 길이)에 의해 만들어진 인쇄용지 또는 인쇄물의 크기(size)를 말합니다. 출판의 목적, 출판물의 성격, 독자의 취향과 편의성 등을
+                        고려하여 출판기획단계에서 결정됩니다. 용지의 종류는 원판 사이즈에 따라 A계열(국전지)과 B계열(46전지)로 나뉘며, A계열(국전지)은 939ⅹ636mm,
+                        B계열(46전지)은 1091ⅹ788mm 입니다. 국전지는 A1으로 부르며 등분하는 횟수에 따라 크기가 작아지며 A2, A3, A4 등으로 부르고 (예. A1을 4등분
+                        하여 8조각으로 나누면 A4라고 부른다) 46전지는 B1으로 부르며 등분하여 나뉘어진 조각의 숫자로 B2(2절지), B3(4절지), B4(8절지) 등으로 부릅니다.
+                    </div>
+                </div>
+                <div class="item" id="i_01">
+                    <div class="title f18S007">
+                        ▣ 판형 (제작사이즈)
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <th class="th_00">판형</th>
+                                <th class="th_01">명칭</th>
+                                <th class="th_02">재단사이즈(mm)</th>
+                                <th class="th_03">작업사이즈(mm)</th>
+                                <th class="th_04">제작용도</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A4</td>
+                                    <td>국배판</td>
+                                    <td>280×210</td>
+                                    <td>286×216</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>A4</td>
+                                    <td>국배판</td>
+                                    <td>260×190</td>
+                                    <td>266×196</td>
+                                    <td>문예물, 교과서, 단행본
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>A4</td>
+                                    <td>국배판</td>
+                                    <td>210×148</td>
+                                    <td>216×150</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>A5</td>
+                                    <td>국배판</td>
+                                    <td>205×140</td>
+                                    <td>211×146</td>
+                                    <td>수필, 소설
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>A6</td>
+                                    <td>국반판(문고판)</td>
+                                    <td>148×105</td>
+                                    <td>154×111
+                                    </td>
+                                    <td>신문, 포스터
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B3</td>
+                                    <td>신문대판</td>
+                                    <td>545×394
+                                    </td>
+                                    <td>551×400
+                                    </td>
+                                    <td>생활정보지</td>
+                                </tr>
+                                <tr>
+                                    <td>B4</td>
+                                    <td>타블로이드
+                                    </td>
+                                    <td>374×254
+                                    </td>
+                                    <td>380×260
+                                    </td>
+                                    <td>초등교과서, 참고서, 여성지
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B5</td>
+                                    <td>타블로이드
+                                    </td>
+                                    <td>353×250
+                                    </td>
+                                    <td>359×256
+                                    </td>
+                                    <td>대학교재, 참고서, 문제집, 주간지
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B6</td>
+                                    <td>4X6 배판
+                                    </td>
+                                    <td>257×188
+                                    </td>
+                                    <td>263×194
+                                    </td>
+                                    <td>학술서, 소설, 일반 서적물(자기계발서, 자서전 등)
+                                    </td>
+                                </tr>
+                                <!-- colspan -->
+                                <tr>
+                                    <td class="rowspan" rowspan="8">규격외</td>
+                                    <td>4X6 배판(다이제스티판, 포켓판)
+                                    </td>
+                                    <td>188×128
+                                    </td>
+                                    <td>194×134
+                                    </td>
+                                    <td>소설, 자서전, 전문서적
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>신국판(신A5)
+                                    </td>
+                                    <td>225×152
+                                    </td>
+                                    <td>231×158
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>신국판(신A5)
+                                    </td>
+                                    <td>224×154
+                                    </td>
+                                    <td>230×160
+                                    </td>
+                                    <td>사진집
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>18절판(크라운판)
+                                    </td>
+                                    <td>248×176
+                                    </td>
+                                    <td>254×182
+                                    </td>
+                                    <td>일반 단행본
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>30절판
+                                    </td>
+                                    <td>205×125
+                                    </td>
+                                    <td>211×131
+                                    </td>
+                                    <td>문고판
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>3X6판
+                                    </td>
+                                    <td>182×103
+                                    </td>
+                                    <td>188×109
+                                    </td>
+                                    <td>문고판
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>신4X6판
+                                    </td>
+                                    <td>128×94
+                                    </td>
+                                    <td>134×100
+                                    </td>
+                                    <td>시집, 수필
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>다찌판
+                                    </td>
+                                    <td>210×128
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="item" id="i_02">
+                    <div class="title f18S007">
+                        ▣ 주요판형 비교
+                    </div>
+                    <div class="img_wrap">
+                        <div class="img">
+                            <img src="./img/print_guide/NoPath.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./img/print_guide/NoPath - 복사본.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./img/print_guide/NoPath - 복사본 (2).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_03">
+                    <div class="text_wrap">
+                        <div class="title f18S007">
+                            ▣ 주요판형 비교
+                        </div>
+                        <div class="desc f15R666">
+                            인쇄물(완성품)의 최종적 크기(Size)<br>
+                            일반 인쇄에서는 작업물의 크기 보다 큰 종이에 인쇄 후 사방을 재단합니다.<br>
+                            가정용 프린터가 처음부터 원하는 규격 용지에 인쇄를 하는 것과 차이가<br>
+                            있습니다.
+                        </div>
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18S007">
+                            ▣ 주요판형 비교
+                        </div>
+                        <div class="desc f15R666">
+                            재단사이즈(완성된 인쇄물)에 여유분을 포함한 크기<br>
+                            인쇄 후 재단하는 과정에서 오차가 발생하여 인쇄되지 않은 영역이 보일 수<br>
+                            있습니다. 디자인, 사진 이미지, 바탕 전체에 컬러가 인쇄된 경우에 작업<br>
+                            사이즈까지 채워져 있지 않고 재단사이즈 까지만 채워져 있으면 재단 후 흰색
+                            종이면이 남을 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contents" id="print_guide_paper_basic">
+            <div id="header">
+                <div class="title f28S222">
+                    ■ 종이의 기본
+                </div>
+                <div class="desc f15R222">
+
+                </div>
+            </div>
+            <div class="item_wrap" id="print_basic">
+                <div class="item" id="i_00">
+                    <div class="title f18S007">
+                        ▣ 종이 특성
+                    </div>
+                    <div class="desc f15R666">
+                        종이는 기본적으로 평량(g/㎡)과 두께(㎛=1/1000mm), 밀도, 수분, 화분, 표면성, 평활도 등의 물리적인 특성과 인장강도와 내절도 등의 기계적 특성 및
+                        백색도, 불투명도와 같은 빛에 따른 광학적인 특성을 가지고 있습니다. 이러한 종이의 특성은 인쇄품질을 좌우할 만큼 중요하므로 최상의 인쇄 결과를 얻기
+                        위해서 종이의 특성을 고려해야 합니다.
+                    </div>
+                </div>
+                <div class="item" id="i_01">
+                    <div class="title f18S007">
+                        ▣ 종이 이름
+                    </div>
+                    <div class="desc f15R666">
+                        제지사가 정한 이름입니다. 따라서 유사한 용지라도 제지사가 다르면 다른 이름을 가지고 있습니다. <br>
+                        보편적으로 사용되는 아트지나 스노우지, 모조지 처럼 비슷한 질감의 종이는 제지사마다 동일한 이름으로 유통하기도 합니다.
+                    </div>
+                </div>
+                <div class="item" id="i_02">
+                    <div class="title f18S007">
+                        ▣ 종이 평량
+                    </div>
+                    <div class="desc f15R666">
+                        평량이란 종이의 무게 단위를 말합니다. <br>
+                        단위 1제곱미터 당(1mⅹ1m) 무게를 나타내며 단위는 g/m²입니다. 흔히 용지의 `평량`을 종이의 두께로 생각하는 경우가 있는데 이것은 오해입니다.<br>
+                        평량이 높다고 반드시 종이가 두꺼운 것은 아니며 제조 과정에서 압착의 정도에 따라 두께가 달라지며 종이의 밀도가 높으면 두께가 얇고 종이의 밀도가<br> 
+                        낮으면 두꺼워집니다. 평량은 종이의 강도, 불투명도, 두께 등에 영향을 줍니다.
+              
+                    </div>
+                </div>
+                <div class="item" id="i_03">
+                    <div class="title f18S007">
+                        ▣ 종이 두께
+                    </div>
+                    <div class="desc f15R666">
+                        종이 한 장의 높이를 말합니다. 단위는 ㎛(1/1000mm)를 사용하며 1 ㎛(마이크로미터)는 0.001mm 입니다. <br>
+                        종이의 평량과 두께는 비례하지 않습니다. 평량이 높다고 두께가 두꺼운 것이 아니며 두께가 두껍다고 평량이 높은 것도 아닙니다.<br>
+                        종이의 두께는 작업물의 디자인에 영향을 주며 책이나 잡지의 두께를 결정하는 중요한 요소입니다.
+                    </div>
+                </div>
+                <div class="item" id="i_04">
+                    <div class="title f18S007">
+                        ▣ 종이 광택
+                    </div>
+                    <div class="desc f15R666">
+                        입사광선의 세기에 대한 물체표면의 반사광의 세기를 말합니다. 반사광의 세기는 주로 백분율(%)로 표시하고, 수치가 높을수록 광택이 강한 종이입니다.<br>
+                        종이 생산시 도공과정을 거쳐 표면이 더 평활해지고 광택이 생기게 합니다. 광택지는 고광택과 반광택이 있으며 광택지는 사진 출력용으로 적합하고 <br>
+                        아트지는 인쇄에 적합한 용지입니다.              
+                    </div>
+                </div>
+                <div class="item" id="i_05">
+                    <div class="title f18S007">
+                        ▣ 종이 결
+                    </div>
+                    <div class="desc f15R666">
+                        종이의 원료인 목재 섬유는 가늘고 긴 섬유로 가공과정에서 섬유의 배열 형태에 따라 종목과 횡목으로 구분합니다. <br>
+                        종이를 제조할 때 섬유는 초지기(연속적으로 종이를 만드는 기계)의 진행 방향으로 배열돼 결을 형성하게 되며 이 방향을 MD(종목, Machine Direction)라
+                        하고, 이와 수직인 폭 방향을 CD(횡목, Cross Direction)라고 합니다. 이러한 종이의 물리적 특성을 고려하여 인쇄물을 제작해야 하며 종이의 결에 맞게
+                        인쇄물을 제작해야 제본을 했을 때, 인쇄물의 바닥이 뒤틀리지 않고 평평하게 제작될 수 있습니다. 종이의 결은 포장재에 표기되어 있으며, 종이가 세로로 
+                        쉽게 찢어지면 종목이고 그렇지 않으면 횡목입니다.
+                    </div>
+                </div>
+            </div>
+            <div class="img_wrap">
+                <div class="img">
+                    <img src="./img/print_guide/paper_00.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="./img/print_guide/paper_01.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>

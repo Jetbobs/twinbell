@@ -1,0 +1,1092 @@
+@use '../../common/css/color/color';
+@use '../../common/css/font/font_mixin';
+@import "../../common/css/common_form.scss";
+
+
+#app {
+    #my_page_header {
+        width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+        #page_location {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        #title {
+            font-size: 72px;
+            color: color.$color-222;
+
+            span {
+                color: color.$color-007;
+            }
+        }
+    }
+
+    #my_page_nav {
+        padding: 0 16.3%;
+        margin-bottom: 30px;
+
+        ul {
+            display: flex;
+
+            .nav_item {
+                padding: 12px 0;
+                flex: 1;
+                text-align: center;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+
+            .active {
+                background-color: #7E746C;
+                color: #fff;
+            }
+
+            .nav_item:first-child {
+                border-left: 1px solid #ddd;
+            }
+        }
+
+    }
+
+    #print_select {
+        width: 1000px;
+        margin: 0 auto;
+        .contents_wrapper{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .contents {
+                table {
+                    width: 100%;
+                    border: 1px solid #ddd;
+                    border-collapse: collapse;
+    
+                    tr {
+                        td {
+                            border: 1px solid #ddd;
+    
+                            #title {
+                                width: 458px;
+                                height: 40px;
+                                border: 1px solid #ddd;
+                                background-color: #f9f9f9;
+                                padding: 0px 25px;
+                            }
+    
+                            input {
+                                border: 1px solid #ddd;
+                                border-radius: 5px;
+                            }
+    
+                        }
+    
+                        td:first-child {
+                            width: 160px;
+                            text-align: center;
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: #222;
+    
+                            span {
+                                color: color.$color-ff0;
+                            }
+                        }
+    
+                        td:nth-child(2) {
+                            padding: 14.5px 30px;
+                        }
+                    }
+                }
+            }
+            #t_00{
+                .select_wrap {
+                    display: flex;
+                    gap: 5px;
+                    margin-bottom: 20px;
+                    .item {
+                        width: 78px;
+                        .img {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 78px;
+                            height: 78px;
+                            border-radius: 5px;
+                            background-color: #f6f7f9;
+                            margin-bottom: 10px;
+                        }
+    
+                        .text_wrap {
+                            text-align: center;
+                        }
+                    }
+                    .active{
+                        .img{
+                            background-color: #e6f0ff;
+                        }
+                        .text_wrap{
+                            .title{
+                                color: color.$color-007;
+                            }
+                            .desc{
+                                color: color.$color-007;
+                            }
+                        }
+                    }
+                }
+                .size_input_wrap{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .item{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        .input{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            input{
+                                width: 100px;
+                                height: 32px;
+                                background-color: #f9f9f9;
+                                border: 1px solid #ddd;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                #print_direction{
+                    width: 288px;
+                    .table_wrapper{
+                        display: flex;
+                        padding: 30px 10px;
+                        justify-content: space-between;
+                        .wrapper{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .title{
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: 222;
+                                span{
+                                    color: color.$color-ff0;
+                                }
+                            }
+                            .select{
+                                select{
+                                    width: 120px;
+                                    height: 40px;
+                                    border: 1px solid #ddd;
+                                    border-radius: 5px;
+                                    color: #888;
+                                }
+                            }
+                        }
+                        .info_wrap{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            .info{
+                                display: flex;
+                                background-color: color.$color-888;
+                                width: 115px;
+                                height: 35px;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                            }
+                        }
+                    }
+    
+                }
+            }
+            #t_01{
+                .input{
+                    input{
+                        border: 1px solid #ddd;
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            #t_02{
+                .input{
+                    input{
+                        border: 1px solid #ddd;
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            #t_03{
+                .select{
+                    select{
+                        border: 1px solid #ddd;
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                        color: #888;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            #t_04{
+                .cover_wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    .select_wrap {
+                        display: flex;
+                        gap: 5px;
+                        margin-bottom: 20px;
+                        .item {
+                            width: 78px;
+                            .img {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 78px;
+                                height: 78px;
+                                border-radius: 5px;
+                                background-color: #f6f7f9;
+                                margin-bottom: 10px;
+                            }
+        
+                            .text_wrap {
+                                text-align: center;
+                            }
+                        }
+                        .active{
+                            .img{
+                                background-color: #e6f0ff;
+                            }
+                            .text_wrap{
+                                .title{
+                                    color: color.$color-007;
+                                }
+                                .desc{
+                                    color: color.$color-007;
+                                }
+                            }
+                        }
+                    }
+                    .wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .check_box{
+                            padding-top: 10px;
+                            display: flex;
+                            justify-content: end;
+                            gap: 10px;
+                        }
+                        .info_wrap{
+                            display: flex;
+                            gap: 15px;
+                            .info{
+                                display: flex;
+                                background-color: color.$color-888;
+                                width: 115px;
+                                height: 35px;
+                                align-items: center;
+                                padding: 10px;
+                                justify-content: start;
+                                gap: 10px;
+                            }
+                        }
+
+                    }
+                }
+                .cover_paper_wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .select{
+                        select{
+                            border: 1px solid #ddd;
+                            width: 150px;
+                            height: 40px;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                            color: #888;
+                            padding: 0 10px;
+                        }
+                    }
+                    .w_120{
+                        select{
+                            width: 120px;
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        background-color: color.$color-888;
+                        width: 115px;
+                        height: 35px;
+                        align-items: center;
+                        padding: 10px;
+                        justify-content: start;
+                        gap: 10px;
+                    }
+                    .check_box_wrapper{
+                        display: flex;
+                        gap: 30px;
+                        .check_box{
+                            input{
+                                margin-right: 10px;
+                            }
+                            label{
+                                font-size: 15px ;
+                                font-weight: 600;
+                                color: #222;
+                            }
+                        }
+                    }
+                    .btn_wrapper{
+                        display: flex;
+                        gap: 10px;
+                        .btn{
+                            width: 81px;
+                            height: 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            background-color: #004DA1;
+                        }
+                    }
+                }
+
+            }
+            #t_05, #t_06{
+                .cover_wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    .select_wrap {
+                        display: flex;
+                        gap: 5px;
+                        margin-bottom: 20px;
+                        .item {
+                            width: 78px;
+                            .img {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 78px;
+                                height: 78px;
+                                border-radius: 5px;
+                                background-color: #f6f7f9;
+                                margin-bottom: 10px;
+                            }
+        
+                            .text_wrap {
+                                text-align: center;
+                            }
+                        }
+                        .active{
+                            .img{
+                                background-color: #e6f0ff;
+                            }
+                            .text_wrap{
+                                .title{
+                                    color: color.$color-007;
+                                }
+                                .desc{
+                                    color: color.$color-007;
+                                }
+                            }
+                        }
+                    }
+                    .wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .check_box{
+                            padding-top: 10px;
+                            display: flex;
+                            justify-content: end;
+                            gap: 10px;
+                        }
+                        .info_wrap{
+                            display: flex;
+                            gap: 15px;
+                            .info{
+                                display: flex;
+                                background-color: color.$color-888;
+                                width: 115px;
+                                height: 35px;
+                                align-items: center;
+                                padding: 10px;
+                                justify-content: start;
+                                gap: 10px;
+                            }
+                        }
+
+                    }
+                }
+                .cover_paper_wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .select{
+                        select{
+                            border: 1px solid #ddd;
+                            width: 150px;
+                            height: 40px;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                            color: #888;
+                            padding: 0 10px;
+                        }
+                    }
+                    .w_120{
+                        select{
+                            width: 120px;
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        background-color: color.$color-888;
+                        width: 115px;
+                        height: 35px;
+                        align-items: center;
+                        padding: 10px;
+                        justify-content: start;
+                        gap: 10px;
+                    }
+                    .check_box_wrapper{
+                        display: flex;
+                        gap: 30px;
+                        .check_box{
+                            input{
+                                margin-right: 10px;
+                            }
+                            label{
+                                font-size: 15px ;
+                                font-weight: 600;
+                                color: #222;
+                            }
+                        }
+                    }
+                    .btn_wrapper{
+                        display: flex;
+                        gap: 10px;
+                        .btn{
+                            width: 81px;
+                            height: 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            background-color: #004DA1;
+                        }
+                    }
+                }
+                .input{
+                    input{
+                        border: 1px solid #ddd;
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            #t_07{
+                .cover_wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    .select_wrap {
+                        display: flex;
+                        gap: 5px;
+                        margin-bottom: 20px;
+                        .item {
+                            width: 78px;
+                            .img {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 78px;
+                                height: 78px;
+                                border-radius: 5px;
+                                background-color: #f6f7f9;
+                                margin-bottom: 10px;
+                            }
+        
+                            .text_wrap {
+                                text-align: center;
+                            }
+                        }
+                        .active{
+                            .img{
+                                background-color: #e6f0ff;
+                            }
+                            .text_wrap{
+                                .title{
+                                    color: color.$color-007;
+                                }
+                                .desc{
+                                    color: color.$color-007;
+                                }
+                            }
+                        }
+                    }
+                    .wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .check_box{
+                            padding-top: 10px;
+                            display: flex;
+                            justify-content: end;
+                            gap: 10px;
+                        }
+                        .info_wrap{
+                            display: flex;
+                            gap: 15px;
+                            .info{
+                                display: flex;
+                                background-color: color.$color-888;
+                                width: 115px;
+                                height: 35px;
+                                align-items: center;
+                                padding: 10px;
+                                justify-content: start;
+                                gap: 10px;
+                            }
+                        }
+
+                    }
+                }
+                .cover_paper_wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .select{
+                        select{
+                            border: 1px solid #ddd;
+                            width: 150px;
+                            height: 40px;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                            color: #888;
+                            padding: 0 10px;
+                        }
+                    }
+                    .w_120{
+                        select{
+                            width: 120px;
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        background-color: color.$color-888;
+                        width: 115px;
+                        height: 35px;
+                        align-items: center;
+                        padding: 10px;
+                        justify-content: start;
+                        gap: 10px;
+                    }
+                    .check_box_wrapper{
+                        display: flex;
+                        gap: 30px;
+                        .check_box{
+                            input{
+                                margin-right: 10px;
+                            }
+                            label{
+                                font-size: 15px ;
+                                font-weight: 600;
+                                color: #222;
+                            }
+                        }
+                    }
+                    .btn_wrapper{
+                        display: flex;
+                        gap: 10px;
+                        .btn{
+                            width: 81px;
+                            height: 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            background-color: #004DA1;
+                        }
+                    }
+                }
+                .input{
+                    input{
+                        border: 1px solid #ddd;
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            #t_08{
+                .cover_wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    .select_wrap {
+                        display: flex;
+                        gap: 5px;
+                        margin-bottom: 20px;
+                        .item {
+                            width: 78px;
+                            .img {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 78px;
+                                height: 78px;
+                                border-radius: 5px;
+                                background-color: #f6f7f9;
+                                margin-bottom: 10px;
+                            }
+        
+                            .text_wrap {
+                                text-align: center;
+                            }
+                        }
+                        .active{
+                            .img{
+                                background-color: #e6f0ff;
+                            }
+                            .text_wrap{
+                                .title{
+                                    color: color.$color-007;
+                                }
+                                .desc{
+                                    color: color.$color-007;
+                                }
+                            }
+                        }
+                    }
+                    .wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .check_box{
+                            padding-top: 10px;
+                            display: flex;
+                            justify-content: end;
+                            gap: 10px;
+                        }
+                        .info_wrap{
+                            display: flex;
+                            gap: 15px;
+                            .info{
+                                display: flex;
+                                background-color: color.$color-888;
+                                width: 115px;
+                                height: 35px;
+                                align-items: center;
+                                padding: 10px;
+                                justify-content: start;
+                                gap: 10px;
+                            }
+                        }
+
+                    }
+                }
+                .cover_paper_wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .select{
+                        select{
+                            border: 1px solid #ddd;
+                            width: 150px;
+                            height: 40px;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                            color: #888;
+                            padding: 0 10px;
+                        }
+                    }
+                    .w_120{
+                        select{
+                            width: 120px;
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        background-color: color.$color-888;
+                        width: 115px;
+                        height: 35px;
+                        align-items: center;
+                        padding: 10px;
+                        justify-content: start;
+                        gap: 10px;
+                    }
+                    .check_box_wrapper{
+                        display: flex;
+                        gap: 30px;
+                        .check_box{
+                            input{
+                                margin-right: 10px;
+                            }
+                            label{
+                                font-size: 15px ;
+                                font-weight: 600;
+                                color: #222;
+                            }
+                        }
+                    }
+                    .btn_wrapper{
+                        display: flex;
+                        gap: 10px;
+                        .btn{
+                            width: 81px;
+                            height: 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            background-color: #004DA1;
+                        }
+                    }
+                }
+                .wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .input{
+                        input{
+                            border: 1px solid #ddd;
+                            width: 120px;
+                            height: 40px;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                        }
+                        
+                    }
+                    .plus{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+            }
+            #t_09{
+                .request_wrapper{
+                    display: flex;
+                    border: 1px solid #e8e8e8;
+                    .title{
+                        width: 145px;
+                        height: 100px;
+                        background-color: #e8e8e8;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .textarea{
+                        width: 755px;
+                        height: 100px;
+                        textarea{
+                            width: 755px;
+                            height: 100px;
+                            border: none;
+                            resize: none;
+                        }
+                    }
+                    .btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        height: 100px;
+                        background-color: color.$color-666;
+                    }
+                }
+            }
+            #t_10{
+                .attached{
+                    display: flex;
+                    border-top: 1px solid #e9e9e9;
+                    border-bottom: 1px solid #e9e9e9;
+                    padding: 10px 0px;
+                    .title{
+                        width: 145px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .item_wrapper{
+                        padding: 0 50px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .item{
+                            display: flex;
+                            gap: 10px;
+                        }
+                        .active{
+                            color: color.$color-ff0;
+                        }
+                    }
+                }
+            }
+            #t_11{
+                .upload_wrapper{
+                    display: flex;
+                    border: 1px solid #e9e9e9;
+                    .title{
+                        width: 145px;
+                        background-color: #e8e8e8;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .name{
+                        width: 735px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #d9d9d9;
+                        padding: 0 10px;
+                    }
+                    .btn{
+                        input{
+                            display: none;
+                        }
+                        label{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            background-color: #000;
+                            width: 120px;
+                            height: 45px;
+                        }
+                    }
+                }
+                .desc{
+                    padding: 10px 155px;
+                    .text{
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: color.$color-ff0;
+                        line-height: 1.6;
+                    }
+                }
+            }
+            #t_12{
+                .wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    .print_select{
+                        width: 232px;
+                        height: 380px;
+                        border: 1px solid #ddd;
+                        .header{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 10px;
+                            background-color: #fafbfd;
+                            text-align: center;
+                            width: 232px;
+                            height: 79px;
+                            border-bottom: 1px solid #ddd;
+                            .title{
+                                color: #222;
+                                font-size: 21px;
+                                font-weight: 600;
+                            }
+                            .desc{
+                                font-size: 10px;
+                                font-weight: 600;
+                                color: #222;
+                            }
+                        }
+                        .body{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .price_wrapper{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                padding: 10px 0px;
+                                .price{
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                .etc_price{
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            }
+                            .btn_wrapper{
+                                width: 202px;
+                                height: 146px;
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                border: 1px solid #ddd;
+                                .btn{
+                                    width: 154px;
+                                    height: 32px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    border: 1px solid #ddd;
+                                }
+                                .black{
+                                    background-color: #000;
+                                }
+                                .grey{
+                                    background-color: #ddd;
+                                }
+                            }
+                        }
+                    }
+                    .active{
+                        .header{
+                            background-color: #FF9100;
+                            .title{
+                                color: #fff;
+                            }
+                            .desc{
+                                color: #fff;
+                            }
+                        }
+                        .body{
+                            .price_wrapper{
+                                .price{
+                                    color: #FF9100;
+                                }
+                            }
+                            .btn_wrapper{
+                                .order{
+                                    background-color: #FF9100;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #t_13{
+                .wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .file{
+                        border: 1px solid #707070;
+                        height: 27px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 20px;
+                        color: color.$color-ff0;
+                        font-weight: 400;
+                    }
+                }
+            }
+            #t_14{
+                .img{
+                    display: none;
+                }
+            }
+            #t_15{
+                .wrapper{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    top: 0;
+                    right: -300px;
+                    .order_wrapper{
+                        width: 290px;
+                        height: 490px;
+                        border: 1px solid #c2c2c2;
+                        .header{
+                            height: 52px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: color.$color-007;
+                        }
+                        .body{
+                            .contents{
+                                padding: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                border-bottom: 1px dashed #c2c2c2;
+                                .item{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    gap: 20px;
+                                    .title{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 64px;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        color: #5e5e5e;
+                                    }
+                                    .desc{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: start;
+                                        width: 147px;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                            .contents:last-child{
+                                border: none;
+                            }
+                        }
+                    }
+                    .request_wrapper{
+                        width: 290px;
+                        height: 232px;
+                        border: 1px solid #c2c2c2;
+                        display: flex;
+                        flex-direction: column;
+                        .header{
+                            height: 52px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: color.$color-007;
+                        }
+                        .textarea{
+                            textarea{
+                                width: 100%;
+                                resize: none;
+                                height: 178px;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

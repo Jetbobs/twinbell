@@ -1,0 +1,1018 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app #my_page_header {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+#app #my_page_header #page_location {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#app #my_page_header #title {
+  font-size: 72px;
+  color: #222;
+}
+#app #my_page_header #title span {
+  color: #007dfb;
+}
+#app #my_page_nav {
+  padding: 0 16.3%;
+  margin-bottom: 30px;
+}
+#app #my_page_nav ul {
+  display: flex;
+}
+#app #my_page_nav ul .nav_item {
+  padding: 12px 0;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #my_page_nav ul .active {
+  background-color: #7E746C;
+  color: #fff;
+}
+#app #my_page_nav ul .nav_item:first-child {
+  border-left: 1px solid #ddd;
+}
+#app #print_select {
+  width: 1000px;
+  margin: 0 auto;
+}
+#app #print_select .contents_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper .contents table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#app #print_select .contents_wrapper .contents table tr td {
+  border: 1px solid #ddd;
+}
+#app #print_select .contents_wrapper .contents table tr td #title {
+  width: 458px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 0px 25px;
+}
+#app #print_select .contents_wrapper .contents table tr td input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#app #print_select .contents_wrapper .contents table tr td:first-child {
+  width: 160px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+#app #print_select .contents_wrapper .contents table tr td:first-child span {
+  color: #ff0000;
+}
+#app #print_select .contents_wrapper .contents table tr td:nth-child(2) {
+  padding: 14.5px 30px;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap .item {
+  width: 78px;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+  margin-bottom: 10px;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap .item .text_wrap {
+  text-align: center;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap .active .img {
+  background-color: #e6f0ff;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap .active .text_wrap .title {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_00 .select_wrap .active .text_wrap .desc {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_00 .size_input_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_00 .size_input_wrap .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_00 .size_input_wrap .item .input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_00 .size_input_wrap .item .input input {
+  width: 100px;
+  height: 32px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction {
+  width: 288px;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper {
+  display: flex;
+  padding: 30px 10px;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper .wrapper .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: 222;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper .wrapper .title span {
+  color: #ff0000;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper .wrapper .select select {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #888;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper .info_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_00 #print_direction .table_wrapper .info_wrap .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_01 .input input {
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_02 .input input {
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_03 .select select {
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #888;
+  padding: 0 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap .item {
+  width: 78px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+  margin-bottom: 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap .item .text_wrap {
+  text-align: center;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap .active .img {
+  background-color: #e6f0ff;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap .active .text_wrap .title {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .select_wrap .active .text_wrap .desc {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .wrapper .check_box {
+  padding-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .wrapper .info_wrap {
+  display: flex;
+  gap: 15px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_wrapper .wrapper .info_wrap .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .select select {
+  border: 1px solid #ddd;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #888;
+  padding: 0 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .w_120 select {
+  width: 120px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .check_box_wrapper {
+  display: flex;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .check_box_wrapper .check_box input {
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .check_box_wrapper .check_box label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .btn_wrapper {
+  display: flex;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_04 .cover_paper_wrapper .btn_wrapper .btn {
+  width: 81px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #004DA1;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper, #app #print_select .contents_wrapper #t_06 .cover_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap .item, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap .item {
+  width: 78px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap .item .img, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+  margin-bottom: 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap .item .text_wrap, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap .item .text_wrap {
+  text-align: center;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap .active .img, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap .active .img {
+  background-color: #e6f0ff;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap .active .text_wrap .title, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap .active .text_wrap .title {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .select_wrap .active .text_wrap .desc, #app #print_select .contents_wrapper #t_06 .cover_wrapper .select_wrap .active .text_wrap .desc {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .wrapper, #app #print_select .contents_wrapper #t_06 .cover_wrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .wrapper .check_box, #app #print_select .contents_wrapper #t_06 .cover_wrapper .wrapper .check_box {
+  padding-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .wrapper .info_wrap, #app #print_select .contents_wrapper #t_06 .cover_wrapper .wrapper .info_wrap {
+  display: flex;
+  gap: 15px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_wrapper .wrapper .info_wrap .info, #app #print_select .contents_wrapper #t_06 .cover_wrapper .wrapper .info_wrap .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .select select, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .select select {
+  border: 1px solid #ddd;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #888;
+  padding: 0 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .w_120 select, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .w_120 select {
+  width: 120px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .info, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .check_box_wrapper, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .check_box_wrapper {
+  display: flex;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .check_box_wrapper .check_box input, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .check_box_wrapper .check_box input {
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .check_box_wrapper .check_box label, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .check_box_wrapper .check_box label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .btn_wrapper, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .btn_wrapper {
+  display: flex;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_05 .cover_paper_wrapper .btn_wrapper .btn, #app #print_select .contents_wrapper #t_06 .cover_paper_wrapper .btn_wrapper .btn {
+  width: 81px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #004DA1;
+}
+#app #print_select .contents_wrapper #t_05 .input input, #app #print_select .contents_wrapper #t_06 .input input {
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap .item {
+  width: 78px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+  margin-bottom: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap .item .text_wrap {
+  text-align: center;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap .active .img {
+  background-color: #e6f0ff;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap .active .text_wrap .title {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .select_wrap .active .text_wrap .desc {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .wrapper .check_box {
+  padding-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .wrapper .info_wrap {
+  display: flex;
+  gap: 15px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_wrapper .wrapper .info_wrap .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .select select {
+  border: 1px solid #ddd;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #888;
+  padding: 0 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .w_120 select {
+  width: 120px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .check_box_wrapper {
+  display: flex;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .check_box_wrapper .check_box input {
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .check_box_wrapper .check_box label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .btn_wrapper {
+  display: flex;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_07 .cover_paper_wrapper .btn_wrapper .btn {
+  width: 81px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #004DA1;
+}
+#app #print_select .contents_wrapper #t_07 .input input {
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap .item {
+  width: 78px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+  margin-bottom: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap .item .text_wrap {
+  text-align: center;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap .active .img {
+  background-color: #e6f0ff;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap .active .text_wrap .title {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .select_wrap .active .text_wrap .desc {
+  color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .wrapper .check_box {
+  padding-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .wrapper .info_wrap {
+  display: flex;
+  gap: 15px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_wrapper .wrapper .info_wrap .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .select select {
+  border: 1px solid #ddd;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #888;
+  padding: 0 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .w_120 select {
+  width: 120px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .info {
+  display: flex;
+  background-color: #888;
+  width: 115px;
+  height: 35px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .check_box_wrapper {
+  display: flex;
+  gap: 30px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .check_box_wrapper .check_box input {
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .check_box_wrapper .check_box label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .btn_wrapper {
+  display: flex;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .cover_paper_wrapper .btn_wrapper .btn {
+  width: 81px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #004DA1;
+}
+#app #print_select .contents_wrapper #t_08 .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#app #print_select .contents_wrapper #t_08 .wrapper .input input {
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#app #print_select .contents_wrapper #t_08 .wrapper .plus {
+  display: flex;
+  align-items: center;
+}
+#app #print_select .contents_wrapper #t_09 .request_wrapper {
+  display: flex;
+  border: 1px solid #e8e8e8;
+}
+#app #print_select .contents_wrapper #t_09 .request_wrapper .title {
+  width: 145px;
+  height: 100px;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app #print_select .contents_wrapper #t_09 .request_wrapper .textarea {
+  width: 755px;
+  height: 100px;
+}
+#app #print_select .contents_wrapper #t_09 .request_wrapper .textarea textarea {
+  width: 755px;
+  height: 100px;
+  border: none;
+  resize: none;
+}
+#app #print_select .contents_wrapper #t_09 .request_wrapper .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #666;
+}
+#app #print_select .contents_wrapper #t_10 .attached {
+  display: flex;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 10px 0px;
+}
+#app #print_select .contents_wrapper #t_10 .attached .title {
+  width: 145px;
+  display: flex;
+  justify-content: center;
+}
+#app #print_select .contents_wrapper #t_10 .attached .item_wrapper {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_10 .attached .item_wrapper .item {
+  display: flex;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_10 .attached .item_wrapper .active {
+  color: #ff0000;
+}
+#app #print_select .contents_wrapper #t_11 .upload_wrapper {
+  display: flex;
+  border: 1px solid #e9e9e9;
+}
+#app #print_select .contents_wrapper #t_11 .upload_wrapper .title {
+  width: 145px;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app #print_select .contents_wrapper #t_11 .upload_wrapper .name {
+  width: 735px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d9d9d9;
+  padding: 0 10px;
+}
+#app #print_select .contents_wrapper #t_11 .upload_wrapper .btn input {
+  display: none;
+}
+#app #print_select .contents_wrapper #t_11 .upload_wrapper .btn label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #000;
+  width: 120px;
+  height: 45px;
+}
+#app #print_select .contents_wrapper #t_11 .desc {
+  padding: 10px 155px;
+}
+#app #print_select .contents_wrapper #t_11 .desc .text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ff0000;
+  line-height: 1.6;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select {
+  width: 232px;
+  height: 380px;
+  border: 1px solid #ddd;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fafbfd;
+  text-align: center;
+  width: 232px;
+  height: 79px;
+  border-bottom: 1px solid #ddd;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .header .title {
+  color: #222;
+  font-size: 21px;
+  font-weight: 600;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .header .desc {
+  font-size: 10px;
+  font-weight: 600;
+  color: #222;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .price_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .price_wrapper .price {
+  display: flex;
+  justify-content: center;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .price_wrapper .etc_price {
+  display: flex;
+  justify-content: center;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .btn_wrapper {
+  width: 202px;
+  height: 146px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ddd;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .btn_wrapper .btn {
+  width: 154px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .btn_wrapper .black {
+  background-color: #000;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .print_select .body .btn_wrapper .grey {
+  background-color: #ddd;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .active .header {
+  background-color: #FF9100;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .active .header .title {
+  color: #fff;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .active .header .desc {
+  color: #fff;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .active .body .price_wrapper .price {
+  color: #FF9100;
+}
+#app #print_select .contents_wrapper #t_12 .wrapper .active .body .btn_wrapper .order {
+  background-color: #FF9100;
+}
+#app #print_select .contents_wrapper #t_13 .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#app #print_select .contents_wrapper #t_13 .wrapper .file {
+  border: 1px solid #707070;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ff0000;
+  font-weight: 400;
+}
+#app #print_select .contents_wrapper #t_14 .img {
+  display: none;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: 0;
+  right: -300px;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper {
+  width: 290px;
+  height: 490px;
+  border: 1px solid #c2c2c2;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper .header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper .body .contents {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px dashed #c2c2c2;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper .body .contents .item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper .body .contents .item .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper .body .contents .item .desc {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 147px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .order_wrapper .body .contents:last-child {
+  border: none;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .request_wrapper {
+  width: 290px;
+  height: 232px;
+  border: 1px solid #c2c2c2;
+  display: flex;
+  flex-direction: column;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .request_wrapper .header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007dfb;
+}
+#app #print_select .contents_wrapper #t_15 .wrapper .request_wrapper .textarea textarea {
+  width: 100%;
+  resize: none;
+  height: 178px;
+  border: none;
+}/*# sourceMappingURL=book_create_style.css.map */

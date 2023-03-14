@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/portfolio_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    const nav_arr = [
+        { title: '마이페이지' },
+        { title: '주문 / 배송조회' },
+        { title: '완료된 거래내역' },
+        { title: '견적서 관리' },
+        { title: '내 정보' },
+        { title: '가상계좌관리' },
+        { title: '문의하기' },
+        { title: '배송지 관리' },
+        { title: '세금계산서' },
+        { title: '장바구니 내역' },
+        { title: '포인트 및 쿠폰' },
+        { title: 'E 머니 관리' }]
+</script>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header.html"></header>
+        <!-- my_page_header -->
+        <section id="my_page_header">
+            <div id="page_location">
+                <span class="main_location f15S222">홈</span>
+                ·
+                <span class="second_location f15S222">트윈벨미디어</span>
+                ··
+                <span class="last_location f15S007">보유장비현황 / 증명서 <i class="fa-solid fa-arrow-down-long"></i></span>
+            </div>
+            <div id="title">
+                포트폴리오 <span>.</span>
+                <div class="subtitle f18R222">
+                    트윈벨미디어의 제작 및 납품 포트폴리오를 모았습니다.
+                </div>
+            </div>
+        </section>
+        <!-- <section id="tab">
+            <div class="tab_wrap">
+                <div class="tab f15S666 active" id="web_printing">
+                    윤전인쇄
+                </div>
+                <div class="tab f15S666" id="commerce_printing">
+                    상업인쇄
+                </div>
+                <div class="tab f15S666" id="post_processing">
+                    후가공 기계
+                </div>
+                <div class="tab f15S666" id="patent">
+                    특허 및 증명서
+                </div>
+            </div>
+        </section> -->
+        <section id="portfolio">
+            <div class="header">
+                <div class="total f18B222">
+                    총 <span>19</span>개
+                </div>
+                <div class="search_box">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">전체</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="search f18S222">
+                        <input type="search" placeholder="검색어를 입력하세요." onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = '검색어를 입력하세요.'">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div id="tab">
+                <div class="tab f15S666 active">
+                    전체
+                </div>
+                <div class="tab f15S666">
+                    학원 / 교육교재
+                </div>
+                <div class="tab f15S666">
+                    일반 / 출판도서
+                </div>
+                <div class="tab f15S666">
+                    카달로그 / 브로셔
+                </div>
+                <div class="tab f15S666">
+                    정기간행물
+                </div>
+                <div class="tab f15S666">
+                    보고서 / 매뉴얼
+                </div>
+                <div class="tab f15S666">
+                    리플렛 / 팜플렛
+                </div>
+                <div class="tab f15S666">
+                    포스터 / 표지
+                </div>
+            </div>
+            <div class="item_wrap">
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="i_00">
+                    <div class="img">
+                        <img src="./img/portfolio/마스크 그룹 6.png" alt="">
+                    </div>
+                    <div class="text_wrap">
+                        <div class="title f18B222">
+                            IKEA 브로셔
+                        </div>
+                    </div>
+                    <div class="tag f15SFFF">
+                        예정
+                    </div>
+                    <div class="hover f18SFFF">
+                        <label for="banner_popup"><span class="f14SFFF">자세히보기</span></label>
+                    </div>
+                    <div class="modal f18SFFF">
+                        <input type="checkbox" id="banner_popup">
+                        <label for="banner_popup"><span class="f14SFFF"></span></label>
+                        <div>
+                            <div>
+                                <label for="banner_popup"></label>
+                                <!-- 배너 이미지 -->
+                                <div class="modal_banner_popup">
+                                    <div class="contents_wrap">
+                                        <div class="header">
+                                            <div class="title f18S222">
+                                                Shaka 전단지
+                                            </div>
+                                            <div class="close">
+                                                <label for="banner_popup"><img src="./img/portfolio/그룹 18852.png" alt=""></i></label>
+                                            </div>
+                                        </div>
+                                        <div class="item_img">
+                                            <img src="./img/portfolio/NoPath.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <label for="banner_popup"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="option_wrap">
+                <div class="option f12R888 active" id="15">
+                    15개
+                </div>
+                <div class="option f12R888" id="30">
+                    30개
+                </div>
+                <div class="option f12R888" id="50">
+                    50개
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer include-html="../common/footer.html"></footer>
+        <!-- include function call -->
+        <script>includeHTML();</script>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+            closeText: "닫기",
+            currentText: "오늘",
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            weekHeader: "주",
+            yearSuffix: '년'
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.datepicker').datepicker();
+    })
+</script>
+<!-- <script>
+    $('[data-toggle="datepicker"]').datepicker();
+</script> -->
+
+
+<script src="/main_page/js/slide.js"></script>
+<script src="/common/js/top_btn.js"></script>
+
+</html>
