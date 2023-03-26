@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang=ko-KR],
+html[lang=ko] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang=ko-KR] body,
+html[lang=ko] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang=en],
+html *[lang=en] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang=en] body,
+html *[lang=en] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 80px;
+}
+header nav {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0px;
+  padding-left: 70px;
+  padding-right: 180px;
+}
+header nav .nav_wrap {
+  width: 1281px;
+}
+header nav .nav_wrap ul {
+  width: 1281px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .nav_wrap ul li .item {
+  display: flex;
+  gap: 5px;
+}
+header nav .dark_mode {
+  display: flex;
+  gap: 10px;
+}
+
+main {
+  margin-top: 30px;
+}/*# sourceMappingURL=header_admin_style.css.map */

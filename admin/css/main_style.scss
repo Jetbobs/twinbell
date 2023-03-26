@@ -1,0 +1,347 @@
+@use '../../common/css/color/color';
+@use '../../common/css/font/font_mixin';
+@import "../../common/css/common_form_admin.scss";
+
+
+
+#app {
+    box-sizing: border-box;
+
+    .section_wrap {
+        padding-top: 35px;
+        padding-right: 180px;
+
+        #header {
+            display: block;
+            margin: 0;
+            margin-bottom: 40px;
+
+            .wrapper {
+                display: flex;
+
+                .card_wrap {
+                    width: 100%;
+                    display: flex;
+                    gap: 15px;
+
+                    .card {
+                        width: 370px;
+                        height: 195px;
+                        color: #fff;
+                        padding: 12px 17px 17px 22px;
+
+                        .title {
+                            font-size: 28px;
+                            color: #fff;
+                            font-weight: 400;
+                            padding-bottom: 10px;
+                        }
+
+                        .number {
+                            display: flex;
+                            justify-content: end;
+                            font-size: 45px;
+                            font-weight: 400;
+                            padding-bottom: 10px;
+                        }
+
+                        .desc_wrap {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 13px;
+                            font-weight: 400;
+
+                            .date_wrap {
+                                display: flex;
+                                gap: 20px;
+
+                                .date_title {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 5px;
+                                }
+
+                                .date_number {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    #revenue {
+                        background-color: #5388FA;
+                    }
+
+                    #charge {
+                        background-color: #01cba5;
+                    }
+
+                    #accident {
+                        background-color: #00c0f0;
+                    }
+
+                    #user {
+                        background-color: #a674ed;
+                    }
+                }
+
+                .date_pick_wrap {
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    width: 77px;
+
+                    .date_pick {
+                        height: 66px;
+                        color: #b6b6b6;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                        padding: 0px 15.5px;
+                    }
+
+                    .date_pick:not(:last-child) {
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+
+        #title {
+            font-size: 70px;
+            font-weight: 400;
+            color: #222;
+            margin-bottom: 40px;
+        }
+
+        .chart {
+            .chart_container {
+                display: flex;
+                justify-content: space-between;
+
+                .chart_wrap {
+                    .tab_container {
+                        .tab_wrap {
+                            display: flex;
+
+                            .tab:first-child {
+                                border-left: 1px solid #ddd;
+                            }
+
+                            .tab {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                border-top: 1px solid #ddd;
+                                border-bottom: 1px solid #ddd;
+                                border-right: 1px solid #ddd;
+                                width: 110px;
+                                height: 35px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+
+                            .active {
+                                background-color: #ffaa00;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    #chart_00 {
+                        width: 890px;
+                        height: 350px;
+                        margin-bottom: 30px;
+                    }
+
+                    #chart_01,
+                    #chart_02,
+                    #chart_03,
+                    #chart_04 {
+                        margin-bottom: 30px;
+                    }
+
+                    #table_00 {
+                        width: 921px;
+                    }
+
+                    table {
+                        border-collapse: collapse;
+
+                        thead {
+                            th:first-child {
+                                width: 80px;
+                            }
+
+                            th {
+                                width: 70px;
+                                height: 35px;
+                                font-size: 14px;
+                                border: 1px solid #ddd;
+                                background-color: #f9f9f9;
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 14px;
+                                    text-align: center;
+                                    border: 1px solid #ddd;
+                                    height: 35px;
+                                }
+                            }
+                        }
+                    }
+
+                    #table_04 {
+                        table {
+                            thead {
+                                th:first-child {
+                                    width: 80px;
+                                }
+
+                                th {
+                                    width: 47px;
+                                    height: 35px;
+                                    font-size: 14px;
+                                    border: 1px solid #ddd;
+                                    background-color: #f9f9f9;
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        width: 47px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #table_05, #table_08 {
+                        table {
+                            thead {
+                                th:first-child {
+                                    width: 80px;
+                                }
+
+                                th {
+                                    width: 100px;
+                                    height: 35px;
+                                    font-size: 14px;
+                                    border: 1px solid #ddd;
+                                    background-color: #f9f9f9;
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        width: 47px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #table_06 {
+                        table {
+                            thead {
+                                th:first-child {
+                                    width: 80px;
+                                }
+
+                                th {
+                                    width: 100px;
+                                    height: 35px;
+                                    font-size: 14px;
+                                    border: 1px solid #ddd;
+                                    background-color: #f9f9f9;
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        width: 47px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #table_07 {
+                        table {
+                            thead {
+                                th:first-child {
+                                    width: 80px;
+                                }
+
+                                th {
+                                    width: 300px;
+                                    height: 35px;
+                                    font-size: 14px;
+                                    border: 1px solid #ddd;
+                                    background-color: #f9f9f9;
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        width: 47px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .chart {
+            .title {
+                font-size: 30px;
+                font-weight: 400;
+            }
+
+            .unit {
+                font-size: 12px;
+                display: flex;
+                justify-content: end;
+                margin-bottom: 10px;
+            }
+        }
+
+        #c_2, #c_5
+        {
+        .chart_container {
+            .chart_wrap {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    #c_4 {
+        .chart_wrap {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    section {
+        padding: 0 70px;
+    }
+}
+
+}

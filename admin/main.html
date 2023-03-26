@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main_style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/css/font/fonts.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datepicker -->
+    <!-- <script src="../common/date_picker/datepicker.js"></script>  -->
+    <!-- <link rel="stylesheet" href="../common/date_picker/datepicker.css"> -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- header -->
+    <link rel="stylesheet" href="/common/css/header.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/common_form_admin.css">
+    <link rel="stylesheet" href="/main_page/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- menu -->
+    <script src="/common/js/menu.js"></script>
+    <!-- include.js -->
+    <script src="../common/js/include.js"></script>
+    <!-- nav_active -->
+    <script src="./js/nav_active.js"></script>
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header include-html="../common/header_admin.html"></header>
+        <div class="section_wrap">
+            <section id="header">
+                <div class="wrapper">
+                    <div class="card_wrap">
+                        <div class="card" id="revenue">
+                            <div class="title">
+                                기간별 매출액
+                            </div>
+                            <div class="number">
+                                89,887,883,555
+                            </div>
+                            <div class="desc_wrap">
+                                <div class="date_wrap">
+                                    <div class="date_title">
+                                        <div class="dt" id="y_t">
+                                            어제
+                                        </div>
+                                        <div class="dt" id="t_t">
+                                            오늘
+                                        </div>
+                                        <div class="dt" id="m_t">
+                                            월
+                                        </div>
+                                    </div>
+                                    <div class="date_number">
+                                        <div class="dn" id="y_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="t_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="m_n">
+                                            88,887,833,300
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    (단위 : 원)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="charge">
+                            <div class="title">
+                                기간별 결제건수
+                            </div>
+                            <div class="number">
+                                89,887,883,555
+                            </div>
+                            <div class="desc_wrap">
+                                <div class="date_wrap">
+                                    <div class="date_title">
+                                        <div class="dt" id="y_t">
+                                            어제
+                                        </div>
+                                        <div class="dt" id="t_t">
+                                            오늘
+                                        </div>
+                                        <div class="dt" id="m_t">
+                                            월
+                                        </div>
+                                    </div>
+                                    <div class="date_number">
+                                        <div class="dn" id="y_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="t_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="m_n">
+                                            88,887,833,300
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    (단위 : 건)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="accident">
+                            <div class="title">
+                                기간별 사고건수
+                            </div>
+                            <div class="number">
+                                89,887,883,555
+                            </div>
+                            <div class="desc_wrap">
+                                <div class="date_wrap">
+                                    <div class="date_title">
+                                        <div class="dt" id="y_t">
+                                            어제
+                                        </div>
+                                        <div class="dt" id="t_t">
+                                            오늘
+                                        </div>
+                                        <div class="dt" id="m_t">
+                                            월
+                                        </div>
+                                    </div>
+                                    <div class="date_number">
+                                        <div class="dn" id="y_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="t_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="m_n">
+                                            88,887,833,300
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    (단위 : 건)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="user">
+                            <div class="title">
+                                기간별 이용자수
+                            </div>
+                            <div class="number">
+                                89,887,883,555
+                            </div>
+                            <div class="desc_wrap">
+                                <div class="date_wrap">
+                                    <div class="date_title">
+                                        <div class="dt" id="y_t">
+                                            어제
+                                        </div>
+                                        <div class="dt" id="t_t">
+                                            오늘
+                                        </div>
+                                        <div class="dt" id="m_t">
+                                            월
+                                        </div>
+                                    </div>
+                                    <div class="date_number">
+                                        <div class="dn" id="y_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="t_n">
+                                            88,887,833,300
+                                        </div>
+                                        <div class="dn" id="m_n">
+                                            88,887,833,300
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    (단위 : 명)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_pick_wrap">
+                            <div class="date_pick" id="pick_y">
+                                어제
+                            </div>
+                            <div class="date_pick" id="pick_t">
+                                오늘
+                            </div>
+                            <div class="date_pick" id="pick_m">
+                                이번 달
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="title">
+                2022년 4월 21일 기준
+            </section>
+            <!-- chart01~02 -->
+            <section class="chart" id="c_0">
+                <div class="title">
+                    ※ 매출 분석 차트
+                </div>
+                <div class="chart_container">
+                    <div class="chart_wrap">
+                        <div id="chart_00">
+                            <canvas id="myChart_00" style="width: 890px;height: 350px;"></canvas>
+                        </div>
+                        <div id="table_00">
+                            <div class="unit">
+                                (단위 : 천만원)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>1월</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                    <th>5월</th>
+                                    <th>6월</th>
+                                    <th>7월</th>
+                                    <th>8월</th>
+                                    <th>9월</th>
+                                    <th>10월</th>
+                                    <th>11월</th>
+                                    <th>12월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>목표매출</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>실매출</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>달성률</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>입금액</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미수금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="chart_wrap">
+                        <div id="chart_01">
+                            <canvas id="myChart_01" style="width : 291px; height:  350px;"></canvas>
+                        </div>
+                        <div id="table_01">
+                            <div class="unit">
+                                (단위 : 천만원)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>2021년</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>주문건수</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제건수</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>견적건수</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>입금액</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미수금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="chart_wrap">
+                        <div id="chart_02">
+                            <canvas id="myChart_02" style="width : 291px; height:  350px;"></canvas>
+                        </div>
+                        <div id="table_02">
+                            <div class="unit">
+                                (단위 : 천만원)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>2021년</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>주문건수</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제건수</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>견적건수</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                        <td>86%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>입금액</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>미수금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- chart03~04 -->
+            <section class="chart" id="c_1">
+                <div class="title">
+                    ※ 상품별 매출 분석 차트
+                </div>
+                <div class="chart_container">
+                    <div class="chart_wrap">
+                        <div id="chart_03">
+                            <canvas id="myChart_03" style="width: 890px; height: 350px;"></canvas>
+                        </div>
+                        <div id="table_03">
+                            <div class="unit">
+                                (단위 : 천만원)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>1월</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                    <th>5월</th>
+                                    <th>6월</th>
+                                    <th>7월</th>
+                                    <th>8월</th>
+                                    <th>9월</th>
+                                    <th>10월</th>
+                                    <th>11월</th>
+                                    <th>12월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>디지털 윤전</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>고급인쇄</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>명함</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>상업인쇄</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>합계</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="chart_wrap">
+                        <div id="chart_04">
+                            <canvas id="myChart_04" style="width : 607px; height:  350px;"></canvas>
+                        </div>
+                        <div id="table_04">
+                            <div class="unit">
+                                (단위 : 천만원)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>2022년</th>
+                                    <th>1월</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                    <th>5월</th>
+                                    <th>6월</th>
+                                    <th>7월</th>
+                                    <th>8월</th>
+                                    <th>9월</th>
+                                    <th>10월</th>
+                                    <th>11월</th>
+                                    <th>12월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>사고건수</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>접수부</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>디지털부</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>후가공</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- chart05 -->
+            <section class="chart" id="c_2">
+                <div class="title">
+                    ※ 상품별 매출 분석 차트
+                </div>
+                <div class="chart_container">
+                    <div class="chart_wrap">
+                        <div id="chart_05">
+                            <canvas id="myChart_05" style="width: 516px; height: 350px;"></canvas>
+                        </div>
+                        <div id="table_05">
+                            <div class="unit">
+
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>1월</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                    <th>5월</th>
+                                    <th>6월</th>
+                                    <th>7월</th>
+                                    <th>8월</th>
+                                    <th>9월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>주문금액</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주문건수</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제금액</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제건수</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>취소금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>취소건수</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>환불금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>환불건수</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- no chart  table 06-->
+            <section class="chart" id="c_3">
+                <div class="title">
+                    ※ 상품별 매출 분석 차트
+                </div>
+                <div class="chart_container">
+
+                    <div class="chart_wrap">
+                        <div class="tab_container">
+                            <div class="tab_wrap">
+                                <div class="tab" id="revenue_state">
+                                    일별매출 현황
+                                </div>
+                                <div class="tab active" id="order_state">
+                                    주문처리 현황
+                                </div>
+                                <div class="tab" id="emoney_state">
+                                    고객 이머니
+                                </div>
+                                <div class="tab" id="coupon_state">
+                                    쿠폰 현황
+                                </div>
+                                <div class="tab" id="post_state">
+                                    게시물 현황
+                                </div>
+                            </div>
+                        </div>
+                        <div id="table_06">
+                            <div class="unit">
+                                (단위 : 건)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>결재대기 주문</th>
+                                    <th>결제완료 주문</th>
+                                    <th>접수대기 주문</th>
+                                    <th>시안동의 대기</th>
+                                    <th>시안동의 완료</th>
+                                    <th>인쇄 승인 주문</th>
+                                    <th>인쇄완료</th>
+                                    <th>후가공 완료</th>
+                                    <th>제작완료</th>
+                                    <th>입고완료</th>
+                                    <th>택배발송</th>
+                                    <th>출고완료</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>4월 15일</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 16일</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 17일</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 18일</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 19일</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 20일</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 21일</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>합계</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>평균</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- chart06 table 07 -->
+            <section class="chart" id="c_4">
+                <div class="title">
+                    ※ 상품별 매출 분석 차트
+                </div>
+                <div class="chart_container">
+                    <div class="chart_wrap">
+                        <div id="chart_06">
+                            <canvas id="myChart_06" style="width: 517px; height: 327.81px;"></canvas>
+                        </div>
+                        <div id="table_07">
+                            <div class="unit">
+
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>E-머니 사용금액</th>
+                                    <th>E-머니 잔고</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>4월 15일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 16일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 17일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 18일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 19일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 20일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 21일</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>합계</td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                        <td>989,898,989,898원
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- chart07 -->
+            <section class="chart" id="c_5">
+                <div class="title">
+                    ※ 상품별 매출 분석 차트
+                </div>
+                <div class="chart_container">
+                    <div class="chart_wrap">
+                        <div id="chart_07">
+                            <canvas id="myChart_07" style="width: 516px; height: 350px;"></canvas>
+                        </div>
+                        <div id="table_08">
+                            <div class="unit">
+
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>1월</th>
+                                    <th>2월</th>
+                                    <th>3월</th>
+                                    <th>4월</th>
+                                    <th>5월</th>
+                                    <th>6월</th>
+                                    <th>7월</th>
+                                    <th>8월</th>
+                                    <th>9월</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>주문금액</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                        <td>912,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주문건수</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                        <td>848,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제금액</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                        <td>547,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제건수</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>취소금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>취소건수</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>환불금액</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>환불건수</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                        <td>301,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- no chart  table 09-->
+            <section class="chart" id="c_6">
+                <div class="title">
+                    ※ 상품별 매출 분석 차트
+                </div>
+                <div class="chart_container">
+
+                    <div class="chart_wrap">
+                        <div class="tab_container">
+                            <div class="tab_wrap">
+                                <div class="tab" id="revenue_state">
+                                    일별매출 현황
+                                </div>
+                                <div class="tab active" id="order_state">
+                                    주문처리 현황
+                                </div>
+                                <div class="tab" id="emoney_state">
+                                    고객 이머니
+                                </div>
+                                <div class="tab" id="coupon_state">
+                                    쿠폰 현황
+                                </div>
+                                <div class="tab" id="post_state">
+                                    게시물 현황
+                                </div>
+                            </div>
+                        </div>
+                        <div id="table_06">
+                            <div class="unit">
+                                (단위 : 건)
+                            </div>
+                            <table>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>결재대기 주문</th>
+                                    <th>결제완료 주문</th>
+                                    <th>접수대기 주문</th>
+                                    <th>시안동의 대기</th>
+                                    <th>시안동의 완료</th>
+                                    <th>인쇄 승인 주문</th>
+                                    <th>인쇄완료</th>
+                                    <th>후가공 완료</th>
+                                    <th>제작완료</th>
+                                    <th>입고완료</th>
+                                    <th>택배발송</th>
+                                    <th>출고완료</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>4월 15일</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                        <td>500건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 16일</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                        <td>250건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 17일</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                        <td>450건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 18일</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                        <td>600건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 19일</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                        <td>120건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 20일</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                        <td>234건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4월 21일</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                        <td>400건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>합계</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                        <td>2554건</td>
+                                    </tr>
+                                    <tr>
+                                        <td>평균</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                        <td>364건</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <script>includeHTML();</script>
+        <!-- section00 chart_00 line -->
+        <script>
+            const ctx_00 = document.getElementById('myChart_00');
+
+            new Chart(ctx_00, {
+                type: 'line',
+                data: {
+                    labels: ['6월', '7월', '8월', '9월', '10월', '11월', '12월', '1월', '2월', '3월', '4월', '5월'],
+                    datasets: [{
+                        label: '목표매출',
+                        data: [12, 19, 3, 5, 2, 3, 6, 35, 14, 22, 14, 7],
+                        borderWidth: 1,
+                        borderColor: '#b9b9b9',
+                        backgroundColor: '#b9b9b9'
+                    },
+                    {
+                        label: '전년동월',
+                        data: [15, 14, 4, 9, 4, 1, 14, 31, 12, 27, 19, 9],
+                        borderWidth: 1,
+                        borderColor: '#6AC4F2',
+                        backgroundColor: '#6AC4F2'
+                    },
+                    {
+                        label: '현재',
+                        data: [22, 9, 4, 8, 12, 30, 26, 5, 15, 26, 12, 9],
+                        borderWidth: 1,
+                        borderColor: '#a4ca41',
+                        backgroundColor: '#a4ca41',
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+        <!-- section00 chart_00 bar_00-->
+        <script>
+            const ctx_01 = document.getElementById('myChart_01');
+
+            new Chart(ctx_01, {
+                type: 'bar',
+                data: {
+                    labels: ['2월', '3월', '4월'],
+                    datasets: [{
+                        label: '주문금액',
+                        data: [12, 19, 3],
+                        borderWidth: 1,
+                        borderColor: '#6ac4f2',
+                        backgroundColor: '#6ac4f2'
+                    },
+                    {
+                        label: '결제금액',
+                        data: [15, 14, 4],
+                        borderWidth: 1,
+                        borderColor: '#ffaa00',
+                        backgroundColor: '#ffaa00'
+                    },
+                    {
+                        label: '견적금액',
+                        data: [22, 9, 4],
+                        borderWidth: 1,
+                        borderColor: '#a4ca41',
+                        backgroundColor: '#a4ca41',
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+        <!-- section00 chart_00 bar_01-->
+        <script>
+            const ctx_02 = document.getElementById('myChart_02');
+
+            new Chart(ctx_02, {
+                type: 'bar',
+                data: {
+                    labels: ['2월', '3월', '4월'],
+                    datasets: [{
+                        label: '주문금액',
+                        data: [12, 19, 3],
+                        borderWidth: 1,
+                        borderColor: '#6ac4f2',
+                        backgroundColor: '#6ac4f2'
+                    },
+                    {
+                        label: '결제금액',
+                        data: [15, 14, 4],
+                        borderWidth: 1,
+                        borderColor: '#ffaa00',
+                        backgroundColor: '#ffaa00'
+                    },
+                    {
+                        label: '견적금액',
+                        data: [22, 9, 4],
+                        borderWidth: 1,
+                        borderColor: '#a4ca41',
+                        backgroundColor: '#a4ca41',
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+        <!-- section01 chart_01 line -->
+        <script>
+            const ctx_03 = document.getElementById('myChart_03');
+
+            new Chart(ctx_03, {
+                type: 'line',
+                data: {
+                    labels: ['6월', '7월', '8월', '9월', '10월', '11월', '12월', '1월', '2월', '3월', '4월', '5월'],
+                    datasets: [{
+                        label: '디지털',
+                        data: [12, 19, 3, 5, 2, 3, 6, 35, 14, 22, 14, 7],
+                        borderWidth: 1,
+                        borderColor: '#ffaa00',
+                        backgroundColor: '#ffaa00'
+                    },
+                    {
+                        label: '고급인쇄',
+                        data: [15, 14, 4, 9, 4, 1, 14, 31, 12, 27, 19, 9],
+                        borderWidth: 1,
+                        borderColor: '#ff7575',
+                        backgroundColor: '#ff7575'
+                    },
+                    {
+                        label: '명함',
+                        data: [22, 9, 4, 8, 12, 30, 26, 5, 15, 26, 12, 9],
+                        borderWidth: 1,
+                        borderColor: '#5089fd',
+                        backgroundColor: '#5089fd',
+                    },
+                    {
+                        label: '상업인쇄(옵셋)',
+                        data: [32, 19, 14, 8, 6, 21, 16, 15, 17, 6, 14, 19],
+                        borderWidth: 1,
+                        borderColor: '#a674f1',
+                        backgroundColor: '#a674f1',
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+        <!-- section01 chart_01 bar -->
+        <script>
+            const ctx_04 = document.getElementById('myChart_04');
+
+            new Chart(ctx_04, {
+                type: 'bar',
+                data: {
+                    labels: ['6월', '7월', '8월', '9월', '10월', '11월', '12월', '1월', '2월', '3월', '4월', '5월'],
+                    datasets: [{
+                        label: '전년동월',
+                        data: [22, 9, 4, 8, 12, 30, 26, 5, 15, 26, 12, 9],
+                        borderWidth: 1,
+                        borderColor: '#cccccc',
+                        backgroundColor: '#cccccc'
+                    },
+                    {
+                        label: '현재',
+                        data: [32, 19, 14, 8, 6, 21, 16, 15, 17, 6, 14, 19],
+                        borderWidth: 1,
+                        borderColor: '#ff7575',
+                        backgroundColor: '#ff7575'
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+        <script>
+            const ctx_05 = document.getElementById('myChart_05');
+
+            new Chart(ctx_05, {
+                type: 'line',
+                data: {
+                    labels: ['15일', '16일', '17일', '18일', '19일', '20일', '21일'],
+                    datasets: [{
+                        label: '주문건수',
+                        data: [22, 9, 4, 8, 12, 30, 26],
+                        borderWidth: 1,
+                        borderColor: '#ff7575',
+                        backgroundColor: '#ff7575'
+                    },
+                    {
+                        label: '결제건수',
+                        data: [32, 19, 14, 8, 6, 21, 16],
+                        borderWidth: 1,
+                        borderColor: '#ffaa00',
+                        backgroundColor: '#ffaa00'
+                    },
+                    {
+                        label: '취소건수',
+                        data: [12, 3, 4, 18, 26, 12, 15],
+                        borderWidth: 1,
+                        borderColor: '#a4ca41',
+                        backgroundColor: '#a4ca41'
+                    }, {
+                        label: '환불건수',
+                        data: [19, 5, 20, 11, 23, 13, 19],
+                        borderWidth: 1,
+                        borderColor: '#5089fd',
+                        backgroundColor: '#5089fd'
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+        <!-- section c_4 -->
+        <script>
+            const ctx_06 = document.getElementById('myChart_06');
+
+            new Chart(ctx_06, {
+                type: 'line',
+                data: {
+                    labels: ['15일', '16일', '17일', '18일', '19일', '20일', '21일'],
+                    datasets: [{
+                        label: '사용금액',
+                        data: [22, 9, 4, 8, 12, 30, 26],
+                        borderWidth: 1,
+                        borderColor: '#a4ca41',
+                        backgroundColor: '#a4ca41'
+                    },
+                    {
+                        label: '잔고',
+                        data: [32, 19, 14, 8, 6, 21, 16],
+                        borderWidth: 1,
+                        borderColor: '#ff7575',
+                        backgroundColor: '#ff7575'
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                    }
+                }
+            });
+        </script>
+                <script>
+                    const ctx_07 = document.getElementById('myChart_07');
+        
+                    new Chart(ctx_07, {
+                        type: 'line',
+                        data: {
+                            labels: ['15일', '16일', '17일', '18일', '19일', '20일', '21일'],
+                            datasets: [{
+                                label: '주문건수',
+                                data: [22, 9, 4, 8, 12, 30, 26],
+                                borderWidth: 1,
+                                borderColor: '#ff7575',
+                                backgroundColor: '#ff7575'
+                            },
+                            {
+                                label: '결제건수',
+                                data: [32, 19, 14, 8, 6, 21, 16],
+                                borderWidth: 1,
+                                borderColor: '#ffaa00',
+                                backgroundColor: '#ffaa00'
+                            },
+                            {
+                                label: '취소건수',
+                                data: [12, 3, 4, 18, 26, 12, 15],
+                                borderWidth: 1,
+                                borderColor: '#a4ca41',
+                                backgroundColor: '#a4ca41'
+                            }, {
+                                label: '환불건수',
+                                data: [19, 5, 20, 11, 23, 13, 19],
+                                borderWidth: 1,
+                                borderColor: '#5089fd',
+                                backgroundColor: '#5089fd'
+                            }]
+                        },
+                        options: {
+                            responsive: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                },
+                            }
+                        }
+                    });
+                </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+html {
+  font-size: 10px;
+}
+
+html[lang="ko-KR"],
+html[lang="ko"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", sans-serif;
+}
+
+html[lang="ko-KR"] body,
+html[lang="ko"] body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+html[lang="en"],
+html *[lang="en"] {
+  font-family: "Pretendard-Bold", "Noto Sans KR", Arial, sans-serif, serif;
+}
+
+html[lang="en"] body,
+html *[lang="en"] body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+//font-size
+$login-btn-size: 14px;
+
+//header_color
+$color-header-border: #e0e0e0;
+//main_color
+$color-subtitle: #c4c4c4;
+//font-size
+$font-largest: 40px;
+$font-subtitle: 18px;
+//버튼 컬러
+$color-btn-blue: #007dfb;
+  //header
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 80px;
+        nav{
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: space-between;
+            padding: 26px 0px;
+            padding-left: 70px;
+            padding-right: 180px;
+            .nav_wrap{
+                width: 1281px;
+                ul{
+                    width: 1281px;
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        .item{
+                            display: flex;
+                            gap: 5px;
+                        }
+                    }
+                }
+            }
+            .dark_mode{
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+    }
+    main{
+        margin-top: 30px;
+    }
